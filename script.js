@@ -12,14 +12,17 @@
   IST is UTC+05:30, so the exact same instant in UTC is:
   10 November 2026, 18:30:00 UTC
 
-  To change the launch date later, edit ONLY the ISO timestamp below.
+  To change the launch date later, edit the ISO timestamp below AND
+  the visible .launch-date label in index.html. Update README.md as well.
   Use a UTC timestamp ending in "Z" so every visitor counts down
   to the exact same moment regardless of their own timezone.
 */
 const TARGET_DATE_UTC = "2026-11-10T18:30:00Z";
 
+// Browser preference key. Changing this key makes existing saved theme choices stop being used.
 const THEME_STORAGE_KEY = "coming-soon-theme";
 
+// HTML hooks: these IDs/classes must match index.html. The deferred script runs after HTML parsing.
 const countdownElement = document.getElementById("countdown");
 const liveMessageElement = document.getElementById("live-message");
 const themeToggle = document.getElementById("theme-toggle");
@@ -30,6 +33,7 @@ const targetTimestamp = new Date(TARGET_DATE_UTC).getTime();
 
 let countdownInterval = null;
 
+// Remember displayed values so unchanged numbers do not replay their animation every 250ms.
 let previousValues = {
   days: null,
   hours: null,
@@ -37,6 +41,7 @@ let previousValues = {
   seconds: null,
 };
 
+// Keep hours/minutes/seconds at two digits; larger day counts are not truncated.
 function pad(value) {
   return String(value).padStart(2, "0");
 }
@@ -61,6 +66,7 @@ function updateDisplayedUnit(unit, value) {
   }
 }
 
+// Stop polling and reveal the launch message. No navigation or deployment happens here.
 function showLiveState() {
   if (countdownInterval) {
     window.clearInterval(countdownInterval);
@@ -71,6 +77,8 @@ function showLiveState() {
   liveMessageElement.hidden = false;
 }
 
+// Calculate from the actual device clock on each update, rather than decrementing a counter.
+// This catches up after background-tab throttling; an incorrect device clock affects the result.
 function updateCountdown() {
   const now = Date.now();
   const remaining = targetTimestamp - now;
@@ -80,6 +88,7 @@ function updateCountdown() {
     return;
   }
 
+  // Convert milliseconds to whole seconds, then split into days and the remaining time units.
   const totalSeconds = Math.floor(remaining / 1000);
 
   const days = Math.floor(totalSeconds / 86400);
@@ -98,6 +107,7 @@ function updateCountdown() {
   );
 }
 
+// Priority: saved manual selection first, operating-system preference second.
 function getInitialTheme() {
   const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
 
@@ -110,6 +120,7 @@ function getInitialTheme() {
     : "light";
 }
 
+// data-theme selects the CSS palette. persist=false is used for system-driven/initial changes.
 function setTheme(theme, persist = true) {
   document.documentElement.dataset.theme = theme;
 
@@ -165,11 +176,13 @@ function initTheme() {
   });
 }
 
+// Uses the current year from the visitor\'s device; no yearly HTML edit is needed.
 function initFooterYear() {
   footerYear.textContent =
     new Date().getFullYear();
 }
 
+// Validate the date, render immediately, then start polling only if launch is still in the future.
 function initCountdown() {
   if (Number.isNaN(targetTimestamp)) {
     console.error(
@@ -200,6 +213,7 @@ function initCountdown() {
     );
 }
 
+// Start page behaviour once. Decorative background animations are CSS-only, not JavaScript timers.
 function init() {
   initTheme();
   initFooterYear();

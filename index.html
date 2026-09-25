@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- EDITING GUIDE: search for EDIT comments for common changes. See README.md for a file-by-file guide.
+     Keep IDs and data-unit attributes unless you also update their selectors in script.js. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +15,7 @@
     content="A personal website for my work, projects, and writing is on the way."
   />
 
+  <!-- Browser UI colours follow the operating-system theme; page colours are controlled in style.css. -->
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#f7f8fc" media="(prefers-color-scheme: light)" />
@@ -28,11 +31,46 @@
 </head>
 
 <body>
+  <!-- Decorative page background: orbs, grid, and outer fragments. aria-hidden keeps it out of screen-reader content. -->
   <div class="background" aria-hidden="true">
     <div class="orb orb--one"></div>
     <div class="orb orb--two"></div>
     <div class="orb orb--three"></div>
     <div class="grid-glow"></div>
+    <!-- Original fragments: software, reflection, music, and exploration. -->
+    <div class="life-fragments">
+      <!-- EDIT: display-only code; this is text, not executable JavaScript. Preserve spacing inside pre. -->
+      <div class="life-fragment fragment-code">
+        <span class="fragment-caption">a work in progress</span>
+        <pre><code>const life = {
+  build: withCare,
+  learn: always,
+  explore: beyond
+};</code></pre>
+      </div>
+      <!-- EDIT: original margin thought. Each br starts a new line; keep it short for the narrow page margin. -->
+      <div class="life-fragment fragment-notebook">
+        <span class="fragment-caption">margin notes / 01</span>
+        <p>Leave room<br>for a better<br>question.</p>
+        <svg viewBox="0 0 120 30" fill="none"><path d="M4 18Q45 6 113 14M16 25Q62 17 101 22"/></svg>
+      </div>
+      <div class="life-fragment fragment-music">
+        <span class="fragment-caption">find your rhythm</span>
+        <!-- Each i is one decorative bar; heights and animation timing are set in style.css. -->
+        <div class="music-wave">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+      <!-- EDIT: travel caption below. SVG path coordinates draw the route; CSS animates its dashes. -->
+      <div class="life-fragment fragment-route">
+        <svg viewBox="0 0 160 190" fill="none">
+          <path class="route-line" d="M20 170C120 160 5 100 85 95S150 35 115 20"/>
+          <circle cx="20" cy="170" r="4"/><circle cx="115" cy="20" r="5"/>
+          <path d="m108 21 7-14 7 14M135 130h14m-7-7v14"/>
+        </svg>
+        <span class="fragment-caption">take the long way</span>
+      </div>
+    </div>
   </div>
 
   <header class="site-header">
@@ -42,9 +80,8 @@
       <!-- EDIT: your name here -->
       <span class="brand-name">Meet Thummar</span>
     </a>
-
-    <button
-      class="theme-toggle"
+    <!-- Keep id="theme-toggle": script.js connects the button and updates its accessible label. -->
+    <button class="theme-toggle"
       id="theme-toggle"
       type="button"
       aria-label="Switch color theme"
@@ -65,11 +102,34 @@
 
   <main class="hero">
     <section class="hero-card" aria-labelledby="page-title">
+      <!-- Inside-card constellation. Resize/reposition with .thought-field in CSS.
+           SVG coordinates use a 600-by-600 canvas; orbit rotation is centred at 300,300. -->
+      <div class="thought-field" aria-hidden="true">
+        <svg viewBox="0 0 600 600" fill="none" focusable="false">
+          <g class="thought-orbit">
+            <circle cx="300" cy="300" r="240" />
+            <ellipse cx="300" cy="300" rx="240" ry="100" transform="rotate(-35 300 300)" />
+            <circle class="thought-node" cx="300" cy="60" r="5" />
+            <circle class="thought-node" cx="540" cy="300" r="4" />
+          </g>
+          <g class="thought-orbit thought-orbit--inner">
+            <circle cx="300" cy="300" r="165" stroke-dasharray="3 12" />
+            <path d="M180 187 440 215 390 435 180 187 160 385 440 215" />
+            <circle class="thought-node" cx="180" cy="187" r="4" />
+            <circle class="thought-node" cx="440" cy="215" r="6" />
+            <circle class="thought-node" cx="390" cy="435" r="4" />
+            <circle class="thought-node" cx="160" cy="385" r="3" />
+          </g>
+          <circle class="thought-core" cx="300" cy="300" r="8" />
+        </svg>
+      </div>
       <p class="eyebrow">
         <span class="status-dot" aria-hidden="true"></span>
         Personal site launching soon
       </p>
 
+      <!-- EDIT: main heading. Keep accent-text around the coloured second line.
+           Longer text may push the countdown down; check a short laptop screen after editing. -->
       <h1 id="page-title">
         A new home for the things I
         <span class="accent-text">build, learn, and write.</span>
@@ -93,6 +153,8 @@
         </span>
       </div>
 
+      <!-- The 00 values are placeholders. script.js fills them using data-unit names.
+           Keep days, hours, minutes, seconds and id="countdown" unchanged. -->
       <div class="countdown-shell">
         <p class="countdown-label">Launching in</p>
 
@@ -131,25 +193,27 @@
           </div>
         </div>
 
+        <!-- EDIT: message shown after the target date. This does not deploy or redirect to a new site. -->
         <div class="live-message" id="live-message" hidden>
           <span class="live-dot" aria-hidden="true"></span>
           <div>
             <p class="live-title">We’re live.</p>
             <p class="live-copy">
               The full site is ready.
-              <!-- EDIT: Replace # with your final website URL when you launch -->
+              <!-- EDIT: final destination. This currently points back to this site; update it if the full site moves. -->
               <a href="https://meetbyte.github.io">Enter the site →</a>
             </p>
           </div>
         </div>
 
+        <!-- EDIT: visible date label. Update this AND TARGET_DATE_UTC in script.js together. -->
         <p class="launch-date">
           11 November 2026 · 12:00 AM IST
         </p>
       </div>
 
       <nav class="socials" aria-label="Social profiles">
-        <!-- EDIT: Replace # with your GitHub profile URL -->
+        <!-- EDIT: GitHub destination in href; the SVG below is only the icon. -->
         <a href="https://github.com/meetbyte" class="social-link" aria-label="GitHub">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
@@ -159,7 +223,7 @@
           </svg>
         </a>
 
-        <!-- EDIT: Replace # with your LinkedIn profile URL -->
+        <!-- EDIT: LinkedIn destination in href; the SVG below is only the icon. -->
         <a href="https://www.linkedin.com/in/thummarmeet/" class="social-link" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
@@ -169,7 +233,7 @@
           </svg>
         </a>
 
-        <!-- EDIT: Replace # with your X / Twitter profile URL -->
+        <!-- EDIT: X destination in href; the SVG below is only the icon. -->
         <a href="https://x.com/meetbyte" class="social-link" aria-label="X / Twitter">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
@@ -184,6 +248,7 @@
 
   <footer class="site-footer">
     <p>
+      <!-- Year is filled automatically by script.js; edit your name and closing sentence below. -->
       © <span id="footer-year"></span>
       <!-- EDIT: your name here -->
       Meet Thummar.
