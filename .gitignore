@@ -1,3 +1,4 @@
+# Local-only files; these rules do not untrack files already committed.
 # Operating system files
 .DS_Store
 Thumbs.db
@@ -15,6 +16,7 @@ Desktop.ini
 # Local environment files
 .env
 .env.*
+# Keep a shareable placeholder example, if one is added later.
 !.env.example
 
 # Optional local tooling (the site itself has no dependencies)
