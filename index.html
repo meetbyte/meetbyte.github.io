@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT: Browser tab title -->
+  <title>Meet Thummar — Coming Soon</title>
+
+  <!-- EDIT: Search/social preview description -->
+  <meta
+    name="description"
+    content="A personal website for my work, projects, and writing is on the way."
+  />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f8fc" media="(prefers-color-scheme: light)" />
+
+  <!-- Simple emoji-style favicon. Replace later with your own favicon if you want. -->
+  <link
+    rel="icon"
+    href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">✦</text></svg>'
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="orb orb--one"></div>
+    <div class="orb orb--two"></div>
+    <div class="orb orb--three"></div>
+    <div class="grid-glow"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+
+      <!-- EDIT: your name here -->
+      <span class="brand-name">Meet Thummar</span>
+    </a>
+
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      type="button"
+      aria-label="Switch color theme"
+      aria-pressed="false"
+    >
+      <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+      </svg>
+
+      <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+      </svg>
+
+      <span class="sr-only">Toggle dark and light mode</span>
+    </button>
+  </header>
+
+  <main class="hero">
+    <section class="hero-card" aria-labelledby="page-title">
+      <p class="eyebrow">
+        <span class="status-dot" aria-hidden="true"></span>
+        Personal site launching soon
+      </p>
+
+      <h1 id="page-title">
+        A new home for the things I
+        <span class="accent-text">build, learn, and write.</span>
+      </h1>
+
+      <!-- EDIT: tagline / teaser copy -->
+      <p class="intro">
+        Thoughtful software, words, and a life in motion — shaped by books,
+        big questions, good music, and roads less travelled.
+      </p>
+
+      <div class="identity" aria-label="Professional identity">
+        <span class="identity-name">
+          <!-- EDIT: your name here -->
+          Meet Thummar
+        </span>
+        <span class="identity-divider" aria-hidden="true"></span>
+        <span class="identity-title">
+          <!-- EDIT: your professional title here -->
+          Software engineer. Thinker. Student of life.
+        </span>
+      </div>
+
+      <div class="countdown-shell">
+        <p class="countdown-label">Launching in</p>
+
+        <div
+          class="countdown"
+          id="countdown"
+          role="timer"
+          aria-live="polite"
+          aria-atomic="true"
+          aria-label="Time remaining until launch"
+        >
+          <div class="time-unit">
+            <span class="time-value" data-unit="days">00</span>
+            <span class="time-label">Days</span>
+          </div>
+
+          <span class="time-separator" aria-hidden="true">:</span>
+
+          <div class="time-unit">
+            <span class="time-value" data-unit="hours">00</span>
+            <span class="time-label">Hours</span>
+          </div>
+
+          <span class="time-separator" aria-hidden="true">:</span>
+
+          <div class="time-unit">
+            <span class="time-value" data-unit="minutes">00</span>
+            <span class="time-label">Minutes</span>
+          </div>
+
+          <span class="time-separator" aria-hidden="true">:</span>
+
+          <div class="time-unit">
+            <span class="time-value" data-unit="seconds">00</span>
+            <span class="time-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="live-message" id="live-message" hidden>
+          <span class="live-dot" aria-hidden="true"></span>
+          <div>
+            <p class="live-title">We’re live.</p>
+            <p class="live-copy">
+              The full site is ready.
+              <!-- EDIT: Replace # with your final website URL when you launch -->
+              <a href="https://meetbyte.github.io">Enter the site →</a>
+            </p>
+          </div>
+        </div>
+
+        <p class="launch-date">
+          11 November 2026 · 12:00 AM IST
+        </p>
+      </div>
+
+      <nav class="socials" aria-label="Social profiles">
+        <!-- EDIT: Replace # with your GitHub profile URL -->
+        <a href="https://github.com/meetbyte" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2.03c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.16 1.19A10.95 10.95 0 0 1 12 6.23c.98 0 1.96.13 2.88.39 2.2-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.11 0 4.45-2.71 5.43-5.29 5.72.42.36.79 1.08.79 2.18v3.04c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z"
+            />
+          </svg>
+        </a>
+
+        <!-- EDIT: Replace # with your LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/thummarmeet/" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V8.98h3.41v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.3ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47Z"
+            />
+          </svg>
+        </a>
+
+        <!-- EDIT: Replace # with your X / Twitter profile URL -->
+        <a href="https://x.com/meetbyte" class="social-link" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.26-8.3L2.98 2h6.4l4.42 5.84L18.9 2Zm-1.09 17.84h1.73L8.44 4.05H6.58l11.23 15.79Z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © <span id="footer-year"></span>
+      <!-- EDIT: your name here -->
+      Meet Thummar.
+      Built quietly, launching soon.
+    </p>
+  </footer>
+</body>
+</html>
