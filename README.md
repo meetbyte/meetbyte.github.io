@@ -1,106 +1,91 @@
-# Meet Thummar | meetbyte.github.io
+# Meet Thummar personal website
 
-A personal corner of the internet for software, ideas, and a life in motion.
+Technical foundation, design shell, and Stage 3 content architecture for [meetbyte.github.io](https://meetbyte.github.io/). The portfolio is being built in five stages; this branch contains Stages 1–3.
 
-**Software engineer. Thinker. Student of life.**
+## Requirements
 
-This repository contains the coming-soon page for [meetbyte.github.io](https://meetbyte.github.io/), built with plain HTML, CSS, and JavaScript. No framework, package installation, or build step is required.
+- Node.js 20.9 or later
+- npm
 
-## Features
+## Local development
 
-- Responsive glass-style card with a compact desktop layout that keeps the countdown in the initial viewport.
-- Countdown to **11 November 2026 at 12:00 AM IST (Asia/Kolkata)**, using one UTC target for all visitors.
-- Light and dark themes, with the chosen preference saved in the browser.
-- Animated countdown digits, drifting colour, and an orbital constellation inspired by connected ideas and exploration. Outside the card, drifting code, an original margin note, a music waveform, and a travel route reflect personal interests. Respects reduced-motion preferences.
-- GitHub, LinkedIn, and X profile links.
-- Automatic footer year and a launch message when the countdown reaches zero.
+```sh
+npm install
+npm run dev
+```
 
-## Project files
+Run `npm install` once after cloning, or again when dependencies change. Open `http://localhost:3000` after starting the development server. The navigation shows only enabled pages. Projects and Blog start hidden while their content is being prepared; Contact remains a preview.
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Page content, identity, metadata, launch-date label, and profile links. |
-| `style.css` | Layout, responsive rules, themes, and animations. |
-| `script.js` | Countdown, theme selection, and footer year. |
-| `.gitignore` | Excludes local editor settings, temporary files, and environment files. |
+## Validate the static site
 
-## Preview locally
+```sh
+npm run typecheck
+npm run build
+```
 
-Open `index.html` in a modern browser for a quick preview. For local HTTP testing, serve this directory with your preferred static server and open its localhost address. Keep the HTML, CSS, and JavaScript files together so their relative paths resolve.
+`next build` writes deployable files to `out/`. Check that each main route has an `index.html` and that assets exist under `out/_next/`. A static file server pointed at `out/` can be used to check direct navigation to every route.
 
-## Customize
+## Deployment
 
-- **Identity and copy:** edit the heading, introduction, and `.identity-title` in `index.html`.
-- **Launch date:** update `TARGET_DATE_UTC` in `script.js` and the visible `.launch-date` text in `index.html` together. The current value, `2026-11-10T18:30:00Z`, corresponds to midnight IST on 11 November 2026.
-- **Profiles:** update the links inside the social navigation in `index.html`.
-- **Appearance:** edit the theme variables and layout rules in `style.css`.
-- **Search preview:** update the title and description in the HTML head.
+The GitHub Actions workflow builds with `npm ci` and uploads `out/` when a change reaches `main`. It uses the official GitHub Pages actions. The repository is a **user site**, so `https://meetbyte.github.io/` is the root; there is no project `basePath`. `trailingSlash: true` produces route directories with `index.html` for direct requests to `/about/` and later pages. `.nojekyll` keeps GitHub Pages from processing Next.js `_next` assets as Jekyll files.
 
-The countdown uses the visitor's device clock. Reaching zero only displays the launch message; it does not publish the full website. Replace the coming-soon page with the finished site at launch and check the destination of the "Enter the site" link, which currently points to the same site root.
+In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the source. If the `github-pages` environment has branch restrictions, allow `main`. Automatic runs start when Stage 1 is merged into `main`; a manual run on the feature branch can build the site but cannot deploy it. The public countdown page stays live until the merge.
 
-## Publishing
+## Architecture
 
-This repository targets GitHub Pages at [meetbyte.github.io](https://meetbyte.github.io/). Keep `index.html`, `style.css`, and `script.js` at the repository root. Commit and push your changes to the branch configured as the Pages publishing source, and confirm that deployment succeeds in GitHub before checking the public page.
+- `src/app/`: App Router pages and root layout
+- `src/data/`: typed profile, navigation, Home, About, Skills, Resume, and CV data
+- `src/data/types.ts`: Stage 3 content schemas, including optional fields and timeline entries
+- `src/components/`: profile card, navigation, theme switcher, role rotator, and route placeholder
+- `src/constants/content.ts`: shared interface wording and Stage 4/5 route previews
+- `src/constants/routes.ts`: canonical paths used by navigation and links
+- `src/constants/page-visibility.ts`: one publish switch for each page
+- `src/constants/config.ts`: behavior settings such as theme storage and role timing
+- `src/lib/navigation.ts`, `src/lib/theme.ts`: reusable route and theme helpers
+- `src/styles/colors.css`: all light, dark, artwork, and shadow colors in one editable palette
+- `src/styles/globals.css`: Tailwind CSS entry, layouts, and component styles that use the palette tokens
+- `content/blog/`: future Markdown posts
+- `public/images/`, `public/icons/`, `public/files/`: static assets
 
-## Before publishing changes
+The site uses Next.js static export. It has no production Node server, runtime API, database, or Vercel dependency. Dynamic project and blog routes added in Stage 4 will need `generateStaticParams()` so every page is emitted during the build.
 
-- Check the countdown and displayed launch date agree.
-- Preview desktop and mobile widths, including a short laptop viewport.
-- Check both themes, keyboard focus, and profile links.
-- Refresh the published page after deployment to confirm the latest version is visible.
+## How the current pages work
 
-## Editing guide
+### Show or hide pages
 
-Search for **EDIT** in the source files to find the main customization points. Make one small change at a time, save, and refresh your preview.
+Edit `src/constants/page-visibility.ts` and set a page to `true` or `false`. Home stays enabled as the site's entry point. About, Resume, Skills, and Contact start enabled; Projects and Blog start disabled. A disabled page disappears from navigation and home feature cards. Its direct URL shows the 404 page, and any profile action pointing to it is hidden. If all home feature cards are disabled, the scroll prompt and card area disappear too. Rebuild and deploy the site after changing a switch; a static export does not change until the next build.
 
-| I want to change... | Where to look | What to edit |
-| --- | --- | --- |
-| Browser title or search description | `index.html`, inside `head` | The `title` text and description `content`. |
-| Name, headline, or identity | `index.html`, `brand-name`, `page-title`, `identity`, footer | Visible text; your name appears in multiple places. |
-| Launch date | `script.js`, `TARGET_DATE_UTC`; HTML `launch-date` | Change the timestamp and the human-readable label together, then update this README. |
-| Social destinations | `index.html`, `socials` | Each link's `href`; keep its accessible label appropriate to the destination. |
-| Page and card colours | `style.css`, palette blocks at the top | `--bg`, `--bg-elevated`, text and accent variables. |
-| Card width or spacing | `style.css`, `.hero`, `.hero-card` | Width/padding; check the compact desktop and mobile overrides too. |
-| Heading size | `style.css`, `.hero h1` | Font size and line height; longer text takes more vertical space. |
-| Constellation inside the card | `style.css`, `.thought-field`, `.thought-orbit` | Size, position, opacity, and rotation duration. |
-| Outer artwork colours | `style.css`, `.life-fragments` colour variables | Accent/text mix; colours automatically follow the active theme. |
-| Outer artwork visibility | `style.css`, `.life-fragment` | Opacity; narrow-screen overrides use separate values. |
-| Code or notebook text outside the card | `index.html`, `fragment-code`, `fragment-notebook` | Display-only code, captions and original thought. The code fragment does not run. |
-| Outer artwork position/speed | `style.css`, individual `.fragment-...` rules | Edge offsets, `--tilt`, animation duration, and delay. |
-| Music waveform | `style.css`, `.music-wave i` | Bar dimensions and pulse timing; HTML `i` elements are the bars. |
-| Travel route | `index.html`, `fragment-route`; CSS `.route-line` | SVG path shape, caption, dash pattern, and animation speed. |
+These switches control whether a page is published. Keep `projects` and `blog` set to `false` until their content is ready. The content files remain in the source so they can be filled in before enabling the pages.
 
-### Theme colours
+- `src/app/layout.tsx` supplies the header, navigation, profile card, main content area, and footer on every route. Its small head script sets the theme before the page is painted.
+- `src/app/page.tsx` is the home page, populated by `src/data/home.ts`. The hero fills the main area, with Projects and Blog links at the bottom of its content card.
+- About, Skills, and Resume render from `src/data/`, with explicit empty states for details Meet has not supplied.
+- Projects, Blog, and Contact select their preview entry from `src/constants/content.ts`; `src/components/section-placeholder.tsx` renders the shared preview.
+- `src/app/template.tsx` wraps route content so the page entry animation runs after navigation.
+- `src/components/navigation.tsx` marks the active route, opens the mobile menu, and closes it after navigation.
+- `src/components/theme-toggle.tsx` starts in light mode on a first visit and stores a manual light or dark choice locally. `src/components/role-rotator.tsx` cycles profile roles and stops cycling when reduced motion is preferred.
+- `src/styles/colors.css` holds the full palette; `src/styles/globals.css` uses its tokens for responsive layouts and motion. On desktop, the shell fits the viewport and the profile or content card scrolls internally when needed. Short windows, tablets, and mobile screens use normal document scrolling so content remains reachable.
 
-There are two light palettes and two dark palettes: defaults based on the operating system, and explicit selections under `html[data-theme="light"]` / `html[data-theme="dark"]`. Keep matching palettes in sync. A saved manual theme takes priority over the system setting.
+Source files use JSDoc-style `/** ... */` comments with `@author meetbyte` for page and function documentation. CSS uses section comments to explain layout and theme rules. Keep comments focused on purpose and behavior as content is added in later stages.
 
-The outer artwork mixes accents with `--text` to produce deeper ink on light backgrounds and brighter colours on dark backgrounds. Its opacity is separate from its colour. The inside-card constellation has its own opacity setting.
+## Edit wording and settings
 
-### Layout and animation tips
+Edit `src/data/profile.ts` for identity, roles, and social links. Its name and title flow into site metadata and shared labels. Edit `src/data/navigation.ts` for navigation, `src/data/home.ts` for Home, and the other `src/data/` files for Stage 3 pages. `src/constants/content.ts` holds shared interface labels and later-stage previews. Components read these values rather than embedding personal details in JSX.
 
-- `padding` is space inside an element; `margin` is space outside it.
-- `clamp(minimum, fluid value, maximum)` allows a size to scale within limits.
-- Animation durations such as `18s` are seconds: increase them for slower movement.
-- Negative animation delays start different elements partway through their cycles.
-- Opacity ranges from `0` (invisible) to `1` (solid).
-- Rules later in the stylesheet can override earlier rules. Search all occurrences of a selector before editing.
-- At widths up to 760px the main layout changes; up to 440px it tightens further. Desktop windows up to 740px tall get compact spacing.
-- Outer code and notebook fragments are hidden at widths up to 1100px to avoid crowding. At 1600px and above, artwork positions move inward.
-- Keep reduced-motion rules so visitors who request less motion get a static background.
-- To remove an outer fragment, remove its complete `life-fragment` HTML block. To remove the inner constellation, remove its complete `thought-field` block.
+## Stage 3 content updates
 
-### Keep these connections intact
+- `src/data/about.ts`: replace the biography placeholder with Meet's verified story; add optional expertise descriptions and interest or learning entries. Empty lists show labeled placeholders.
+- `src/data/skills.ts`: add, remove, or reorder category objects in `categories`. Add skills as `{ name, note? }` inside each category. Categories and chips are entirely data-driven. Do not add percentage scores.
+- `src/data/resume.ts`: add experience and education entries with a unique `id`, `title`, and optional `organization`, `location`, `period`, `summary`, and `highlights`. Empty timelines show a labeled placeholder. Use real dates and organizations only.
+- `src/data/cv.ts`: once a real PDF exists under `public/files/`, set `href` to its root-relative path, optionally set `filename`, and set `available: true`. A verified external CV URL can also be used. Until then, the profile action stays disabled and the Resume page explains why.
+- `src/data/types.ts`: the schemas for the above data. Optional fields are omitted from the page when empty.
 
-The IDs `countdown`, `live-message`, `theme-toggle`, and `footer-year`, plus the `time-value` class and `data-unit` values, are used by JavaScript. If renamed in HTML, update the corresponding JavaScript selectors too. Keep the script's `defer` attribute so it runs after the page has been parsed.
+Meet still needs to provide a biography, interests, specific skills, professional experience, education, and a CV file or link. The current broad expertise and current-learning labels come from the existing Stage 2 profile wording. No employment, education, achievements, or skill ratings are implied by them.
 
-The decorative SVGs use their own coordinate systems, defined by `viewBox`. Use CSS width/position for normal resizing; editing SVG path coordinates changes the actual drawing.
+Edit `src/constants/routes.ts` when a route path changes; navigation and calls to action use those paths. Edit `src/constants/config.ts` for behavior settings such as the theme storage key or role rotation interval. Change colors in `src/styles/colors.css`; `src/styles/globals.css` refers to those named color tokens instead of repeating color values.
 
-### After an edit
+## Stage 2 design shell
 
-Check a 1366 x 768 desktop window, a shorter laptop window, and a narrow phone width. Confirm the countdown stays visible on desktop, text does not overlap, both themes look good, links work, and the theme button still responds. For animation changes, also check your device's reduced-motion setting.
+The profile card stays beside routed content on desktop, becomes a horizontal identity area on tablet, and stacks above content on mobile. Navigation changes to a menu on narrow screens. The current portrait artwork is an explicit placeholder; the CV button is disabled until a real PDF is supplied. No work history, skills, or project results have been invented.
 
-If a saved change does not appear, try a hard refresh (Ctrl+F5). For the public site, ensure the commit was pushed and the deployment completed.
-
-### Git ignore rules
-
-`.gitignore` only prevents matching untracked files from being added by default; it does not remove files already committed. The `!.env.example` exception allows a placeholder configuration example to be tracked. This static site does not need environment files or Node dependencies.
+Light and dark themes use a slate blue, warm clay, and ivory palette defined in `src/styles/colors.css`. The first visit starts in light mode; a manual dark or light choice is saved in local storage. A small script in the document head applies a saved theme before the main content paints. The theme button changes the `data-theme` attribute on `<html>`, which selects the palette in `colors.css`. The development server accepts both `localhost` and `127.0.0.1`; each address has its own saved browser preference. Page entry and role text use restrained CSS motion, and `prefers-reduced-motion` disables those effects. Keyboard users can skip directly to the main content. Desktop cards show a thin native scrollbar when they need to scroll, so additional content remains visible and easy to find.

@@ -1,0 +1,57 @@
+/* Shared palette for the site. Edit these tokens to change color in every component.
+   @author meetbyte */
+:root {
+  color-scheme: light;
+  --page: #f4f0e8;
+  --page-glow: #dce5ec;
+  --surface: #fcfaf6;
+  --surface-quiet: #f3f0e9;
+  --surface-hover: #e9e5dd;
+  --ink: #263340;
+  --ink-soft: #52616a;
+  --ink-muted: #5e6d77;
+  --line: #dcddd9;
+  --accent: #496a86;
+  --accent-deep: #365571;
+  --accent-soft: #e1e9ef;
+  --clay: #a55f4d;
+  --button-ink: #ffffff;
+  --shadow: 0 22px 62px rgba(38, 51, 64, 0.08);
+  --button-hover-shadow: 0 10px 24px rgba(54, 85, 113, 0.2);
+
+  /* The portrait placeholder uses the same artwork in both themes. */
+  --mask-ink: #000000;
+  --art-glow-clay: rgba(165, 95, 77, 0.28);
+  --art-glow-blue: #527390;
+  --art-gradient-start: #27435d;
+  --art-gradient-end: #172b40;
+  --art-ink: #f7f0e8;
+  --art-frame-line: rgba(242, 237, 227, 0.17);
+  --art-halo: rgba(165, 190, 213, 0.22);
+  --art-caption-ink: #d0dce7;
+  --art-orbit-line: rgba(204, 221, 236, 0.25);
+  --portrait-mark-line: rgba(242, 237, 227, 0.28);
+  --portrait-mark-surface: rgba(205, 221, 234, 0.09);
+  --portrait-mark-shadow: rgba(205, 221, 234, 0.1);
+}
+
+/* Dark mode applies only after the visitor selects it and the choice is saved. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #171d27;
+  --page-glow: #293a4f;
+  --surface: #202936;
+  --surface-quiet: #273343;
+  --surface-hover: #304053;
+  --ink: #f6f2eb;
+  --ink-soft: #d4dee8;
+  --ink-muted: #a6b4c2;
+  --line: #3e4b59;
+  --accent: #a5bed5;
+  --accent-deep: #c0d3e2;
+  --accent-soft: #2b4358;
+  --clay: #dea38d;
+  --button-ink: #17222b;
+  --shadow: 0 25px 75px rgba(0, 0, 0, 0.2);
+  --button-hover-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
