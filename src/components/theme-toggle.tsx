@@ -1,6 +1,9 @@
 "use client";
 
-/** Clock-based defaults and an interruptible manual sun/moon journey. @author meetbyte */
+/**
+ * @file Clock-based defaults and an interruptible manual sun/moon journey.
+ * @author meetbyte
+ */
 import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/constants/config";
 import { siteContent } from "@/constants/content";
@@ -10,6 +13,10 @@ import { parseSeasonChoice, readVisitSeason, seasonChoiceEvent } from "@/lib/sea
 import { readVisitTheme, resolveTheme, saveVisitTheme, type Theme } from "@/lib/theme";
 import { Icon } from "./icons";
 
+/**
+ * Synchronizes the local clock, manual theme choice and season updates with reversible sun/moon travel and preference cleanup.
+ * @author meetbyte
+ */
 export function ThemeToggle() {
   const [ready, setReady] = useState(false);
   const [theme, setTheme] = useState<Theme>("light");

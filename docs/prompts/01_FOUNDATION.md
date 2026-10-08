@@ -1,0 +1,11 @@
+# Prompt 01 — Foundation and static export
+
+Continue the destination established in prompt 00. Required context: destination path, MODE, this prompt pack's `BUILD_SPEC.md`, persona input (unless reproduce), source snapshot and prior checklist. Read applicable AGENTS instructions and the installed framework docs before code changes.
+
+Make the project support the specification's Next.js App Router/TypeScript/static-export architecture. In reuse modes, preserve the reference `package.json`/lockfile and use `npm ci`; do not regenerate the project or upgrade packages. In fresh mode, match the reference dependency tree and configuration deliberately. Include the normalized build-time Markdown dependencies, meaningful validation scripts and focused content/lib modules. Personal fields belong in typed data; behaviour and publication flags in constants; shared logic in focused lib files; presentation in components/styles.
+
+Configure export, trailing slashes, unoptimized local images, allowed development hostname and local fonts exactly as the specification describes. Root-hosted GitHub user sites have no repository-name subpath. Validate the persona's origin/repository relationship; flag a different hosting mode as a deliberate configuration variant. Preserve font licenses. Do not add runtime backend dependencies, a CMS, animation framework, API keys or paid services.
+
+Keep all seven page implementations and detail route folders. Add/retain centralized visibility flags with Home/About/Resume/Skills/Contact on and Projects/Blog off unless the persona explicitly overrides them. Add/retain npm lint, typecheck, test, build and postbuild finalization scripts. Generated `out/`, `.next/`, dependencies, secrets and logs remain ignored. Do not remove the current application's source or operational instructions.
+
+Validate dependency installation and static configuration. In a clean destination run `npx next typegen` after `npm ci` before typecheck, using the local locked package; `.next/` types are generated rather than copied. Run typecheck/build when the stage is runnable. Document missing source/media that prevents a complete build, rather than substituting false facts. Return actual command outcomes, changed files and a foundation handoff/checklist update. Do not commit, push or deploy.

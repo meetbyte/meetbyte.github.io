@@ -1,10 +1,13 @@
 "use client";
 
-/** A visit-scoped preview; Auto returns immediately to India's visual calendar. @author meetbyte */
+/**
+ * @file A visit-scoped preview; Auto returns immediately to India's visual calendar.
+ * @author meetbyte
+ */
 import { useEffect, useRef, useState } from "react";
 import { parseSeasonChoice, readVisitSeason, resolveSeason, saveVisitSeason, seasonChoiceEvent, type SeasonChoice } from "@/lib/season";
 
-/** Preview control reused by the optional header disclosure. */
+/** Preview control reused by the optional header disclosure. @author meetbyte */
 export function SeasonPicker() {
   const [ready, setReady] = useState(false);
   const [choice, setChoice] = useState<SeasonChoice>("auto");
@@ -32,7 +35,7 @@ export function SeasonPicker() {
   </label>;
 }
 
-/** A compact optional preview; opening it never changes the header height. */
+/** A compact optional preview; opening it never changes the header height. @author meetbyte */
 export function SeasonPreview() {
   const disclosure = useRef<HTMLDetailsElement>(null);
 

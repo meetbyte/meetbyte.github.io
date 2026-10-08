@@ -1,4 +1,7 @@
-/* Accessible finishing details without changing the established layout. @author meetbyte */
+/**
+ * @file Accessible finishing details without changing the established layout.
+ * @author meetbyte
+ */
 .profile-name { font-family: var(--font-heading), "Segoe UI", sans-serif; }
 .portrait-placeholder { position: absolute; inset: 0; display: grid; place-items: center; background: linear-gradient(135deg, var(--art-gradient-start), var(--art-gradient-end)); color: var(--art-ink); font-family: var(--font-heading), sans-serif; font-size: 64px; letter-spacing: -.07em; }
 .image-fallback { display: grid; place-items: center; background: var(--surface-quiet); color: var(--ink-muted); font-size: 13px; text-align: center; }

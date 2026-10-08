@@ -53,3 +53,7 @@ The current ESLint configuration deliberately disables `react-hooks/set-state-in
 Run `npm run lint`, `npm run typecheck`, `npm test` and `npm run build`. On Windows, `npm run build -- --webpack` is the documented fallback. The normal npm build also runs the postbuild cleanup.
 
 Preview the generated `out/` through a static server. Check both themes, the mobile menu at 320/390/900 px, the desktop reading panels, keyboard navigation, reduced motion, an unknown URL and Contact/CV links. If the season flag is enabled, compare all four previews, choose Auto, and verify the header stays the same height when its disclosure opens.
+
+## Source descriptions and future content
+
+Use [the commenting guide](COMMENTING_GUIDE.md) for authored file/function descriptions and `@author meetbyte`. [Repository context](PROJECT_CONTEXT.md) records the active implementation and choices for future chats. Add genuine projects/articles through [the Step 4 follow-up](prompts/04_RESUME_PROJECTS_AND_BLOG.md), using [the content worksheet](planning/PROJECT_BLOG_CONTENT_TEMPLATE.md); preserve the existing engines and publication flags.

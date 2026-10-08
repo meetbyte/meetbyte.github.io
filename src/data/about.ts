@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Professional story, working approach and personal interests. @author meetbyte */
+/**
+ * @file Professional story, working approach and personal interests.
+ * @author meetbyte
+ */
 import type { AboutContent } from "./types";
 
 export const aboutContent: AboutContent = {

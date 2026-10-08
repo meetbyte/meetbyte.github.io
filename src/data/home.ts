@@ -1,5 +1,8 @@
 import { pageEyebrow } from "@/lib/page-label";
-/** Home content, kept outside the page component. @author meetbyte */
+/**
+ * @file Home content, kept outside the page component.
+ * @author meetbyte
+ */
 import { routes } from "@/constants/routes";
 import type { HomeContent } from "./types";
 

@@ -1,5 +1,7 @@
-/* Shared palette for the site. Edit these tokens to change color in every component.
-   @author meetbyte */
+/**
+ * @file Shared palette for the site. Edit these tokens to change color in every component.
+ * @author meetbyte
+ */
 :root {
   color-scheme: light;
   --page: #f8f5ee;

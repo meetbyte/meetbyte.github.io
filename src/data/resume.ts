@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Confirmed career chronology, education and certification. @author meetbyte */
+/**
+ * @file Confirmed career chronology, education and certification.
+ * @author meetbyte
+ */
 import type { ResumeContent } from "./types";
 
 export const resumeContent: ResumeContent = {

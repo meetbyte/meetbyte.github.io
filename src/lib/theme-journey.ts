@@ -1,20 +1,51 @@
-/** Sun/moon travel and accessible sunset palettes. @author meetbyte */
+/**
+ * @file Sun/moon travel and accessible sunset palettes.
+ * @author meetbyte
+ */
 import type { Theme } from "./theme";
 
 type RGB = [number, number, number];
+/**
+ * Interpolates one numeric value between two endpoints for the current journey progress.
+ * @author meetbyte
+ */
 const mix = (a: number, b: number, t: number) => a + (b - a) * t;
+/**
+ * Converts a six-digit hexadecimal colour into its red, green and blue channel values.
+ * @author meetbyte
+ */
 const rgb = (hex: string): RGB => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16)) as RGB;
+/**
+ * Encodes rounded RGB channels as a six-digit hexadecimal colour.
+ * @author meetbyte
+ */
 const hex = (color: RGB) => "#" + color.map((v) => Math.round(v).toString(16).padStart(2, "0")).join("");
+/**
+ * Interpolates two hexadecimal colours channel by channel for intermediate journey palettes.
+ * @author meetbyte
+ */
 const blend = (a: string, b: string, t: number) => hex(rgb(a).map((v, i) => mix(v, rgb(b)[i], t)) as RGB);
 
+/**
+ * Computes sRGB relative luminance for foreground/background contrast evaluation.
+ * @author meetbyte
+ */
 export function luminance(color: string): number {
   const values = rgb(color).map((v) => { const n = v / 255; return n <= .04045 ? n / 12.92 : ((n + .055) / 1.055) ** 2.4; });
   return .2126 * values[0] + .7152 * values[1] + .0722 * values[2];
 }
+/**
+ * Returns the relative-luminance contrast ratio between two hexadecimal colours.
+ * @author meetbyte
+ */
 export function contrast(a: string, b: string): number {
   const x = luminance(a), y = luminance(b);
   return (Math.max(x, y) + .05) / (Math.min(x, y) + .05);
 }
+/**
+ * Keeps the desired foreground when readable on every supplied surface, otherwise selects the stronger black/white alternative.
+ * @author meetbyte
+ */
 function readable(desired: string, backgrounds: string[]): string {
   const score = (color: string) => Math.min(...backgrounds.map((bg) => contrast(color, bg)));
   if (score(desired) >= 4.5) return desired;
@@ -30,6 +61,10 @@ const stops = [
 ] as const;
 const keys = ["page", "surface", "surface-quiet", "surface-hover", "ink", "ink-soft", "ink-muted", "accent", "accent-deep", "clay", "button-ink", "line", "card-edge-top", "card-edge-right", "card-edge-bottom", "card-edge-left", "celestial-glow"];
 
+/**
+ * Interpolates theme stops and resolves readable card, chrome and button colours across the light/dark crossover.
+ * @author meetbyte
+ */
 export function journeyPalette(progress: number): Record<string, string> {
   const p = Math.max(0, Math.min(1, progress));
   let index = stops.findIndex((stop) => stop.at >= p);
@@ -60,6 +95,10 @@ export interface JourneyClock {
   request(callback: FrameRequestCallback): number;
   cancel(id: number): void;
 }
+/**
+ * Controls interruptible sun/moon travel and CSS palette overrides; exposes instant finish/disposal paths for reduced motion and cleanup.
+ * @author meetbyte
+ */
 export function createThemeJourney(root: Pick<HTMLElement, "dataset" | "style">, reduced: () => boolean, clock: JourneyClock = {
   now: () => performance.now(), request: (callback) => requestAnimationFrame(callback), cancel: (id) => cancelAnimationFrame(id),
 }) {

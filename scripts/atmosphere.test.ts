@@ -1,4 +1,7 @@
-/** Clock boundaries and pre-paint seasonal behavior. @author meetbyte */
+/**
+ * @file Clock boundaries and pre-paint seasonal behavior.
+ * @author meetbyte
+ */
 import test from "node:test";
 import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";
@@ -40,6 +43,10 @@ test("manual choices survive page navigation in this tab but a fresh visit uses 
   }
 });
 
+/**
+ * Builds a controllable fake boundary clock to inspect scheduled checks, selected themes/seasons and disposal.
+ * @author meetbyte
+ */
 function clockFixture(date: Date, initialSeason: SeasonChoice = "auto") {
   let current = date, id = 0;
   const pending = new Map<number, () => void>();

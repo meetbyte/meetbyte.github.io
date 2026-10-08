@@ -1,4 +1,7 @@
-/* Clean photographic sky plates and one independently travelling sun/moon. @author meetbyte */
+/**
+ * @file Clean photographic sky plates and one independently travelling sun/moon.
+ * @author meetbyte
+ */
 :root {
   --night-progress: 0; --celestial-bend: 0; --celestial-arc-progress: 0; --sunset-opacity: 0; --twilight-opacity: 0;
   --sun-x: 24.5vw; --moon-x: 76vw; --orb-y: 60px; --orb-size: 66px; --orbit-arc: clamp(190px, 34dvh, 310px); --header-band: 94px; --lunar-phase: 0;

@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Shared interface wording and previews for later stages. @author meetbyte */
+/**
+ * @file Shared interface wording and previews for later stages.
+ * @author meetbyte
+ */
 import { profile } from "@/data/profile";
 
 export const siteContent = {

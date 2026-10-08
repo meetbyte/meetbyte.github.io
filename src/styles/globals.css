@@ -1,3 +1,7 @@
+/**
+ * @file Defines responsive shell layouts, reading typography, portrait cropping, focus styles and route/scroll motion.
+ * @author meetbyte
+ */
 @import "tailwindcss";
 
 /* Global page behavior and keyboard focus. */

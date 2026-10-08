@@ -1,4 +1,7 @@
-/* Seasonal artwork changes the landscape; weather never covers reading cards. @author meetbyte */
+/**
+ * @file Seasonal artwork changes the landscape; weather never covers reading cards.
+ * @author meetbyte
+ */
 html[data-season="autumn"] .scenery-sky-day { background-image: url("/images/scenery/autumn-day-v1.webp"); }
 html[data-season="autumn"] .scenery-sky-night { background-image: url("/images/scenery/autumn-night-v1.webp"); }
 html[data-season="monsoon"] .scenery-sky-day { background-image: url("/images/scenery/monsoon-day-v1.webp"); }

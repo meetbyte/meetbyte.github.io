@@ -1,7 +1,14 @@
-/** Matching seasonal sky plates and lightweight decorative weather. @author meetbyte */
+/**
+ * @file Matching seasonal sky plates and lightweight decorative weather.
+ * @author meetbyte
+ */
 import type { CSSProperties } from "react";
 import { CelestialBody } from "./celestial-body";
 
+/**
+ * Generates deterministic decorative rain, snow or leaf particles with staggered CSS timing and per-particle motion variables.
+ * @author meetbyte
+ */
 function Weather({ kind, count }: { kind: "rain" | "snow" | "leaves"; count: number }) {
   return <div className={`season-weather weather-${kind}`}>
     {Array.from({ length: count }, (_, i) => {
@@ -15,6 +22,10 @@ function Weather({ kind, count }: { kind: "rain" | "snow" | "leaves"; count: num
   </div>;
 }
 
+/**
+ * Composes decorative sky plates, foliage, clouds, seasonal weather and the sky celestial layer behind opaque reading cards.
+ * @author meetbyte
+ */
 export function SiteScenery() {
   return <div id="site-scenery" className="site-scenery" aria-hidden="true">
     <div className="scenery-sky scenery-sky-day" />

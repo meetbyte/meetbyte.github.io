@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Data-driven project index, without category filters. @author meetbyte */
+/**
+ * @file Data-driven project index, without category filters.
+ * @author meetbyte
+ */
 import { SiteLink as Link } from "@/components/site-link";
 import { Icon } from "@/components/icons";
 import { PageHeading } from "@/components/page-heading";
@@ -9,6 +12,10 @@ import { getProjects } from "@/lib/content/projects";
 import { pageMetadata } from "@/lib/metadata";
 import { requirePageEnabled } from "@/lib/require-page-enabled";
 export const metadata = pageMetadata("Projects", "Project case studies and the engineering decisions behind them.", "/projects/");
+/**
+ * Lists enabled validated case studies with sample labels, featured ordering and an informative empty state.
+ * @author meetbyte
+ */
 export default function Projects() {
   requirePageEnabled("projects");
   const entries = getProjects();

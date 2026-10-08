@@ -1,4 +1,7 @@
-/** Editable sample case studies. Replace these with verified work. @author meetbyte */
+/**
+ * @file Editable sample case studies. Replace these with verified work.
+ * @author meetbyte
+ */
 import type { Project } from "./types";
 
 export const projects: readonly Project[] = [

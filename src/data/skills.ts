@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Professional experience, earlier practice and exploration are distinct. @author meetbyte */
+/**
+ * @file Professional experience, earlier practice and exploration are distinct.
+ * @author meetbyte
+ */
 import type { SkillsContent } from "./types";
 
 export const skillsContent: SkillsContent = {

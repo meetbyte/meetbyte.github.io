@@ -1,4 +1,7 @@
-/** Optional-section case study, generated before deployment. @author meetbyte */
+/**
+ * @file Optional-section case study, generated before deployment.
+ * @author meetbyte
+ */
 import { SiteImage as Image } from "@/components/site-image";
 import { SiteLink as Link } from "@/components/site-link";
 import { notFound } from "next/navigation";
@@ -9,17 +12,29 @@ import { requirePageEnabled } from "@/lib/require-page-enabled";
 import { ProjectVisual } from "@/components/project-visual";
 type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
+/**
+ * Builds enabled project detail parameters and supplies the reserved recovery slug when no routes are available.
+ * @author meetbyte
+ */
 export function generateStaticParams() {
   const params = isPageEnabled("projects") ? getProjects().map(({ slug }) => ({ slug })) : [];
   // Static export requires one parameter. This reserved slug always renders 404.
   return params.length ? params : [{ slug: "_unpublished" }];
 }
+/**
+ * Resolves an enabled case study and derives its canonical description and sample indexing policy.
+ * @author meetbyte
+ */
 export async function generateMetadata({ params }: Props) {
   requirePageEnabled("projects");
   const project = getProject((await params).slug);
   if (!project) notFound();
   return pageMetadata(project.title, project.summary, `/projects/${project.slug}/`, { sample: project.placeholder });
 }
+/**
+ * Renders a validated project with optional sections, media and external links; rejects missing or disabled content.
+ * @author meetbyte
+ */
 export default async function CaseStudy({ params }: Props) {
   requirePageEnabled("projects");
   const project = getProject((await params).slug);

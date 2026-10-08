@@ -1,12 +1,19 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Direct contact without a form backend or third-party service. @author meetbyte */
+/**
+ * @file Direct contact without a form backend or third-party service.
+ * @author meetbyte
+ */
 import { PageHeading } from "@/components/page-heading";
 import { Icon } from "@/components/icons";
 import { contactContent as contact } from "@/data/contact";
 import { pageMetadata } from "@/lib/metadata";
 import { requirePageEnabled } from "@/lib/require-page-enabled";
 export const metadata = pageMetadata("Contact", "Connect with Meet Thummar about engineering problems, enterprise applications and opportunities.", "/contact/");
+/**
+ * Renders approved contact wording, an encoded mailto action and public social destinations for the enabled Contact route.
+ * @author meetbyte
+ */
 export default function Contact() {
   requirePageEnabled("contact");
   const emailHref = `mailto:${contact.email}?subject=${encodeURIComponent(contact.subject)}`;

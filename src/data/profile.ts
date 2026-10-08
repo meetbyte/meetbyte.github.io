@@ -1,4 +1,7 @@
-/** Confirmed public identity and professional positioning. @author meetbyte */
+/**
+ * @file Confirmed public identity and professional positioning.
+ * @author meetbyte
+ */
 import type { Profile } from "./types";
 
 export const profile: Profile = {

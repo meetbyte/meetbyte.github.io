@@ -1,3 +1,7 @@
+/**
+ * @file Tests theme-travel contrast, reversal, reduced motion, hidden texture changes and frame cleanup.
+ * @author meetbyte
+ */
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { contrast, createThemeJourney, journeyPalette, type JourneyClock } from "../src/lib/theme-journey";
@@ -13,6 +17,10 @@ test("sunset and twilight keep text and button labels at AA contrast", () => {
   }
 });
 
+/**
+ * Provides a deterministic animation clock and tracked CSS properties for journey reversal, contrast and cleanup tests.
+ * @author meetbyte
+ */
 function fixture(theme = "light") {
   let now = 0, id = 0;
   const pending = new Map<number, FrameRequestCallback>();

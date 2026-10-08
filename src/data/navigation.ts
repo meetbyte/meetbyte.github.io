@@ -1,4 +1,7 @@
-/** Shared navigation data. @author meetbyte */
+/**
+ * @file Shared navigation data.
+ * @author meetbyte
+ */
 import { routes } from "@/constants/routes";
 import type { NavigationItem } from "./types";
 

@@ -1,6 +1,9 @@
 "use client";
 
-/** Native mobile disclosure stays usable before JavaScript loads. @author meetbyte */
+/**
+ * @file Native mobile disclosure stays usable before JavaScript loads.
+ * @author meetbyte
+ */
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { siteContent } from "@/constants/content";
@@ -10,7 +13,7 @@ import { isRouteEnabled } from "@/lib/page-visibility";
 import { SiteLink } from "./site-link";
 import { Icon } from "./icons";
 
-/** Render visible routes and preserve keyboard/native disclosure behaviour. */
+/** Render visible routes and preserve keyboard/native disclosure behaviour. @author meetbyte */
 export function Navigation() {
   const pathname = usePathname();
   const desktop = useRef<HTMLElement>(null);

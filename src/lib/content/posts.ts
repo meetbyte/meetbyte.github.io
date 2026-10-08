@@ -1,4 +1,7 @@
-/** Build-time Markdown adapter. No filesystem or parser code reaches the browser. @author meetbyte */
+/**
+ * @file Build-time Markdown adapter. No filesystem or parser code reaches the browser.
+ * @author meetbyte
+ */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { cache } from "react";
@@ -14,7 +17,7 @@ import type { BlogPost } from "@/data/types";
 import { slugPattern } from "./projects";
 import { localImageDimensions, validateImage } from "./images";
 
-/** Keyboard users can focus and scroll long code examples. */
+/** Keyboard users can focus and scroll long code examples. @author meetbyte */
 function enhanceReading() {
   return (tree: Root) => {
     let previousHeading = 1;
@@ -42,7 +45,7 @@ function enhanceReading() {
 }
 const markdown = unified().use(remarkParse).use(remarkGfm).use(remarkRehype).use(rehypeSanitize).use(enhanceReading).use(rehypeStringify);
 
-/** Validate frontmatter at build time; report its source filename to the author. */
+/** Validate frontmatter at build time; report its source filename to the author. @author meetbyte */
 export async function parsePost(source: string, filename: string): Promise<BlogPost | undefined> {
   const fail = (message: string): never => { throw new Error(`Blog ${filename}: ${message}`); };
   const match = source.replace(/^\uFEFF/, "").match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)([\s\S]*)$/);
@@ -85,6 +88,10 @@ export async function parsePost(source: string, filename: string): Promise<BlogP
   };
 }
 
+/**
+ * Caches build-time Markdown loading, rejects duplicate published slugs and orders normalized articles newest first.
+ * @author meetbyte
+ */
 export const getPosts = cache(async (): Promise<readonly BlogPost[]> => {
   const directory = path.join(process.cwd(), "content", "blog");
   if (!existsSync(directory)) return [];
@@ -99,10 +106,18 @@ export const getPosts = cache(async (): Promise<readonly BlogPost[]> => {
   return posts.sort((a, b) => b.date.localeCompare(a.date));
 });
 
+/**
+ * Finds one published normalized article by slug, returning undefined for absent or draft content.
+ * @author meetbyte
+ */
 export async function getPost(slug: string): Promise<BlogPost | undefined> {
   return (await getPosts()).find((post) => post.slug === slug);
 }
 
+/**
+ * Formats a date-only article value in UTC so visitors do not see a previous-day timezone shift.
+ * @author meetbyte
+ */
 export function formatPostDate(date: string): string {
   return new Intl.DateTimeFormat("en", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 }

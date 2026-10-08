@@ -1,8 +1,15 @@
-/** One boundary timer keeps local time and the seasonal calendar current. @author meetbyte */
+/**
+ * @file One boundary timer keeps local time and the seasonal calendar current.
+ * @author meetbyte
+ */
 import { siteConfig } from "@/constants/config";
 import { resolveTheme, type Theme } from "./theme";
 import { resolveSeason, type Season, type SeasonChoice } from "./season";
 
+/**
+ * Returns the delay to the next day/night boundary or midnight using the visitor-local date.
+ * @author meetbyte
+ */
 export function nextAtmosphereCheck(date: Date): number {
   const boundary = new Date(date);
   const hour = date.getHours();
@@ -18,6 +25,10 @@ export interface AtmosphereClock {
   clear(id: number): void;
 }
 
+/**
+ * Maintains one boundary timer, respects manual theme/season choices and exposes synchronization and disposal actions.
+ * @author meetbyte
+ */
 export function watchAtmosphere(apply: { theme(theme: Theme): void; season(season: Season): void }, clock: AtmosphereClock = {
   now: () => new Date(), delay: (callback, ms) => window.setTimeout(callback, ms), clear: (id) => window.clearTimeout(id),
 }, initialChoice: Theme | null = null, initialSeason: SeasonChoice = "auto") {

@@ -1,4 +1,7 @@
-/** Validate preference precedence and the pre-paint script. @author meetbyte */
+/**
+ * @file Validate preference precedence and the pre-paint script.
+ * @author meetbyte
+ */
 import test from "node:test";
 import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";

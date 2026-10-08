@@ -1,0 +1,11 @@
+# Prompt 02 — Preserve the responsive design and navigation
+
+Continue the authorized build in the destination from prompt 00. Read `BUILD_SPEC.md`, the persona input, reference source and prior handoff. Reuse existing shell/styles in adapt/reproduce mode. Any fresh implementation must use the full reference styles/assets as visual constraints; do not simplify them into a generic resume template.
+
+Implement the compact sticky header, persistent profile card and opaque routed reading panel with the reference Manrope/Bricolage local fonts, full palette tokens, 22px cards, editorial headings, spacing and breakpoint rules. Keep the original identity-independent visual language. Preserve viewport-fitting two-panel scrolling only at width >=1051px and height >=620px; retain normal document scrolling otherwise, horizontal tablet profile and stacked phone profile. Keep no footer, no progress/in-progress identity label and no mounted pause UI. The reading-progress line remains.
+
+At <=900px use native details/summary navigation with an absolutely positioned dropdown below the header. Opening it must not enlarge the header. Keep readable active feedback, 44px touch targets, Escape focus return, outside-click dismissal and automatic closure on completed navigation. Desktop gets the active underline/marker. Base routes and heading numbers come from the visible route map, not separate hand-coded number lists. Shared profile stays mounted across routes.
+
+Give the main reading region a stable ID and keyboard focus/scroll access; include skip link, meaningful landmarks and visible focus. Long titles, email, tags, tables and code must not widen the page. Use native thin scrollbars with a 4px legacy fallback and forced-colors override. Header text remains readable against photographic scenery. Preserve local image dimensions/alt/fallback handling.
+
+Inspect both light/dark themes at 320, 390, 900px and large/short-window desktop. Check menu before JavaScript and keyboard opening/dismissal. Compare with source and reference screenshots; treat screenshots as historical observations, while the specification/current source controls final layout. Record any intentional style departure and actual visual checks. Update the stage handoff. Do not commit, push or deploy.
