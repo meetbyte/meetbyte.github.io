@@ -1,11 +1,18 @@
 "use client";
 
-/** Pause decorative motion without changing the chosen day/night theme. @author meetbyte */
+/**
+ * @file Pause decorative motion without changing the chosen day/night theme.
+ * @author meetbyte
+ */
 import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/constants/config";
 import { resolveSceneryMotion, sceneryMotionStorageKey } from "@/lib/scenery-motion";
 import { Icon } from "./icons";
 
+/**
+ * Synchronizes a saved scenery pause choice with reduced motion and renders the optional, currently unmounted toggle.
+ * @author meetbyte
+ */
 export function SceneryMotionToggle() {
   const preference = useRef(false);
   const [state, setState] = useState({ paused: false, reduced: false, ready: false });

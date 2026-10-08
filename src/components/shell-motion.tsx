@@ -1,10 +1,17 @@
 "use client";
 
-/** Coordinates both native scroll containers without intercepting wheel/touch. @author meetbyte */
+/**
+ * @file Coordinates both native scroll containers without intercepting wheel/touch.
+ * @author meetbyte
+ */
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/constants/config";
 
+/**
+ * Coordinates native panel/document scrolling, portrait cropping, reading progress, one-time reveals and route focus with cleaned-up observers.
+ * @author meetbyte
+ */
 export function ShellMotion() {
   const pathname = usePathname();
   const previousPath = useRef(pathname);

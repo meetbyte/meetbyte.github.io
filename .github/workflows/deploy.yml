@@ -1,3 +1,6 @@
+# Builds locked static source, checks quality and uploads out/; deployment is limited to main.
+# @file GitHub Pages build and release workflow.
+# @author meetbyte
 name: Deploy to GitHub Pages
 
 on:

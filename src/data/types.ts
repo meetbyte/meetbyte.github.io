@@ -1,4 +1,7 @@
-/** Structured, editable content types for Stage 3. @author meetbyte */
+/**
+ * @file Structured, editable content types for Stage 3.
+ * @author meetbyte
+ */
 export type SocialLink = { label: string; shortLabel: string; href: string };
 export type NavigationItem = { label: string; href: string };
 export type Profile = {

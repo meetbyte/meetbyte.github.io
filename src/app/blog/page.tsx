@@ -1,6 +1,9 @@
 import { pageEyebrow } from "@/lib/page-label";
 import { routes } from "@/constants/routes";
-/** Normalized post listing; no filesystem knowledge in the UI. @author meetbyte */
+/**
+ * @file Normalized post listing; no filesystem knowledge in the UI.
+ * @author meetbyte
+ */
 import { SiteLink as Link } from "@/components/site-link";
 import { PageHeading } from "@/components/page-heading";
 import { Icon } from "@/components/icons";
@@ -8,6 +11,10 @@ import { getPosts, formatPostDate } from "@/lib/content/posts";
 import { pageMetadata } from "@/lib/metadata";
 import { requirePageEnabled } from "@/lib/require-page-enabled";
 export const metadata = pageMetadata("Blog", "Notes on engineering, learning and ideas worth returning to.", "/blog/");
+/**
+ * Renders the enabled blog listing from validated published posts, including sample notices and the empty state.
+ * @author meetbyte
+ */
 export default async function Blog() {
   requirePageEnabled("blog");
   const posts = await getPosts();

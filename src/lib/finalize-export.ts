@@ -1,7 +1,14 @@
-/** Remove generated soft-404 paths so a static host returns a real 404. @author meetbyte */
+/**
+ * @file Remove generated soft-404 paths so a static host returns a real 404.
+ * @author meetbyte
+ */
 import { existsSync, realpathSync, rmSync } from "node:fs";
 import path from "node:path";
 
+/**
+ * Validates all generated cleanup targets, removes disabled/helper export directories and returns their paths while preserving source content.
+ * @author meetbyte
+ */
 export function finalizeExport(directory: string, disabled: readonly string[]): string[] {
   const root = realpathSync(directory);
   if (!existsSync(path.join(root, "404.html"))) throw new Error("Static export must contain 404.html before cleanup.");

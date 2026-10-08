@@ -1,11 +1,14 @@
-/** Project access and validation shared by pages, metadata and sitemap. @author meetbyte */
+/**
+ * @file Project access and validation shared by pages, metadata and sitemap.
+ * @author meetbyte
+ */
 import { projects } from "@/data/projects";
 import type { Project } from "@/data/types";
 import { validateImage } from "./images";
 
 export const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-/** Fail with an actionable message instead of silently losing a case-study route. */
+/** Fail with an actionable message instead of silently losing a case-study route. @author meetbyte */
 export function validateProjects(entries: readonly Project[]): readonly Project[] {
   const slugs = new Set<string>();
   for (const project of entries) {
@@ -28,10 +31,18 @@ export function validateProjects(entries: readonly Project[]): readonly Project[
   return entries;
 }
 
+/**
+ * Returns validated case studies with featured entries first while leaving the source array unchanged.
+ * @author meetbyte
+ */
 export function getProjects(): readonly Project[] {
   return [...validateProjects(projects)].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
 }
 
+/**
+ * Finds a validated case study by slug, returning undefined when it does not exist.
+ * @author meetbyte
+ */
 export function getProject(slug: string): Project | undefined {
   return getProjects().find((project) => project.slug === slug);
 }

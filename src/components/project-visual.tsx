@@ -1,6 +1,13 @@
-/** Code-native concept artwork, independent of client screenshots. @author meetbyte */
+/**
+ * @file Code-native concept artwork, independent of client screenshots.
+ * @author meetbyte
+ */
 import { SiteImage as Image } from "@/components/site-image";
 import type { Project } from "@/data/types";
+/**
+ * Chooses a supplied project cover or the matching code-native concept illustration without requiring client screenshots.
+ * @author meetbyte
+ */
 export function ProjectVisual({ project }: { project: Project }) {
   if (project.cover) return <div className="project-visual"><Image src={project.cover.src} alt={project.cover.alt} width={project.cover.width} height={project.cover.height} /></div>;
   return <div className={`project-visual visual-${project.visual ?? "workflow"}`} aria-hidden="true">

@@ -1,4 +1,7 @@
-/** User-supplied CV available as a static PDF download. @author meetbyte */
+/**
+ * @file User-supplied CV available as a static PDF download.
+ * @author meetbyte
+ */
 import type { CvConfig } from "./types";
 
 export const cvConfig: CvConfig = {

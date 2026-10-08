@@ -1,14 +1,25 @@
 "use client";
 
-/** Keep reading available while navigation or optional artwork is slow. @author meetbyte */
+/**
+ * @file Keep reading available while navigation or optional artwork is slow.
+ * @author meetbyte
+ */
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { isLimitedConnection, sceneryVisitStorageKey, type ConnectionHints } from "@/lib/connection";
 
 const ConnectionContext = createContext({ limited: false, offline: false, light: false, ready: false,
   showScenery: () => {}, begin: (href: string) => { void href; }, hold: (href: string) => { void href; } });
+/**
+ * Reads connection quality and navigation-recovery actions from the shared connection context.
+ * @author meetbyte
+ */
 export const useConnection = () => useContext(ConnectionContext);
 
+/**
+ * Synchronizes optional connection hints, visit-scoped scenery quality and delayed/offline route feedback; disposes listeners and timers.
+ * @author meetbyte
+ */
 export function ConnectionProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [state, setState] = useState({ limited: false, offline: false, light: false, ready: false });
@@ -70,6 +81,10 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
   </ConnectionContext.Provider>;
 }
 
+/**
+ * Offers full scenic artwork when a limited connection uses the light backdrop; retained as an optional unmounted control.
+ * @author meetbyte
+ */
 export function SceneryQualityControl() {
   const connection = useConnection();
   if (!connection.ready || !connection.light) return null;

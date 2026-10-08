@@ -1,4 +1,7 @@
-/** Content-boundary tests protect static publishing behavior. @author meetbyte */
+/**
+ * @file Content-boundary tests protect static publishing behavior.
+ * @author meetbyte
+ */
 import test from "node:test";
 import assert from "node:assert/strict";
 import { parsePost, getPosts } from "../src/lib/content/posts";
@@ -6,6 +9,10 @@ import { validateProjects, getProjects } from "../src/lib/content/projects";
 import { pageMetadata } from "../src/lib/metadata";
 import sitemap from "../src/app/sitemap";
 
+/**
+ * Creates a minimal published Markdown fixture with optional frontmatter/body variations for validation cases.
+ * @author meetbyte
+ */
 const source = (extra = "", body = "## An idea\nA paragraph.") => `---\ntitle: "A note"\nslug: "a-note"\ndate: "2026-10-07"\nexcerpt: "An example."\ntags: [Engineering]\npublished: true\n${extra}---\n${body}`;
 
 test("a new Markdown article is normalized without UI changes", async () => {

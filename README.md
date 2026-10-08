@@ -166,3 +166,9 @@ Before publishing, run all validation commands, review desktop/tablet/mobile in 
 ## Maintenance guide
 
 See [docs/MAINTENANCE.md](docs/MAINTENANCE.md) for the edit map, conventions, shared utility ownership and verification steps.
+
+## Continue without the original chat
+
+Start with [repository context](docs/PROJECT_CONTEXT.md), which records the current implementation, publishing choices and future content work. When projects or articles are ready, use [the Step 4 follow-up prompt](docs/prompts/04_RESUME_PROJECTS_AND_BLOG.md) and [content intake worksheet](docs/planning/PROJECT_BLOG_CONTENT_TEMPLATE.md). Blog/Projects remain hidden until explicitly enabled.
+
+[The reusable prompt guide](docs/prompts/README.md) supports reproduction and other personas. [The commenting guide](docs/COMMENTING_GUIDE.md) describes module/function documentation with author `meetbyte`. These instructions, current content and runtime assets are retained in this repository; the original ChatGPT project is not required for continued development.

@@ -1,4 +1,7 @@
-/** Public contact details approved in the completed questionnaire. @author meetbyte */
+/**
+ * @file Public contact details approved in the completed questionnaire.
+ * @author meetbyte
+ */
 import { profile } from "./profile";
 
 export const contactContent = {

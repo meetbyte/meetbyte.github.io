@@ -1,11 +1,18 @@
 "use client";
 
-/** Native HTML navigation on limited connections; fallback for slow SPA routes. @author meetbyte */
+/**
+ * @file Native HTML navigation on limited connections; fallback for slow SPA routes.
+ * @author meetbyte
+ */
 import Link from "next/link";
 import type { AnchorHTMLAttributes } from "react";
 import { useConnection } from "./connection-provider";
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & { href: string };
 
+/**
+ * Uses native anchors on limited connections, prevents unusable offline navigation and tracks ordinary client navigation without prefetch.
+ * @author meetbyte
+ */
 export function SiteLink({ href, onClick, ...props }: Props) {
   const connection = useConnection();
   if (connection.limited) return <a {...props} href={href} onClick={(event) => {

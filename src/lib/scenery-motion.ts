@@ -1,4 +1,7 @@
-/** Visitor preference for decorative scenery, independent of route motion. @author meetbyte */
+/**
+ * @file Visitor preference for decorative scenery, independent of route motion.
+ * @author meetbyte
+ */
 import { siteConfig } from "@/constants/config";
 
 export const sceneryMotionStorageKey = "meet-thummar-scenery-motion";

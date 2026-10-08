@@ -1,4 +1,7 @@
-/** Reliability regressions: no network dependency for first paint or generated 404s. @author meetbyte */
+/**
+ * @file Reliability regressions: no network dependency for first paint or generated 404s.
+ * @author meetbyte
+ */
 import test from "node:test";
 import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";

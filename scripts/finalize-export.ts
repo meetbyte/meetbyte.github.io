@@ -1,4 +1,7 @@
-/** Runs after a successful static build; never edits source files. @author meetbyte */
+/**
+ * @file Runs after a successful static build; never edits source files.
+ * @author meetbyte
+ */
 import path from "node:path";
 import { pageVisibility } from "../src/constants/page-visibility";
 import { finalizeExport } from "../src/lib/finalize-export";
