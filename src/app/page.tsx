@@ -1,12 +1,14 @@
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata("Software Engineer | Meet Thummar", "Full-stack engineering, technical leadership and enterprise systems. Meet the engineer behind the work.", "/");
+
 /**
  * @file Home page introducing the portfolio and its main sections.
  * @author meetbyte
  */
-import Link from "next/link";
+import { SiteLink as Link } from "@/components/site-link";
 import { Icon } from "@/components/icons";
 import { homeContent } from "@/data/home";
-import { routes } from "@/constants/routes";
-import { isPageEnabled, isRouteEnabled } from "@/lib/page-visibility";
+import { isRouteEnabled } from "@/lib/page-visibility";
 
 /**
  * Renders the introductory hero and links revealed below it on scroll.
@@ -17,7 +19,8 @@ export default function Home() {
   const home = homeContent;
   // Keep unpublished sections out of the home cards and their scroll prompt.
   const visibleFeatures = home.features.filter((feature) => isRouteEnabled(feature.href));
-  const showAboutAction = isPageEnabled("about");
+  const showPrimaryAction = isRouteEnabled(home.primaryHref);
+  const secondaryAction = home.secondaryAction && isRouteEnabled(home.secondaryAction.href) ? home.secondaryAction : undefined;
 
   return (
     <div className="home-page">
@@ -33,11 +36,16 @@ export default function Home() {
           <span className="heading-period">{home.headingPunctuation}</span>
         </h1>
         <p className="hero-description">{home.description}</p>
-        {(showAboutAction || visibleFeatures.length > 0) && (
+        {(showPrimaryAction || secondaryAction || visibleFeatures.length > 0) && (
           <div className="hero-actions">
-            {showAboutAction && (
-              <Link className="button button-primary" href={routes.about}>
+            {showPrimaryAction && (
+              <Link className="button button-primary" href={home.primaryHref}>
                 {home.primaryAction} <Icon name="arrow" size={17} />
+              </Link>
+            )}
+            {secondaryAction && (
+              <Link className="hero-secondary" href={secondaryAction.href}>
+                {secondaryAction.label} <Icon name="arrow" size={16} />
               </Link>
             )}
             {visibleFeatures.length > 0 && (

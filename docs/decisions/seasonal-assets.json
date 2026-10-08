@@ -1,0 +1,56 @@
+[
+  {
+    "asset": "autumn-day",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-a91958dd-5577-4673-81a7-6db45db3da80.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-38892ec4-a014-4731-a064-01e37dddb82a.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied day portfolio landscape. Create its autumn seasonal variant.\nTransform the peripheral foliage and distant forest into natural autumn copper, amber and muted burnt orange leaves, with some slender branches visible. Keep the landscape mist. Refined warm seasonal colour, not oversaturated red. No falling leaves baked into the central sky; separate animation will provide those.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-left diffuse daylight illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/autumn-day-v1.webp"
+  },
+  {
+    "asset": "autumn-night",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-29058ba3-9ff4-4e40-bdcc-697fddb5a7cb.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-33c086de-3232-4232-aaa9-ecb1817a9cda.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied night portfolio landscape. Create its autumn seasonal variant.\nTransform the peripheral foliage and distant forest into natural autumn copper, amber and muted burnt orange leaves, with some slender branches visible. Keep the landscape mist. Refined warm seasonal colour, not oversaturated red. No falling leaves baked into the central sky; separate animation will provide those.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-right diffuse lunar illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/autumn-night-v1.webp"
+  },
+  {
+    "asset": "monsoon-day",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-4993d6d3-f998-4424-bcb3-cdfc227cb796.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-38892ec4-a014-4731-a064-01e37dddb82a.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied day portfolio landscape. Create its monsoon seasonal variant.\nTransform the scene into a lush Indian monsoon landscape: richer wet forest foliage, soft low valley mist and layered rain-bearing clouds. The daytime version must remain luminous and airy, pale silver-blue with diffuse cream light, never gloomy or storm-black. Night is deep blue with soft silver cloud edges. Keep an open, readable upper sky. No lightning, no rain streaks baked into the image; separate animation will provide rain.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-left diffuse daylight illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/monsoon-day-v1.webp"
+  },
+  {
+    "asset": "monsoon-night",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-e293d51a-3865-44b2-8914-725cd80405fa.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-33c086de-3232-4232-aaa9-ecb1817a9cda.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied night portfolio landscape. Create its monsoon seasonal variant.\nTransform the scene into a lush Indian monsoon landscape: richer wet forest foliage, soft low valley mist and layered rain-bearing clouds. The daytime version must remain luminous and airy, pale silver-blue with diffuse cream light, never gloomy or storm-black. Night is deep blue with soft silver cloud edges. Keep an open, readable upper sky. No lightning, no rain streaks baked into the image; separate animation will provide rain.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-right diffuse lunar illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/monsoon-night-v1.webp"
+  },
+  {
+    "asset": "winter-day",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-6df78870-c61e-432b-b868-f370ec2f273d.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-38892ec4-a014-4731-a064-01e37dddb82a.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied day portfolio landscape. Create its winter seasonal variant.\nTransform the peripheral branches and distant mountains/forest into a beautiful quiet winter landscape, fine frost on the branches and a light blanket of snow on mountain slopes and forest canopy. Cool pale blue and silver-white in daylight, rich blue and silver at night. Preserve spacious luminous sky. No blizzard or large falling snow baked into the sky; separate animation will provide a few snowflakes.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-left diffuse daylight illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/winter-day-v1.webp"
+  },
+  {
+    "asset": "winter-night",
+    "source": "C:\\Users\\Meet.Thummar\\.codex\\generated_images\\01a116ed-0f0f-7933-84de-a6b1ec46bc1e\\exec-ca77cb3f-4047-42e5-b1b3-3d86b11d96f8.png",
+    "reference": "C:/Users/Meet.Thummar/.codex/generated_images/01a116ed-0f0f-7933-84de-a6b1ec46bc1e/exec-33c086de-3232-4232-aaa9-ecb1817a9cda.png",
+    "prompt": "Use case: lighting-weather.\nEdit target: the supplied night portfolio landscape. Create its winter seasonal variant.\nTransform the peripheral branches and distant mountains/forest into a beautiful quiet winter landscape, fine frost on the branches and a light blanket of snow on mountain slopes and forest canopy. Cool pale blue and silver-white in daylight, rich blue and silver at night. Preserve spacious luminous sky. No blizzard or large falling snow baked into the sky; separate animation will provide a few snowflakes.\nPreserve the original 3:2 framing, all hill contours, cloud/foliage placement and negative space, perspective, soft cinematic painterly photographic texture and professional mood. Preserve the upper-right diffuse lunar illumination.\nCRITICAL: there must be NO sun disc, moon disc, crescent, planet, bright circular orb or any celestial body anywhere. The website supplies one separately animated sun/moon. No people, buildings, lettering, logo or watermark. Change only season/weather and corresponding natural materials and illumination; keep the established composition.",
+    "mode": "built-in image_gen.imagegen, reference-image edit",
+    "transparent_background": false,
+    "savedPath": "D:/Projects/iMeetMinds/meetbyte.github.io/public/images/scenery/winter-night-v1.webp"
+  }
+]

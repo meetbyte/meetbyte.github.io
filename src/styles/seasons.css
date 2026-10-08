@@ -1,0 +1,45 @@
+/* Seasonal artwork changes the landscape; weather never covers reading cards. @author meetbyte */
+html[data-season="autumn"] .scenery-sky-day { background-image: url("/images/scenery/autumn-day-v1.webp"); }
+html[data-season="autumn"] .scenery-sky-night { background-image: url("/images/scenery/autumn-night-v1.webp"); }
+html[data-season="monsoon"] .scenery-sky-day { background-image: url("/images/scenery/monsoon-day-v1.webp"); }
+html[data-season="monsoon"] .scenery-sky-night { background-image: url("/images/scenery/monsoon-night-v1.webp"); }
+html[data-season="winter"] .scenery-sky-day { background-image: url("/images/scenery/winter-day-v1.webp"); }
+html[data-season="winter"] .scenery-sky-night { background-image: url("/images/scenery/winter-night-v1.webp"); }
+html[data-season="autumn"] .scenery-foliage, html[data-season="winter"] .scenery-foliage { display: none; }
+html[data-season="monsoon"] .site-scenery { --cloud-opacity: .23; }
+html[data-season="winter"] .site-scenery { --cloud-opacity: .18; }
+html[data-season="monsoon"] .scenery-dapple, html[data-season="winter"] .scenery-dapple { display: none; }
+.season-weather { display: none; position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+html[data-season="monsoon"] .weather-rain, html[data-season="winter"] .weather-snow, html[data-season="autumn"] .weather-leaves { display: block; }
+.weather-particle { position: absolute; top: 0; animation: weather-fall linear infinite paused; }
+.weather-particle i { display: block; }
+html[data-scenery-motion="playing"] .season-weather .weather-particle, html[data-scenery-motion="playing"] .season-weather .weather-particle i { animation-play-state: running; }
+.weather-rain .weather-particle { animation-name: rain-fall; opacity: calc(.52 + .08 * var(--night-progress)); }
+.weather-rain i { width: var(--drop-width); height: var(--drop-length); background: linear-gradient(transparent, color-mix(in srgb, #4b7d94 calc(100% * (1 - var(--night-progress))), #d3e9ff)); transform: rotate(9deg); }
+.weather-rain .weather-particle:nth-child(3n) { opacity: .32; }
+.weather-snow .weather-particle { opacity: .82; }
+.weather-snow i { width: var(--flake-size); height: var(--flake-size); border-radius: 50%; background: #f8fcff; box-shadow: 0 0 2px #b1cbdc; animation: snow-float var(--flutter-duration) ease-in-out var(--flutter-delay) infinite alternate paused; }
+.weather-leaves .weather-particle { opacity: .8; }
+.weather-leaves i { position: relative; width: 14px; height: 8px; border-radius: 1px 80% 1px 80%; background: #b97538; animation: leaf-flutter var(--flutter-duration) ease-in-out var(--flutter-delay) infinite alternate paused; }
+.weather-leaves i::after { content: ""; position: absolute; width: 80%; height: 1px; top: 48%; left: 10%; background: #f5d09599; transform: rotate(24deg); }
+.weather-leaves .weather-particle:nth-child(3n) i { background: #ce9b51; width: 8px; height: 5px; }
+.weather-leaves .weather-particle:nth-child(3n + 1) i { background: #995834; }
+@keyframes weather-fall {
+  from { transform: translate3d(0, -10dvh, 0) rotate(0); }
+  to { transform: translate3d(var(--drift), 110dvh, 0) rotate(var(--leaf-turn)); }
+}
+@keyframes rain-fall {
+  from { transform: translate3d(5vw, -10dvh, 0); }
+  to { transform: translate3d(-5vw, 110dvh, 0); }
+}
+@keyframes snow-float { from { transform: translate3d(-14px, 0, 0); } to { transform: translate3d(18px, 0, 0); } }
+@keyframes leaf-flutter { 0% { transform: translate3d(-18px, 0, 0) rotate(-25deg) scaleX(.55); } 55% { transform: translate3d(8px, 0, 0) rotate(35deg) scaleX(1); } 100% { transform: translate3d(22px, 0, 0) rotate(-10deg) scaleX(.6); } }
+@media (max-width: 760px) {
+  .weather-rain .weather-particle:nth-child(n + 29) { display: none; }
+  .weather-snow .weather-particle:nth-child(n + 21) { display: none; }
+  .weather-leaves .weather-particle:nth-child(n + 11) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .season-weather { display: none !important; }
+  .weather-particle, .weather-particle i { animation: none !important; }
+}

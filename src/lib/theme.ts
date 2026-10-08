@@ -1,61 +1,24 @@
-/**
- * @file Theme selection helpers and the script used before React paints.
- * @author meetbyte
- */
+/** Local-time defaults; manual choices belong to the current tab visit. @author meetbyte */
 import { siteConfig } from "@/constants/config";
-
 export type Theme = "light" | "dark";
 
-/**
- * Chooses a saved theme when valid and defaults new visits to light.
- * @param saved - Value previously stored by the visitor.
- * @returns The theme to display.
- * @author meetbyte
- */
-export function resolveTheme(saved: string | null): Theme {
-  return saved === "dark" ? "dark" : "light";
+export function resolveTheme(date = new Date()): Theme {
+  const hour = date.getHours();
+  return hour >= siteConfig.dayStartHour && hour < siteConfig.nightStartHour ? "light" : "dark";
 }
 
-/**
- * Reads the saved choice without breaking the page if storage is blocked.
- * @returns The saved value or null.
- * @author meetbyte
- */
-export function readSavedTheme(): string | null {
+export function readVisitTheme(): Theme | null {
   try {
-    return window.localStorage.getItem(siteConfig.themeStorageKey);
-  } catch {
-    return null;
-  }
+    const saved = window.sessionStorage.getItem(siteConfig.themeVisitStorageKey);
+    return saved === "light" || saved === "dark" ? saved : null;
+  } catch { return null; }
 }
 
-/**
- * Persists a manual choice when browser storage is available.
- * @param theme - Theme chosen by the visitor.
- * @author meetbyte
- */
-export function saveTheme(theme: Theme): void {
-  try {
-    window.localStorage.setItem(siteConfig.themeStorageKey, theme);
-  } catch {
-    // The selected theme remains active for this visit.
-  }
+export function saveVisitTheme(theme: Theme): void {
+  try { window.sessionStorage.setItem(siteConfig.themeVisitStorageKey, theme); } catch { /* The in-memory choice still works. */ }
 }
 
-/**
- * Creates a small head script to apply the theme before hydration.
- * @returns Self-contained browser code using the shared storage key.
- * @author meetbyte
- */
+/** Runs before CSS paints. Old saved choices intentionally do not override the clock. */
 export function createThemeBootstrapScript(): string {
-  // Keep this script in the document head so a saved dark choice is applied
-  // before the CSS paints; the client component synchronizes its icon later.
-  return `(() => {
-    try {
-      const saved = localStorage.getItem(${JSON.stringify(siteConfig.themeStorageKey)});
-      document.documentElement.dataset.theme = saved === "dark" ? "dark" : "light";
-    } catch {
-      document.documentElement.dataset.theme = "light";
-    }
-  })();`;
+  return `(() => { let manual = null; try { manual = sessionStorage.getItem(${JSON.stringify(siteConfig.themeVisitStorageKey)}); } catch {} const hour = new Date().getHours(); document.documentElement.dataset.theme = manual === "light" || manual === "dark" ? manual : hour >= ${siteConfig.dayStartHour} && hour < ${siteConfig.nightStartHour} ? "light" : "dark"; })();`;
 }

@@ -1,14 +1,12 @@
-/** CV link configuration. Enable only when the real file or link exists. @author meetbyte */
+/** User-supplied CV available as a static PDF download. @author meetbyte */
 import type { CvConfig } from "./types";
 
 export const cvConfig: CvConfig = {
   label: "Download CV",
-  available: false,
-  // TODO(Meet): Add a real PDF under public/files and set href to /files/name.pdf.
-  // Alternatively use a verified external CV URL.
-  href: undefined,
-  filename: undefined,
-  unavailableLabel: "CV download unavailable; Meet has not supplied a CV yet",
-  unavailableTitle: "CV will be available after Meet supplies a file or link",
-  status: "Pending",
+  available: true,
+  href: "/files/Meet-Thummar-CV.pdf",
+  filename: "Meet-Thummar-CV.pdf",
+  unavailableLabel: "CV download currently unavailable",
+  unavailableTitle: "My experience and education are listed below while the CV download is unavailable.",
+  status: "Unavailable",
 };

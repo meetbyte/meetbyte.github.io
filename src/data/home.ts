@@ -1,22 +1,24 @@
+import { pageEyebrow } from "@/lib/page-label";
 /** Home content, kept outside the page component. @author meetbyte */
 import { routes } from "@/constants/routes";
-import { profile } from "./profile";
 import type { HomeContent } from "./types";
 
 export const homeContent: HomeContent = {
-  eyebrow: "WELCOME / 00",
-  topline: "THE BEGINNING OF SOMETHING GOOD",
+  eyebrow: pageEyebrow(routes.home, "WELCOME"),
+  topline: "SOFTWARE WITH PURPOSE",
   spark: "✳",
-  kicker: "SOFTWARE, IDEAS & EVERYTHING BETWEEN.",
-  headingStart: "A space for the work ",
-  headingEmphasis: "and",
-  headingEnd: " what comes next",
+  kicker: "TECHNICAL LEADERSHIP & HANDS-ON ENGINEERING",
+  headingStart: "I make complex systems ",
+  headingEmphasis: "easier",
+  headingEnd: " to work with",
   headingPunctuation: ".",
-  description: `An evolving home for ${profile.name}'s projects, perspective, and notes from the learning curve. The foundations are here; the story is taking shape.`,
-  primaryAction: "Explore the site",
-  scrollPrompt: "SCROLL TO DISCOVER",
+  description: "I lead teams and deliver end-to-end solutions across banking, financial services and insurance. My work connects business requirements, system design and hands-on engineering, from customer journeys and enterprise integrations to delivery and production support. I like understanding the whole flow, helping a team make clear decisions, and staying close enough to the code to work through the difficult parts.",
+  primaryAction: "View my experience",
+  primaryHref: routes.resume,
+  secondaryAction: { label: "Read my story", href: routes.about },
+  scrollPrompt: "MORE TO EXPLORE",
   features: [
-    { eyebrow: "01 / THE WORK", titleLines: ["Projects with", "a point of view."], href: routes.projects },
-    { eyebrow: "02 / THE THINKING", titleLines: ["Ideas worth", "writing down."], href: routes.blog },
+    { eyebrow: "01 / THE EXPERIENCE", titleLines: ["The work behind", "the perspective."], href: routes.resume },
+    { eyebrow: "02 / THE PERSON", titleLines: ["How I think,", "and what I explore."], href: routes.about },
   ],
 };

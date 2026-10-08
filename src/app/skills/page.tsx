@@ -1,3 +1,6 @@
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata("Skills", "Technical leadership, full-stack development, system design and the tools behind Meet Thummar’s work.", "/skills/");
+
 /**
  * @file Skills page rendered from editable categories.
  * @author meetbyte

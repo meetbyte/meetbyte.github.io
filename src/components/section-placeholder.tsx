@@ -2,7 +2,7 @@
  * @file Shared preview for routes awaiting their final content.
  * @author meetbyte
  */
-import Link from "next/link";
+import { SiteLink as Link } from "@/components/site-link";
 import { Icon } from "./icons";
 import { siteContent, type PreviewSection } from "@/constants/content";
 import { routes } from "@/constants/routes";

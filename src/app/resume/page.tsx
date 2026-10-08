@@ -1,3 +1,6 @@
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata("Resume", "Meet Thummar’s professional experience, education, certification and downloadable CV.", "/resume/");
+
 /**
  * @file Resume page with data-driven experience and education timelines.
  * @author meetbyte
@@ -41,6 +44,12 @@ export default function Resume() {
         <h2 id="education-heading">{resume.educationHeading}</h2>
         <Timeline entries={resume.education} empty={resume.emptyEducation} />
       </section>
+      {resume.certificationsHeading && resume.certifications && resume.certifications.length > 0 && (
+        <section className="detail-section resume-section" aria-labelledby="certifications-heading">
+          <h2 id="certifications-heading">{resume.certificationsHeading}</h2>
+          <Timeline entries={resume.certifications} empty="" />
+        </section>
+      )}
     </div>
   );
 }

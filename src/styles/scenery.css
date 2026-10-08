@@ -1,0 +1,75 @@
+/* Clean photographic sky plates and one independently travelling sun/moon. @author meetbyte */
+:root {
+  --night-progress: 0; --celestial-bend: 0; --celestial-arc-progress: 0; --sunset-opacity: 0; --twilight-opacity: 0;
+  --sun-x: 24.5vw; --moon-x: 76vw; --orb-y: 60px; --orb-size: 66px; --orbit-arc: clamp(190px, 34dvh, 310px); --header-band: 94px; --lunar-phase: 0;
+  --celestial-glow: #ffe5a0;
+  --orb-x: calc(var(--sun-x) * (1 - var(--night-progress)) + var(--moon-x) * var(--night-progress));
+}
+html[data-theme="dark"] { --night-progress: 1; --lunar-phase: 1; --celestial-glow: #c6dfff; }
+.site-scenery { --foliage-opacity: .44; --cloud-opacity: .13; position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background: var(--page); }
+.scenery-sky { position: absolute; inset: 0; background-image: url("/images/scenery/daylight-v2.webp"); background-size: max(100vw, 150dvh) auto; background-repeat: no-repeat; background-position: 50% min(0px, calc(110px - max(7.3vw, 10.95dvh))); }
+.scenery-sky-night { opacity: var(--night-progress); background-image: url("/images/scenery/moonlight-v2.webp"); background-size: max(115vw, 150dvh) auto; background-position: 100% min(0px, calc(110px - max(9.085vw, 11.85dvh))); }
+.scenery-sunset, .scenery-twilight, .scenery-light { position: absolute; inset: 0; }
+.scenery-sunset { opacity: var(--sunset-opacity); background: linear-gradient(125deg, #f4a055, #ef99a0 55%, #8b6b9f); mix-blend-mode: multiply; }
+.scenery-twilight { opacity: var(--twilight-opacity); background: linear-gradient(130deg, #eaa0b5, #bb83bd 45%, #5b426f); mix-blend-mode: multiply; }
+.scenery-light { opacity: .16; background: radial-gradient(ellipse at var(--orb-x) var(--orb-y), var(--celestial-glow), transparent 62%); }
+.scenery-foliage, .scenery-clouds { position: absolute; inset: -3%; background-repeat: no-repeat; background-size: cover; background-position: center; animation-play-state: paused; }
+.scenery-foliage { background-image: url("/images/scenery/foliage-v1.webp"); opacity: calc(var(--foliage-opacity) * (1 - .65 * var(--night-progress))); transform-origin: 12% 90%; animation: foliage-sway 9s ease-in-out infinite alternate paused; }
+.scenery-clouds { inset: -12%; opacity: calc(var(--cloud-opacity) + .16 * var(--night-progress)); background-image: url("/images/scenery/clouds-v1.webp"); animation: cloud-drift 26s ease-in-out infinite alternate paused; }
+.scenery-clouds-far { opacity: calc(.06 + .09 * var(--night-progress)); animation-duration: 43s; animation-direction: alternate-reverse; background-size: 125% auto; background-position: 65% 0; }
+.scenery-dapple { position: absolute; inset: -8%; background: radial-gradient(ellipse at 10% 12%, #ffe9af88, transparent 38%), radial-gradient(ellipse at 95% 75%, #a1d4aa44, transparent 30%); opacity: calc(.35 * (1 - var(--night-progress))); animation: dapple-drift 11s ease-in-out infinite alternate paused; }
+html[data-scenery-motion="playing"] :is(.scenery-foliage, .scenery-clouds, .scenery-dapple) { animation-play-state: running; }
+@keyframes foliage-sway { 0% { transform: translate3d(-10px, 5px, 0) rotate(-1deg); } 45% { transform: translate3d(6px, -2px, 0) rotate(.45deg); } 100% { transform: translate3d(15px, -7px, 0) rotate(1.1deg); } }
+@keyframes cloud-drift { from { transform: translate3d(-6%, 1%, 0); } to { transform: translate3d(6%, -2%, 0); } }
+@keyframes dapple-drift { from { transform: translate3d(-2%, 1%, 0) scale(1); } to { transform: translate3d(3%, -2%, 0) scale(1.06); } }
+
+/* Non-overlapping viewport clips join into one visible body. Above the band,
+   it clears the sticky header veil; below it, opaque cards actually occlude it.
+   This also works while the mobile header is docked after document scrolling. */
+.celestial-stage { position: fixed; inset: 0; pointer-events: none; }
+.celestial-stage-header { z-index: -1; clip-path: inset(0 0 calc(100% - var(--header-band)) 0); }
+.celestial-stage-sky { z-index: 1; clip-path: inset(var(--header-band) 0 0 0); }
+.celestial { position: fixed; top: 0; left: 0; width: var(--orb-size); height: var(--orb-size); z-index: -1; pointer-events: none; transform: translate3d(var(--orb-x), calc(var(--orb-y) + var(--celestial-arc-progress) * var(--orbit-arc)), 0) translate(-50%, -50%) scale(calc(.78 + .22 * var(--night-progress) - .25 * var(--celestial-bend))); }
+.celestial-aura { position: absolute; inset: -110%; border-radius: 50%; background: radial-gradient(circle, var(--celestial-glow) 9%, transparent 66%); opacity: .65; }
+.celestial-disc { position: absolute; inset: 0; overflow: hidden; border-radius: 50%; background: var(--celestial-glow); box-shadow: inset 0 0 1px #fff; }
+.celestial-sun, .celestial-moon { position: absolute; inset: 0; border-radius: inherit; }
+.celestial-sun { opacity: calc(1 - var(--lunar-phase)); background: radial-gradient(circle at 35% 25%, #fffef2, #fff3c7 60%, var(--celestial-glow)); }
+.celestial-moon { opacity: var(--lunar-phase); background-image: url("/images/scenery/moon-disc-v1.webp"); background-size: 108% 108%; background-position: center; }
+/* Per-frame palette updates must not queue additional CSS colour transitions. */
+html[data-celestial-travel] body, html[data-celestial-travel] body *, html[data-celestial-travel] body *::before, html[data-celestial-travel] body *::after { transition: none !important; }
+html[data-celestial-travel] .celestial { will-change: transform; }
+
+/* Local fonts and opaque reading surfaces keep the scenery outside the copy. */
+h1, h2, h3 { font-family: var(--font-heading), "Segoe UI", sans-serif; font-optical-sizing: auto; }
+button, input, select, textarea { font-family: var(--font-body), "Segoe UI", sans-serif; }
+.profile-card, .content-panel { border-color: var(--card-edge-top) var(--card-edge-right) var(--card-edge-bottom) var(--card-edge-left); box-shadow: var(--card-rim), var(--shadow); }
+.site-header::before { position: fixed; inset: 0 0 auto; height: calc(var(--header-band) + 14px); background: color-mix(in srgb, var(--page) 48%, transparent); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.site-header[data-scrolled="true"]::before { background: var(--page); }
+/* A soft haze behind navigation follows twilight without masking the body. */
+@media (min-width: 1051px) and (min-height: 620px) {
+  html[data-celestial-travel] .site-header::before { display: block; background: var(--surface); opacity: var(--celestial-bend); }
+  html[data-celestial-travel] .site-brand { color: var(--ink); }
+}
+.site-brand { color: var(--chrome-ink, var(--ink)); }
+.scenery-motion-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 126px; min-height: 28px; border: 1px solid var(--line); border-radius: 7px; padding: 5px 9px; background: var(--surface); color: var(--ink-soft); font-size: 10px; font-weight: 600; letter-spacing: .025em; }
+.scenery-motion-toggle:hover:not(:disabled) { background: var(--surface-hover); color: var(--ink); }
+.scenery-motion-toggle:disabled { cursor: default; }
+.season-picker { display: inline-flex; align-items: center; gap: 7px; color: var(--chrome-ink, var(--ink-muted)); font-size: 10px; font-weight: 600; letter-spacing: .025em; }
+.season-picker select { min-height: 28px; width: 108px; border: 1px solid var(--line); border-radius: 7px; padding: 4px 7px; background: var(--surface); color: var(--ink-soft); font-size: 10px; cursor: pointer; }
+
+@media (max-width: 760px) {
+  :root { --sun-x: 43vw; --moon-x: 59vw; --orb-y: 47px; --orb-size: 52px; --orbit-arc: 190px; --header-band: 78px; }
+  .scenery-sky-day { background-position: 16% min(0px, calc(78px - max(7.3vw, 10.95dvh))); }
+  .scenery-sky-night { background-position: 87% min(0px, calc(78px - max(9.085vw, 11.85dvh))); }
+  .site-scenery { --foliage-opacity: .26; --cloud-opacity: .1; }
+  .site-header::before { background: color-mix(in srgb, var(--page) 64%, transparent); }
+}
+@media (max-width: 560px) {
+  :root { --header-band: 72px; }
+}
+@media (max-width: 360px) { :root { --sun-x: 41vw; --moon-x: 52vw; --orb-size: 42px; } }
+@media (pointer: coarse), (max-width: 760px) { .scenery-motion-toggle, .season-picker select { min-height: 44px; } }
+@media (prefers-reduced-motion: reduce) {
+  .scenery-foliage, .scenery-clouds, .scenery-dapple { animation: none !important; transform: none !important; }
+}
+@media (min-width: 1700px) { .header-tools { gap: 300px; } }

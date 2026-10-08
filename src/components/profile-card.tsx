@@ -2,7 +2,8 @@
  * @file Persistent profile summary shown beside or above route content.
  * @author meetbyte
  */
-import Link from "next/link";
+import { SiteLink as Link } from "@/components/site-link";
+import { SiteImage as Image } from "@/components/site-image";
 import { siteContent } from "@/constants/content";
 import { profile } from "@/data/profile";
 import { cvConfig } from "@/data/cv";
@@ -21,25 +22,36 @@ export function ProfileCard() {
 
   return (
     <aside className="profile-card" aria-label={copy.label}>
-      <div className="profile-art" aria-label={copy.portraitLabel}>
-        <span className="art-topline"><span className="live-dot" /> {copy.artLabel}</span>
-        <div className="portrait-orbit portrait-orbit-one" aria-hidden="true" />
-        <div className="portrait-orbit portrait-orbit-two" aria-hidden="true" />
-        <div className="portrait-mark" aria-hidden="true">{profile.initials}</div>
-        <span className="art-caption">{copy.artCaption}</span>
+      <div className="profile-art">
+        <div className="portrait-frame">
+          <div className="portrait-image">
+            <span className="portrait-placeholder" aria-hidden="true">{profile.initials}</span>
+            {/* Keep the photo scale stable while the outer frame crops vertically. */}
+            <Image
+              className="profile-photo"
+              src={profile.portrait.src}
+              alt={profile.portrait.alt}
+              fill
+              sizes="(max-width: 560px) calc(100vw - 24px), (max-width: 760px) 30vw, (max-width: 1050px) 33vw, 355px"
+              preload
+            />
+          </div>
+        </div>
       </div>
 
       <div className="profile-body">
         <div className="profile-intro">
           <p className="micro-label">{copy.introLabel}</p>
-          <h2>{profile.name}</h2>
+          <p className="profile-name">{profile.name}</p>
           <p className="profile-title">{profile.title}</p>
+          {profile.summary && <p className="profile-summary">{profile.summary}</p>}
           {profile.roles.length > 0 && (
             <div className="profile-role">
               <span className="role-pulse" />
               <RoleRotator roles={profile.roles} />
             </div>
           )}
+          {profile.learning && <p className="profile-learning">{profile.learning}</p>}
         </div>
 
         {profile.location && (
@@ -49,14 +61,14 @@ export function ProfileCard() {
           </div>
         )}
 
-        <div className="social-links" aria-label={copy.socialLabel}>
+        <nav className="social-links" aria-label={copy.socialLabel}>
           {profile.socials.map((social) => (
-            <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={`${social.label} (${copy.socialNewTabLabel})`} title={social.label}>
+            <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={`${social.shortLabel === social.label ? social.label : `${social.shortLabel} — ${social.label}`} (${copy.socialNewTabLabel})`} title={social.label}>
               {social.shortLabel}
               <Icon name="external" size={12} />
             </a>
           ))}
-        </div>
+        </nav>
 
         <div className="profile-actions">
           {/* Do not link to a route that is disabled by the publication switch. */}

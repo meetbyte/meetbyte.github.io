@@ -2,6 +2,7 @@
  * @file Route template that replays the entry transition after navigation.
  * @author meetbyte
  */
+import { RouteMotion } from "@/components/route-motion";
 /**
  * Wraps each route in the page transition styling.
  * @param children - The current route's content.
@@ -9,5 +10,5 @@
  * @author meetbyte
  */
 export default function Template({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <div className="page-transition">{children}</div>;
+  return <RouteMotion>{children}</RouteMotion>;
 }

@@ -2,21 +2,26 @@
    @author meetbyte */
 :root {
   color-scheme: light;
-  --page: #f4f0e8;
+  --page: #f8f5ee;
   --page-glow: #dce5ec;
   --surface: #fcfaf6;
   --surface-quiet: #f3f0e9;
   --surface-hover: #e9e5dd;
   --ink: #263340;
   --ink-soft: #52616a;
-  --ink-muted: #5e6d77;
+  --ink-muted: #596872;
   --line: #dcddd9;
   --accent: #496a86;
   --accent-deep: #365571;
   --accent-soft: #e1e9ef;
   --clay: #a55f4d;
   --button-ink: #ffffff;
-  --shadow: 0 22px 62px rgba(38, 51, 64, 0.08);
+  --shadow: 12px 22px 62px rgba(38, 51, 64, 0.12);
+  --card-edge-top: #fffdf4;
+  --card-edge-right: #cdd6dc;
+  --card-edge-bottom: #d5dcdd;
+  --card-edge-left: #fff4d9;
+  --card-rim: inset 1px 1px 0 rgba(255, 246, 214, 0.75);
   --button-hover-shadow: 0 10px 24px rgba(54, 85, 113, 0.2);
 
   /* The portrait placeholder uses the same artwork in both themes. */
@@ -38,7 +43,7 @@
 /* Dark mode applies only after the visitor selects it and the choice is saved. */
 html[data-theme="dark"] {
   color-scheme: dark;
-  --page: #171d27;
+  --page: #0d1725;
   --page-glow: #293a4f;
   --surface: #202936;
   --surface-quiet: #273343;
@@ -52,6 +57,11 @@ html[data-theme="dark"] {
   --accent-soft: #2b4358;
   --clay: #dea38d;
   --button-ink: #17222b;
-  --shadow: 0 25px 75px rgba(0, 0, 0, 0.2);
+  --shadow: -12px 25px 75px rgba(0, 0, 0, 0.32);
+  --card-edge-top: #61778e;
+  --card-edge-right: #768ba1;
+  --card-edge-bottom: #25374b;
+  --card-edge-left: #28394d;
+  --card-rim: inset -1px 1px 0 rgba(191, 218, 246, 0.16);
   --button-hover-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
 }

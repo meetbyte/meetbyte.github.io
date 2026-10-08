@@ -26,17 +26,19 @@ export function RoleRotator({ roles }: { roles: readonly string[] }) {
      */
     const syncMotion = () => {
       window.clearInterval(timer);
-      if (media.matches) {
-        setIndex(0);
-      } else {
+      const paused = media.matches || document.hidden || document.documentElement.dataset.sceneryMotion !== "playing" || document.documentElement.dataset.connection === "limited";
+      if (!paused) {
         timer = window.setInterval(() => setIndex((value) => (value + 1) % roles.length), siteConfig.roleRotationMs);
       }
     };
     syncMotion();
     media.addEventListener("change", syncMotion);
+    const observer = new MutationObserver(syncMotion);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-scenery-motion", "data-connection"] });
+    document.addEventListener("visibilitychange", syncMotion);
     // Remove the listener and timer when this component unmounts.
-    return () => { window.clearInterval(timer); media.removeEventListener("change", syncMotion); };
+    return () => { window.clearInterval(timer); observer.disconnect(); media.removeEventListener("change", syncMotion); document.removeEventListener("visibilitychange", syncMotion); };
   }, [roles]);
 
-  return <span className="role-rotator" aria-label={roles[0]}><span key={index} className="role-rotator-text" aria-hidden="true">{roles[index]}</span></span>;
+  return <span id="profile-roles" className="role-rotator"><span className="sr-only">{roles.join(" · ")}</span><span key={index} className="role-rotator-text" aria-hidden="true">{roles[index]}</span></span>;
 }
