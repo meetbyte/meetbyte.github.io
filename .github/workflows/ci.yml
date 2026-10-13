@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: '20'
           cache: npm
+      - name: Test AI review signal safety
+        run: node --test scripts/ai-review-ready.test.mjs
       - name: Install dependencies
         run: npm ci
       - name: Generate Next.js route types
@@ -38,3 +40,5 @@ jobs:
         run: npm test
       - name: Build static export
         run: npm run build
+
+
