@@ -128,6 +128,25 @@ export async function getPublishedEditorial(kind: EditorialKind): Promise<Editor
   return (await getEditorialLibrary()).entries.filter(entry => entry.kind === kind && isPublishedEditorial(entry));
 }
 
+/** Local authoring previews include drafts; production remains approved-published-only. @author meetbyte */
+export function selectWritingEntries(entries: readonly EditorialEntry[], preview: boolean): EditorialEntry[] {
+  return entries.filter(entry => entry.kind === "writing" && !entry.placeholder && (preview || isPublishedEditorial(entry)));
+}
+
+/** Reads writing in manifest order, enabling draft copy only in the local development runtime. @author meetbyte */
+export async function getWritingEntries(): Promise<EditorialEntry[]> {
+  const { entries, manifest } = await getEditorialLibrary();
+  const visible = selectWritingEntries(entries, process.env.NODE_ENV === "development");
+  return manifest.writingIds.map(id => visible.find(entry => entry.id === id)).filter((entry): entry is EditorialEntry => Boolean(entry));
+}
+
+/** Supplies ordered local case-study drafts while retaining the production publication boundary. @author meetbyte */
+export async function getExperienceEntries(): Promise<EditorialEntry[]> {
+  const { entries, manifest } = await getEditorialLibrary();
+  const visible = entries.filter(entry => entry.kind === "experience" && !entry.placeholder && (process.env.NODE_ENV === "development" || isPublishedEditorial(entry)));
+  return manifest.experienceIds.map(id => visible.find(entry => entry.id === id)).filter((entry): entry is EditorialEntry => Boolean(entry));
+}
+
 /** Keeps ordered Home selections behind both publication and section-visibility gates. @author meetbyte */
 export function selectHomeEditorial(entries: readonly EditorialEntry[], manifest: EditorialManifest, visible: { experience: boolean; writing: boolean }) {
   const select = (kind: "experience" | "writing", ids: string[]) => visible[kind] ? ids.map(id => entries.find(entry => entry.id === id && entry.kind === kind && isPublishedEditorial(entry))).filter((entry): entry is EditorialEntry => Boolean(entry)) : [];

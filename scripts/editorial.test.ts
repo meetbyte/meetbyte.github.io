@@ -4,7 +4,7 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getEditorialLibrary, getPublishedEditorial, parseEditorial, validateEditorialManifest, isPublishedEditorial, selectHomeEditorial } from "../src/lib/content/editorial";
+import { getEditorialLibrary, getPublishedEditorial, parseEditorial, validateEditorialManifest, isPublishedEditorial, selectHomeEditorial, selectWritingEntries } from "../src/lib/content/editorial";
 
 /** Makes editorial fixtures without genuine personal claims. @author meetbyte */
 const source = (extra = "", body = "## Section\nAn example paragraph.") => `---\nid: example\ntitle: Example\nslug: example\nsummary: Summary\ncategory: Engineering\nseoDescription: Description\nstatus: review\n${extra}---\n${body}`;
@@ -65,4 +65,17 @@ test("Home selections keep manifest order and both publication/visibility gates"
   assert.equal(visible.writing.length, 3);
   prepared[0].placeholder = true;
   assert.equal(selectHomeEditorial(prepared, selected, { experience: true, writing: true }).experience.some(entry => entry.id === prepared[0].id), false);
+});
+
+test("writing drafts are readable only in authoring preview, never production models", async () => {
+  const { entries } = await getEditorialLibrary();
+  assert.equal(selectWritingEntries(entries, true).length, 6);
+  assert.deepEqual(selectWritingEntries(entries, false), []);
+  const sample = entries.map(entry => ({ ...entry, placeholder: true }));
+  assert.deepEqual(selectWritingEntries(sample, true), []);
+  assert.equal(selectWritingEntries(entries, true).some(entry => entry.kind !== "writing"), false);
+  for (const entry of selectWritingEntries(entries, true)) {
+    assert.equal(entry.publishedAt, undefined);
+    assert.doesNotMatch(entry.html, /unpublished inventory entry/);
+  }
 });

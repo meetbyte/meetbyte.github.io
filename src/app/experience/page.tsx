@@ -1,12 +1,22 @@
 /**
- * @file Reserved editorial experience route; remains unavailable until content publication is authorized.
+ * @file Text-led experience index with local draft previews and production publication gating.
  * @author meetbyte
  */
-import { requirePageEnabled } from "@/lib/require-page-enabled";
+import { SiteLink as Link } from "@/components/site-link";
+import { getExperienceEntries } from "@/lib/content/editorial";
 import { pageMetadata } from "@/lib/metadata";
-export const metadata = pageMetadata("Experience", "Verified experience content.", "/experience/");
-/** Preserve the unpublished boundary while the content milestone prepares the real index. @author meetbyte */
-export default function Experience() {
+import { requirePageEnabled } from "@/lib/require-page-enabled";
+import { formatPostDate } from "@/lib/content/posts";
+export const metadata = pageMetadata("Experience", "Notes on engineering, decisions and thinking slowly.", "/experience/", { sample: process.env.NODE_ENV === "development" });
+/** Presents original prose without fictional dates or empty card grids. @author meetbyte */
+export default async function Experience() {
   requirePageEnabled("experience");
-  return null;
+  const entries = await getExperienceEntries();
+  return <div className="detail-page experience-index">
+    <header className="detail-intro"><p className="eyebrow">EXPERIENCE</p><h1>The work behind the perspective.</h1><p className="detail-lead">Problems, decisions and lessons from enterprise engineering.</p></header>
+    <div className="writing-list">{entries.map(entry => <article key={entry.id}>
+      <p className="writing-meta"><span>{entry.category}</span><span>{entry.minutes} min read</span>{entry.publishedAt && <time dateTime={entry.publishedAt}>{formatPostDate(entry.publishedAt)}</time>}{entry.status !== "published" && <span>Draft</span>}</p>
+      <h2><Link href={`/experience/${entry.slug}/`}>{entry.title}</Link></h2><p>{entry.summary}</p>
+    </article>)}</div>
+  </div>;
 }

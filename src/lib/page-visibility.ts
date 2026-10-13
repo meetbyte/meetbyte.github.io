@@ -12,6 +12,8 @@ import { routes } from "@/constants/routes";
  * @author meetbyte
  */
 export function isPageEnabled(page: PageKey): boolean {
+  // Owner-authorized local content previews never change production publication switches.
+  if ((page === "writing" || page === "experience") && process.env.NODE_ENV === "development") return true;
   return pageVisibility[page];
 }
 
