@@ -1,0 +1,23 @@
+/**
+ * @file Approved-reference artwork placement; all reading copy stays outside the image.
+ * @author meetbyte
+ */
+.editorial-artwork { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--surface-muted); }
+.artwork-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.artwork-dark { display: none; }
+html[data-theme="dark"] .artwork-light { display: none; }
+html[data-theme="dark"] .artwork-dark { display: block; }
+.artwork-failed { visibility: hidden; }
+.home-introduction { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; }
+.home-introduction h1 { font-size: clamp(3.25rem, 6.5vw, 5.5rem); max-width: 8ch; }
+.home-summary { max-width: 38ch; }
+.home-summary { font-family: var(--font-heading), Georgia, serif; font-size: 1.5rem; line-height: 1.5; }
+.menu-toggle,.menu-toggle:hover,.menu-toggle:focus-visible { color: var(--text); background: var(--surface); border-color: var(--border); }
+.home-introduction-copy { min-width: 0; }
+.editorial-index-heading { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; align-items: center; }
+.artwork-experience { aspect-ratio: 8 / 3; }
+.artwork-experience .artwork-image { object-position: 75% 65%; }
+.artwork-writing { aspect-ratio: 8 / 3; }
+.artwork-writing .artwork-image { object-position: 30% 28%; }
+@media (max-width: 959px) { .home-introduction { grid-template-columns: minmax(0, 1fr); gap: 32px; } .home-introduction .editorial-artwork { max-width: 440px; aspect-ratio: 5 / 4; } .home-introduction .artwork-image { object-position: 65% 55%; } }
+@media (max-width: 639px) { .editorial-index-heading { grid-template-columns: minmax(0, 1fr); gap: 24px; } .editorial-index-heading .editorial-artwork { max-width: 280px; } }

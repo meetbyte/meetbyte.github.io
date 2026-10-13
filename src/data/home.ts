@@ -7,6 +7,7 @@ import { routes } from "@/constants/routes";
 import type { HomeContent } from "./types";
 
 export const homeContent: HomeContent = {
+  editorialSummary: "A practice in building, learning, and looking closer.",
   eyebrow: pageEyebrow(routes.home, "WELCOME"),
   topline: "SOFTWARE WITH PURPOSE",
   spark: "✳",

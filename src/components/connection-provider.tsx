@@ -7,6 +7,7 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { isLimitedConnection, sceneryVisitStorageKey, type ConnectionHints } from "@/lib/connection";
+import { normalizePath } from "@/lib/navigation";
 
 const ConnectionContext = createContext({ limited: false, offline: false, light: false, ready: false,
   showScenery: () => {}, begin: (href: string) => { void href; }, hold: (href: string) => { void href; } });
@@ -54,9 +55,9 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
   }, [pathname]);
   useEffect(() => {
     if (!destination || state.offline) return;
-    const feedback = window.setTimeout(() => setVisible(true), 300);
-    const fallback = window.setTimeout(() => setStalled(true), 3000);
-    return () => { window.clearTimeout(feedback); window.clearTimeout(fallback); };
+    // Routine internal transitions are quiet. Offer recovery only after a genuine stall.
+    const fallback = window.setTimeout(() => { setVisible(true); setStalled(true); }, 5000);
+    return () => { window.clearTimeout(fallback); };
   }, [destination, state.offline]);
 
   function showScenery() {
@@ -66,7 +67,7 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
     setState((current) => ({ ...current, light: false }));
   }
   function begin(href: string) {
-    if (href.split("#")[0] === pathname) return;
+    if (normalizePath(href.split(/[?#]/)[0]) === normalizePath(pathname)) return;
     setDestination(href); setVisible(false); setStalled(false); setDismissed(false);
   }
   function hold(href: string) { setDestination(href); setVisible(true); setDismissed(false); }
@@ -74,7 +75,7 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
   return <ConnectionContext.Provider value={{ ...state, showScenery, begin, hold }}>
     {children}
     {!dismissed && (state.offline || visible && destination) && <div className="connection-notice">
-      <span role="status">{state.offline ? "You’re offline. You can keep reading this page." : "Opening page…"}</span>
+      <span role="status">{state.offline ? "You’re offline. You can keep reading this page." : "This page is taking longer than expected."}</span>
       {destination && (state.offline || stalled) && <button type="button" disabled={state.offline} onClick={() => window.location.assign(destination)}>{state.offline ? "Waiting for connection" : "Open page directly"}</button>}
       <button type="button" aria-label="Dismiss connection notice" onClick={() => setDismissed(true)}>Dismiss</button>
     </div>}

@@ -4,10 +4,11 @@ title: "The Problem Behind the Requirement"
 slug: "behind-the-requirement"
 summary: "A requested feature is often the beginning of a conversation. Understanding the reason behind it can change the shape of the solution."
 category: "Engineering"
-status: "draft"
+status: "published"
 seoDescription: "A requested feature is often the beginning of a conversation. Understanding the reason behind it can change the shape of the solution."
 placeholder: false
 tags: ["Engineering"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## A request arrives with a proposed answer
 
@@ -16,6 +17,9 @@ Requirements often reach a developer in the language of an interface: add a fiel
 I do not assume the proposed answer is wrong. The person making the request may understand a constraint I have not encountered yet. But I want to understand what the answer is meant to achieve before making it permanent in software.
 
 The distinction is practical. A field has a definition. A problem has a context. If I understand only the field, I can implement it precisely and still miss the reason it was needed.
+
+
+> A field has a definition. A problem has a context.
 
 ## Start with the work being done
 

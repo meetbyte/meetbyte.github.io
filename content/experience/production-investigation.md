@@ -1,36 +1,39 @@
 ---
 id: "production-investigation"
-title: "Production support and root-cause investigation"
+title: "Engineering Beyond Deployment"
 slug: "production-investigation"
-summary: "Connecting reported issues, technical investigation and follow-through with QA, business and support teams."
+summary: "Taking reported issues through investigation and resolution with business, QA and support teams, while staying hands-on in the system."
 category: "Delivery and support"
-status: "draft"
-seoDescription: "Connecting reported issues, technical investigation and follow-through with QA, business and support teams."
+status: "published"
+seoDescription: "Taking reported issues through investigation and resolution with business, QA and support teams, while staying hands-on in the system."
 placeholder: false
 tags: ["Delivery and support"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
-## Context
+## Delivery did not end the responsibility
 
-My responsibilities include production and customer support, issue investigation and root-cause analysis. I work with business and customer support teams to understand reported issues, investigate their causes and carry fixes through to resolution. I also collaborate with QA and production support during delivery.
+My role includes production and customer support, root-cause investigation and carrying fixes through to resolution. I work with business and customer support teams to understand reported issues, and with QA and production support around the changes required to address them.
 
-That work connects the application's implementation to the experience of people using it. A report rarely arrives as a complete technical diagnosis. It usually describes an interruption in the person's task.
+This is where the application's intended behavior meets the conditions of real use. A person may describe missing information, an interrupted action or a result they did not expect. The engineering work begins by understanding that interruption well enough to investigate it.
 
-## The challenge
+## Connecting the report to the system
 
-The first job is to make the interruption understandable. What was expected? What happened instead? Which conditions are known? What information would help distinguish one possible cause from another?
+I stay hands-on while coordinating across the people involved. A support report provides the user's perspective; the system flow helps identify where that experience could have changed. Bringing those views together is part of the investigation.
 
-I want to preserve that practical question throughout the investigation. It is possible to find a technical explanation that sounds convincing without establishing that it accounts for the behavior the person actually reported.
+The questions are specific: what did the person expect, what happened instead, and which conditions are known? A familiar symptom can suggest a cause, but the investigation still needs to connect that explanation to the reported behavior.
 
-## Contribution
+My wider responsibilities across requirements, system design, implementation and integration help me follow that connection. An issue may cross several components. Understanding the flow is often more useful than approaching each component as an unrelated problem.
 
-My verified role spans conversations with business and support teams, root-cause investigation and coordination around fixes. I remain hands-on in the implementation while working across the people involved in the solution's delivery and support.
+## Carrying a correction through delivery
 
-I value updates that distinguish evidence from assumption. A temporary recovery, an identified cause and a verified correction are different milestones. Making that distinction clear helps the team understand what the immediate action establishes and what still needs follow-through.
+Finding a cause is one stage of the work. The correction has to be implemented, checked and coordinated with the people who support the application. I work with QA, production support and business teams as part of that follow-through.
 
-The correction also needs a boundary. Which behavior should change, which surrounding behavior should remain intact and what check would reveal a regression? QA and support perspectives help connect those questions to the real interruption rather than only to the changed code.
+The behavior that should change needs to be clear, as does the surrounding behavior that should remain intact. The team also needs to know whether an immediate recovery, an identified cause or a verified correction is being discussed. Those are different kinds of progress.
 
-## Outcome and insight
+I want technical communication to support that distinction. An update should explain what is known, what is still uncertain and what the next action is meant to establish. That makes the work easier to follow for people who are affected by the issue but are not reading the implementation.
 
-This draft deliberately avoids a specific incident story, recovery-time claim or customer-impact figure because none is established in the source material. The verified contribution is the investigation, collaboration and ownership of the work through resolution.
+## What remains after the immediate fix
 
-The lesson is that support is part of engineering a system. An issue can reveal a missing assumption, an unclear failure response or a gap in how the team observes a flow. I want the immediate fix to end the interruption, and the follow-through to leave the system easier to understand the next time someone needs help.
+The contribution combines investigation, hands-on correction and collaboration through resolution. It is a continuing part of taking responsibility for an application, rather than a task that begins and ends with deployment.
+
+The deeper lesson is that support belongs to engineering. A reported issue can expose an assumption, an integration boundary or an unclear failure response. Resolving the immediate problem matters; learning from it can make the system easier to understand and the next investigation easier to carry forward. I want ownership to include both parts.

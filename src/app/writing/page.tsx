@@ -2,6 +2,7 @@
  * @file Text-led writing index with local draft previews and production publication gating.
  * @author meetbyte
  */
+import { EditorialArtwork } from "@/components/editorial-artwork";
 import { SiteLink as Link } from "@/components/site-link";
 import { getWritingEntries } from "@/lib/content/editorial";
 import { pageMetadata } from "@/lib/metadata";
@@ -13,7 +14,7 @@ export default async function Writing() {
   requirePageEnabled("writing");
   const entries = await getWritingEntries();
   return <div className="detail-page writing-index">
-    <header className="detail-intro"><p className="eyebrow">WRITING</p><h1>Ideas worth thinking through.</h1><p className="detail-lead">Engineering, judgment and the questions that stay with me beyond the code.</p></header>
+    <header className="detail-intro editorial-index-heading"><div><p className="eyebrow">WRITING</p><h1>Ideas worth thinking through.</h1><p className="detail-lead">Engineering, judgment and the questions that stay with me beyond the code.</p></div><EditorialArtwork variant="writing" /></header>
     <div className="writing-list">{entries.map(entry => <article key={entry.id}>
       <p className="writing-meta"><span>{entry.category}</span><span>{entry.minutes} min read</span>{entry.publishedAt && <time dateTime={entry.publishedAt}>{formatPostDate(entry.publishedAt)}</time>}{entry.status !== "published" && <span>Draft</span>}</p>
       <h2><Link href={`/writing/${entry.slug}/`}>{entry.title}</Link></h2><p>{entry.summary}</p>

@@ -1,0 +1,18 @@
+# Experience corrections, concise Home and artwork milestone
+
+14 October 2026. Owner requested richer earlier Experience narratives, quieter internal navigation, less Home detail, non-draft presentation, Writing quotations and the next milestone. Work remains on CR002; no main merge or deployment.
+
+## Resulting behavior
+
+- Restored the earlier four narrative titles and concrete contribution detail. APEX now explains business→project evaluation→DBA coordination, card/spend/market criteria, dynamic query generation, extra columns, Microsoft LDAP, User/Supervisor/Admin permissions, database security, PII masking, audit, weekly/monthly files, communications, HTML/CSS and server installation. Export, webpage access and email-triggered communications remain distinct; no email-attachment claim or invented metrics. Other stories cover preserved functionality/coding standards/ongoing delivery during MobileFirst migration, bounded AI/tooling and quality checks, and hands-on investigation through QA/support resolution. Preparation notes and defensive disclaimers are removed from reading copy.
+- Home returns to the approved mockup's short line: “A practice in building, learning, and looking closer.” One hero, identity, role and direct links; biography, detailed philosophy and contact paragraphs stay on dedicated pages. Targeted browser check found 23 words in main.
+- Normal internal Link prefetching is restored. Recovery feedback starts only after a five-second stall; no routine 300ms loading toast. Same-route comparisons normalize trailing slashes, preventing a stuck pending destination. Offline recovery remains. Next.js development may still compile a route on its first visit; this is not a zero-latency claim.
+- Owner's non-draft presentation instruction is recorded in Linear MEE-10 comment `84a72fd3-175c-4e10-9337-56b5d8fedd81`. All ten records now have published source state and that durable authorization reference; Experience/Writing source visibility is enabled on CR002. Static builds include all ten real routes and sitemap canonicals, with no invented dates. This source state is not approval to merge/deploy main. Future draft/sample exclusion remains enforced.
+- Each essay includes one pull quote repeated verbatim from its own prose. No borrowed quotation or invented attribution.
+- Next milestone MEE-7/MEE-13: the approved reference was recovered, standalone matching light/dark artwork generated with the built-in tool, optimized WebP sources integrated on Home, and related small display crops added to Experience/Writing. Prompts/provenance/placement/file weights: `public/images/editorial/README.md`.
+
+## Observed implementation checks
+
+Lint, production compilation/TypeScript/static generation passed; all 38 source tests passed, including sitemap/publication boundaries. Production export cleanup removes only hidden legacy Projects/Blog. The targeted static-export browser regression passed ordinary and repeated-current-route navigation without a busy notice, all ten editorial HTTP URLs without Draft labels, concrete APEX details, six original blockquotes, manual-theme artwork, 320px overflow and no page errors. Results: `docs/qa/corrections-artwork/results.json`. Local screenshots were inspected but not committed.
+
+Run `npm run build`, then `scripts/qa/corrections-browser.mjs` with separately installed Playwright/Chromium as described in the foundation QA document. Sandbox uses the documented Node-loader equivalents for tsx IPC restrictions. Formal accessibility/performance/SEO audit and independent review remain deferred; these are targeted regressions requested by the owner, not MEE-20 completion. Final visual/content acceptance, merge and deployment remain owner-controlled.

@@ -21,6 +21,7 @@ import "@/styles/editorial.css";
 import "@/styles/editorial-pages.css";
 import "@/styles/editorial-home.css";
 import "@/styles/editorial-writing.css";
+import "@/styles/editorial-artwork.css";
 import { RouteFocus } from "@/components/route-focus";
 import { cvConfig } from "@/data/cv";
 import { contactContent } from "@/data/contact";

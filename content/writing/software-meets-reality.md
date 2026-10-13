@@ -4,10 +4,11 @@ title: "When Software Meets Reality"
 slug: "software-meets-reality"
 summary: "Delivery is an important moment, but it does not end a system’s story. Supporting real use asks for evidence, communication and careful follow-through."
 category: "Engineering"
-status: "draft"
+status: "published"
 seoDescription: "Delivery is an important moment, but it does not end a system’s story. Supporting real use asks for evidence, communication and careful follow-through."
 placeholder: false
 tags: ["Engineering"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## A system enters a wider context
 
@@ -16,6 +17,9 @@ A development environment gives us a bounded view of an application. We choose t
 My work includes collaboration with QA, business teams, production support and customer support. That has made the work around a delivered application important to me. A system needs to remain understandable when someone reports a problem in the language of their task, rather than the language of its implementation.
 
 The report may be simple: the information is missing, an action did not finish, the result looks different. Turning that report into a useful engineering question requires care.
+
+
+> Supporting software is part of engineering it.
 
 ## Begin by understanding the interruption
 

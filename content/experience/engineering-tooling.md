@@ -1,34 +1,39 @@
 ---
 id: "engineering-tooling"
-title: "Engineering tooling and code quality"
+title: "Improving the Engineering Workflow"
 slug: "engineering-tooling"
-summary: "Documentation, code-quality checks and delivery tooling that support the work around application development."
+summary: "Bringing AI-assisted documentation, dependency checks, code scanning and delivery tooling into the everyday work of maintaining software."
 category: "Engineering practice"
-status: "draft"
-seoDescription: "Documentation, code-quality checks and delivery tooling that support the work around application development."
+status: "published"
+seoDescription: "Bringing AI-assisted documentation, dependency checks, code scanning and delivery tooling into the everyday work of maintaining software."
 placeholder: false
 tags: ["Engineering practice"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
-## Context
+## The work around the implementation
 
-Some of my engineering work concerns how the team develops and maintains software. Alongside application delivery, I have worked with Jenkins, SonarQube and GitHub-based checks. I also created a GitHub Copilot agent for documentation, comments and code updates under defined conditions and standards.
+In addition to delivering application features, I worked on the engineering workflow around the codebase. That included a GitHub Copilot agent for documentation, commenting and code updates, as well as dependency checks, code scanning, Jenkins pipelines and SonarQube.
 
-These contributions belong to the everyday work around a codebase. A feature needs an implementation, but it also needs a way to be understood, checked and carried forward by the team.
+I wanted these improvements to connect to how the team actually worked. Documentation and code checks have limited value if they remain separate from the implementation and delivery process. The useful question was where a repeatable step could make the work clearer or reduce a recurring burden.
 
-## The challenge
+## Putting boundaries around AI assistance
 
-Repeated work is a useful place to look for improvements. Documentation can drift as code changes. A familiar convention can still be applied inconsistently. A dependency check is useful only if its result reaches someone who can act on it.
+I created the Copilot agent to operate under defined conditions and standards. Its purpose was to assist with documentation, comments and code updates within those boundaries. This was an engineering workflow contribution, not a claim that generated code could approve its own correctness.
 
-I am interested in reducing unnecessary effort without making the process less understandable. Automation should clarify the expected behavior and make evidence available. A successful tool invocation does not automatically prove that the underlying change was correct.
+The distinction mattered to me because automated output still becomes part of a codebase that someone has to understand and maintain. A documentation update should describe the implementation accurately. A comment should explain a useful responsibility or decision. A code change should fit the standards and scope of the work it is helping with.
 
-## Contribution
+I see AI assistance as most useful when its responsibilities are clear. It can help produce or update an artifact, while the surrounding process still determines whether that artifact is appropriate.
 
-My approved source record identifies documentation, commenting and code-update assistance through a Copilot agent, dependency checks and code scanning in GitHub workflows, and SonarQube checks in delivery workflows. It also records Jenkins frontend and backend deployment pipelines.
+## Mechanical checks and delivery
 
-I see these tools as supporting different parts of the work. Documentation helps someone find the reasoning around an implementation. Mechanical checks can identify conditions the team has chosen to detect. Delivery tooling makes the path from a tested change to an environment more explicit. Their usefulness depends on those responsibilities remaining clear.
+I added OWASP dependency checks and code scanning to GitHub workflows. I also worked with SonarQube in delivery workflows and set up Jenkins pipelines for frontend and backend deployment.
 
-## Outcome and insight
+These tools address different questions. Dependency checks provide information about the dependencies included in the application. Code scanning and quality checks examine conditions the tooling is designed to detect. A pipeline gives the team a repeatable delivery path. None of those results should be stretched into a claim that all defects or security risks have been eliminated.
 
-The source record does not provide a quantified time saving or a claim that these tools eliminate defects. I do not add either. The contribution is the tooling and workflow work itself, together with the discipline of keeping it connected to the team's standards.
+My contribution was bringing those checks and capabilities into the workflow, alongside the application work. That meant considering how the output would be used, rather than treating the existence of a tool as the improvement itself.
 
-My main insight is that an improvement can be valuable without becoming an elaborate platform. A small check, a clearer description or a repeatable step can make the surrounding engineering work easier to follow. I want the process to support judgment, rather than create another source of output that people learn to ignore.
+## Small improvements that remain useful
+
+The concrete contributions were the agent, the checks and the delivery tooling, integrated alongside ongoing application work.
+
+What I value is the effect of making the surrounding work more deliberate. Better documentation makes reasoning easier to find. Repeatable checks make expectations more visible. Delivery tooling helps the team follow a known path. Together, these are practical improvements to the way software is developed and carried forward, even when they do not appear as a feature on a user's screen.

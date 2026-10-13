@@ -4,16 +4,20 @@ title: "The Value of Thinking Slowly"
 slug: "thinking-slowly"
 summary: "Some questions become clearer when they are given more space. Slower thinking can be a way to pay closer attention, rather than a reason to avoid action."
 category: "Reflection"
-status: "draft"
+status: "published"
 seoDescription: "Some questions become clearer when they are given more space. Slower thinking can be a way to pay closer attention, rather than a reason to avoid action."
 placeholder: false
 tags: ["Reflection"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## Not every question needs an immediate answer
 
 I enjoy reading, writing, philosophy and chess. One thing those interests have in common is that they can make an immediate answer feel less necessary. An idea can remain open for a while. A position can be examined before a move is chosen. A paragraph can change because I discover that I did not quite mean what I first wrote.
 
 That pace feels useful alongside engineering work, where there is often pressure to turn uncertainty into an action. Action matters. But I do not want the desire to move forward to decide what I believe before I have understood the question.
+
+
+> Writing helps me notice the difference between an idea that sounds clear in my head and an idea I can actually explain.
 
 ## Give the thought somewhere to develop
 

@@ -15,3 +15,5 @@
 .essay-navigation { display: flex; justify-content: space-between; gap: 32px; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--border); }
 .essay-navigation a { max-width: 45%; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 639px) { .essay-navigation { flex-direction: column; gap: 16px; } .essay-navigation a { max-width: 100%; } }
+.editorial-essay .article-prose blockquote { margin: 40px 0; padding: 16px 0 16px 24px; border-left: 2px solid var(--accent); background: transparent; color: var(--text); font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.4rem, 2.4vw, 1.85rem); line-height: 1.45; }
+.editorial-essay .article-prose blockquote p { margin: 0; }

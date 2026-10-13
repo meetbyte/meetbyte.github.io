@@ -25,3 +25,6 @@
   .home-introduction .eyebrow { font-size: 11px; line-height: 1.6; }
   .home-perspective,.home-contact,.home-editorial-section { padding: 32px 0; }
 }
+.home-direct-links { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-top: 32px; }
+.home-introduction { padding-block: 48px 64px; }
+.home-summary { font-size: clamp(1.05rem, 1.5vw, 1.25rem); }

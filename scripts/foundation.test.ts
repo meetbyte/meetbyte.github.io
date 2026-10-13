@@ -37,9 +37,10 @@ test("theme bootstrap handles missing browser APIs and persistent explicit choic
   assert.equal(resolvePreferredTheme("dark", false), "dark");
 });
 
-test("nested nav states and unpublished editorial routes preserve boundaries", () => {
+test("nested nav states and editorial routes preserve explicit visibility boundaries", () => {
   assert.equal(isActiveRoute("/experience/example/", "/experience/"), true);
   assert.equal(isActiveRoute("/experience-other/", "/experience/"), false);
   assert.equal(isActiveRoute("/about/", "/"), false);
-  for (const key of ["projects", "blog", "experience", "writing"] as const) assert.equal(pageVisibility[key], false);
+  for (const key of ["projects", "blog"] as const) assert.equal(pageVisibility[key], false);
+  for (const key of ["experience", "writing"] as const) assert.equal(pageVisibility[key], true);
 });

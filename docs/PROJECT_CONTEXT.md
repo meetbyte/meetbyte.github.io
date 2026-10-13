@@ -1,6 +1,6 @@
 # Website context for future work
 
-Last reviewed: 13 October 2026 (Foundation milestone). This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
+Last reviewed: 14 October 2026 (corrections and artwork checkpoint). This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
 
 ## Start here
 
@@ -12,23 +12,19 @@ Author for source/module/function documentation: `meetbyte`. Follow [the comment
 
 The website is Meet Thummar's portfolio at `https://meetbyte.github.io`, implemented with Next.js App Router, TypeScript, React, local fonts and a static GitHub Pages export. The source and local public assets live in this repository. The current professional content is in `src/data/`; [the completed questionnaire](planning/PERSONAL_WEBSITE_CONTENT_COMPLETED.md) is a preserved source record, not a instruction to replace newer approved data.
 
-Public sections: Home, About, Resume, Skills, Contact. **Projects and Blog are implemented but hidden** by `src/constants/page-visibility.ts`. Their typed case-study and Markdown engines are ready; existing samples are fictional/illustrative. New genuine content is pending the owner's supplied material. One section may be enabled independently when expressly requested; do not enable the other automatically.
+CR002 source sections: Home, About, Resume, Skills, Experience, Writing, Contact. Main/live release remains unchanged until owner approval. **Projects and Blog are implemented but hidden** by `src/constants/page-visibility.ts`. Their typed case-study and Markdown engines are ready; existing samples are fictional/illustrative. New genuine content is pending the owner's supplied material. One section may be enabled independently when expressly requested; do not enable the other automatically.
 
 The Foundation milestone replaces the scenic shell under the approved `docs/planning/design-system.md`: local Newsreader headings and Inter body, warm blush/muted-red light theme and charcoal/burgundy dark theme, slim navigation, native document scrolling, a quiet footer and portrait only on About. No landscape/celestial travel, profile sidebar or shell scroll effects are mounted. Legacy scenery modules/assets remain for provenance; they are not the current UI.
 
 Theme preference is System/Light/Dark, follows the OS initially, persists an explicit choice in localStorage, and resolves before paint. OS changes apply only in System mode. Blocked storage leaves controls usable in memory; reduced motion is respected. Appearance changes do not dispatch clock or seasonal changes.
 
-Experience and Writing canonical route slots exist but remain unpublished alongside the legacy Projects/Blog URLs. Their complete content templates and compatibility aliases belong to the later content milestone; do not enable blank route slots. Existing verified page copy is retained pending the Core website milestone. Original abstract artwork and approved genuine experience/essay content are separate dependencies.
+Experience and Writing now have real indexes and ten canonical reading routes on CR002. Four Experience narratives use the earlier detailed owner-supplied material, led by the from-scratch APEX segmentation system; six original essays include their own pull quotes. The owner requested non-draft presentation; source statuses and section flags are enabled with a durable Linear instruction reference. No publication dates or metrics are fabricated. GitHub main/release approval is still separate. Legacy Projects/Blog samples stay hidden.
 
-MEE-10 adds deterministic unpublished four-experience/six-essay inventory under `content/`, an exact manifest and build-time schema validation. These are editorial drafts, not approved final copy. See [content-workflow.md](planning/content-workflow.md). Public editorial models must use `getPublishedEditorial`; static builds validate drafts without adding their URLs. Legacy posts reuse the same sanitized Markdown renderer with their existing normalization retained.
+Home now matches the approved concise mockup direction: typographic identity, role, the short “A practice in building, learning, and looking closer” line and direct links beside the approved-reference paper/ink artwork. Matching light/dark WebP sources and related index crops are in public/images/editorial/. The portrait remains only About. See [corrections-artwork.md](planning/corrections-artwork.md) for source decisions and checks.
 
-The Core page checkpoint refines About into a reading layout with an inline desktop portrait and mobile prose stack, Resume into date-column chronology, Skills into text-led groups with separate exploratory learning, and Contact into direct email/social/CV actions. All verified `src/data/` text remains unchanged. `docs/qa/core-pages/README.md` records the observed browser checks and limitations. Home artwork/content templates remain separate dependencies.
+Content adapters validate exact four/six inventory, genuine optional dates, owner instruction references, sanitized prose and future draft/sample exclusion. Do not treat source status as permission to merge or deploy. Current owner instructions supersede earlier historical draft checkpoints; formal audit/review remains deferred.
 
-Milestone 2 also makes Home text-led: typographic identity, verified introduction and engineering perspective, quiet email invitation, and manifest-selected experience/writing teasers behind both publication and visibility gates. Unpublished teasers are omitted entirely. The owner approved colors/fonts and deferred homepage artwork; none is substituted or implied complete. See [milestone-2.md](planning/milestone-2.md). Development remains on CR002 for local owner review; final main merge/deployment needs approval.
-
-The subsequent content checkpoint supplies four draft case studies and six original draft essays, with Experience/Writing indexes and sanitized reading pages. `npm run dev` permits owner-local draft previews, labeled Draft and noindex, without altering production publication switches/statuses. Production exports continue hiding these sections and Home omits unpublished teasers. See [content-milestone.md](planning/content-milestone.md) for sources and unresolved APEX details. The owner deferred formal audit/review for now; no editorial approval or full QA is claimed.
-
-Limited connections use a light backdrop and navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
+Normal internal links prefetch; only a five-second stall shows recovery feedback, and same-route slash differences do not create pending navigation. Limited/offline connections retain native navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 
 ## How the next projects/blog work should proceed
 

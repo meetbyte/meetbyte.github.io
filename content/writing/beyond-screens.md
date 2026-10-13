@@ -4,10 +4,11 @@ title: "Building Software Is More Than Building Screens"
 slug: "beyond-screens"
 summary: "The interface is only one part of a system. The harder work is understanding the decisions, dependencies and people behind it."
 category: "Engineering"
-status: "draft"
+status: "published"
 seoDescription: "The interface is only one part of a system. The harder work is understanding the decisions, dependencies and people behind it."
 placeholder: false
 tags: ["Engineering"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## The visible part of the work
 
@@ -16,6 +17,9 @@ A screen gives software a shape. It makes an idea concrete enough to discuss: a 
 My work connects business requirements, system design, implementation, integration and support. From that position, I find it difficult to think of an application as a collection of pages. A page is where a person meets the system. Much of what determines whether that meeting goes well happens elsewhere.
 
 There are rules about who can do what. There are dependencies on other services. There are assumptions about the data. There are people who need to understand a failure when the original developer is unavailable. None of those concerns disappear because the interface looks finished.
+
+
+> A page is where a person meets the system.
 
 ## Following a request through the system
 

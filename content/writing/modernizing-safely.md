@@ -4,10 +4,11 @@ title: "Modernizing Without Breaking What Works"
 slug: "modernizing-safely"
 summary: "Modernization asks for two kinds of care: making a system easier to change while preserving the behavior people still depend on."
 category: "Engineering"
-status: "draft"
+status: "published"
 seoDescription: "Modernization asks for two kinds of care: making a system easier to change while preserving the behavior people still depend on."
 placeholder: false
 tags: ["Engineering"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## The system already means something
 
@@ -16,6 +17,9 @@ An existing application is more than its implementation. People have learned how
 That makes modernization a different problem from starting with an empty repository. A newer implementation may be cleaner, but cleanliness alone does not establish that it preserves what matters. The old system carries obligations as well as technical limitations.
 
 My professional work includes enterprise platforms, application migration, Java and Spring Boot. That context shapes how I think about replacing an older capability. I want to understand the behavior before deciding which parts of the implementation deserve to survive.
+
+
+> The old system carries obligations as well as technical limitations.
 
 ## Separate the contract from the mechanism
 

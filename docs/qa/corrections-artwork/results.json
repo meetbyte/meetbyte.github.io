@@ -1,0 +1,14 @@
+{
+  "homeWords": 23,
+  "editorialRoutes": 10,
+  "checks": [
+    "normal and same-route navigation without busy notice",
+    "static editorial URLs",
+    "non-draft presentation",
+    "source-backed APEX detail",
+    "six original pull quotes",
+    "manual-theme artwork",
+    "mobile overflow",
+    "no page errors"
+  ]
+}

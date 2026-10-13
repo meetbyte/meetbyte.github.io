@@ -5,16 +5,17 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { getEditorialLibrary, getPublishedEditorial, parseEditorial, validateEditorialManifest, isPublishedEditorial, selectHomeEditorial, selectWritingEntries } from "../src/lib/content/editorial";
+import sitemap from "../src/app/sitemap";
 
 /** Makes editorial fixtures without genuine personal claims. @author meetbyte */
 const source = (extra = "", body = "## Section\nAn example paragraph.") => `---\nid: example\ntitle: Example\nslug: example\nsummary: Summary\ncategory: Engineering\nseoDescription: Description\nstatus: review\n${extra}---\n${body}`;
 
-test("source inventory has exactly four experiences/six essays and publishes none", async () => {
+test("source inventory has four experiences/six essays with recorded non-draft authorization", async () => {
   const library = await getEditorialLibrary();
   assert.equal(library.manifest.experienceIds.length, 4);
   assert.equal(library.manifest.writingIds.length, 6);
-  assert.deepEqual(await getPublishedEditorial("experience"), []);
-  assert.deepEqual(await getPublishedEditorial("writing"), []);
+  assert.equal((await getPublishedEditorial("experience")).length, 4);
+  assert.equal((await getPublishedEditorial("writing")).length, 6);
   assert.deepEqual(library.manifest.homeFeaturedWritingIds, []);
 });
 test("status, deterministic filenames and signoff fail closed", async () => {
@@ -46,7 +47,7 @@ test("shared renderer sanitizes HTML, rejects unsafe links/headings/media, compu
 });
 test("manifest rejects duplicate ids/routes, unknown ids, extra inventory and draft Home selections", async () => {
   const { entries, manifest } = await getEditorialLibrary();
-  assert.throws(() => validateEditorialManifest({ ...manifest, homeFeaturedWritingIds: [manifest.writingIds[0]] }, entries), /approved and published/);
+  assert.throws(() => validateEditorialManifest({ ...manifest, homeFeaturedWritingIds: [manifest.writingIds[0]] }, entries.map(entry => ({ ...entry, status: "draft" }))), /approved and published/);
   assert.throws(() => validateEditorialManifest({ ...manifest, writingIds: [...manifest.writingIds.slice(1), "missing"] }, entries), /missing/);
   assert.throws(() => validateEditorialManifest(manifest, [...entries, entries[0]]), /duplicate/);
   const sameRoute = entries.map((entry, index) => index === 1 ? { ...entry, slug: entries[0].slug } : entry);
@@ -59,7 +60,7 @@ test("Home selections keep manifest order and both publication/visibility gates"
   const prepared = entries.map(entry => ({ ...entry, status: "published" as const, ownerApproval: "Owner-reviewed-test-fixture" }));
   const selected = { ...manifest, homeFeaturedExperienceIds: [...manifest.experienceIds].reverse(), homeFeaturedWritingIds: manifest.writingIds.slice(0, 3) };
   assert.deepEqual(selectHomeEditorial(prepared, selected, { experience: false, writing: false }), { experience: [], writing: [] });
-  assert.deepEqual(selectHomeEditorial(entries, selected, { experience: true, writing: true }), { experience: [], writing: [] });
+  assert.deepEqual(selectHomeEditorial(entries.map(entry => ({ ...entry, status: "draft" })), selected, { experience: true, writing: true }), { experience: [], writing: [] });
   const visible = selectHomeEditorial(prepared, selected, { experience: true, writing: true });
   assert.deepEqual(visible.experience.map(entry => entry.id), selected.homeFeaturedExperienceIds);
   assert.equal(visible.writing.length, 3);
@@ -70,7 +71,8 @@ test("Home selections keep manifest order and both publication/visibility gates"
 test("writing drafts are readable only in authoring preview, never production models", async () => {
   const { entries } = await getEditorialLibrary();
   assert.equal(selectWritingEntries(entries, true).length, 6);
-  assert.deepEqual(selectWritingEntries(entries, false), []);
+  assert.equal(selectWritingEntries(entries, false).length, 6);
+  assert.deepEqual(selectWritingEntries(entries.map(entry => ({ ...entry, status: "draft" })), false), []);
   const sample = entries.map(entry => ({ ...entry, placeholder: true }));
   assert.deepEqual(selectWritingEntries(sample, true), []);
   assert.equal(selectWritingEntries(entries, true).some(entry => entry.kind !== "writing"), false);
@@ -78,4 +80,11 @@ test("writing drafts are readable only in authoring preview, never production mo
     assert.equal(entry.publishedAt, undefined);
     assert.doesNotMatch(entry.html, /unpublished inventory entry/);
   }
+});
+
+test("enabled editorial sitemap contains all ten canonicals without invented dates", async () => {
+  const entries = (await sitemap()).filter(entry => /\/(experience|writing)\/.+\/$/.test(entry.url));
+  assert.equal(entries.length, 10);
+  assert.ok(entries.every(entry => entry.lastModified === undefined));
+  assert.ok(entries.every(entry => !entry.url.includes("_unpublished")));
 });

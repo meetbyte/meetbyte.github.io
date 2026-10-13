@@ -18,6 +18,7 @@ export type Profile = {
 };
 export type FeatureLink = { eyebrow: string; titleLines: readonly string[]; href: string };
 export type HomeContent = {
+  editorialSummary?: string;
   eyebrow: string; topline: string; spark: string; kicker: string;
   headingStart: string; headingEmphasis: string; headingEnd: string; headingPunctuation: string;
   description: string; primaryAction: string; scrollPrompt: string;

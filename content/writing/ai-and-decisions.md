@@ -4,10 +4,11 @@ title: "AI Can Write Code. Who Owns the Decision?"
 slug: "ai-and-decisions"
 summary: "Generated code can reduce effort. It does not settle requirements, trade-offs or responsibility for what becomes part of a system."
 category: "Engineering"
-status: "draft"
+status: "published"
 seoDescription: "Generated code can reduce effort. It does not settle requirements, trade-offs or responsibility for what becomes part of a system."
 placeholder: false
 tags: ["Engineering"]
+ownerApproval: "Linear MEE-10 owner instruction, comment 84a72fd3-175c-4e10-9337-56b5d8fedd81 (14 October 2026); CR002 presentation, release approval separate"
 ---
 ## The output arrives before the understanding
 
@@ -16,6 +17,9 @@ An AI tool can produce code quickly enough to change the rhythm of development. 
 I use AI-assisted tools in engineering and personal projects. I am interested in what they make possible. I am also interested in the distance between receiving a plausible implementation and deciding that it belongs in a system.
 
 The output can look settled even when the underlying requirement is not. Names, types and comments give a solution an appearance of completeness. They do not establish that the problem has been understood correctly.
+
+
+> The code may be generated. The decision to make it part of a system still needs an owner.
 
 ## A prompt contains decisions, including accidental ones
 
