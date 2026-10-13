@@ -12,7 +12,7 @@ This file records verified state and setup instructions. It does not itself conf
 - [ ] Owner approves the MEE-23 CI-ready signal workflow PR before it can run from main.
 - [x] Created and inspected an active cloud Work GitHub event task; account accepts the PR author/title filters. [Setup conversation](https://chatgpt.com/c/6ace2962-9d1c-83ec-879c-6482939634b4).
 - [ ] Verify bot ready_for_review webhook delivery and actual review writes.
-- [ ] Verify SHA-specific review, GitHub COMMENT and Linear evidence write end to end.
+- [x] Initial owner-triggered ready_for_review event on bot-authored PR #8 produced a SHA-specific advisory GitHub COMMENT and matching Linear evidence. Initial review requested one documentation correction; bot-originated readiness and automatic bridge operation remain pending.
 - [ ] Verify duplicate and stale signals do not cause duplicate reviews.
 - [ ] Configure Cursor delegation separately, with explicit spend limits and at most two correction cycles.
 
@@ -31,7 +31,7 @@ Signal safety tests run using `node --test scripts/ai-review-ready.test.mjs` and
 Official documentation: [app-event tasks](https://learn.chatgpt.com/docs/automations) and [GitHub code review](https://learn.chatgpt.com/docs/third-party/github). Event tasks are documented for eligible web/mobile accounts; availability must be verified in the actual account. Desktop timer/heartbeat automations are not a GitHub webhook substitute.
 
 Created a single Work event task named **MeetByte CI-gated PR review**, active for testing:
-- Trigger: PR activity in meetbyte/meetbyte.github.io, author github-actions[bot], title regex ^\\[MEE-[0-9]+\\]. Opened, ready_for_review and closed are the default event families; commit updates, reviews and comments are disabled.
+- Trigger: PR activity in meetbyte/meetbyte.github.io, author github-actions[bot], title regex `^\[MEE-[0-9]+\]` (literal regex; JSON strings require doubled backslashes). Opened, ready_for_review and closed are the default event families; commit updates, reviews and comments are disabled.
 - Prompt condition: process only ready_for_review for an eligible open non-draft PR, and skip already reviewed current heads.
 - No periodic schedule. Do not enable overlapping automatic Codex reviews.
 - Confirm bot ready_for_review delivery, prompt filtering and serialization; these are not established merely by saving the configuration. The discovered comment-event guidance names human comments and provides no bot-comment guarantee, so the design does not depend on those.
@@ -47,6 +47,11 @@ Before expensive review, read PR comments/reviews for a completed meetbyte:ai-re
 Return PASS, CHANGES_REQUIRED, HUMAN_DECISION or BLOCKED. PASS requires acceptance evidence, not just green CI or an agent summary. Findings need severity, changed path/line, triggering condition and remedy or missing evidence. Re-read the head immediately before posting; discard stale results. Post advisory COMMENT anchored to the reviewed SHA and include the durable review marker, issue, result and CI URL. Recheck for a terminal record immediately before writing. If parallel execution cannot be serialized, report that limitation; comment checks alone do not provide atomic locking.
 
 After verified GitHub feedback, write one Linear evidence comment keyed to the same PR/SHA. Current statuses are Backlog, Todo, In Progress, Done, Canceled and Duplicate. Keep authorized active work In Progress; put AI Review, Changes Required, Ready for Owner Review, Human Decision or Blocked in the evidence comment. Do not change canceled, duplicate or completed issues. Never set Done from a PASS: require human merge and all issue-specific acceptance/release evidence. Count durable CHANGES_REQUIRED review records; after two correction cycles following the initial review, stop as BLOCKED. Do not invoke Cursor until separately configured. Never modify source, approve, merge, push main, deploy, change controls or launch parallel agents. Notify only for meaningful actionable findings, failure or an owner decision.
+
+## Initial event test evidence
+On 13 October 2026, the owner authorized the coordinator to mark PR #8 ready after verifying dispatched PR Quality run 38401839531 at head 3694149802991f7e8b4a00f9d2b3ff8555ec2e2e. GitHub recorded ready_for_review at 13:28:32 UTC (18:58:32 IST). Work independently read CI, the five-file diff and MEE-23, then posted [advisory review 5504310189](https://github.com/meetbyte/meetbyte.github.io/pull/8#pullrequestreview-5504310189) with CHANGES_REQUIRED for an overescaped documentation filter. Matching Linear evidence was posted automatically. The regex correction is included in this PR.
+
+This proves owner-originated event receipt and GitHub/Linear writes, not bot-originated readiness, installed workflow_run behavior, real duplicate/stale event handling or atomic Work-run serialization. Main was unchanged and the PR remained blocked by owner-review requirements. MEE-23 stays In Progress.
 
 ## Safe rollout test
 1. Owner reviews and merges the bridge PR; agents must not perform this merge.
