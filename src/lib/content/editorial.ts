@@ -127,3 +127,9 @@ export const getEditorialLibrary = cache(async () => {
 export async function getPublishedEditorial(kind: EditorialKind): Promise<EditorialEntry[]> {
   return (await getEditorialLibrary()).entries.filter(entry => entry.kind === kind && isPublishedEditorial(entry));
 }
+
+/** Keeps ordered Home selections behind both publication and section-visibility gates. @author meetbyte */
+export function selectHomeEditorial(entries: readonly EditorialEntry[], manifest: EditorialManifest, visible: { experience: boolean; writing: boolean }) {
+  const select = (kind: "experience" | "writing", ids: string[]) => visible[kind] ? ids.map(id => entries.find(entry => entry.id === id && entry.kind === kind && isPublishedEditorial(entry))).filter((entry): entry is EditorialEntry => Boolean(entry)) : [];
+  return { experience: select("experience", manifest.homeFeaturedExperienceIds), writing: select("writing", manifest.homeFeaturedWritingIds).slice(0, 3) };
+}

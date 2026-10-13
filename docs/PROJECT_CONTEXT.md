@@ -24,6 +24,8 @@ MEE-10 adds deterministic unpublished four-experience/six-essay inventory under 
 
 The Core page checkpoint refines About into a reading layout with an inline desktop portrait and mobile prose stack, Resume into date-column chronology, Skills into text-led groups with separate exploratory learning, and Contact into direct email/social/CV actions. All verified `src/data/` text remains unchanged. `docs/qa/core-pages/README.md` records the observed browser checks and limitations. Home artwork/content templates remain separate dependencies.
 
+Milestone 2 also makes Home text-led: typographic identity, verified introduction and engineering perspective, quiet email invitation, and manifest-selected experience/writing teasers behind both publication and visibility gates. Unpublished teasers are omitted entirely. The owner approved colors/fonts and deferred homepage artwork; none is substituted or implied complete. See [milestone-2.md](planning/milestone-2.md). Development remains on CR002 for local owner review; final main merge/deployment needs approval.
+
 Limited connections use a light backdrop and navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 
 ## How the next projects/blog work should proceed

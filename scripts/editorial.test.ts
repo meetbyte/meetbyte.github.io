@@ -4,7 +4,7 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getEditorialLibrary, getPublishedEditorial, parseEditorial, validateEditorialManifest, isPublishedEditorial } from "../src/lib/content/editorial";
+import { getEditorialLibrary, getPublishedEditorial, parseEditorial, validateEditorialManifest, isPublishedEditorial, selectHomeEditorial } from "../src/lib/content/editorial";
 
 /** Makes editorial fixtures without genuine personal claims. @author meetbyte */
 const source = (extra = "", body = "## Section\nAn example paragraph.") => `---\nid: example\ntitle: Example\nslug: example\nsummary: Summary\ncategory: Engineering\nseoDescription: Description\nstatus: review\n${extra}---\n${body}`;
@@ -52,4 +52,17 @@ test("manifest rejects duplicate ids/routes, unknown ids, extra inventory and dr
   const sameRoute = entries.map((entry, index) => index === 1 ? { ...entry, slug: entries[0].slug } : entry);
   assert.throws(() => validateEditorialManifest(manifest, sameRoute), /duplicate/);
   assert.throws(() => validateEditorialManifest({ ...manifest, writingIds: manifest.writingIds.slice(1) }, entries), /exactly/);
+});
+
+test("Home selections keep manifest order and both publication/visibility gates", async () => {
+  const { entries, manifest } = await getEditorialLibrary();
+  const prepared = entries.map(entry => ({ ...entry, status: "published" as const, ownerApproval: "Owner-reviewed-test-fixture" }));
+  const selected = { ...manifest, homeFeaturedExperienceIds: [...manifest.experienceIds].reverse(), homeFeaturedWritingIds: manifest.writingIds.slice(0, 3) };
+  assert.deepEqual(selectHomeEditorial(prepared, selected, { experience: false, writing: false }), { experience: [], writing: [] });
+  assert.deepEqual(selectHomeEditorial(entries, selected, { experience: true, writing: true }), { experience: [], writing: [] });
+  const visible = selectHomeEditorial(prepared, selected, { experience: true, writing: true });
+  assert.deepEqual(visible.experience.map(entry => entry.id), selected.homeFeaturedExperienceIds);
+  assert.equal(visible.writing.length, 3);
+  prepared[0].placeholder = true;
+  assert.equal(selectHomeEditorial(prepared, selected, { experience: true, writing: true }).experience.some(entry => entry.id === prepared[0].id), false);
 });
