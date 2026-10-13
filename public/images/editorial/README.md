@@ -13,7 +13,9 @@ Created 14 October 2026 with the built-in image-generation tool, using the owner
 
 WebP exports were resized/compressed from the generated PNGs with ImageMagick, quality 80. No text, brand mark, portrait, animation or external font is embedded. Generated for this project; this record does not declare a license for unrelated repository assets.
 
-`EditorialArtwork` supplies native srcsets and reserved dimensions. Root `data-theme` selects the light/dark variant before paint and after manual theme changes. Home uses the full portrait composition on desktop; mobile uses a 5:4 display crop at 65%/55%. Experience uses an 8:3 crop at 75%/65%; Writing uses an 8:3 crop at 30%/28%. Crops use CSS from the same source family, avoiding extra full-weight files. Artwork is decorative (empty alt, hidden from the accessibility tree); text is outside its bounds. Failed images leave their reserved palette surface. Only Home is eager/high-priority; index accents are lazy. There is no animation.
+`PageAtmosphere` places decorative ink/paper behind the entire viewport, without a defined image box, border or card. A feathered CSS mask blends the artwork into the paper background and keeps the text region quiet. Home has the strongest right-side composition; About, Resume, Skills, Experience, Writing and Contact each use a different position, angle and intensity. Reading routes use deterministic per-path offsets with lower contrast. The portrait stays on About only.
+
+Root `data-theme` selects the light/dark CSS background. Mobile uses the 600px source and desktops the 1120px source; the browser requests the active themed asset. Backgrounds are hidden from the accessibility tree and do not receive focus or intercept clicks. No artwork animation, artificial image panel or extra per-page bitmap is added. The source palette remains usable if a decorative asset fails to load.
 
 ## Exact generation prompts
 

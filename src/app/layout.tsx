@@ -22,6 +22,7 @@ import "@/styles/editorial-pages.css";
 import "@/styles/editorial-home.css";
 import "@/styles/editorial-writing.css";
 import "@/styles/editorial-artwork.css";
+import { PageAtmosphere } from "@/components/editorial-artwork";
 import { RouteFocus } from "@/components/route-focus";
 import { cvConfig } from "@/data/cv";
 import { contactContent } from "@/data/contact";
@@ -53,11 +54,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head><script dangerouslySetInnerHTML={{ __html: createThemeBootstrapScript() + createConnectionBootstrapScript() }} /></head>
       <body suppressHydrationWarning>
         <ConnectionProvider>
+        <PageAtmosphere />
         <a className="skip-link" href="#main-content">{common.skipLink}</a>
         <div className="site-shell">
           <header className="site-header">
-            <Link className="site-brand" href={routes.home} aria-label={`${common.brand.symbol}${common.brand.punctuation} ${common.brand.homeLabel}`}>
-              <span className="brand-name">{profile.name}</span>
+            <Link className="site-brand" href={routes.home} aria-label="MeetByte home">
+              <span className="brand-name">MeetByte<span className="brand-period" aria-hidden="true">.</span></span>
             </Link>
             <Navigation />
             <div className="header-tools">

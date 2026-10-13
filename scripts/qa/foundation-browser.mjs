@@ -34,7 +34,7 @@ const server=http.createServer((req,res)=>{let name=decodeURIComponent(new URL(r
  await p.getByRole('combobox',{name:'Appearance'}).selectOption('system');await p.waitForFunction(()=>document.documentElement.dataset.theme==='dark');await p.emulateMedia({colorScheme:'light'});await p.waitForFunction(()=>document.documentElement.dataset.theme==='light');
  await p.locator('summary').click();assert.equal(await p.locator('details').getAttribute('open'),'');await p.keyboard.press('Escape');assert.equal(await p.locator('details').getAttribute('open'),null);assert.equal(await p.evaluate(()=>document.activeElement.tagName),'SUMMARY');
  await p.locator('summary').click();await p.locator('details').getByRole('link',{name:'About',exact:true}).click();await p.waitForURL(/\/about\/?$/);await p.waitForFunction(()=>document.activeElement.id==='main-content');
- for(const route of ['/projects/','/blog/','/does-not-exist/']) { const response=await p.goto('http://127.0.0.1:4173'+route); assert.equal(response.status(),404,`${route}: ${response.url()}`); }
+ for(const route of ['/projects/workflow-workspace/','/blog/a-place-for-technical-notes/','/does-not-exist/']) { const response=await p.goto('http://127.0.0.1:4173'+route); assert.equal(response.status(),404,`${route}: ${response.url()}`); }
  assert.equal((await p.request.get('http://127.0.0.1:4173/files/Meet-Thummar-CV.pdf')).status(),200);
  await c.close();assert.deepEqual(errors,[]);
  // Denied storage must retain a usable manual selection during this visit.

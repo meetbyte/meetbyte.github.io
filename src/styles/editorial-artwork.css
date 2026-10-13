@@ -1,23 +1,47 @@
 /**
- * @file Approved-reference artwork placement; all reading copy stays outside the image.
+ * @file Borderless ink composition across the viewport, with distinct restrained page variations.
  * @author meetbyte
  */
-.editorial-artwork { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--surface-muted); }
-.artwork-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.artwork-dark { display: none; }
-html[data-theme="dark"] .artwork-light { display: none; }
-html[data-theme="dark"] .artwork-dark { display: block; }
-.artwork-failed { visibility: hidden; }
-.home-introduction { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 48px; align-items: center; }
-.home-introduction h1 { font-size: clamp(3.25rem, 6.5vw, 5.5rem); max-width: 8ch; }
-.home-summary { max-width: 38ch; }
-.home-summary { font-family: var(--font-heading), Georgia, serif; font-size: 1.5rem; line-height: 1.5; }
+body { position: relative; isolation: isolate; }
+:root { --page-art: url('/images/editorial/hero-light-1120.webp'); }
+html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-1120.webp'); }
+.page-atmosphere { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.ink-layer { position: absolute; inset: -3%; background-image: var(--page-art); background-repeat: no-repeat; background-size: auto 115%; background-position: right -3vw center; opacity: .085; mask-image: linear-gradient(90deg,transparent 20%,#000 70%); }
+.site-shell { position: relative; z-index: 1; }
+.site-header { background: transparent; border-bottom: 0; }
+.brand-period { color: var(--accent); }
+.site-grid { padding-top: 32px; }
+.atmosphere-home .ink-layer { opacity: .96; background-size: auto 112%; background-position: right -5vw center; mask-image: linear-gradient(90deg,transparent 28%,rgba(0,0,0,.12) 44%,#000 67%); }
+.atmosphere-about .ink-layer { background-position: right -18vw top -20vh; transform: rotate(-9deg) scale(1.1); opacity: .10; }
+.atmosphere-resume .ink-layer { background-position: right -25vw bottom -15vh; transform: scaleX(-1); opacity: .065; mask-image: linear-gradient(90deg,#000,transparent 72%); }
+.atmosphere-skills .ink-layer { background-size: auto 150%; background-position: right -32vw center; transform: rotate(12deg); opacity: .075; }
+.atmosphere-experience .ink-layer { background-size: auto 130%; background-position: right -15vw top -10vh; transform: rotate(-4deg); opacity: .09; }
+.atmosphere-writing .ink-layer { background-size: auto 140%; background-position: right -24vw bottom -15vh; transform: rotate(15deg); opacity: .065; }
+.atmosphere-contact .ink-layer { background-position: right -12vw center; transform: rotate(-16deg); opacity: .12; }
+.atmosphere-reading .ink-layer { background-position: var(--reading-shift) center; transform: rotate(var(--reading-rotation)); opacity: .035; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .09; }
+html[data-theme="dark"] .atmosphere-reading .ink-layer { opacity: .055; }
+.editorial-home { max-width: none; width: 100%; margin: 0; padding: 0; }
+.home-introduction { display: flex; align-items: center; min-height: calc(100svh - 180px); padding: 40px 0 80px; }
+.home-introduction-copy { min-width: 0; width: 100%; max-width: 640px; }
+.home-introduction .eyebrow { font-size: 11px; letter-spacing: .28em; font-weight: 500; margin: 0 0 32px; }
+.home-introduction h1 { max-width: none; margin: 0 0 28px; font-size: clamp(4.5rem, 9.7vw, 9rem); font-weight: 400; line-height: .95; letter-spacing: -.045em; }
+.home-introduction h1 span { display: block; }
+.home-surname { color: var(--accent); }
+.home-summary { max-width: 30ch; margin: 0; font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.15rem, 1.5vw, 1.4rem); line-height: 1.6; letter-spacing: .06em; }
+.home-explore { display: inline-flex; gap: 16px; align-items: center; min-height: 44px; margin-top: 48px; padding-left: 20px; border-left: 1px solid var(--accent); font-size: 12px; letter-spacing: .1em; color: var(--text-secondary); }
+.home-explore:hover { color: var(--accent); }
+.editorial-index-heading { display: block; }
 .menu-toggle,.menu-toggle:hover,.menu-toggle:focus-visible { color: var(--text); background: var(--surface); border-color: var(--border); }
-.home-introduction-copy { min-width: 0; }
-.editorial-index-heading { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; align-items: center; }
-.artwork-experience { aspect-ratio: 8 / 3; }
-.artwork-experience .artwork-image { object-position: 75% 65%; }
-.artwork-writing { aspect-ratio: 8 / 3; }
-.artwork-writing .artwork-image { object-position: 30% 28%; }
-@media (max-width: 959px) { .home-introduction { grid-template-columns: minmax(0, 1fr); gap: 32px; } .home-introduction .editorial-artwork { max-width: 440px; aspect-ratio: 5 / 4; } .home-introduction .artwork-image { object-position: 65% 55%; } }
-@media (max-width: 639px) { .editorial-index-heading { grid-template-columns: minmax(0, 1fr); gap: 24px; } .editorial-index-heading .editorial-artwork { max-width: 280px; } }
+@media (max-width: 959px) { .atmosphere-home .ink-layer { background-position: right -24vw center; opacity: .55; mask-image: linear-gradient(90deg,transparent 8%,rgba(0,0,0,.12) 52%,#000); } .home-introduction-copy { max-width: 550px; } }
+@media (max-width: 639px) {
+ :root { --page-art: url('/images/editorial/hero-light-600.webp'); }
+ html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-600.webp'); }
+ .home-introduction { min-height: calc(100svh - 160px); padding: 48px 0 80px; }
+ .home-introduction h1 { font-size: clamp(3.75rem,20vw,5.5rem); }
+ .home-summary { max-width: 22ch; font-size: 1.125rem; }
+ .atmosphere-home .ink-layer { opacity: .32; background-size: auto 100%; background-position: right -52vw center; mask-image: linear-gradient(90deg,transparent 5%,rgba(0,0,0,.1) 58%,#000); }
+ .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .055; }
+}
+/* Soft vertical paper fade protects header/footer text without introducing a panel edge. */
+.page-atmosphere::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,var(--page) 0%,var(--page) 8%,transparent 25%,transparent 74%,var(--page) 95%,var(--page) 100%); }

@@ -18,8 +18,12 @@ Paths below are relative to the repository root.
 | Colours and typography | `src/styles/colors.css`, `src/styles/editorial.css`, `src/app/layout.tsx` | Approved semantic palette, editorial foundation and local Newsreader/Inter fonts. |
 | Page/card layout | `src/styles/globals.css` | Responsive grids, profile sizing and reading panels. |
 | Mobile dropdown, scrollbar width, finishing details | `src/styles/polish.css` | Modern browsers use native thin scrollbars; `--scrollbar-size: 4px` is the legacy WebKit fallback. Menu panel is explicitly absolute to prevent header expansion. |
-| Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; original abstract artwork is a later milestone. |
+| Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; current original artwork is managed by PageAtmosphere. |
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
+
+| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless viewport atmosphere; theme/width selects asset, each section has distinct placement/intensity. |
+| Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
+| Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 
 ## Shared functionality
 

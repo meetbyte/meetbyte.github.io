@@ -1,6 +1,6 @@
 # Website context for future work
 
-Last reviewed: 14 October 2026 (corrections and artwork checkpoint). This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
+Last reviewed: 14 October 2026 (complete CR002 implementation checkpoint). This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
 
 ## Start here
 
@@ -12,7 +12,7 @@ Author for source/module/function documentation: `meetbyte`. Follow [the comment
 
 The website is Meet Thummar's portfolio at `https://meetbyte.github.io`, implemented with Next.js App Router, TypeScript, React, local fonts and a static GitHub Pages export. The source and local public assets live in this repository. The current professional content is in `src/data/`; [the completed questionnaire](planning/PERSONAL_WEBSITE_CONTENT_COMPLETED.md) is a preserved source record, not a instruction to replace newer approved data.
 
-CR002 source sections: Home, About, Resume, Skills, Experience, Writing, Contact. Main/live release remains unchanged until owner approval. **Projects and Blog are implemented but hidden** by `src/constants/page-visibility.ts`. Their typed case-study and Markdown engines are ready; existing samples are fictional/illustrative. New genuine content is pending the owner's supplied material. One section may be enabled independently when expressly requested; do not enable the other automatically.
+CR002 source sections: Home, About, Resume, Skills, Experience, Writing, Contact. Main/live release remains unchanged until owner approval. **Legacy Projects and Blog sample content remains hidden** by `src/constants/page-visibility.ts`. Their typed case-study and Markdown engines are ready; existing samples are fictional/illustrative. New genuine content is pending the owner's supplied material. One section may be enabled independently when expressly requested; do not enable the other automatically.
 
 The Foundation milestone replaces the scenic shell under the approved `docs/planning/design-system.md`: local Newsreader headings and Inter body, warm blush/muted-red light theme and charcoal/burgundy dark theme, slim navigation, native document scrolling, a quiet footer and portrait only on About. No landscape/celestial travel, profile sidebar or shell scroll effects are mounted. Legacy scenery modules/assets remain for provenance; they are not the current UI.
 
@@ -20,9 +20,9 @@ Theme preference is System/Light/Dark, follows the OS initially, persists an exp
 
 Experience and Writing now have real indexes and ten canonical reading routes on CR002. Four Experience narratives use the earlier detailed owner-supplied material, led by the from-scratch APEX segmentation system; six original essays include their own pull quotes. The owner requested non-draft presentation; source statuses and section flags are enabled with a durable Linear instruction reference. No publication dates or metrics are fabricated. GitHub main/release approval is still separate. Legacy Projects/Blog samples stay hidden.
 
-Home now matches the approved concise mockup direction: typographic identity, role, the short “A practice in building, learning, and looking closer” line and direct links beside the approved-reference paper/ink artwork. Matching light/dark WebP sources and related index crops are in public/images/editorial/. The portrait remains only About. See [corrections-artwork.md](planning/corrections-artwork.md) for source decisions and checks.
+Home now matches the approved concise mockup direction: typographic identity, role, the short “A practice in building, learning, and looking closer” line and one Explore link. Approved-reference paper/ink artwork spans the whole viewport with no box; every internal section has its own quieter position, angle and intensity. Matching light/dark WebP sources are in public/images/editorial/. The portrait remains only About. See [corrections-artwork.md](planning/corrections-artwork.md) for source decisions and checks.
 
-Content adapters validate exact four/six inventory, genuine optional dates, owner instruction references, sanitized prose and future draft/sample exclusion. Do not treat source status as permission to merge or deploy. Current owner instructions supersede earlier historical draft checkpoints; formal audit/review remains deferred.
+Content adapters validate exact four/six inventory, genuine optional dates, owner instruction references, sanitized prose and future draft/sample exclusion. Do not treat source status as permission to merge or deploy. Current owner instructions supersede earlier historical draft checkpoints; complete local implementation checks are recorded in docs/qa/report.md; owner acceptance and release remain pending.
 
 Normal internal links prefetch; only a five-second stall shows recovery feedback, and same-route slash differences do not create pending navigation. Limited/offline connections retain native navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 
@@ -45,6 +45,6 @@ The full prompt pack and its source ZIP/manifest supply a portable implementatio
 
 ## Verification and release
 
-Run `npm run lint`, `npm run typecheck`, `npm test` and `npm run build`. In a clean extraction run `npm ci` and `npx next typegen` before typechecking; use the documented Windows webpack fallback only if needed. Preview `out/` through a static host with real 404 responses. Check both themes, narrow/large layouts, keyboard navigation, reduced motion, Contact/CV, published detail routes and disabled/draft/sample boundaries. Save actual results in a new dated handoff under `docs/planning/`.
+Run `npm run lint`, `npm run typecheck`, `npm test` and `npm run build`. In a clean extraction run `npm ci`; the typecheck script generates route types automatically; use the documented Windows webpack fallback only if needed. Preview `out/` through a static host with real 404 responses. Check both themes, narrow/large layouts, keyboard navigation, reduced motion, Contact/CV, published detail routes and disabled/draft/sample boundaries. Current local results are in [the QA report](qa/report.md). `/projects/` and `/blog/` are noindex canonical pointers to Experience and Writing, while old sample detail URLs remain 404. Release and rollback preparation is in [website-release.md](release/website-release.md); future post-release feedback follows [revision-protocol.md](release/revision-protocol.md).
 
 The GitHub Pages workflow builds from source and uploads `out/`; its deploy job is restricted to `main`. A local check is not proof of a live deployment. Do not commit, push, dispatch or deploy without explicit user authorization. Preserve any existing staged or unstaged changes when continuing.
