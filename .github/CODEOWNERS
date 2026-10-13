@@ -1,0 +1,3 @@
+# Human owner approval for every changed path, including governance, docs and release files.
+# The protect-main ruleset must also enable "Require review from Code Owners".
+* @meetbyte

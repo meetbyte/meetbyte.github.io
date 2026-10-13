@@ -1,15 +1,16 @@
-# Unprivileged, deterministic checks on each PR. No tokens or secrets are provided to PR code.
+# Unprivileged validation; PR creation with GITHUB_TOKEN requires workflow_dispatch for its first run.
 name: PR Quality
 
 on:
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: pr-quality-${{ github.event.pull_request.number }}
+  group: pr-quality-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -18,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Check out PR head
+      - name: Check out source commit
         uses: actions/checkout@v6
       - name: Set up Node.js
         uses: actions/setup-node@v6

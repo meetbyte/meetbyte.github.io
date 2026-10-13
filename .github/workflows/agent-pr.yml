@@ -1,0 +1,51 @@
+# Trusted GitHub Actions bot opens a draft PR for pre-authorized agent/* feature branches.
+# No merge, approval, secrets, or direct main changes.
+name: Agent Draft PR
+
+on:
+  push:
+    branches:
+      - 'agent/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+  actions: write
+
+jobs:
+  create-draft-pr:
+    name: create-draft-pr
+    if: github.repository == 'meetbyte/meetbyte.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Open or find draft PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_BRANCH: ${{ github.ref_name }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$SOURCE_BRANCH" =~ ^agent/MEE-[0-9]+-[a-z0-9][a-z0-9-]*$ ]]; then
+            echo "::error::Agent branches must be named agent/MEE-NNN-short-description"
+            exit 1
+          fi
+          issue="${SOURCE_BRANCH#agent/}"
+          issue="${issue%%-*}-${issue#*-}"
+          issue="${issue%-*}"
+          issue_id="$(echo "$SOURCE_BRANCH" | sed -E 's@^agent/(MEE-[0-9]+)-.*@\1@')"
+
+          existing="$(gh pr list --repo "$REPOSITORY" --state open --head "$SOURCE_BRANCH" --base main --json number --jq '.[0].number // empty')"
+          if [[ -z "$existing" ]]; then
+            gh pr create \
+              --repo "$REPOSITORY" --base main --head "$SOURCE_BRANCH" --draft \
+              --title "[$issue_id] Agent implementation — owner review required" \
+              --body "Agent-generated draft PR linked to $issue_id. Independent CI, requirements review and explicit @meetbyte owner approval are required for main. No automatic merge or approval is authorized. Use the repository task contract for evidence."
+          else
+            echo "PR #$existing already open; no duplicate created."
+          fi
+
+          # GITHUB_TOKEN-generated PR events do not start pull_request CI.
+          # Once ci.yml is on default branch, workflow_dispatch can run the exact branch commit.
+          gh workflow run ci.yml --repo "$REPOSITORY" --ref "$SOURCE_BRANCH"
