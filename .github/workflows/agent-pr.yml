@@ -44,8 +44,14 @@ jobs:
               --body "Agent-generated draft PR linked to $issue_id. Independent CI, requirements review and explicit @meetbyte owner approval are required for main. No automatic merge or approval is authorized. Use the repository task contract for evidence."
           else
             echo "PR #$existing already open; no duplicate created."
+            # A new head needs fresh CI before another ready_for_review event.
+            if [[ "$(gh pr view "$existing" --repo "$REPOSITORY" --json isDraft --jq .isDraft)" == "false" ]]; then
+              gh pr ready "$existing" --repo "$REPOSITORY" --undo
+            fi
           fi
 
           # GITHUB_TOKEN-generated PR events do not start pull_request CI.
           # Once ci.yml is on default branch, workflow_dispatch can run the exact branch commit.
           gh workflow run ci.yml --repo "$REPOSITORY" --ref "$SOURCE_BRANCH"
+
+

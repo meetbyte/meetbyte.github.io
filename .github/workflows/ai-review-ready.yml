@@ -1,0 +1,96 @@
+# Trusted default-branch code marks an agent draft ready after CI; never executes PR code.
+# @author meetbyte
+name: AI Review Ready
+
+on:
+  workflow_run:
+    workflows: [PR Quality]
+    types: [completed]
+    branches: ['agent/**']
+
+permissions:
+  actions: read
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: ai-review-ready-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  signal:
+    if: github.repository == 'meetbyte/meetbyte.github.io' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Mark current agent draft ready after successful CI
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const repository = `${owner}/${repo}`;
+            const repositoryId = context.payload.repository.id;
+            const eventRun = context.payload.workflow_run;
+            const skip = (reason) => core.info(`No review signal: ${reason}`);
+            if (repository !== 'meetbyte/meetbyte.github.io') return skip('repository');
+            const { data: run } = await github.rest.actions.getWorkflowRun({ owner, repo, run_id: eventRun.id });
+            const { data: workflow } = await github.rest.actions.getWorkflow({ owner, repo, workflow_id: 'ci.yml' });
+            if (run.workflow_id !== workflow.id || run.path !== '.github/workflows/ci.yml' ||
+                run.name !== 'PR Quality' || run.event !== 'workflow_dispatch' ||
+                run.status !== 'completed' || run.conclusion !== 'success' ||
+                run.run_attempt !== eventRun.run_attempt ||
+                run.head_repository?.id !== repositoryId || run.repository?.id !== repositoryId ||
+                !/^[a-f0-9]{40}$/.test(run.head_sha)) return skip('unverified quality run');
+            const match = /^agent\/(MEE-[0-9]+)-[a-z0-9][a-z0-9-]*$/.exec(run.head_branch || '');
+            if (!match) return skip('branch');
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner, repo, state: 'open', base: 'main', head: `${owner}:${run.head_branch}`, per_page: 100
+            });
+            const candidates = pulls.filter(pr => pr.head.repo?.id === repositoryId &&
+              pr.head.ref === run.head_branch && pr.head.sha === run.head_sha &&
+              pr.base.ref === 'main' && pr.state === 'open' && !pr.merged_at &&
+              pr.user?.id === 41898282);
+            if (candidates.length !== 1) return skip('no unique current bot PR');
+            const pr = candidates[0];
+            const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {
+              owner, repo, run_id: run.id, filter: 'latest', per_page: 100
+            });
+            const quality = jobs.filter(job => job.name === 'quality');
+            const expectedSteps = ['Install dependencies', 'Generate Next.js route types', 'Check types',
+              'Lint', 'Run tests', 'Build static export'];
+            if (quality.length !== 1 || quality[0].head_sha !== run.head_sha ||
+                quality[0].status !== 'completed' || quality[0].conclusion !== 'success' ||
+                !expectedSteps.every(name => quality[0].steps?.some(step =>
+                  step.name === name && step.status === 'completed' && step.conclusion === 'success')))
+              return skip('missing successful quality evidence');
+            const marker = `<!-- meetbyte:ci-ready:v1:${pr.number}:${run.head_sha} -->`;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner, repo, issue_number: pr.number, per_page: 100
+            });
+            const signaled = comments.some(comment => comment.user?.id === 41898282 &&
+                comment.body?.includes(marker));
+            // A push/close during the API reads makes this run stale. Recheck immediately before writing.
+            const { data: current } = await github.rest.pulls.get({ owner, repo, pull_number: pr.number });
+            if (current.state !== 'open' || current.merged_at || current.head.sha !== run.head_sha ||
+                current.head.ref !== run.head_branch || current.head.repo?.id !== repositoryId ||
+                current.base.ref !== 'main') return skip('PR changed');
+            if (!current.draft) return skip('already ready');
+            if (!signaled) await github.rest.issues.createComment({ owner, repo, issue_number: pr.number,
+              body: [marker, 'MEETBYTE_AI_REVIEW_READY', `issue: ${match[1]}`,
+                `head_sha: ${run.head_sha}`, `quality_run_id: ${run.id}`,
+                `quality_run_attempt: ${run.run_attempt}`,
+                `quality_run_url: https://github.com/${repository}/actions/runs/${run.id}`,
+                'CI evidence signal only. Independently verify the current PR, CI and Linear acceptance criteria.',
+                'No approval, merge, deployment or task completion is authorized by this signal.'].join('\n')
+            });
+            // Bot comments are not the task trigger. ready_for_review is a supported PR event.
+            // Retry safely if the audit comment succeeded but the draft transition failed.
+            const { data: final } = await github.rest.pulls.get({ owner, repo, pull_number: pr.number });
+            if (final.state !== 'open' || final.merged_at || final.head.sha !== run.head_sha ||
+                final.head.ref !== run.head_branch || final.head.repo?.id !== repositoryId ||
+                final.base.ref !== 'main' || !final.draft) return skip('PR changed before readiness');
+            await github.graphql(
+              'mutation($id: ID!) { markPullRequestReadyForReview(input: {pullRequestId: $id}) { pullRequest { number isDraft } } }',
+              { id: final.node_id }
+            );
+
