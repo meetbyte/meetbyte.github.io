@@ -20,13 +20,12 @@ export default function Resume() {
   const resume = resumeContent;
 
   return (
-    <div className="detail-page">
+    <div className="detail-page resume-page">
       <div className="section-topline">
         <span className="eyebrow">{resume.eyebrow}</span>
         <span className="topline-index">{resume.topline} <span aria-hidden="true">↗</span></span>
       </div>
-      <div className="detail-intro">
-        <span className="detail-mark" aria-hidden="true">✳</span>
+      <header className="detail-intro">
         <h1>{resume.title}</h1>
         <p className="detail-lead">{resume.introduction}</p>
         {/* The download appears only after a real CV URL is configured. */}
@@ -35,7 +34,7 @@ export default function Resume() {
             {cvConfig.label}
           </a>
         ) : <p className="resume-cv-note">{cvConfig.unavailableTitle}</p>}
-      </div>
+      </header>
       <section className="detail-section resume-section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">{resume.experienceHeading}</h2>
         <Timeline entries={resume.experience} empty={resume.emptyExperience} />

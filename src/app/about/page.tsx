@@ -22,20 +22,23 @@ export default function About() {
   const biography = (typeof about.biography === "string" ? [about.biography] : about.biography ?? []).filter((paragraph) => paragraph.trim());
 
   return (
-    <div className="detail-page">
+    <div className="detail-page about-page">
       <div className="section-topline">
         <span className="eyebrow">{about.eyebrow}</span>
         <span className="topline-index">{about.topline} <span aria-hidden="true">↗</span></span>
       </div>
-      <div className="detail-intro">
-        <span className="detail-mark" aria-hidden="true">✳</span>
+      <header className="detail-intro about-intro">
         <h1>{about.title}</h1>
-        <SiteImage className="about-portrait" src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} sizes="(max-width: 640px) 80vw, 280px" />
+        <div className="about-intro-grid">
+        <div className="about-intro-copy">
         {about.introduction && <p className="detail-lead">{about.introduction}</p>}
         {biography.length > 0 ? biography.map((paragraph, index) => (
           <p className="detail-body" key={index}>{paragraph}</p>
         )) : <p className="detail-empty">{about.placeholder}</p>}
-      </div>
+        </div>
+        <SiteImage className="about-portrait" src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} sizes="(max-width: 640px) 80vw, 280px" />
+        </div>
+      </header>
 
       {about.storySections?.filter((section) => section.paragraphs.some((paragraph) => paragraph.trim())).map((section) => (
         <section className="detail-section about-story" key={section.id} aria-labelledby={`story-${section.id}`}>
@@ -53,7 +56,6 @@ export default function About() {
           <div className="expertise-grid">
             {about.expertise.map((area) => (
               <article className="expertise-card" key={area.title}>
-                <span className="expertise-dot" aria-hidden="true" />
                 <h3>{area.title}</h3>
                 {area.description && <p>{area.description}</p>}
               </article>

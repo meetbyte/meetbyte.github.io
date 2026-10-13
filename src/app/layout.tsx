@@ -18,6 +18,7 @@ import "@/styles/colors.css";
 import "@/styles/globals.css";
 import "@/styles/polish.css";
 import "@/styles/editorial.css";
+import "@/styles/editorial-pages.css";
 import { RouteFocus } from "@/components/route-focus";
 import { cvConfig } from "@/data/cv";
 import { contactContent } from "@/data/contact";

@@ -1,0 +1,57 @@
+/**
+ * @file Text-led About, Resume, Skills and Contact composition using verified source content.
+ * @author meetbyte
+ */
+.detail-page .detail-intro h1 { max-width: 22ch; font-size: clamp(2.25rem, 4.5vw, 3.5rem); line-height: 1.12; }
+.detail-page .detail-intro { border-bottom: 0; }
+.detail-page .detail-section { margin: 0; padding-block: 48px; border-top: 1px solid var(--border); }
+.detail-page .detail-section h2 { margin: 0 0 24px; font-size: clamp(1.75rem, 3vw, 2.5rem); }
+.detail-page .detail-body,.detail-page .detail-section-intro { max-width: var(--reading-width); font-size: inherit; line-height: 1.7; }
+.about-story { max-width: var(--reading-width); }
+.about-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: start; gap: 48px; }
+.about-intro-copy { min-width: 0; }
+.about-intro-grid .about-portrait { width: 240px; margin: 8px 0 0; }
+.expertise-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; }
+.expertise-card { min-height: 0; border: 0; padding: 0; background: transparent; }
+.expertise-card h3 { font-size: 1.375rem; font-weight: 500; }
+.expertise-card p { font-size: 1rem; line-height: 1.7; }
+.detail-pair { gap: 48px; }
+.text-list { font-size: inherit; line-height: 1.7; }
+.about-page .text-list { display: grid; gap: 12px; padding-left: 20px; list-style: disc; }
+.about-page .text-list li { padding: 0; border: 0; border-radius: 0; background: transparent; font-size: inherit; }
+.resume-page .timeline { gap: 40px; margin: 0; padding: 0; border: 0; }
+.resume-page .timeline-node { display: none; }
+.resume-page .timeline-card { position: relative; border: 0; border-radius: 0; padding: 0 0 0 220px; background: transparent; }
+.resume-page .timeline-period { position: absolute; top: 3px; left: 0; width: 188px; margin: 0; font-size: 14px; line-height: 1.6; text-transform: none; letter-spacing: 0; font-weight: 500; }
+.resume-page .timeline-card h3 { font-size: 1.5rem; font-weight: 500; }
+.resume-page .timeline-meta { font-size: 14px; }
+.resume-page .timeline-summary,.resume-page .timeline-highlights { max-width: var(--reading-width); font-size: 1rem; line-height: 1.7; }
+.skill-categories { gap: 0; padding: 0; }
+.skill-category { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px; padding: 48px 0; border-top: 1px solid var(--border); border-bottom: 0; }
+.skill-heading h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 500; }
+.skill-heading p { font-size: 1rem; line-height: 1.7; }
+.skill-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+.skill-list li { gap: 4px; padding: 16px 0; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: transparent; font-size: 1rem; font-weight: 500; }
+.skill-list li:first-child { padding-top: 0; }
+.skill-list li:last-child { border-bottom: 0; }
+.skill-list small { font-size: .875rem; font-weight: 400; line-height: 1.6; color: var(--text-secondary); }
+.skill-learning { border-top: 2px solid var(--accent); }
+.contact-page .contact-email { font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.15rem, 3.3vw, 2.5rem); font-weight: 500; text-decoration: underline; text-underline-offset: 6px; }
+.contact-page .contact-socials { display: flex; flex-wrap: wrap; gap: 16px 32px; }
+.contact-page .contact-socials a { min-height: 44px; padding: 8px 0; border: 0; border-radius: 0; background: transparent; font-size: 1rem; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; transition: color 150ms ease; }
+.contact-page .contact-socials a:hover { transform: none; background: transparent; color: var(--accent-hover); }
+@media (max-width: 959px) {
+  .about-intro-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .about-intro-grid .about-portrait { width: min(280px, 100%); margin: 0; }
+  .skill-category { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 639px) {
+  .detail-page .detail-section,.skill-category { padding-block: 32px; }
+  .expertise-grid,.detail-pair { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .detail-pair { gap: 0; }
+  .resume-page .timeline-card { padding: 0; }
+  .resume-page .timeline-period { position: static; width: auto; margin-bottom: 12px; }
+  .resume-page .timeline-summary,.resume-page .timeline-highlights { font-size: 1rem; }
+  .contact-page .contact-email svg { width: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .contact-page .contact-socials a { transition: none; } }

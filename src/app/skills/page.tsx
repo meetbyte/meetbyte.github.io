@@ -18,22 +18,21 @@ export default function Skills() {
   const skills = skillsContent;
 
   return (
-    <div className="detail-page">
+    <div className="detail-page skills-page">
       <div className="section-topline">
         <span className="eyebrow">{skills.eyebrow}</span>
         <span className="topline-index">{skills.topline} <span aria-hidden="true">↗</span></span>
       </div>
-      <div className="detail-intro">
-        <span className="detail-mark" aria-hidden="true">✳</span>
+      <header className="detail-intro">
         <h1>{skills.title}</h1>
         <p className="detail-lead">{skills.introduction}</p>
-      </div>
+      </header>
 
-      {/* Categories and chips come from data; missing entries remain explicit. */}
+      {/* Verified competencies and exploratory learning keep separate labeled groups. */}
       <div className="skill-categories">
         {skills.categories.length > 0 ? (
           skills.categories.map((category) => (
-            <section className="skill-category" key={category.id} aria-labelledby={`skill-${category.id}`}>
+            <section className={`skill-category${category.id === "exploring" ? " skill-learning" : ""}`} key={category.id} aria-labelledby={`skill-${category.id}`}>
               <div className="skill-heading">
                 <h2 id={`skill-${category.id}`}>{category.title}</h2>
                 {category.description && <p>{category.description}</p>}

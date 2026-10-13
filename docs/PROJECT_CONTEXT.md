@@ -22,6 +22,8 @@ Experience and Writing canonical route slots exist but remain unpublished alongs
 
 MEE-10 adds deterministic unpublished four-experience/six-essay inventory under `content/`, an exact manifest and build-time schema validation. These are editorial preparation records, not approved final copy. See [content-workflow.md](planning/content-workflow.md). Public editorial models must use `getPublishedEditorial`; static builds validate drafts without adding their URLs. Legacy posts reuse the same sanitized Markdown renderer with their existing normalization retained.
 
+The Core page checkpoint refines About into a reading layout with an inline desktop portrait and mobile prose stack, Resume into date-column chronology, Skills into text-led groups with separate exploratory learning, and Contact into direct email/social/CV actions. All verified `src/data/` text remains unchanged. `docs/qa/core-pages/README.md` records the observed browser checks and limitations. Home artwork/content templates remain separate dependencies.
+
 Limited connections use a light backdrop and navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 
 ## How the next projects/blog work should proceed
