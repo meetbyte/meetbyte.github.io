@@ -20,6 +20,8 @@ Theme preference is System/Light/Dark, follows the OS initially, persists an exp
 
 Experience and Writing canonical route slots exist but remain unpublished alongside the legacy Projects/Blog URLs. Their complete content templates and compatibility aliases belong to the later content milestone; do not enable blank route slots. Existing verified page copy is retained pending the Core website milestone. Original abstract artwork and approved genuine experience/essay content are separate dependencies.
 
+MEE-10 adds deterministic unpublished four-experience/six-essay inventory under `content/`, an exact manifest and build-time schema validation. These are editorial preparation records, not approved final copy. See [content-workflow.md](planning/content-workflow.md). Public editorial models must use `getPublishedEditorial`; static builds validate drafts without adding their URLs. Legacy posts reuse the same sanitized Markdown renderer with their existing normalization retained.
+
 Limited connections use a light backdrop and navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 
 ## How the next projects/blog work should proceed

@@ -6,44 +6,10 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 import { parse } from "yaml";
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
-import rehypeSanitize from "rehype-sanitize";
-import rehypeStringify from "rehype-stringify";
-import type { Root, Element } from "hast";
 import type { BlogPost } from "@/data/types";
 import { slugPattern } from "./projects";
-import { localImageDimensions, validateImage } from "./images";
-
-/** Keyboard users can focus and scroll long code examples. @author meetbyte */
-function enhanceReading() {
-  return (tree: Root) => {
-    let previousHeading = 1;
-    let tableNumber = 0;
-    const visit = (node: Root | Element) => {
-      if (node.type === "element" && node.tagName === "pre") node.properties = { ...node.properties, tabIndex: 0, role: "region", ariaLabel: "Code example" };
-      if (node.type === "element" && /^h[1-6]$/.test(node.tagName)) {
-        const level = Number(node.tagName[1]);
-        if (level === 1 || level > previousHeading + 1) throw new Error("use ## for article sections and do not skip heading levels; the page supplies its h1.");
-        previousHeading = level;
-      }
-      if (node.type === "element" && node.tagName === "img") {
-        const src = String(node.properties.src ?? "");
-        if (!String(node.properties.alt ?? "").trim()) throw new Error("article images need descriptive alternative text.");
-        node.properties = { ...node.properties, ...localImageDimensions(src), loading: "lazy", decoding: "async" };
-      }
-      node.children.forEach((child, index) => {
-        if (child.type !== "element") return;
-        if (child.tagName === "table") node.children[index] = { type: "element", tagName: "div", properties: { className: ["table-scroll"], tabIndex: 0, role: "region", ariaLabel: `Scrollable table ${++tableNumber}` }, children: [child] };
-        visit(child);
-      });
-    };
-    visit(tree);
-  };
-}
-const markdown = unified().use(remarkParse).use(remarkGfm).use(remarkRehype).use(rehypeSanitize).use(enhanceReading).use(rehypeStringify);
+import { validateImage } from "./images";
+import { renderMarkdown } from "./markdown";
 
 /** Validate frontmatter at build time; report its source filename to the author. @author meetbyte */
 export async function parsePost(source: string, filename: string): Promise<BlogPost | undefined> {
@@ -80,7 +46,7 @@ export async function parsePost(source: string, filename: string): Promise<BlogP
   if (!match[2].trim()) return fail("published articles need Markdown body content.");
   // Raw HTML is dropped; sanitization also removes unsafe URLs and attributes.
   let html: string;
-  try { html = String(await markdown.process(match[2])); } catch (error) { return fail(error instanceof Error ? error.message : "invalid article content"); }
+  try { html = await renderMarkdown(match[2]); } catch (error) { return fail(error instanceof Error ? error.message : "invalid article content"); }
   return {
     slug, date, title: meta.title as string, excerpt: meta.excerpt as string,
     tags: meta.tags as string[], published: true, placeholder: meta.placeholder === true,
