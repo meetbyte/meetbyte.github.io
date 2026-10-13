@@ -1,0 +1,39 @@
+# Temporary bootstrap. This workflow is removed before the new PR can merge.
+# It only creates a DRAFT pull request under github-actions[bot].
+name: Temporary bot PR bootstrap
+
+on:
+  push:
+    branches:
+      - bootstrap/ai-protocol-bot-pr
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-draft-pr:
+    if: github.repository == 'meetbyte/meetbyte.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Create draft PR using GitHub Actions identity
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          existing="$(gh pr list --repo "$REPOSITORY" --state open --head "$SOURCE_BRANCH" --base main --json number --jq '.[0].number // empty')"
+          if [[ -n "$existing" ]]; then
+            echo "PR already exists: #$existing"
+            exit 0
+          fi
+
+          gh pr create \
+            --repo "$REPOSITORY" \
+            --base main \
+            --head "$SOURCE_BRANCH" \
+            --draft \
+            --title "[MEE-5] Foundation: AI protocol and PR CI (bot-authored)" \
+            --body "One-time bot-authored replacement for #5. Contains engineering protocol and read-only PR quality checks. Owner review required; do not merge until CI passes. Temporary bootstrap workflow will be removed from this branch before review. No production changes are authorized."
