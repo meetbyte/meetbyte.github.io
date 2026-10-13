@@ -4,27 +4,31 @@
  */
 :root {
   color-scheme: light;
-  --page: #f8f5ee;
-  --page-glow: #dce5ec;
-  --surface: #fcfaf6;
-  --surface-quiet: #f3f0e9;
-  --surface-hover: #e9e5dd;
-  --ink: #263340;
-  --ink-soft: #52616a;
-  --ink-muted: #596872;
-  --line: #dcddd9;
-  --accent: #496a86;
-  --accent-deep: #365571;
-  --accent-soft: #e1e9ef;
-  --clay: #a55f4d;
-  --button-ink: #ffffff;
-  --shadow: 12px 22px 62px rgba(38, 51, 64, 0.12);
+  --text: var(--ink); --text-secondary: var(--ink-soft); --border: var(--line);
+  --surface-muted: var(--surface-quiet); --accent-hover: var(--accent-deep);
+  --focus: #8C3448;
+
+  --page: #FFF8F5;
+  --page-glow: #FFF8F5;
+  --surface: #FFFFFF;
+  --surface-quiet: #F6E9E6;
+  --surface-hover: #F6E9E6;
+  --ink: #30252A;
+  --ink-soft: #67565F;
+  --ink-muted: #67565F;
+  --line: #DFC9CF;
+  --accent: #8C3448;
+  --accent-deep: #6E2537;
+  --accent-soft: #F6E9E6;
+  --clay: #8C3448;
+  --button-ink: #FFFFFF;
+  --shadow: none;
   --card-edge-top: #fffdf4;
   --card-edge-right: #cdd6dc;
   --card-edge-bottom: #d5dcdd;
   --card-edge-left: #fff4d9;
-  --card-rim: inset 1px 1px 0 rgba(255, 246, 214, 0.75);
-  --button-hover-shadow: 0 10px 24px rgba(54, 85, 113, 0.2);
+  --card-rim: none;
+  --button-hover-shadow: none;
 
   /* The portrait placeholder uses the same artwork in both themes. */
   --mask-ink: #000000;
@@ -42,28 +46,32 @@
   --portrait-mark-shadow: rgba(205, 221, 234, 0.1);
 }
 
-/* Dark mode applies only after the visitor selects it and the choice is saved. */
+/* Dark mode follows the OS until a persistent explicit preference is selected. */
 html[data-theme="dark"] {
   color-scheme: dark;
-  --page: #0d1725;
-  --page-glow: #293a4f;
-  --surface: #202936;
-  --surface-quiet: #273343;
-  --surface-hover: #304053;
-  --ink: #f6f2eb;
-  --ink-soft: #d4dee8;
-  --ink-muted: #a6b4c2;
-  --line: #3e4b59;
-  --accent: #a5bed5;
-  --accent-deep: #c0d3e2;
-  --accent-soft: #2b4358;
-  --clay: #dea38d;
-  --button-ink: #17222b;
-  --shadow: -12px 25px 75px rgba(0, 0, 0, 0.32);
+  --text: var(--ink); --text-secondary: var(--ink-soft); --border: var(--line);
+  --surface-muted: var(--surface-quiet); --accent-hover: var(--accent-deep);
+  --focus: #F0BFCC;
+
+  --page: #181417;
+  --page-glow: #181417;
+  --surface: #231C20;
+  --surface-quiet: #30232A;
+  --surface-hover: #30232A;
+  --ink: #F7EDE9;
+  --ink-soft: #CEB9C1;
+  --ink-muted: #CEB9C1;
+  --line: #725B66;
+  --accent: #E3A4B4;
+  --accent-deep: #F0BFCC;
+  --accent-soft: #30232A;
+  --clay: #E3A4B4;
+  --button-ink: #30252A;
+  --shadow: none;
   --card-edge-top: #61778e;
   --card-edge-right: #768ba1;
   --card-edge-bottom: #25374b;
   --card-edge-left: #28394d;
-  --card-rim: inset -1px 1px 0 rgba(191, 218, 246, 0.16);
-  --button-hover-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+  --card-rim: none;
+  --button-hover-shadow: none;
 }

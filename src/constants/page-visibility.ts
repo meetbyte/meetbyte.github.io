@@ -10,6 +10,8 @@ export const pageVisibility = {
   about: true,
   resume: true,
   skills: true,
+  experience: false,
+  writing: false,
   projects: false,
   blog: false,
   contact: true,

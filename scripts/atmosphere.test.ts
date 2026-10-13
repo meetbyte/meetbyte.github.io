@@ -18,28 +18,28 @@ test("day starts at 07:00 and night at 19:00 in the visitor's local clock", () =
   assert.equal(nextAtmosphereCheck(new Date(2026, 9, 8, 23, 59)), 60_000);
 });
 
-test("every month has the chosen visual season and bootstrap ignores old saved themes", () => {
+test("season bootstrap keeps its calendar independent of the persistent theme", () => {
   const months: Season[] = ["winter", "winter", "summer", "summer", "summer", "monsoon", "monsoon", "monsoon", "monsoon", "autumn", "autumn", "winter"];
   months.forEach((expected, month) => {
-    for (const hour of [6, 7, 18, 19]) {
-      const date = new Date(2026, month, 1, hour);
-      assert.equal(resolveSeason(date), expected);
-      const dataset: Record<string, string> = {};
-      class VisitDate extends Date { constructor() { super(date.getTime()); } }
-      const context = { Date: VisitDate, document: { documentElement: { dataset } }, get localStorage() { throw new Error("A new visit must ignore saved manual themes"); } };
-      runInNewContext(createThemeBootstrapScript() + createSeasonBootstrapScript(), context);
-      assert.equal(dataset.theme, hour >= 7 && hour < 19 ? "light" : "dark");
-      assert.equal(dataset.season, expected);
-    }
+    const date = new Date(2026, month, 1);
+    assert.equal(resolveSeason(date), expected);
+    const dataset: Record<string, string> = {};
+    class VisitDate extends Date { constructor() { super(date.getTime()); } }
+    runInNewContext(createSeasonBootstrapScript(), { Date: VisitDate, document: { documentElement: { dataset } } });
+    assert.equal(dataset.season, expected);
   });
 });
 
-test("manual choices survive page navigation in this tab but a fresh visit uses the clock", () => {
-  class VisitDate extends Date { getHours() { return 10; } }
-  for (const [saved, expected] of [["dark", "dark"], ["light", "light"], [null, "light"], ["invalid", "light"]]) {
+test("persistent choices override OS before paint; invalid or denied storage uses OS", () => {
+  for (const dark of [true, false]) {
+    for (const saved of ["dark", "light", "system", "invalid", null]) {
+      const dataset: Record<string, string> = {};
+      runInNewContext(createThemeBootstrapScript(), { localStorage: { getItem: () => saved }, matchMedia: () => ({ matches: dark }), document: { documentElement: { dataset } } });
+      assert.equal(dataset.theme, saved === "dark" || saved === "light" ? saved : dark ? "dark" : "light");
+    }
     const dataset: Record<string, string> = {};
-    runInNewContext(createThemeBootstrapScript(), { Date: VisitDate, sessionStorage: { getItem: () => saved }, document: { documentElement: { dataset } } });
-    assert.equal(dataset.theme, expected);
+    runInNewContext(createThemeBootstrapScript(), { get localStorage() { throw new Error("denied"); }, matchMedia: () => ({ matches: dark }), document: { documentElement: { dataset } } });
+    assert.equal(dataset.theme, dark ? "dark" : "light");
   }
 });
 

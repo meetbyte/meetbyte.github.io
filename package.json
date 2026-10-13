@@ -7,7 +7,7 @@
     "build": "next build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings=0",
-    "test": "tsx --test scripts/content.test.ts scripts/scenery-motion.test.ts scripts/theme-journey.test.ts scripts/atmosphere.test.ts scripts/ux-reliability.test.ts",
+    "test": "tsx --test scripts/content.test.ts scripts/scenery-motion.test.ts scripts/theme-journey.test.ts scripts/atmosphere.test.ts scripts/ux-reliability.test.ts scripts/foundation.test.ts",
     "postbuild": "tsx scripts/finalize-export.ts"
   },
   "dependencies": {

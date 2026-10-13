@@ -10,7 +10,7 @@ export const navigationItems: readonly NavigationItem[] = [
   { label: "About", href: routes.about },
   { label: "Resume", href: routes.resume },
   { label: "Skills", href: routes.skills },
-  { label: "Projects", href: routes.projects },
-  { label: "Blog", href: routes.blog },
+  { label: "Experience", href: routes.experience },
+  { label: "Writing", href: routes.writing },
   { label: "Contact", href: routes.contact },
 ];

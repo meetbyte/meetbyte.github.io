@@ -1,5 +1,5 @@
 /**
- * @file Local-time defaults; manual choices belong to the current tab visit.
+ * @file Persistent OS-aware theme preferences plus retained legacy scenery helpers.
  * @author meetbyte
  */
 import { siteConfig } from "@/constants/config";
@@ -33,7 +33,25 @@ export function saveVisitTheme(theme: Theme): void {
   try { window.sessionStorage.setItem(siteConfig.themeVisitStorageKey, theme); } catch { /* The in-memory choice still works. */ }
 }
 
-/** Runs before CSS paints. Old saved choices intentionally do not override the clock. @author meetbyte */
+export type ThemePreference = Theme | "system";
+/** Normalize absent, corrupt or unknown preferences to OS-controlled mode. @author meetbyte */
+export function parseThemePreference(value: unknown): ThemePreference {
+  return value === "light" || value === "dark" ? value : "system";
+}
+/** Resolve explicit choices independently of the operating system. @author meetbyte */
+export function resolvePreferredTheme(preference: ThemePreference, systemDark: boolean): Theme {
+  return preference === "system" ? (systemDark ? "dark" : "light") : preference;
+}
+/** Ignore obsolete visit-only clock settings; persistent preference is a new storage key. @author meetbyte */
+export function readThemePreference(): ThemePreference {
+  try { return parseThemePreference(window.localStorage.getItem("meetbyte-theme-preference")); }
+  catch { return "system"; }
+}
+/** Native controls still work in memory if browser privacy settings deny storage. @author meetbyte */
+export function saveThemePreference(preference: ThemePreference): void {
+  try { window.localStorage.setItem("meetbyte-theme-preference", preference); } catch { /* In-memory selection remains usable. */ }
+}
+/** Resolve the theme before CSS paints, including blocked storage and unavailable media queries. @author meetbyte */
 export function createThemeBootstrapScript(): string {
-  return `(() => { let manual = null; try { manual = sessionStorage.getItem(${JSON.stringify(siteConfig.themeVisitStorageKey)}); } catch {} const hour = new Date().getHours(); document.documentElement.dataset.theme = manual === "light" || manual === "dark" ? manual : hour >= ${siteConfig.dayStartHour} && hour < ${siteConfig.nightStartHour} ? "light" : "dark"; })();`;
+  return `(() => { let choice = null; try { choice = localStorage.getItem("meetbyte-theme-preference"); } catch {} let dark = false; try { dark = matchMedia("(prefers-color-scheme: dark)").matches; } catch {} document.documentElement.dataset.theme = choice === "light" || choice === "dark" ? choice : dark ? "dark" : "light"; })();`;
 }

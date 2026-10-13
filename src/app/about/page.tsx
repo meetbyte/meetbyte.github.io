@@ -5,6 +5,8 @@ export const metadata = pageMetadata("About", "Meet Thummar’s story, approach 
  * @file About page populated from editable, structured content.
  * @author meetbyte
  */
+import { SiteImage } from "@/components/site-image";
+import { profile } from "@/data/profile";
 import { aboutContent } from "@/data/about";
 import { requirePageEnabled } from "@/lib/require-page-enabled";
 
@@ -28,6 +30,7 @@ export default function About() {
       <div className="detail-intro">
         <span className="detail-mark" aria-hidden="true">✳</span>
         <h1>{about.title}</h1>
+        <SiteImage className="about-portrait" src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} sizes="(max-width: 640px) 80vw, 280px" />
         {about.introduction && <p className="detail-lead">{about.introduction}</p>}
         {biography.length > 0 ? biography.map((paragraph, index) => (
           <p className="detail-body" key={index}>{paragraph}</p>

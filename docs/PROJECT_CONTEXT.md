@@ -1,6 +1,6 @@
 # Website context for future work
 
-Last reviewed: 8 October 2026. This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
+Last reviewed: 13 October 2026 (Foundation milestone). This is the repository handoff for future chats and agents. Continuing this website does not require the original ChatGPT project or conversation history.
 
 ## Start here
 
@@ -14,7 +14,11 @@ The website is Meet Thummar's portfolio at `https://meetbyte.github.io`, impleme
 
 Public sections: Home, About, Resume, Skills, Contact. **Projects and Blog are implemented but hidden** by `src/constants/page-visibility.ts`. Their typed case-study and Markdown engines are ready; existing samples are fictional/illustrative. New genuine content is pending the owner's supplied material. One section may be enabled independently when expressly requested; do not enable the other automatically.
 
-The shared shell keeps the scenic day/night design, persistent profile and reading panel. Desktop portrait cropping retains full width while shortening 290px to 180px; phone/short-window layouts dock the portrait into the header after it leaves view. There is no footer or visible pause control. `showSeasonPicker` is false. Day is 07:00–before 19:00 visitor-local; artistic seasons follow the reference India-inspired calendar. Theme travel passes behind opaque cards and can reverse mid-journey. Reduced motion remains supported. These choices should be preserved when adding content.
+The Foundation milestone replaces the scenic shell under the approved `docs/planning/design-system.md`: local Newsreader headings and Inter body, warm blush/muted-red light theme and charcoal/burgundy dark theme, slim navigation, native document scrolling, a quiet footer and portrait only on About. No landscape/celestial travel, profile sidebar or shell scroll effects are mounted. Legacy scenery modules/assets remain for provenance; they are not the current UI.
+
+Theme preference is System/Light/Dark, follows the OS initially, persists an explicit choice in localStorage, and resolves before paint. OS changes apply only in System mode. Blocked storage leaves controls usable in memory; reduced motion is respected. Appearance changes do not dispatch clock or seasonal changes.
+
+Experience and Writing canonical route slots exist but remain unpublished alongside the legacy Projects/Blog URLs. Their complete content templates and compatibility aliases belong to the later content milestone; do not enable blank route slots. Existing verified page copy is retained pending the Core website milestone. Original abstract artwork and approved genuine experience/essay content are separate dependencies.
 
 Limited connections use a light backdrop and navigation recovery. `SceneryQualityControl`/its full-artwork opt-in logic are retained but the control is not mounted. Do not restore removed controls during an unrelated content update.
 

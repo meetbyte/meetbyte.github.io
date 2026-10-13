@@ -10,16 +10,16 @@ Paths below are relative to the repository root.
 | Day/night hours | `src/constants/config.ts` | `dayStartHour: 7`, `nightStartHour: 19`; visitor-local clock, no location request. |
 | Seasonal calendar | `src/lib/season.ts` | `seasonByMonth` has 12 entries, January first. Summer March–May; monsoon June–September; autumn October–November; winter December–February. Snow is artistic, not live weather. |
 | Publish Blog/Projects | `src/constants/page-visibility.ts` | Both remain `false`. Navigation, route numbering, sitemap and export cleanup share these flags. |
-| Name, portrait and social links | `src/data/profile.ts` | Use a local image and descriptive alt text. |
+| Name, portrait and social links | `src/data/profile.ts`, `src/app/about/page.tsx` | Portrait mounts only on About; preserve local dimensions and truthful alt text. |
 | Home/About/Resume/Skills/Contact | Matching file under `src/data/` | Edit content here instead of embedding it in page components. Email and subject are in `contact.ts`. |
 | Interface wording | `src/constants/content.ts` | Labels used across components. The progress label and footer copy were removed. |
 | Articles | `content/blog/*.md` | Validated frontmatter and Markdown; start sections at `##`. |
 | Project case studies | `src/data/projects.ts` | Typed sections, optional media and links; replace illustrative content before publishing. |
-| Colours and typography | `src/styles/colors.css`, `src/app/layout.tsx` | Palette tokens and local font declarations. |
+| Colours and typography | `src/styles/colors.css`, `src/styles/editorial.css`, `src/app/layout.tsx` | Approved semantic palette, editorial foundation and local Newsreader/Inter fonts. |
 | Page/card layout | `src/styles/globals.css` | Responsive grids, profile sizing and reading panels. |
 | Mobile dropdown, scrollbar width, finishing details | `src/styles/polish.css` | Modern browsers use native thin scrollbars; `--scrollbar-size: 4px` is the legacy WebKit fallback. Menu panel is explicitly absolute to prevent header expansion. |
-| Landscape artwork and weather | `src/styles/scenery.css`, `src/styles/seasons.css` | Files under `public/images/scenery/`. |
-| Global shell | `src/app/layout.tsx` | Persistent header/profile/main. There is no footer or mounted pause control. |
+| Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; original abstract artwork is a later milestone. |
+| Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
 ## Shared functionality
 
@@ -27,9 +27,9 @@ Use the existing focused modules instead of introducing a miscellaneous `utils.t
 
 - `src/lib/navigation.ts`: active-route matching.
 - `src/lib/page-visibility.ts`, `page-label.ts`: publication and visible section numbering.
-- `src/lib/theme.ts`, `season.ts`: clock/calendar choices, tab storage and prepaint scripts. Hidden seasonal preview ignores old saved choices.
-- `src/lib/atmosphere-clock.ts`: boundary scheduling and catch-up after sleep.
-- `src/lib/theme-journey.ts`: interruptible sun/moon orbit and intermediate colour palettes.
+- `src/lib/theme.ts`, `src/components/theme-toggle.tsx`: prepaint OS theme, persistent explicit preference, cross-tab/OS updates and blocked-storage fallback. Older clock/season helpers are retained but unmounted.
+- `src/components/route-focus.tsx`: reading-region keyboard focus after client navigation. `atmosphere-clock.ts` is a retained legacy module, not mounted.
+- `src/lib/theme-journey.ts`: retained legacy journey and tested contrast helpers; no travel is mounted.
 - `src/lib/scenery-motion.ts`: saved ambient preference and reduced-motion resolution. The reusable `SceneryMotionToggle` component is not mounted.
 - `src/lib/connection.ts`: optional slow/offline hints; `ConnectionProvider` and `SiteLink` handle navigation feedback and recovery.
 - `src/lib/metadata.ts`: shared SEO origin, descriptions and social metadata.
