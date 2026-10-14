@@ -47,7 +47,7 @@ Slim header: brand, enabled navigation, theme control. Quiet footer: copyright i
 
 ## Theme and interaction contract
 
-Before paint resolve valid persisted explicit light/dark choice, else OS prefers-color-scheme; use localStorage with blocked-storage fallback. Track OS changes only while no manual selection exists. Provide accessible named theme toggle and explicit System option. Initial HTML/prepaint must avoid visible hydration flash. This intentionally replaces clock-driven theme after approval.
+Before paint resolve valid persisted explicit light/dark choice, else OS prefers-color-scheme; use localStorage with blocked-storage fallback. Track OS changes only while no manual selection exists. Owner revision (14 October 2026): provide one subtle, accessible light/dark toggle button, with no dropdown. OS theme remains the initial default until a persistent manual choice is made. Initial HTML/prepaint must avoid visible hydration flash. This intentionally replaces clock-driven theme after approval.
 Navigation is keyboard operable, has aria-current, visible focus and Escape-to-close mobile menu. Closed menu does not leave hidden controls focusable; return focus to its trigger. Native scrolling, no scroll-jacking/parallax. Reduced motion removes animated transforms/travel; use at most 150–200ms opacity/color transitions otherwise. Preserve route focus handling, image/error and unavailable-storage resilience.
 
 ## Page composition constraints

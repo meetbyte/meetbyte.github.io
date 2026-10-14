@@ -1,6 +1,6 @@
 # Complete CR002 website: local validation
 
-Evidence date: 13 October 2026. This validates the feature-branch static export, not the deployed website or owner acceptance. The final tested source commit is linked in Linear after pushing.
+Latest functional evidence: 14 October 2026. This validates the feature-branch static export, not the deployed website or owner acceptance. The final tested source commit is linked in Linear after pushing.
 
 ## Implemented scope
 
@@ -21,13 +21,13 @@ Seven canonical sections and ten reading routes: four detailed Experience narrat
 | Interaction | Theme persistence/System changes, mobile Escape focus, route focus and same-route loading recovery passed |
 | Browser exceptions | None detected |
 
-Machine evidence: [results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
+Latest machine evidence: [results.json](visual-refinement/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
 
 Axe marked color contrast as requiring manual judgment on every route/theme because text overlaps masked decorative backgrounds. Zero detected violations does **not** establish full WCAG conformance. Visual inspection covered the artwork and reading layouts, but a formal screen-reader assessment and comprehensive manual contrast certification have not been performed.
 
-## Performance lab
+## Previous checkpoint performance lab
 
-Lighthouse, one sequential run per scenario against the local static export with Chromium 153. Scores vary with environment; these are simulated lab results, not field Core Web Vitals or production hosting measurements.
+Measured on previous commit c51d53b, before the latest visual refinement; these scores have not been remeasured for the new composition. Lighthouse, one sequential run per scenario against the local static export with Chromium 153. Scores vary with environment; these are simulated lab results, not field Core Web Vitals or production hosting measurements.
 
 | Scenario | Performance | Accessibility / Best practices / SEO | FCP | LCP | Blocking | Layout shift |
 | --- | ---: | --- | ---: | ---: | ---: | ---: |
@@ -44,3 +44,9 @@ Run the normal npm checks above. `scripts/qa/complete-site.mjs` uses externally 
 ## Remaining owner/release gates
 
 Owner visual/content/privacy acceptance; final PR and required GitHub CI/current eligible review; explicit authorization for main merge and its automatic Pages deployment; then actual live smoke checks. External mail delivery/social destinations and live hosting were not tested. MEE-21 release preparation and MEE-22 revision protocol are written, but a successful live release has not occurred from this work. Do not mark deployment complete or represent this local report as a live release certificate.
+
+## 14 October visual correction
+
+The owner rejected the earlier visual match. Compared the rendered Home to the approved top ink/paper portfolio reference, rather than treating responsive test success as design acceptance. Changed header identity to Meet.; Experience/Writing use the same visible-order numbering as Skills/Contact (04 and 05). Replaced the selector with a half-disc light/dark button; initial OS preference, manual persistence and blocked-storage behavior remain supported.
+
+Home typography is lighter, its introduction sits higher, navigation is quieter, and the reference eyebrow hairline is restored. Removed the solid vertical paper fade and viewport cutoff; art now covers the full document, uses feathered masks and multiply/screen palette blending. Internal page opacity is visibly stronger, with distinct route positions/angles and restrained reading-page backgrounds. Desktop and mobile screenshots were inspected against the reference for composition and edge continuity. Final owner acceptance remains pending; the original reference is a direction, not a pixel-identical implementation promise.

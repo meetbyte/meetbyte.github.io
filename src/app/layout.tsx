@@ -58,8 +58,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main-content">{common.skipLink}</a>
         <div className="site-shell">
           <header className="site-header">
-            <Link className="site-brand" href={routes.home} aria-label="MeetByte home">
-              <span className="brand-name">MeetByte<span className="brand-period" aria-hidden="true">.</span></span>
+            <Link className="site-brand" href={routes.home} aria-label="Meet home">
+              <span className="brand-name">Meet<span className="brand-period" aria-hidden="true">.</span></span>
             </Link>
             <Navigation />
             <div className="header-tools">

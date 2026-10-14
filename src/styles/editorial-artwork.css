@@ -5,43 +5,54 @@
 body { position: relative; isolation: isolate; }
 :root { --page-art: url('/images/editorial/hero-light-1120.webp'); }
 html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-1120.webp'); }
-.page-atmosphere { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.ink-layer { position: absolute; inset: -3%; background-image: var(--page-art); background-repeat: no-repeat; background-size: auto 115%; background-position: right -3vw center; opacity: .085; mask-image: linear-gradient(90deg,transparent 20%,#000 70%); }
+.page-atmosphere { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.ink-layer { position: absolute; inset: -12%; background-image: var(--page-art); background-repeat: no-repeat; background-size: auto 135%; background-position: right -3vw center; opacity: .26; mix-blend-mode: multiply; mask-image: linear-gradient(90deg,transparent 22%,rgba(0,0,0,.25) 46%,#000 78%); }
 .site-shell { position: relative; z-index: 1; }
 .site-header { background: transparent; border-bottom: 0; }
 .brand-period { color: var(--accent); }
 .site-grid { padding-top: 32px; }
-.atmosphere-home .ink-layer { opacity: .96; background-size: auto 112%; background-position: right -5vw center; mask-image: linear-gradient(90deg,transparent 28%,rgba(0,0,0,.12) 44%,#000 67%); }
-.atmosphere-about .ink-layer { background-position: right -18vw top -20vh; transform: rotate(-9deg) scale(1.1); opacity: .10; }
-.atmosphere-resume .ink-layer { background-position: right -25vw bottom -15vh; transform: scaleX(-1); opacity: .065; mask-image: linear-gradient(90deg,#000,transparent 72%); }
-.atmosphere-skills .ink-layer { background-size: auto 150%; background-position: right -32vw center; transform: rotate(12deg); opacity: .075; }
-.atmosphere-experience .ink-layer { background-size: auto 130%; background-position: right -15vw top -10vh; transform: rotate(-4deg); opacity: .09; }
-.atmosphere-writing .ink-layer { background-size: auto 140%; background-position: right -24vw bottom -15vh; transform: rotate(15deg); opacity: .065; }
-.atmosphere-contact .ink-layer { background-position: right -12vw center; transform: rotate(-16deg); opacity: .12; }
-.atmosphere-reading .ink-layer { background-position: var(--reading-shift) center; transform: rotate(var(--reading-rotation)); opacity: .035; }
-html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .09; }
-html[data-theme="dark"] .atmosphere-reading .ink-layer { opacity: .055; }
+/* Source paper is blended into the page; every raster boundary lies outside its visible mask. */
+.atmosphere-home .ink-layer { opacity: .95; background-size: auto 142%; background-position: right -4vw center; mask-image: linear-gradient(90deg,transparent 22%,rgba(0,0,0,.2) 43%,#000 68%); }
+.atmosphere-about .ink-layer { background-position: right -16vw top -24vh; transform: rotate(-9deg) scale(1.4); opacity: .28; }
+.atmosphere-resume .ink-layer { background-position: right -18vw bottom -15vh; transform: scaleX(-1); opacity: .22; mask-image: linear-gradient(90deg,#000,rgba(0,0,0,.15) 54%,transparent 80%); }
+.atmosphere-skills .ink-layer { background-size: auto 155%; background-position: right -22vw center; transform: rotate(12deg) scale(1.4); opacity: .28; }
+.atmosphere-experience .ink-layer { background-size: auto 145%; background-position: right -8vw top -10vh; transform: rotate(-4deg) scale(1.4); opacity: .25; }
+.atmosphere-writing .ink-layer { background-size: auto 145%; background-position: right -12vw bottom -15vh; transform: rotate(15deg) scale(1.4); opacity: .23; }
+.atmosphere-contact .ink-layer { background-position: right -5vw center; transform: rotate(-16deg) scale(1.4); opacity: .30; }
+.atmosphere-reading .ink-layer { background-position: var(--reading-shift) center; transform: rotate(var(--reading-rotation)) scale(1.25); opacity: .14; }
+html[data-theme="dark"] .ink-layer { mix-blend-mode: screen; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .32; }
+html[data-theme="dark"] .atmosphere-reading .ink-layer { opacity: .18; }
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--accent); padding: 0; cursor: pointer; }
+.theme-toggle:hover { background: var(--surface-muted); }
+.theme-toggle:disabled { opacity: .5; }
+.desktop-navigation .nav-link { font-size: 12px; letter-spacing: .07em; }
 .editorial-home { max-width: none; width: 100%; margin: 0; padding: 0; }
-.home-introduction { display: flex; align-items: center; min-height: calc(100svh - 180px); padding: 40px 0 80px; }
-.home-introduction-copy { min-width: 0; width: 100%; max-width: 640px; }
-.home-introduction .eyebrow { font-size: 11px; letter-spacing: .28em; font-weight: 500; margin: 0 0 32px; }
-.home-introduction h1 { max-width: none; margin: 0 0 28px; font-size: clamp(4.5rem, 9.7vw, 9rem); font-weight: 400; line-height: .95; letter-spacing: -.045em; }
+.home-introduction { display: flex; align-items: flex-start; min-height: calc(100svh - 180px); padding: clamp(40px,7vh,72px) 0 56px; }
+.home-introduction-copy { min-width: 0; width: 100%; max-width: 600px; }
+.home-introduction .eyebrow::before { content: ""; display: inline-block; width: 26px; height: 1px; background: currentColor; margin-right: 16px; vertical-align: middle; }
+.home-introduction .eyebrow { font-size: 11px; letter-spacing: .28em; font-weight: 500; margin: 0 0 24px; }
+.home-introduction h1 { max-width: none; margin: 0 0 28px; font-size: clamp(4.5rem, 8.5vw, 8rem); font-weight: 300; line-height: .9; letter-spacing: -.045em; }
 .home-introduction h1 span { display: block; }
 .home-surname { color: var(--accent); }
-.home-summary { max-width: 30ch; margin: 0; font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.15rem, 1.5vw, 1.4rem); line-height: 1.6; letter-spacing: .06em; }
+.home-summary { max-width: 30ch; margin: 0; font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.15rem, 1.5vw, 1.4rem); line-height: 1.6; letter-spacing: .13em; }
 .home-explore { display: inline-flex; gap: 16px; align-items: center; min-height: 44px; margin-top: 48px; padding-left: 20px; border-left: 1px solid var(--accent); font-size: 12px; letter-spacing: .1em; color: var(--text-secondary); }
 .home-explore:hover { color: var(--accent); }
 .editorial-index-heading { display: block; }
 .menu-toggle,.menu-toggle:hover,.menu-toggle:focus-visible { color: var(--text); background: var(--surface); border-color: var(--border); }
-@media (max-width: 959px) { .atmosphere-home .ink-layer { background-position: right -24vw center; opacity: .55; mask-image: linear-gradient(90deg,transparent 8%,rgba(0,0,0,.12) 52%,#000); } .home-introduction-copy { max-width: 550px; } }
+@media (max-width: 959px) { .atmosphere-home .ink-layer { background-position: right -24vw center; opacity: .70; mask-image: linear-gradient(90deg,transparent 8%,rgba(0,0,0,.12) 52%,#000); } .home-introduction-copy { max-width: 550px; } }
 @media (max-width: 639px) {
  :root { --page-art: url('/images/editorial/hero-light-600.webp'); }
  html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-600.webp'); }
  .home-introduction { min-height: calc(100svh - 160px); padding: 48px 0 80px; }
  .home-introduction h1 { font-size: clamp(3.75rem,20vw,5.5rem); }
  .home-summary { max-width: 22ch; font-size: 1.125rem; }
- .atmosphere-home .ink-layer { opacity: .32; background-size: auto 100%; background-position: right -52vw center; mask-image: linear-gradient(90deg,transparent 5%,rgba(0,0,0,.1) 58%,#000); }
- .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .055; }
+ .atmosphere-home .ink-layer { opacity: .48; background-size: auto 130%; background-position: right -58vw center; mask-image: linear-gradient(90deg,transparent 5%,rgba(0,0,0,.1) 58%,#000); }
+ .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .22; }
 }
-/* Soft vertical paper fade protects header/footer text without introducing a panel edge. */
-.page-atmosphere::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,var(--page) 0%,var(--page) 8%,transparent 25%,transparent 74%,var(--page) 95%,var(--page) 100%); }
+/* No top/bottom paper strip: ink bleeds naturally to the viewport edges. */
+body:has(.editorial-home) .site-footer { border-top: 0; }
+
+/* Keep the footer readable over ink without a rectangular footer surface. */
+.site-footer { position: relative; }
+.site-footer::before { content: ""; position: absolute; inset: -48px 0 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at center,var(--page) 30%,transparent 75%); }

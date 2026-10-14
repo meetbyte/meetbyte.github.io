@@ -1,20 +1,20 @@
 "use client";
 /**
- * @file Native accessible appearance selector with persistent and OS-aware preferences.
+ * @file One-click accessible appearance toggle with persistent and OS-aware preferences.
  * @author meetbyte
  */
 import { useEffect, useState } from "react";
-import { readThemePreference, saveThemePreference, parseThemePreference, type ThemePreference, resolvePreferredTheme } from "@/lib/theme";
+import { readThemePreference, saveThemePreference, parseThemePreference, resolvePreferredTheme } from "@/lib/theme";
 /** Sync cross-tab and OS changes; keep manual choices in memory when storage is blocked. @author meetbyte */
 export function ThemeToggle() {
-  const [preference, setPreference] = useState<ThemePreference>("system");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   const [ready, setReady] = useState(false);
   useEffect(() => {
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     let current = readThemePreference();
     const apply = () => {
       document.documentElement.dataset.theme = resolvePreferredTheme(current, media.matches);
-      setPreference(current);
+      setTheme(resolvePreferredTheme(current, media.matches));
     };
     const choose = (event: Event) => {
       current = parseThemePreference((event as CustomEvent).detail);
@@ -35,14 +35,17 @@ export function ThemeToggle() {
       window.removeEventListener("storage", storage);
     };
   }, []);
-  return <label className="theme-choice">
-    <span className="sr-only">Appearance</span>
-    <select aria-label="Appearance" value={preference} disabled={!ready} onChange={(event) => {
-      const next = parseThemePreference(event.target.value);
+  return <button className="theme-toggle" type="button" disabled={!ready}
+    aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+    title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+    onClick={() => {
+      const next = theme === "dark" ? "light" : "dark";
       saveThemePreference(next);
       window.dispatchEvent(new CustomEvent("meetbyte:theme-preference", { detail: next }));
     }}>
-      <option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option>
-    </select>
-  </label>;
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" strokeWidth="1.25" />
+      <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
+    </svg>
+  </button>;
 }
