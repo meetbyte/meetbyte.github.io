@@ -1,25 +1,45 @@
 "use client";
 
 /**
- * @file Native HTML navigation on limited connections; fallback for slow SPA routes.
+ * @file Native document navigation for static GitHub Pages; no RSC route transport is required.
  * @author meetbyte
  */
-import Link from "next/link";
 import type { AnchorHTMLAttributes } from "react";
 import { useConnection } from "./connection-provider";
-type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & { href: string };
+type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
+  href: string;
+};
 
 /**
- * Uses native anchors on limited connections, prevents unusable offline navigation and tracks ordinary client navigation without prefetch.
+ * Loads exported HTML directly. Preserve browser history, modifier clicks, downloads and native no-JS links.
+ * Only an ordinary offline internal click is held for the existing connection-recovery control.
  * @author meetbyte
  */
 export function SiteLink({ href, onClick, ...props }: Props) {
   const connection = useConnection();
-  if (connection.limited) return <a {...props} href={href} onClick={(event) => {
-    onClick?.(event);
-    if (!event.defaultPrevented && connection.offline && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
-      event.preventDefault(); connection.hold(href);
-    }
-  }} />;
-  return <Link {...props} href={href} onClick={onClick} prefetch={false} onNavigate={() => connection.begin(href)} />;
+  return (
+    <a
+      {...props}
+      href={href}
+      onClick={(event) => {
+        onClick?.(event);
+        if (
+          !event.defaultPrevented &&
+          connection.offline &&
+          href.startsWith("/") &&
+          !href.startsWith("//") &&
+          !props.download &&
+          (!props.target || props.target === "_self") &&
+          event.button === 0 &&
+          !event.metaKey &&
+          !event.ctrlKey &&
+          !event.shiftKey &&
+          !event.altKey
+        ) {
+          event.preventDefault();
+          connection.hold(href);
+        }
+      }}
+    />
+  );
 }
