@@ -2,6 +2,7 @@
  * @file Accessible sanitized essay pages; development drafts cannot reach the production export.
  * @author meetbyte
  */
+import { ExperienceMap } from "@/components/experience-map";
 import { notFound } from "next/navigation";
 import { SiteLink as Link } from "@/components/site-link";
 import { getExperienceEntries } from "@/lib/content/editorial";
@@ -35,6 +36,7 @@ export default async function CaseStudy({ params }: Props) {
   return <article className="detail-page editorial-essay">
     <Link className="back-link" href="/experience/">← All experience</Link>
     <header className="detail-intro"><p className="writing-meta"><span>{entry.category}</span><span>{entry.minutes} min read</span>{entry.publishedAt && <time dateTime={entry.publishedAt}>{formatPostDate(entry.publishedAt)}</time>}{entry.status !== "published" && <span>Draft</span>}</p><h1>{entry.title}</h1><p className="detail-lead">{entry.summary}</p></header>
+    <ExperienceMap id={entry.id} />
     {/* Only the shared sanitized build-time adapter can supply HTML. */}
     <div className="article-prose" dangerouslySetInnerHTML={{ __html: entry.html }} />
     <nav className="essay-navigation" aria-label="More experience">{entries[index-1] && <Link href={`/experience/${entries[index-1].slug}/`}>← {entries[index-1].title}</Link>}{entries[index+1] && <Link href={`/experience/${entries[index+1].slug}/`}>{entries[index+1].title} →</Link>}</nav>

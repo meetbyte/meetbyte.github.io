@@ -19,7 +19,9 @@ I use AI-assisted tools in engineering and personal projects. I am interested in
 The output can look settled even when the underlying requirement is not. Names, types and comments give a solution an appearance of completeness. They do not establish that the problem has been understood correctly.
 
 
-> The code may be generated. The decision to make it part of a system still needs an owner.
+> What I cannot create, I do not understand.
+>
+> — [Richard Feynman](https://www.preskill.caltech.edu/talks/APS-April-2018-Feynman-4-3.pdf), *Final blackboard; documented by John Preskill, Caltech*
 
 ## A prompt contains decisions, including accidental ones
 

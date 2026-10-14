@@ -21,7 +21,7 @@ Seven canonical sections and ten reading routes: four detailed Experience narrat
 | Interaction | Theme persistence/System changes, mobile Escape focus, route focus and same-route loading recovery passed |
 | Browser exceptions | None detected |
 
-Latest machine evidence: [results.json](visual-refinement/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
+Latest machine evidence: [results.json](editorial-polish/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
 
 Axe marked color contrast as requiring manual judgment on every route/theme because text overlaps masked decorative backgrounds. Zero detected violations does **not** establish full WCAG conformance. Visual inspection covered the artwork and reading layouts, but a formal screen-reader assessment and comprehensive manual contrast certification have not been performed.
 
@@ -50,3 +50,13 @@ Owner visual/content/privacy acceptance; final PR and required GitHub CI/current
 The owner rejected the earlier visual match. Compared the rendered Home to the approved top ink/paper portfolio reference, rather than treating responsive test success as design acceptance. Changed header identity to Meet.; Experience/Writing use the same visible-order numbering as Skills/Contact (04 and 05). Replaced the selector with a half-disc light/dark button; initial OS preference, manual persistence and blocked-storage behavior remain supported.
 
 Home typography is lighter, its introduction sits higher, navigation is quieter, and the reference eyebrow hairline is restored. Removed the solid vertical paper fade and viewport cutoff; art now covers the full document, uses feathered masks and multiply/screen palette blending. Internal page opacity is visibly stronger, with distinct route positions/angles and restrained reading-page backgrounds. Desktop and mobile screenshots were inspected against the reference for composition and edge continuity. Final owner acceptance remains pending; the original reference is a direction, not a pixel-identical implementation promise.
+
+## 14 October content, portrait and viewport follow-up
+
+Reused the actual favicon asset in the header. Repositioned Home introduction to match the approved reference's upper-left composition; Home now fits the five standard widths at 900px height and eight additional light/dark short-viewport scenarios (1440×600, 1024×768, 375×667, 320×568). Narrow 320×400 reflow remains scrollable with Explore/footer reachable; no overflow hiding is used to force a fit. Evidence: [home-viewports.json](editorial-polish/home-viewports.json), reproduced with scripts/qa/home-viewport.mjs.
+
+Artwork uses cover sizing without transforms, so neither a raster boundary nor an off-document rotated crop can hide the Skills treatment. Final full-route checks include document coverage and Skills visibility. Home footer links sit in the quiet left region, and the theme icon has a palette backdrop for contrast. No artificial footer strip remains. Both-theme screenshots of Home, Skills, About, APEX and an essay were inspected for type hierarchy, spacing and art continuity.
+
+All four Experience records have additional source-grounded explanation and responsibility tables, plus semantic visual reading maps. Maps summarize the described responsibilities; they are not presented as undocumented production topologies. No new historical incidents, measured outcomes, infrastructure specifics or client identities were invented. Essay quotations are short, attributed and linked to inspected sources; the full provenance is docs/planning/quotation-sources.md.
+
+About uses a new alpha cutout on the left with the original face/pose/orientation, plus a CSS lower-edge fade. Original portrait files remain unchanged. Asset, exact image-edit prompt, dimensions and hash are documented in public/images/portrait-notes.md. The final feature-branch content and portrait still require owner acceptance before main release.

@@ -2,6 +2,7 @@
  * @file Shared layout for every portfolio route.
  * @author meetbyte
  */
+import Image from "next/image";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ConnectionProvider } from "@/components/connection-provider";
@@ -59,7 +60,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="site-shell">
           <header className="site-header">
             <Link className="site-brand" href={routes.home} aria-label="Meet home">
-              <span className="brand-name">Meet<span className="brand-period" aria-hidden="true">.</span></span>
+              <Image src="/icons/mark.svg" width={36} height={36} alt="" className="brand-logo" />
             </Link>
             <Navigation />
             <div className="header-tools">

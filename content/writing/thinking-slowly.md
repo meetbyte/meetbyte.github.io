@@ -17,7 +17,9 @@ I enjoy reading, writing, philosophy and chess. One thing those interests have i
 That pace feels useful alongside engineering work, where there is often pressure to turn uncertainty into an action. Action matters. But I do not want the desire to move forward to decide what I believe before I have understood the question.
 
 
-> Writing helps me notice the difference between an idea that sounds clear in my head and an idea I can actually explain.
+> Words are events, they do things, change things.
+>
+> — [Ursula K. Le Guin](https://www.themarginalian.org/2015/10/22/telling-is-listening-ursula-k-le-guin-communication/), *The Wave in the Mind, “Telling Is Listening”; excerpt reproduced by The Marginalian*
 
 ## Give the thought somewhere to develop
 

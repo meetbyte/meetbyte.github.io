@@ -19,7 +19,9 @@ My work includes collaboration with QA, business teams, production support and c
 The report may be simple: the information is missing, an action did not finish, the result looks different. Turning that report into a useful engineering question requires care.
 
 
-> Supporting software is part of engineering it.
+> Program testing can be used to show the presence of bugs, but never to show their absence!
+>
+> — [Edsger W. Dijkstra](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html), *Notes on Structured Programming*
 
 ## Begin by understanding the interruption
 

@@ -19,7 +19,9 @@ I do not assume the proposed answer is wrong. The person making the request may 
 The distinction is practical. A field has a definition. A problem has a context. If I understand only the field, I can implement it precisely and still miss the reason it was needed.
 
 
-> A field has a definition. A problem has a context.
+> The hardest single part of building a software system is deciding precisely what to build.
+>
+> — [Frederick P. Brooks, Jr.](https://cs.calvin.edu/courses/cs/262/kvlinden/references/brooksNoSilverBullet.html), *No Silver Bullet*
 
 ## Start with the work being done
 

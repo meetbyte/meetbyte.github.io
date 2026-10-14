@@ -42,6 +42,29 @@ The solution included exported files, webpage access and email-triggered communi
 
 My contribution also included server installation. That meant carrying the work beyond the pages and queries into the environment where the application had to run. I was responsible for bringing together the permission page, LDAP integration, query generation, security, scheduling, audit and interface work as one solution.
 
+## Reading the system as connected responsibilities
+
+The application can be understood through three connected questions: who is requesting the data, which criteria define the request, and how the result reaches the person who needs it. None of these questions is resolved by a filter screen alone. A usable data request connects the business meaning of a segment to the permissions and delivery path around the resulting information.
+
+| Responsibility | Concrete work in this system | Why it belongs in the same design |
+| --- | --- | --- |
+| Identity and access | Microsoft LDAP; User, Supervisor and Admin permissions | A successful login and permission to perform an action are different responsibilities. |
+| Request definition | Card, spending and market criteria; additional columns; query-generation pages | The selected business criteria and the requested output must describe the same need. |
+| Sensitive data | Database security, PII masking and auditing | Convenience in obtaining a result must remain connected to its access boundaries. |
+| Repeated delivery | Weekly/monthly scheduling, file generation, webpage access and communications | A recurring request needs an operational path beyond the first interactive run. |
+| Operating the application | Server installation and custom HTML/CSS integration | The workflow has to remain usable in the environment where it runs. |
+
+This is the part of the work that I find most substantial: bringing those responsibilities together rather than building a collection of unrelated pages. The permission page, query generation and scheduled outputs each serve a different purpose, but the user experiences them as one application.
+
+## Where the judgment sits
+
+A business user thinks in terms of a customer segment. The database needs a precise expression of that segment. My engineering responsibility sat between those views: making the request understandable without treating every database option as something the user should have to navigate.
+
+The extra-column requirement is a useful example of that tension. A result can satisfy the selection criteria and still be incomplete for the business if it omits the information needed to use it. That made output requirements part of the request conversation, alongside the conditions that identified the customers.
+
+The system also made the distinction between an occasional request and a recurring obligation more visible. Scheduling weekly or monthly work addressed repetition; permissions, auditing and the defined delivery paths addressed the responsibility surrounding it. The value was in connecting these pieces as a governed workflow, not in claiming that automation removed the need for oversight.
+
+
 ## What this work changed for me
 
 The result was a self-service application around a workflow that had previously required repeated business, project and DBA coordination.

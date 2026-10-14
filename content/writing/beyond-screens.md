@@ -19,7 +19,9 @@ My work connects business requirements, system design, implementation, integrati
 There are rules about who can do what. There are dependencies on other services. There are assumptions about the data. There are people who need to understand a failure when the original developer is unavailable. None of those concerns disappear because the interface looks finished.
 
 
-> A page is where a person meets the system.
+> Good design makes a product understandable.
+>
+> — [Dieter Rams](https://www.vitsoe.com/us/about/good-design), *Ten principles for good design*
 
 ## Following a request through the system
 

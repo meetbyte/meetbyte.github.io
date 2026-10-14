@@ -7,7 +7,7 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Meet Thummar",
   initials: "MT",
-  portrait: { src: "/images/meet-thummar.webp", alt: "Meet Thummar", width: 1122, height: 1402 },
+  portrait: { src: "/images/meet-thummar-editorial.webp", alt: "Meet Thummar", width: 1122, height: 1402 },
   title: "Software Engineer | Full-Stack & Enterprise Systems",
   brandLines: ["MEET", "THUMMAR"],
   roles: ["Technical Leadership", "Full-Stack Engineering", "System Design & Integration", "End-to-End Delivery"],

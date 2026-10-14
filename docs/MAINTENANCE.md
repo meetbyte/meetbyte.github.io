@@ -10,7 +10,7 @@ Paths below are relative to the repository root.
 | Day/night hours | `src/constants/config.ts` | `dayStartHour: 7`, `nightStartHour: 19`; visitor-local clock, no location request. |
 | Seasonal calendar | `src/lib/season.ts` | `seasonByMonth` has 12 entries, January first. Summer March–May; monsoon June–September; autumn October–November; winter December–February. Snow is artistic, not live weather. |
 | Publish Blog/Projects | `src/constants/page-visibility.ts` | Both remain `false`. Navigation, route numbering, sitemap and export cleanup share these flags. |
-| Name, portrait and social links | `src/data/profile.ts`, `src/app/about/page.tsx` | Portrait mounts only on About; preserve local dimensions and truthful alt text. |
+| Name, portrait and social links | `src/data/profile.ts`, `src/app/about/page.tsx` | Portrait mounts only on About, on the left. Use the editorial alpha cutout and soft lower-edge mask; preserve originals, dimensions and truthful alt text. |
 | Home/About/Resume/Skills/Contact | Matching file under `src/data/` | Edit content here instead of embedding it in page components. Email and subject are in `contact.ts`. |
 | Interface wording | `src/constants/content.ts` | Labels used across components. The progress label and footer copy were removed. |
 | Articles | `content/blog/*.md` | Validated frontmatter and Markdown; start sections at `##`. |
@@ -21,7 +21,7 @@ Paths below are relative to the repository root.
 | Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; current original artwork is managed by PageAtmosphere. |
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
-| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless document-wide atmosphere; theme/width selects asset; masked edges and multiply/screen blending prevent a paper rectangle, each section has distinct placement/intensity. |
+| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless document-wide atmosphere; theme/width selects asset; masked edges and multiply/screen blending prevent a paper rectangle, cover sizing keeps raster edges out of view; each section has distinct crop/intensity. |
 | Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
 | Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 

@@ -17,3 +17,16 @@
 @media (max-width: 639px) { .essay-navigation { flex-direction: column; gap: 16px; } .essay-navigation a { max-width: 100%; } }
 .editorial-essay .article-prose blockquote { margin: 40px 0; padding: 16px 0 16px 24px; border-left: 2px solid var(--accent); background: transparent; color: var(--text); font-family: var(--font-heading), Georgia, serif; font-size: clamp(1.4rem, 2.4vw, 1.85rem); line-height: 1.45; }
 .editorial-essay .article-prose blockquote p { margin: 0; }
+
+.experience-map { margin: 0 0 64px; padding: 32px 0; border-block: 1px solid var(--border); }
+.experience-map h2 { font-size: clamp(1.6rem,3vw,2.2rem); margin: 12px 0 16px; }
+.map-note { font-size: .875rem; color: var(--text-secondary); }
+.map-stages { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); list-style: none; padding: 0; gap: 32px 40px; margin: 32px 0; }
+.map-stages li { display: flex; gap: 16px; padding-left: 16px; border-left: 1px solid var(--accent); }
+.map-number { color: var(--accent); font-size: .75rem; padding-top: 4px; }
+.map-stages h3 { margin: 0 0 12px; font-size: 1.25rem; }
+.map-stages p { margin: 0; font-size: .9375rem; line-height: 1.65; color: var(--text-secondary); }
+.map-across { display: flex; gap: 16px 24px; flex-wrap: wrap; font-size: .8125rem; }
+.map-across > span { color: var(--accent); }
+.map-across ul { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; margin: 0; list-style: none; }
+@media (max-width:639px) { .map-stages { grid-template-columns: minmax(0,1fr); gap: 24px; } .experience-map { margin-bottom: 40px; } }

@@ -32,6 +32,28 @@ Alongside the application work, I set up Jenkins pipelines for frontend and back
 
 I wanted the replacement to be understandable to the team that would maintain it. Preserving coding standards was part of that responsibility. A migration should leave people with a system they can continue to work on, not an implementation that can only be explained by its original author.
 
+## A migration has more than one boundary
+
+The work touched three kinds of boundary: the application journeys, the integration responsibilities and the delivery process. Keeping them separate in the explanation helps make the scale of the migration clearer without suggesting that a framework change solved all three automatically.
+
+| Boundary | Existing context | Work carried into the replacement |
+| --- | --- | --- |
+| Customer journeys | Loan, EMI and payment flows | Preserve the functionality those journeys depend on. |
+| Service integrations | MobileFirst SQL, HTTP and Java adapters | Adapt their responsibilities to Java and Spring Boot. |
+| Platform-dependent behavior | Discontinued platform APIs; Cordova and APIGEE connections | Replace or adapt the relevant connections within the changed stack. |
+| Team delivery | Frontend/backend releases, QA and production support | Jenkins pipelines, coding standards and coordination around release. |
+
+The important connection is between a change at one of these boundaries and its effect on the others. A backend service is part of a user journey, even when the interface itself is not being redesigned. An integration is part of delivery, even when it communicates with a system outside the application team's direct control.
+
+## Maintaining an explanation of the change
+
+My responsibilities combined hands-on adaptation with collaboration across QA, business and support. That combination matters because different people describe the same flow differently. Business discussion starts from the intended action. QA needs a behavior that can be checked. Engineering has to connect that behavior to the implementation and its integrations.
+
+For me, a clear explanation of modernization therefore needs both sides: what is changing in the stack and which application responsibilities continue through that change. Listing Java and Spring Boot is useful context; it is not enough to explain why the replacement is suitable.
+
+The same applies to coding standards and delivery pipelines. Their value is that the replacement can be maintained and carried through the team's release process. They are part of making a platform transition workable over time, rather than treating it as a demonstration that ends with the new backend.
+
+
 ## The lesson behind the newer stack
 
 The delivered work modernized banking application services while retaining their place in loan, EMI and payment journeys.

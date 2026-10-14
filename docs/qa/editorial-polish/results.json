@@ -1,0 +1,2867 @@
+{
+  "layouts": [
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 465.578125,
+      "footer": 811.21875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/about/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 1,
+      "main": 6012.9375,
+      "footer": 6076.9375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6209.53125,
+      "documentHeight": 6210
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/resume/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6492.421875,
+      "footer": 6556.421875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6689.015625,
+      "documentHeight": 6689
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/skills/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 9538.90625,
+      "footer": 9602.90625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 9735.5,
+      "documentHeight": 9736
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/experience/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1789,
+      "footer": 1853,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 1985.59375,
+      "documentHeight": 1986
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2385.28125,
+      "footer": 2449.28125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 2581.875,
+      "documentHeight": 2582
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/contact/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1097.71875,
+      "footer": 1161.71875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 1294.3125,
+      "documentHeight": 1294
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/experience/apex-self-service/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 9507,
+      "footer": 9571,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 9703.59375,
+      "documentHeight": 9704
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7806.609375,
+      "footer": 7870.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 8003.203125,
+      "documentHeight": 8003
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8173.109375,
+      "footer": 8237.109375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 8369.703125,
+      "documentHeight": 8370
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/experience/production-investigation/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8085.46875,
+      "footer": 8149.46875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 8282.0625,
+      "documentHeight": 8282
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/beyond-screens/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6233.125,
+      "footer": 6297.125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6429.71875,
+      "documentHeight": 6430
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6399.46875,
+      "footer": 6463.46875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6596.0625,
+      "documentHeight": 6596
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6430.09375,
+      "footer": 6494.09375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6626.6875,
+      "documentHeight": 6627
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6202.59375,
+      "footer": 6266.59375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6399.1875,
+      "documentHeight": 6399
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6457.21875,
+      "footer": 6521.21875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 6653.8125,
+      "documentHeight": 6654
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4652.296875,
+      "footer": 4716.296875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 4848.890625,
+      "documentHeight": 4849
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 485.390625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/about/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 1,
+      "main": 5170.1875,
+      "footer": 5234.1875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5366.78125,
+      "documentHeight": 5367
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/resume/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5548.5,
+      "footer": 5612.5,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5745.09375,
+      "documentHeight": 5745
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8723.125,
+      "footer": 8787.125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 8919.71875,
+      "documentHeight": 8920
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/experience/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1668.734375,
+      "footer": 1732.734375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 1865.328125,
+      "documentHeight": 1865
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2231.421875,
+      "footer": 2295.421875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 2428.015625,
+      "documentHeight": 2428
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/contact/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1068.828125,
+      "footer": 1132.828125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 1265.421875,
+      "documentHeight": 1265
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/experience/apex-self-service/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8155.34375,
+      "footer": 8219.34375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 8351.9375,
+      "documentHeight": 8352
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6819.765625,
+      "footer": 6883.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 7016.359375,
+      "documentHeight": 7016
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7088.609375,
+      "footer": 7152.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 7285.203125,
+      "documentHeight": 7285
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/experience/production-investigation/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7279.921875,
+      "footer": 7343.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 7476.515625,
+      "documentHeight": 7477
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/beyond-screens/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5380.609375,
+      "footer": 5444.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5577.203125,
+      "documentHeight": 5577
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5586.84375,
+      "footer": 5650.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5783.4375,
+      "documentHeight": 5783
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5474.1875,
+      "footer": 5538.1875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5670.78125,
+      "documentHeight": 5671
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5422.078125,
+      "footer": 5486.078125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5618.671875,
+      "documentHeight": 5619
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5625.390625,
+      "footer": 5689.390625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 5821.984375,
+      "documentHeight": 5822
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4095.8125,
+      "footer": 4159.8125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-600.webp\")",
+      "artBottom": 4292.40625,
+      "documentHeight": 4292
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 539.15625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/about/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3577.71875,
+      "footer": 3641.71875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3730.515625,
+      "documentHeight": 3731
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/resume/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4317.875,
+      "footer": 4381.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4470.671875,
+      "documentHeight": 4471
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7983.4375,
+      "footer": 8047.4375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 8136.234375,
+      "documentHeight": 8136
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/experience/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1278.890625,
+      "footer": 1342.890625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1431.6875,
+      "documentHeight": 1432
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1625.328125,
+      "footer": 1689.328125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1778.125,
+      "documentHeight": 1778
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/contact/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 951.875,
+      "footer": 1015.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1104.671875,
+      "documentHeight": 1105
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/experience/apex-self-service/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5161.046875,
+      "footer": 5225.046875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 5313.84375,
+      "documentHeight": 5314
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4369.765625,
+      "footer": 4433.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4522.5625,
+      "documentHeight": 4523
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4549.40625,
+      "footer": 4613.40625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4702.203125,
+      "documentHeight": 4702
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/experience/production-investigation/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4698.9375,
+      "footer": 4762.9375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4851.734375,
+      "documentHeight": 4852
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/beyond-screens/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3459.265625,
+      "footer": 3523.265625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3612.0625,
+      "documentHeight": 3612
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3645.3125,
+      "footer": 3709.3125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3798.109375,
+      "documentHeight": 3798
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3628.53125,
+      "footer": 3692.53125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3781.328125,
+      "documentHeight": 3781
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3475.4375,
+      "footer": 3539.4375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3628.234375,
+      "documentHeight": 3628
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3587.25,
+      "footer": 3651.25,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3740.046875,
+      "documentHeight": 3740
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2677.921875,
+      "footer": 2741.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 2830.71875,
+      "documentHeight": 2831
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 533.625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/about/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3348.078125,
+      "footer": 3412.078125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3500.875,
+      "documentHeight": 3501
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/resume/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3839.859375,
+      "footer": 3903.859375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3992.65625,
+      "documentHeight": 3993
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6851.796875,
+      "footer": 6915.796875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 7004.59375,
+      "documentHeight": 7005
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/experience/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1280.921875,
+      "footer": 1344.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1433.71875,
+      "documentHeight": 1434
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1656.203125,
+      "footer": 1720.203125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1809,
+      "documentHeight": 1809
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/contact/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 983.140625,
+      "footer": 1047.140625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1135.9375,
+      "documentHeight": 1136
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/experience/apex-self-service/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5047.140625,
+      "footer": 5111.140625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 5199.9375,
+      "documentHeight": 5200
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4366.171875,
+      "footer": 4430.171875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4518.96875,
+      "documentHeight": 4519
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4602.84375,
+      "footer": 4666.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4755.640625,
+      "documentHeight": 4756
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/experience/production-investigation/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4510.703125,
+      "footer": 4574.703125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4663.5,
+      "documentHeight": 4664
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/beyond-screens/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3437.84375,
+      "footer": 3501.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3590.640625,
+      "documentHeight": 3591
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3562.25,
+      "footer": 3626.25,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3715.046875,
+      "documentHeight": 3715
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3577.859375,
+      "footer": 3641.859375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3730.65625,
+      "documentHeight": 3731
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3348.703125,
+      "footer": 3412.703125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3501.5,
+      "documentHeight": 3502
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3501.046875,
+      "footer": 3565.046875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3653.84375,
+      "documentHeight": 3654
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2651.6875,
+      "footer": 2715.6875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 2804.484375,
+      "documentHeight": 2804
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 610.28125,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/about/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3364.84375,
+      "footer": 3428.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3517.640625,
+      "documentHeight": 3518
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/resume/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3895.53125,
+      "footer": 3959.53125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4048.328125,
+      "documentHeight": 4048
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6862.921875,
+      "footer": 6926.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 7015.71875,
+      "documentHeight": 7016
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/experience/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1395.734375,
+      "footer": 1459.734375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1548.53125,
+      "documentHeight": 1549
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1782.171875,
+      "footer": 1846.171875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1934.96875,
+      "documentHeight": 1935
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/contact/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1027.09375,
+      "footer": 1091.09375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 1179.890625,
+      "documentHeight": 1180
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/experience/apex-self-service/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5263.3125,
+      "footer": 5327.3125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 5416.109375,
+      "documentHeight": 5416
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4529.390625,
+      "footer": 4593.390625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4682.1875,
+      "documentHeight": 4682
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4767.015625,
+      "footer": 4831.015625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4919.8125,
+      "documentHeight": 4920
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/experience/production-investigation/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4674.875,
+      "footer": 4738.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 4827.671875,
+      "documentHeight": 4828
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/beyond-screens/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3579.765625,
+      "footer": 3643.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3732.5625,
+      "documentHeight": 3733
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3659.453125,
+      "footer": 3723.453125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3812.25,
+      "documentHeight": 3812
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3727.0625,
+      "footer": 3791.0625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3879.859375,
+      "documentHeight": 3880
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3434.78125,
+      "footer": 3498.78125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3587.578125,
+      "documentHeight": 3588
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3642.96875,
+      "footer": 3706.96875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 3795.765625,
+      "documentHeight": 3796
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2770.40625,
+      "footer": 2834.40625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-light-1120.webp\")",
+      "artBottom": 2923.203125,
+      "documentHeight": 2923
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 465.578125,
+      "footer": 811.21875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/about/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 1,
+      "main": 6012.9375,
+      "footer": 6076.9375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6209.53125,
+      "documentHeight": 6210
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/resume/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6492.421875,
+      "footer": 6556.421875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6689.015625,
+      "documentHeight": 6689
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/skills/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 9538.90625,
+      "footer": 9602.90625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 9735.5,
+      "documentHeight": 9736
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/experience/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1789,
+      "footer": 1853,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 1985.59375,
+      "documentHeight": 1986
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2385.28125,
+      "footer": 2449.28125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 2581.875,
+      "documentHeight": 2582
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/contact/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1097.71875,
+      "footer": 1161.71875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 1294.3125,
+      "documentHeight": 1294
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/experience/apex-self-service/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 9507,
+      "footer": 9571,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 9703.59375,
+      "documentHeight": 9704
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7806.609375,
+      "footer": 7870.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 8003.203125,
+      "documentHeight": 8003
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8173.109375,
+      "footer": 8237.109375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 8369.703125,
+      "documentHeight": 8370
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/experience/production-investigation/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8085.46875,
+      "footer": 8149.46875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 8282.0625,
+      "documentHeight": 8282
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/beyond-screens/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6233.125,
+      "footer": 6297.125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6429.71875,
+      "documentHeight": 6430
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6399.46875,
+      "footer": 6463.46875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6596.0625,
+      "documentHeight": 6596
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6430.09375,
+      "footer": 6494.09375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6626.6875,
+      "documentHeight": 6627
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6202.59375,
+      "footer": 6266.59375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6399.1875,
+      "documentHeight": 6399
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6457.21875,
+      "footer": 6521.21875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 6653.8125,
+      "documentHeight": 6654
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 320,
+      "viewport": 320,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4652.296875,
+      "footer": 4716.296875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 4848.890625,
+      "documentHeight": 4849
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 485.390625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/about/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 1,
+      "main": 5170.1875,
+      "footer": 5234.1875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5366.78125,
+      "documentHeight": 5367
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/resume/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5548.5,
+      "footer": 5612.5,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5745.09375,
+      "documentHeight": 5745
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8723.125,
+      "footer": 8787.125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 8919.71875,
+      "documentHeight": 8920
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/experience/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1668.734375,
+      "footer": 1732.734375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 1865.328125,
+      "documentHeight": 1865
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2231.421875,
+      "footer": 2295.421875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 2428.015625,
+      "documentHeight": 2428
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/contact/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1068.828125,
+      "footer": 1132.828125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 1265.421875,
+      "documentHeight": 1265
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/experience/apex-self-service/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 8155.34375,
+      "footer": 8219.34375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 8351.9375,
+      "documentHeight": 8352
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6819.765625,
+      "footer": 6883.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 7016.359375,
+      "documentHeight": 7016
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7088.609375,
+      "footer": 7152.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 7285.203125,
+      "documentHeight": 7285
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/experience/production-investigation/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7279.921875,
+      "footer": 7343.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 7476.515625,
+      "documentHeight": 7477
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/beyond-screens/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5380.609375,
+      "footer": 5444.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5577.203125,
+      "documentHeight": 5577
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5586.84375,
+      "footer": 5650.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5783.4375,
+      "documentHeight": 5783
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5474.1875,
+      "footer": 5538.1875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5670.78125,
+      "documentHeight": 5671
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5422.078125,
+      "footer": 5486.078125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5618.671875,
+      "documentHeight": 5619
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5625.390625,
+      "footer": 5689.390625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 5821.984375,
+      "documentHeight": 5822
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 375,
+      "viewport": 375,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4095.8125,
+      "footer": 4159.8125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-600.webp\")",
+      "artBottom": 4292.40625,
+      "documentHeight": 4292
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 539.15625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/about/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3577.71875,
+      "footer": 3641.71875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3730.515625,
+      "documentHeight": 3731
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/resume/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4317.875,
+      "footer": 4381.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4470.671875,
+      "documentHeight": 4471
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 7983.4375,
+      "footer": 8047.4375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 8136.234375,
+      "documentHeight": 8136
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/experience/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1278.890625,
+      "footer": 1342.890625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1431.6875,
+      "documentHeight": 1432
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1625.328125,
+      "footer": 1689.328125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1778.125,
+      "documentHeight": 1778
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/contact/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 951.875,
+      "footer": 1015.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1104.671875,
+      "documentHeight": 1105
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/experience/apex-self-service/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5161.046875,
+      "footer": 5225.046875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 5313.84375,
+      "documentHeight": 5314
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4369.765625,
+      "footer": 4433.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4522.5625,
+      "documentHeight": 4523
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4549.40625,
+      "footer": 4613.40625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4702.203125,
+      "documentHeight": 4702
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/experience/production-investigation/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4698.9375,
+      "footer": 4762.9375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4851.734375,
+      "documentHeight": 4852
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/beyond-screens/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3459.265625,
+      "footer": 3523.265625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3612.0625,
+      "documentHeight": 3612
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3645.3125,
+      "footer": 3709.3125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3798.109375,
+      "documentHeight": 3798
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3628.53125,
+      "footer": 3692.53125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3781.328125,
+      "documentHeight": 3781
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3475.4375,
+      "footer": 3539.4375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3628.234375,
+      "documentHeight": 3628
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3587.25,
+      "footer": 3651.25,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3740.046875,
+      "documentHeight": 3740
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 768,
+      "viewport": 768,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2677.921875,
+      "footer": 2741.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 2830.71875,
+      "documentHeight": 2831
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 533.625,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/about/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3348.078125,
+      "footer": 3412.078125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3500.875,
+      "documentHeight": 3501
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/resume/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3839.859375,
+      "footer": 3903.859375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3992.65625,
+      "documentHeight": 3993
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6851.796875,
+      "footer": 6915.796875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 7004.59375,
+      "documentHeight": 7005
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/experience/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1280.921875,
+      "footer": 1344.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1433.71875,
+      "documentHeight": 1434
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1656.203125,
+      "footer": 1720.203125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1809,
+      "documentHeight": 1809
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/contact/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 983.140625,
+      "footer": 1047.140625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1135.9375,
+      "documentHeight": 1136
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/experience/apex-self-service/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5047.140625,
+      "footer": 5111.140625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 5199.9375,
+      "documentHeight": 5200
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4366.171875,
+      "footer": 4430.171875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4518.96875,
+      "documentHeight": 4519
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4602.84375,
+      "footer": 4666.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4755.640625,
+      "documentHeight": 4756
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/experience/production-investigation/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4510.703125,
+      "footer": 4574.703125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4663.5,
+      "documentHeight": 4664
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/beyond-screens/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3437.84375,
+      "footer": 3501.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3590.640625,
+      "documentHeight": 3591
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3562.25,
+      "footer": 3626.25,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3715.046875,
+      "documentHeight": 3715
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3577.859375,
+      "footer": 3641.859375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3730.65625,
+      "documentHeight": 3731
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3348.703125,
+      "footer": 3412.703125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3501.5,
+      "documentHeight": 3502
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3501.046875,
+      "footer": 3565.046875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3653.84375,
+      "documentHeight": 3654
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 1024,
+      "viewport": 1024,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2651.6875,
+      "footer": 2715.6875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 2804.484375,
+      "documentHeight": 2804
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 610.28125,
+      "footer": 847.609375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 900,
+      "documentHeight": 900
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/about/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 1,
+      "main": 3364.84375,
+      "footer": 3428.84375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3517.640625,
+      "documentHeight": 3518
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/resume/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3895.53125,
+      "footer": 3959.53125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4048.328125,
+      "documentHeight": 4048
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 6862.921875,
+      "footer": 6926.921875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 7015.71875,
+      "documentHeight": 7016
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/experience/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1395.734375,
+      "footer": 1459.734375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1548.53125,
+      "documentHeight": 1549
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1782.171875,
+      "footer": 1846.171875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1934.96875,
+      "documentHeight": 1935
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/contact/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 1027.09375,
+      "footer": 1091.09375,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 1179.890625,
+      "documentHeight": 1180
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/experience/apex-self-service/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 5263.3125,
+      "footer": 5327.3125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 5416.109375,
+      "documentHeight": 5416
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/experience/mobilefirst-modernization/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4529.390625,
+      "footer": 4593.390625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4682.1875,
+      "documentHeight": 4682
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/experience/engineering-tooling/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4767.015625,
+      "footer": 4831.015625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4919.8125,
+      "documentHeight": 4920
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/experience/production-investigation/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 4674.875,
+      "footer": 4738.875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 4827.671875,
+      "documentHeight": 4828
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/beyond-screens/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3579.765625,
+      "footer": 3643.765625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3732.5625,
+      "documentHeight": 3733
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/modernizing-safely/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3659.453125,
+      "footer": 3723.453125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3812.25,
+      "documentHeight": 3812
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/behind-the-requirement/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3727.0625,
+      "footer": 3791.0625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3879.859375,
+      "documentHeight": 3880
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/software-meets-reality/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3434.78125,
+      "footer": 3498.78125,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3587.578125,
+      "documentHeight": 3588
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/ai-and-decisions/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 3642.96875,
+      "footer": 3706.96875,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 3795.765625,
+      "documentHeight": 3796
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/thinking-slowly/",
+      "scroll": 1440,
+      "viewport": 1440,
+      "h1": 1,
+      "portrait": 0,
+      "main": 2770.40625,
+      "footer": 2834.40625,
+      "background": "url(\"http://127.0.0.1:4173/images/editorial/hero-dark-1120.webp\")",
+      "artBottom": 2923.203125,
+      "documentHeight": 2923
+    }
+  ],
+  "axe": [
+    {
+      "mode": "light",
+      "route": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 17
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/about/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 50
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/resume/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 72
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/skills/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 159
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/experience/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 31
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 39
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/contact/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 25
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/experience/apex-self-service/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 79
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/experience/mobilefirst-modernization/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 71
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/experience/engineering-tooling/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 73
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/experience/production-investigation/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 70
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/beyond-screens/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 42
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/modernizing-safely/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 44
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/behind-the-requirement/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 46
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/software-meets-reality/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 44
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/ai-and-decisions/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "mode": "light",
+      "route": "/writing/thinking-slowly/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 37
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 17
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/about/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 50
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/resume/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 72
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/skills/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 159
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/experience/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 31
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 39
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/contact/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 25
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/experience/apex-self-service/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 79
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/experience/mobilefirst-modernization/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 71
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/experience/engineering-tooling/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 73
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/experience/production-investigation/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 70
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/beyond-screens/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 42
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/modernizing-safely/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 44
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/behind-the-requirement/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 46
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/software-meets-reality/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 44
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/ai-and-decisions/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "route": "/writing/thinking-slowly/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 37
+        }
+      ]
+    }
+  ],
+  "localLinks": [
+    {
+      "link": "/_next/static/media/inter_latin_variable-s.p.34fk6-9m1aguk.woff2",
+      "status": 200
+    },
+    {
+      "link": "/_next/static/media/newsreader_latin_variable-s.p.0dc79pquxokce.woff2",
+      "status": 200
+    },
+    {
+      "link": "/_next/static/chunks/30795fxjha1b3.css",
+      "status": 200
+    },
+    {
+      "link": "/_next/static/chunks/0el5nt6-nk2y3.js",
+      "status": 200
+    },
+    {
+      "link": "/icons/mark.svg",
+      "status": 200
+    },
+    {
+      "link": "/icons/apple-touch-icon.png",
+      "status": 200
+    },
+    {
+      "link": "/",
+      "status": 200
+    },
+    {
+      "link": "/about/",
+      "status": 200
+    },
+    {
+      "link": "/resume/",
+      "status": 200
+    },
+    {
+      "link": "/skills/",
+      "status": 200
+    },
+    {
+      "link": "/experience/",
+      "status": 200
+    },
+    {
+      "link": "/writing/",
+      "status": 200
+    },
+    {
+      "link": "/contact/",
+      "status": 200
+    },
+    {
+      "link": "/files/Meet-Thummar-CV.pdf",
+      "status": 200
+    },
+    {
+      "link": "/experience/apex-self-service/",
+      "status": 200
+    },
+    {
+      "link": "/experience/mobilefirst-modernization/",
+      "status": 200
+    },
+    {
+      "link": "/experience/engineering-tooling/",
+      "status": 200
+    },
+    {
+      "link": "/experience/production-investigation/",
+      "status": 200
+    },
+    {
+      "link": "/writing/beyond-screens/",
+      "status": 200
+    },
+    {
+      "link": "/writing/modernizing-safely/",
+      "status": 200
+    },
+    {
+      "link": "/writing/behind-the-requirement/",
+      "status": 200
+    },
+    {
+      "link": "/writing/software-meets-reality/",
+      "status": 200
+    },
+    {
+      "link": "/writing/ai-and-decisions/",
+      "status": 200
+    },
+    {
+      "link": "/writing/thinking-slowly/",
+      "status": 200
+    }
+  ],
+  "navigation": [
+    "real alias canonicals/noindex",
+    "legacy sample/unknown 404s",
+    "theme persistence/system",
+    "mobile Escape focus",
+    "route focus",
+    "same-route loading recovery"
+  ],
+  "errors": []
+}

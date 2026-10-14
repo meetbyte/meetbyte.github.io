@@ -19,7 +19,9 @@ That makes modernization a different problem from starting with an empty reposit
 My professional work includes enterprise platforms, application migration, Java and Spring Boot. That context shapes how I think about replacing an older capability. I want to understand the behavior before deciding which parts of the implementation deserve to survive.
 
 
-> The old system carries obligations as well as technical limitations.
+> to restructure software by applying a series of refactorings without changing its observable behavior.
+>
+> — [Martin Fowler](https://refactoring.com/), *Refactoring, verb definition*
 
 ## Separate the contract from the mechanism
 
