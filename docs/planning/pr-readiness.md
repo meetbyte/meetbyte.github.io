@@ -35,3 +35,5 @@ Choose base main and compare feature/CR002_subtle_changes; review actual diff an
 ## Current owner correction checkpoint — 14 October 2026
 
 CR002 additionally lowers the Home identity, restores full original artwork proportions and continuous header treatment, varies inner-page ink on visits, adds natural theme-specific shirt variants, and refines the unboxed mobile menu with an editorial index. Evidence is in docs/qa/atmosphere-revision/. Final visual acceptance, PR creation, main merge and deployment remain with the owner. This checkpoint does not close release-dependent Linear tasks.
+
+Latest follow-up: Home artwork now has broader coverage, identity is lower again and the concise line reads “Building software. Staying curious.” Inner pages distribute spills and spray on both sides with a quiet reading lane. Current local evidence moves to docs/qa/spilled-surface/. Previous checkpoints remain historical.

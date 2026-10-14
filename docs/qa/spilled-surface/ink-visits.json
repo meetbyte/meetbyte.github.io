@@ -1,0 +1,16 @@
+{
+  "first": "1",
+  "second": "2",
+  "revisit": "4",
+  "home": {
+    "background": "url(\"http://127.0.0.1:4179/images/editorial/hero-dark-1120.webp\")",
+    "width": 864,
+    "height": 1080
+  },
+  "checks": [
+    "inner artwork changes on refresh and route return",
+    "theme switch preserves composition",
+    "Home remains fixed at natural 4:5 ratio",
+    "one visible portrait with matching theme"
+  ]
+}

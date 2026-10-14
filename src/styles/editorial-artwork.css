@@ -37,7 +37,7 @@ html[data-theme="dark"] .atmosphere-reading .ink-layer { opacity: .14; }
 body:has(.editorial-home) .site-shell { display: flex; flex-direction: column; min-height: 100svh; }
 body:has(.editorial-home) .site-grid { flex: 1; padding: 0; }
 body:has(.editorial-home) .site-footer { padding: 16px 0; border-top: 0; font-size: 12px; }
-.home-introduction { display: flex; align-items: flex-start; min-height: 0; padding: clamp(72px,20svh,180px) 0 32px; }
+.home-introduction { display: flex; align-items: flex-start; min-height: 0; padding: clamp(96px,26svh,234px) 0 32px; }
 .home-introduction-copy { min-width: 0; width: 100%; max-width: 580px; }
 .home-introduction .eyebrow::before { content: ""; display: inline-block; width: 26px; height: 1px; background: currentColor; margin-right: 16px; vertical-align: middle; }
 .home-introduction .eyebrow { font-size: 11px; letter-spacing: .28em; font-weight: 500; margin: 0 0 24px; }
@@ -61,7 +61,7 @@ body:has(.editorial-home) .site-footer { padding: 16px 0; border-top: 0; font-si
 @media (max-width: 639px) {
  :root { --page-art: url('/images/editorial/hero-light-600.webp'); }
  html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-600.webp'); }
- .home-introduction { padding: clamp(72px,15svh,135px) 0 24px; }
+ .home-introduction { padding: clamp(96px,20svh,180px) 0 24px; }
  .home-introduction h1 { font-size: min(20vw,12svh,5.5rem); }
  .home-introduction .eyebrow { font-size: 10px; letter-spacing: .18em; margin-bottom: 20px; }
  .home-summary { max-width: 25ch; font-size: 1.125rem; }
@@ -96,8 +96,8 @@ body:has(.editorial-home) .site-footer { justify-content: flex-start; gap: 16px 
 /* Keyboard focus stays visible without outlining the mobile label as a boxed button. */
 .site-header .menu-toggle:focus-visible { outline: 0; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
 
-/* Preserve the full portrait-shaped ink source at its natural ratio, with a feathered local edge. */
-.atmosphere-home .ink-layer { inset: 0 -2vw auto auto; width: 80svh; height: 100svh; background-size: 100% 100%; background-position: center; opacity: .85; mask-image: linear-gradient(90deg,transparent,rgba(0,0,0,.12) 24%,#000 68%); }
+/* Broaden coverage while preserving the source 4:5 ratio and a feathered local edge. */
+.atmosphere-home .ink-layer { inset: -8svh -1vw auto auto; width: 96svh; height: 120svh; background-size: 100% 100%; background-position: center; opacity: .85; mask-image: linear-gradient(90deg,transparent,rgba(0,0,0,.18) 20%,#000 58%); }
 .page-atmosphere:not(.atmosphere-home) .inner-ink { inset: 0; background: none; mask-image: none; mix-blend-mode: normal; opacity: .30; --ink-color: #8c314c; }
 html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { --ink-color: #cc829c; opacity: .28; mix-blend-mode: normal; }
 .atmosphere-reading .inner-ink { opacity: .18 !important; }
@@ -108,7 +108,7 @@ html[data-theme="dark"] .portrait-light { display: none; }
 html[data-theme="dark"] .portrait-dark { display: block; }
 .mobile-route-index,.menu-caption { display: none; }
 @media(max-width:959px) {
- .atmosphere-home .ink-layer { width: max(76vw,80svh); height: max(95vw,100svh); opacity: .58; right: -12vw; }
+ .atmosphere-home .ink-layer { width: max(84vw,88svh); height: max(105vw,110svh); opacity: .58; right: -8vw; }
  .mobile-navigation .primary-navigation { padding-top: 8px; gap: 10px 24px; }
  .menu-caption { display: block; grid-column: 1 / -1; font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
  .mobile-navigation .nav-link,.mobile-navigation .nav-link.is-active { display: flex; align-items: baseline; gap: 10px; font-size: 21px; min-height: 46px; }
@@ -116,7 +116,7 @@ html[data-theme="dark"] .portrait-dark { display: block; }
  .site-header:has(.mobile-navigation[open]) { padding-bottom: 286px; }
 }
 @media(max-width:639px) {
- .atmosphere-home .ink-layer { width: 80svh; height: 100svh; right: -38svh; opacity: .4; mask-image: linear-gradient(90deg,transparent,rgba(0,0,0,.1) 30%,#000 75%); }
+ .atmosphere-home .ink-layer { width: 88svh; height: 110svh; right: -32svh; opacity: .4; mask-image: linear-gradient(90deg,transparent,rgba(0,0,0,.1) 30%,#000 75%); }
 }
 
 /* Grain comes from the approved paper/ink assets; local radial masks erase all raster boundaries. */
@@ -129,3 +129,18 @@ html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { mix-
 .atmosphere-skills .ink-echo,.atmosphere-reading .ink-echo { display: block; }
 /* Deep light-theme accent remains readable over every permitted inner-page stain. */
 html[data-theme="light"] .site-header .nav-link[aria-current="page"] { color: var(--accent-deep); }
+
+/* A spilled surface has restrained marks on both margins, with the reading column kept quiet. */
+.home-spill { position: absolute; inset: 0; --ink-color: #8c314c; opacity: .13; mix-blend-mode: multiply; }
+html[data-theme="dark"] .home-spill { --ink-color: #cc829c; opacity: .10; mix-blend-mode: screen; }
+.home-spill .ink-primary-stain { opacity: .65; }
+.ink-echo { display: block; opacity: .22; }
+.home-spill .ink-echo { display: none; }
+@media(max-width:639px) { .home-spill { opacity: .09; } }
+/* Keep the two short sentences balanced rather than leaving a lone word on the second line. */
+.home-summary { max-width: 36ch; letter-spacing: .045em; text-wrap: balance; }
+@media(max-width:639px) { .home-summary { max-width: 25ch; } }
+/* Feather the ink through the reading lane; retain stronger spills at both outer margins. */
+.page-atmosphere:not(.atmosphere-home) .inner-ink { mask-image: linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.4) 12%,rgba(0,0,0,.22) 25%,rgba(0,0,0,.22) 75%,rgba(0,0,0,.4) 88%,rgba(0,0,0,.7)); }
+/* Quiet the entire Home artwork while browsing the open menu, without a header-only cut or panel. */
+@media(max-width:959px) { body:has(.mobile-navigation[open]) .atmosphere-home .ink-layer { opacity: .22; } }

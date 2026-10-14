@@ -17,11 +17,11 @@ Paths below are relative to the repository root.
 | Project case studies | `src/data/projects.ts` | Typed sections, optional media and links; replace illustrative content before publishing. |
 | Colours and typography | `src/styles/colors.css`, `src/styles/editorial.css`, `src/app/layout.tsx` | Approved semantic palette, editorial foundation and local Newsreader/Inter fonts. |
 | Page/card layout | `src/styles/globals.css` | Responsive grids, profile sizing and reading panels. |
-| Mobile dropdown, scrollbar width, finishing details | `src/styles/polish.css` | Modern browsers use native thin scrollbars; `--scrollbar-size: 4px` is the legacy WebKit fallback. Menu panel is explicitly absolute to prevent header expansion. |
+| Mobile dropdown, scrollbar width, finishing details | `src/styles/polish.css` | Modern browsers use native thin scrollbars; `--scrollbar-size: 4px` is the legacy WebKit fallback. The current editorial override uses an unboxed list and reserves flow space while open; preserve that behavior. |
 | Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; current original artwork is managed by PageAtmosphere. |
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
-| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless document-wide atmosphere; theme/width selects asset; masked edges and multiply/screen blending prevent a paper rectangle, cover sizing keeps raster edges out of view; each section has distinct crop/intensity. |
+| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless document-wide atmosphere; fixed broader Home art with a quiet left spill; inner visits vary two-sided stains/spray. Feathered reading-lane masks and multiply/screen blending preserve legibility without a backing panel. |
 | Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
 | Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 
