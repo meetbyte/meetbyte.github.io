@@ -8,7 +8,7 @@ import { getExperienceEntries } from "@/lib/content/editorial";
 import { pageMetadata } from "@/lib/metadata";
 import { requirePageEnabled } from "@/lib/require-page-enabled";
 import { formatPostDate } from "@/lib/content/posts";
-export const metadata = pageMetadata("Experience", "Notes on engineering, decisions and thinking slowly.", "/experience/", { sample: process.env.NODE_ENV === "development" });
+export const metadata = pageMetadata("Experience", "Four engineering case studies by Meet Thummar: Oracle APEX self-service data workflows, enterprise modernization, engineering tooling and production investigation.", "/experience/", { sample: process.env.NODE_ENV === "development" });
 /** Presents original prose without fictional dates or empty card grids. @author meetbyte */
 export default async function Experience() {
   requirePageEnabled("experience");

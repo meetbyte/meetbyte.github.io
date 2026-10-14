@@ -7,7 +7,7 @@ import { profile } from "@/data/profile";
 import { homeContent } from "@/data/home";
 import { isPageEnabled } from "@/lib/page-visibility";
 import { pageMetadata } from "@/lib/metadata";
-export const metadata = pageMetadata("Software Engineer", "Full-stack engineering, technical leadership and enterprise systems. Meet the engineer behind the work.", "/");
+export const metadata = { ...pageMetadata("Software Engineer & Enterprise Systems", "Meet Thummar is a software engineer working across full-stack development, enterprise integrations, modernization and production delivery. Explore his experience and writing.", "/"), title: { absolute: "Meet Thummar | Software Engineer & Enterprise Systems" } };
 /** Leaves detailed biography and long-form writing on their dedicated pages. @author meetbyte */
 export default function Home() {
   const [first, ...rest] = profile.name.split(" ");

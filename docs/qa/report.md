@@ -21,7 +21,7 @@ Seven canonical sections and ten reading routes: four detailed Experience narrat
 | Interaction | Theme persistence/System changes, mobile Escape focus, route focus and same-route loading recovery passed |
 | Browser exceptions | None detected |
 
-Latest machine evidence: [results.json](editorial-polish/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
+Latest machine evidence: [results.json](header-seo/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
 
 Axe marked color contrast as requiring manual judgment on every route/theme because text overlaps masked decorative backgrounds. Zero detected violations does **not** establish full WCAG conformance. Visual inspection covered the artwork and reading layouts, but a formal screen-reader assessment and comprehensive manual contrast certification have not been performed.
 
@@ -60,3 +60,13 @@ Artwork uses cover sizing without transforms, so neither a raster boundary nor a
 All four Experience records have additional source-grounded explanation and responsibility tables, plus semantic visual reading maps. Maps summarize the described responsibilities; they are not presented as undocumented production topologies. No new historical incidents, measured outcomes, infrastructure specifics or client identities were invented. Essay quotations are short, attributed and linked to inspected sources; the full provenance is docs/planning/quotation-sources.md.
 
 About uses a new alpha cutout on the left with the original face/pose/orientation, plus a CSS lower-edge fade. Original portrait files remain unchanged. Asset, exact image-edit prompt, dimensions and hash are documented in public/images/portrait-notes.md. The final feature-branch content and portrait still require owner acceptance before main release.
+
+## 14 October header and search-readiness follow-up
+
+Header letters now sit within the opaque portion of a feathered page-colour veil rather than over textured ink. The m-dot logo geometry is rendered as inline SVG with theme tokens. The standalone favicon uses the same palette with OS theme media selection; unlike the inline header mark, favicon theme follows the browser/OS rather than the page's manual preference.
+
+Dedicated checks: 126 header link/theme/viewport contrast cases at >=4.5:1, with desktop text confirmed above the veil fade and mobile menu text checked against its own surface; inline mark fill equals the current accent token. Reproduction: scripts/qa/header-contrast.mjs; evidence: docs/qa/header-seo/header-contrast.json.
+
+Static SEO audit checks 17 unique titles/descriptions, canonical equality, indexable HTML, one h1, anchors, OG/Twitter tags, robots/sitemap and sample/alias exclusions. It caught the missing name in the root title (root-level layout template did not append it); the page now uses an explicit absolute name/role title. Experience metadata is corrected to describe its actual subject. Reproduction: scripts/qa/seo-check.mjs; evidence: docs/qa/header-seo/seo-results.json. Social PNG dimensions checked at 1200×630. No live search indexing/ranking, Search Console access or fresh Lighthouse score is claimed.
+
+Linear acceptance reconciliation: docs/planning/pr-readiness.md. Reports/process/schema completion does not authorize an application-source merge or publication. All normal tests and the final full-site responsive/accessibility/browser checks remain required for the pushed head.

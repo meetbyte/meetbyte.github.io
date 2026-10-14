@@ -2,7 +2,7 @@
  * @file Shared layout for every portfolio route.
  * @author meetbyte
  */
-import Image from "next/image";
+import { BrandMark } from "@/components/brand-mark";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ConnectionProvider } from "@/components/connection-provider";
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
   ...pageMetadata("Home", siteContent.common.metadata.description, "/"),
   metadataBase: new URL(siteUrl),
   title: { default: siteContent.common.metadata.title, template: `%s | ${profile.name}` },
+  authors: [{ name: profile.name, url: siteUrl }],
   openGraph: { ...pageMetadata("Home", siteContent.common.metadata.description, "/").openGraph, images: [socialImage] },
   icons: { icon: "/icons/mark.svg", apple: "/icons/apple-touch-icon.png" },
 };
@@ -60,7 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="site-shell">
           <header className="site-header">
             <Link className="site-brand" href={routes.home} aria-label="Meet home">
-              <Image src="/icons/mark.svg" width={36} height={36} alt="" className="brand-logo" />
+              <BrandMark />
             </Link>
             <Navigation />
             <div className="header-tools">

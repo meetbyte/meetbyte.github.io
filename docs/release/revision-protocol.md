@@ -9,8 +9,8 @@ Record the released full SHA, Pages run, deployment URL, final source/design app
 ## Review sequence
 
 1. Open each canonical URL directly and after internal navigation. Check aliases and known legacy/sample/draft/unknown URLs, CV and mailto/social destinations.
-2. Check 320/375/768/1024/1440 views in light/dark, System and manual persistence, keyboard menu/skip link/focus, reduced motion and denied storage. Distinguish a first development compile from real production navigation behavior.
-3. Check reading hierarchy, image/asset failures, content facts/redaction, optional real dates, computed reading time and original pull quotes. Do not infer editorial approval from a published source flag.
+2. Check 320/375/768/1024/1440 views in light/dark, OS default and one-click manual persistence, keyboard menu/skip link/focus, reduced motion and denied storage. Distinguish a first development compile from real production navigation behavior.
+3. Check reading hierarchy, image/asset failures, content facts/redaction, optional real dates, computed reading time and sourced quotations and accurate attribution. Do not infer editorial approval from a published source flag.
 4. Re-run the committed complete-site harness and selected Lighthouse checks. Keep automated violations, manual checks, lab measurements and live observations separate; never call an unperformed check passed.
 5. Record a discrepancy with the route, released SHA, environment, viewport/theme, exact reproduction, expected versus actual result and a screenshot/log when useful. Never put personal/payment screenshots into broadly shared reports.
 
