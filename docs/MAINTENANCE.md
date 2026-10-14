@@ -21,7 +21,7 @@ Paths below are relative to the repository root.
 | Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; current original artwork is managed by PageAtmosphere. |
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
-| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Borderless document-wide atmosphere; fixed broader Home art with a quiet left spill; inner visits vary two-sided stains/spray. Feathered reading-lane masks and multiply/screen blending preserve legibility without a backing panel. |
+| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Home uses line-free landscape/portrait WebP pairs selected by screen aspect, no CSS rotation or masks. Inner visits retain two-sided stains/spray and feathered reading-lane masks. |
 | Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
 | Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 

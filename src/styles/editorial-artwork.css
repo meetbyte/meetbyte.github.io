@@ -149,10 +149,17 @@ html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { opac
 html[data-theme="dark"] .atmosphere-reading .inner-ink { opacity: .41 !important; }
 html[data-theme="light"] body:has(.editorial-home) .site-shell { --text: #080508; --text-secondary: #080508; }
 
-/* Continuous original artwork: all image edges stay outside the page after rotation. */
-.home-diagonal { position: absolute; inset: 0; mask-image: none; container-type: size; }
-.atmosphere-home .ink-layer { inset: auto; top: 50%; left: 50%; width: calc(68.3cqw + 75.8cqh); height: auto; aspect-ratio: 4 / 5; background: var(--page-art) center / 100% 100% no-repeat; transform: translate(-50%,-50%) rotate(48deg); opacity: .50; mask-image: none; mix-blend-mode: normal; }
-html[data-theme="dark"] .atmosphere-home .ink-layer { mix-blend-mode: normal; }
+/* Native landscape composition avoids rotation overscan and keeps the texture at a natural scale. */
+.home-diagonal { position: absolute; inset: 0; mask-image: none; }
+.atmosphere-home { --home-art: url('/images/editorial/home-light-landscape.webp'); }
+html[data-theme="dark"] .atmosphere-home { --home-art: url('/images/editorial/home-dark-landscape.webp'); }
+.atmosphere-home .ink-layer { inset: 0; width: auto; height: auto; aspect-ratio: auto; background: var(--home-art) center / cover no-repeat; transform: none; opacity: .50; mask-image: none; mix-blend-mode: normal; }
+html[data-theme="dark"] .atmosphere-home .ink-layer { opacity: .44; mix-blend-mode: normal; }
+/* Tall screens use a composed portrait counterpart instead of cropping deep into the wide image. */
+@media (max-aspect-ratio: 1/1) {
+ .atmosphere-home { --home-art: url('/images/editorial/home-light-portrait.webp'); }
+ html[data-theme="dark"] .atmosphere-home { --home-art: url('/images/editorial/home-dark-portrait.webp'); }
+}
 /* Uniform artwork strength and clear lettering; no local fades, panels or extra Home stains. */
 html[data-theme="light"] body:has(.editorial-home) .site-shell { --text: #080508; --text-secondary: #080508; }
 body:has(.editorial-home) .home-surname,body:has(.editorial-home) .home-explore,body:has(.editorial-home) .site-footer,body:has(.editorial-home) .home-introduction .eyebrow,body:has(.editorial-home) .site-header .nav-link { color: var(--text); }

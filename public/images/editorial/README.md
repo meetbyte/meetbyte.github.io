@@ -71,3 +71,17 @@ The accepted 24 inner-page designs are retained, with intensity reduced roughly 
 The owner rejected the artificial diagonal cut/fade. All old Home image masks, identity-side masks and extra Home stains are removed, including obsolete stylesheet rules. The original paired bitmap now covers the entire Home through a 48° rotated, container-sized overscan plane. Its 4:5 ratio is preserved; raster boundaries remain outside the page. The normal viewport crops the background at the screen boundary, but no internal contour, oval, ribbon or strip cuts the artwork. Uniform .50 opacity applies across the whole image in each theme; no region is faded differently and opening the menu does not change artwork intensity. Clear Home text ink retains the established two-tone name.
 
 The fine curved lines are part of the original source image, not added by the renderer. No source bitmap is edited. The artificial straight diagonal seam from earlier compositing is removed. Other-page artwork/designs and their accepted tone remain unchanged.
+
+
+## Current Home: line-free native compositions — 14 October 2026
+
+Supersedes all earlier Home framing entries. Owner selected removal of the curved lines. Built-in image editing adapted the original artwork into landscape and portrait counterparts, retaining the wine palette, organic pigment shapes and paper character. These are edited adaptations, not pixel-identical originals. Original hero sources and inner-page artwork remain unchanged.
+
+Prompt set: remove all thin arcs/circles/lines; retain original burgundy/blush/ivory pigment and fine paper texture; zoom out into a broad landscape, generous quiet left space, organic wine flow from middle bottom toward upper right; no frame, geometry, bottle, text or macro grain. Dark edit changes only palette to the original charcoal/plum/burgundy family while retaining composition. Mobile edit adapts the same artwork to tall 9:19 framing, quiet left two-thirds and right/bottom pigment, then a matching dark palette edit.
+
+Actual editor output: landscape 1672×941 both themes; portrait 863×1822 light / 864×1821 dark. A 3840×2160 landscape was requested but not delivered; these are not native 4K assets. No artificial upscaling was performed. Encoded WebP at quality 92, effort 6. Native diagonal composition replaces CSS rotation and overscan. Aspect ratio selects tall sources for portrait screens; cover still naturally crops at different screen ratios. No internal masks/fades, added lines or extra Home stains. Uniform opacity .50 light/.44 dark passes targeted text contrast. Retina and larger-than-tested displays can still resample these finite sources; no universal pixel-perfect sharpness claim.
+
+- `home-dark-landscape.webp`: 337,010 bytes; SHA-256 `dea66ccde26db8501753d47cea088226d17d31367ff3b66fd47eeaea4d788082`.
+- `home-dark-portrait.webp`: 278,728 bytes; SHA-256 `90971123e23c0e2ba008152b8dbca6c009e25ca2b459d937d8a98ed41572e2c9`.
+- `home-light-landscape.webp`: 280,898 bytes; SHA-256 `8f60c5907b67290bd0d12a617461234c4f0e5a64764a11d26a61b2d718f5cc2b`.
+- `home-light-portrait.webp`: 197,024 bytes; SHA-256 `485153fd704df626f305bb6d0648897141c323b717c99c471263b98760d2e48b`.

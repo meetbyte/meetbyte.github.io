@@ -133,3 +133,12 @@ This correction supersedes the earlier Home masking and fade treatment. Home now
 Fresh validation in `docs/qa/continuous-original-art/`: 88 Home raster text checks with mobile menus open and 60 with menus closed pass, with minimum normal-text contrast 4.61:1 and large-text contrast 3.16:1. These checks also assert no Home or wrapper mask and no extra Home spill elements. Eight short-viewport checks pass, including reachable small-screen reflow. Artwork, portrait, theme, inner-page visit variation and stable Home behavior checks pass. Lint, typecheck, all 38 tests and production build pass.
 
 This is targeted validation of this correction. The earlier full 170-layout matrix in `ribbon-art` remains historical and was not rerun for this change. Owner visual acceptance remains pending. Changes are confined to CR002; no main merge or deployment was performed.
+
+
+## Line-free native Home compositions — 14 October 2026
+
+Owner chose removal of the original curved lines. New edited landscape and portrait sources retain the original artwork family while exposing more of the composition. No Home rotation, masks or local fades remain. Tall screens use composed tall assets instead of a deep landscape crop. Uniform opacity .50 light/.44 dark; original two-tone name and lower placement remain. Inner pages unchanged.
+
+Fresh evidence: `line-free-landscape/`. All 148 Home raster contrast cases pass (88 mobile-menu-open/desktop cases plus 60 menu-closed cases). Minimum normal text 5.87:1 and large text 3.52:1. Eight short viewport fits/reachable reflow checks and theme/visit/portrait behavior pass. Eight native-art scale/composition checks pass: 1668×940 desktop uses ~1.00× cover scale, 1920×1080 ~1.15×, representative phone/tablet screens downsample their composed tall sources. Source dimensions and scale evidence are in `art-scale.json`; no native 4K or retina-resolution claim. Lint, typecheck, 38 tests and production build pass. Earlier complete layout matrices remain historical; this is a targeted visual correction.
+
+Owner visual acceptance remains pending. CR002 only; no main merge or deployment.

@@ -45,3 +45,6 @@ Latest owner screenshot correction: replace the Home bitmap ellipse with an orga
 Latest owner correction supersedes the SVG band checkpoint: restore the exact original paired artwork and rotate the full source diagonally. Keep all accepted inner designs and slightly lower their intensity. Current targeted local evidence is docs/qa/original-art-diagonal/. Owner visual acceptance remains pending.
 
 Current screenshot correction removes all Home masks/extra stains and renders the original image as a continuous 48° diagonal background, with uniform image strength and clear lettering. Current targeted evidence: docs/qa/continuous-original-art/. Original source curves remain; no internal straight cut is introduced.
+
+
+14 October 2026: owner-selected line-free Home correction supersedes rotated original-art framing. Landscape/tall edited counterparts retain wine-art identity with no CSS rotation or masks. Actual image dimensions and source provenance are documented in `public/images/editorial/README.md`; fresh targeted evidence is `docs/qa/line-free-landscape/`. Original sources and inner pages unchanged. Owner visual acceptance and main/release approval remain pending.

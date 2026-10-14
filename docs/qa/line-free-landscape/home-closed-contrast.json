@@ -1,0 +1,613 @@
+{
+  "scope": "home",
+  "menuState": "closed",
+  "rows": [
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 18.31
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 11.43
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 4.95
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 18.31
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 18.31
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 13.29
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 5.87
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 18.44
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "00Home",
+      "minimumSampledContrast": 9.63
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "01About",
+      "minimumSampledContrast": 18.23
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "02Resume",
+      "minimumSampledContrast": 14.34
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "03Skills",
+      "minimumSampledContrast": 16.96
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "04Experience",
+      "minimumSampledContrast": 14.44
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "05Writing",
+      "minimumSampledContrast": 18.27
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "06Contact",
+      "minimumSampledContrast": 17.79
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 18.13
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 13.06
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 6.44
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 18.15
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "00Home",
+      "minimumSampledContrast": 9.63
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "01About",
+      "minimumSampledContrast": 18.23
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "02Resume",
+      "minimumSampledContrast": 14.34
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "03Skills",
+      "minimumSampledContrast": 16.96
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "04Experience",
+      "minimumSampledContrast": 14.44
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "05Writing",
+      "minimumSampledContrast": 18.27
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "06Contact",
+      "minimumSampledContrast": 17.79
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 17.84
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 13.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 7.59
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 17.96
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 11.93
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 3.52
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 15.1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 15.03
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 5.23
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "00Home",
+      "minimumSampledContrast": 14.94
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "01About",
+      "minimumSampledContrast": 14.08
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "02Resume",
+      "minimumSampledContrast": 11.41
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "03Skills",
+      "minimumSampledContrast": 12.32
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "04Experience",
+      "minimumSampledContrast": 7.05
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "05Writing",
+      "minimumSampledContrast": 14.94
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "06Contact",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 14.79
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 5.48
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 14.71
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "00Home",
+      "minimumSampledContrast": 14.94
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "01About",
+      "minimumSampledContrast": 14.08
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "02Resume",
+      "minimumSampledContrast": 11.41
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "03Skills",
+      "minimumSampledContrast": 12.32
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "04Experience",
+      "minimumSampledContrast": 7.05
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "05Writing",
+      "minimumSampledContrast": 14.94
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "header",
+      "required": 4.5,
+      "label": "06Contact",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "SOFTWARE ENGINEER",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Meet",
+      "minimumSampledContrast": 14.62
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 3,
+      "label": "Thummar",
+      "minimumSampledContrast": 5.18
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "kind": "body",
+      "required": 4.5,
+      "label": "Building software. Staying curious.",
+      "minimumSampledContrast": 14.79
+    }
+  ],
+  "checks": [
+    "actual artwork pixels: normal text >=4.5:1, large headings >=3:1",
+    "transparent header, no veil",
+    "unframed menu makes room in document",
+    "Escape returns focus",
+    "light mark uses deep accent; dark unchanged"
+  ]
+}
