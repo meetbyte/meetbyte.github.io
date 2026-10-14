@@ -21,7 +21,7 @@ Seven canonical sections and ten reading routes: four detailed Experience narrat
 | Interaction | Theme persistence/System changes, mobile Escape focus, route focus and same-route loading recovery passed |
 | Browser exceptions | None detected |
 
-Latest machine evidence: [results.json](free-header/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
+Latest machine evidence: [results.json](atmosphere-revision/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
 
 Axe marked color contrast as requiring manual judgment on every route/theme because text overlaps masked decorative backgrounds. Zero detected violations does **not** establish full WCAG conformance. Visual inspection covered the artwork and reading layouts, but a formal screen-reader assessment and comprehensive manual contrast certification have not been performed.
 
@@ -44,6 +44,8 @@ Run the normal npm checks above. `scripts/qa/complete-site.mjs` uses externally 
 ## Remaining owner/release gates
 
 Owner visual/content/privacy acceptance; final PR and required GitHub CI/current eligible review; explicit authorization for main merge and its automatic Pages deployment; then actual live smoke checks. External mail delivery/social destinations and live hosting were not tested. MEE-21 release preparation and MEE-22 revision protocol are written, but a successful live release has not occurred from this work. Do not mark deployment complete or represent this local report as a live release certificate.
+
+The chronological checkpoints below describe earlier iterations; the final atmosphere revision at the end supersedes their artwork framing, portrait and header details.
 
 ## 14 October visual correction
 
@@ -80,3 +82,13 @@ Mobile controls are borderless Menu/Close text and a smaller theme glyph with no
 Contrast validation now samples actual screenshot pixels behind text rectangles after hiding glyphs/underlines (with transitions disabled for stable background sampling), not a presumed opaque header surface. Sampled values are in docs/qa/free-header/header-contrast.json. This is a regression test for the measured combinations, not comprehensive WCAG certification. Both-theme closed/open phone/tablet/desktop images were inspected locally. Full 170-layout/34-axe matrix and eight short-viewport fits are recorded under docs/qa/free-header/; artifacts from the earlier veil checkpoint are historical.
 
 Final free-header result: 168 sampled header/menu text cases passed, minimum sampled contrast 5.09:1; eight short-viewport fits passed. Keyboard Menu focus uses a visible underline, rather than a button-shaped outline. The 170-layout/34-axe regression reports zero detected violations and no browser exceptions.
+
+## 14 October final atmosphere, placement and portrait revision
+
+The owner’s latest screenshot showed an enlarged Home crop and an introduction still too high. Home now shows the entire approved 4:5 original at viewport height on desktop, with a feathered local edge and deliberate smaller-screen right bleed. The artwork continues behind the transparent header, with no cut or backing panel. Home introduction top space increases to 20svh on taller desktop screens and 15svh on taller phones; short-height layouts retain compact spacing. Screenshots of both themes and the mobile menu were visually inspected.
+
+Inner-page visits select among eight motionless compositions using organic SVG silhouettes, approved ink/paper grain, different positions/rotations and radial edge masks. Refresh and route return advance the scene; theme switching preserves it; Home remains fixed. Skills and long-form routes include a quiet lower-edge echo. About has two transparent shirt recolours: warm ivory/oatmeal in light mode and subdued plum-brown in dark, with exactly one visible/accessible portrait. Original photo and blue-shirt cutout are preserved. Exact editing prompts, asset hashes and limitations are in public/images/portrait-notes.md.
+
+Mobile navigation adds a small Explore caption, route indices and restrained 21px links, retaining the transparent two-column flow layout, native details, Escape/outside/route dismissal and focus return. A texture contrast regression was found and corrected by using the deep accent for active light-theme header text.
+
+Final evidence: docs/qa/atmosphere-revision/results.json (170 layouts, 34 axe runs, zero detected violations/browser exceptions and 24 linked targets); home-viewports.json (eight ordinary short-viewport fits plus reachable small-screen reflow); ink-visits.json (refresh/return variation, no theme-induced scene change, stable natural-ratio Home and matching visible portrait); header-contrast.json (952 sampled text cases including all eight inner-page variants across both themes and phone/tablet/desktop sizes). The 17 static metadata/crawlability checks pass. Normal lint, typecheck, 38 tests and production build pass. These are local implementation checks, not live hosting, search ranking, comprehensive accessibility certification or owner visual acceptance. No main merge or deployment was performed.

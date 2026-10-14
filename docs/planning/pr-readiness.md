@@ -31,3 +31,7 @@ This is technical crawlability and presentation readiness. Search Console owners
 ## Owner PR handoff
 
 Choose base main and compare feature/CR002_subtle_changes; review actual diff and attached QA/release records. Required CI/current eligible approval and final source-head revalidation still apply. The existing approval policy says the connected meetbyte account cannot approve a PR it authored: an owner-authored PR needs an eligible separate reviewer under the configured rules. Do not weaken protection to avoid that constraint. No PR, merge, deployment, workflow dispatch or reviewer/controller change was made for this handoff.
+
+## Current owner correction checkpoint — 14 October 2026
+
+CR002 additionally lowers the Home identity, restores full original artwork proportions and continuous header treatment, varies inner-page ink on visits, adds natural theme-specific shirt variants, and refines the unboxed mobile menu with an editorial index. Evidence is in docs/qa/atmosphere-revision/. Final visual acceptance, PR creation, main merge and deployment remain with the owner. This checkpoint does not close release-dependent Linear tasks.

@@ -64,7 +64,7 @@ export function Navigation() {
   }, []);
 
   function renderLinks() {
-    return visibleItems.map((item) => {
+    return visibleItems.map((item, index) => {
       const active = isActiveRoute(pathname, item.href);
       return (
         <SiteLink
@@ -73,7 +73,7 @@ export function Navigation() {
           className={`nav-link${active ? " is-active" : ""}`}
           aria-current={active ? "page" : undefined}
         >
-          {item.label}
+          <span className="mobile-route-index" aria-hidden="true">{String(index).padStart(2, "0")}</span><span className="nav-label">{item.label}</span>
         </SiteLink>
       );
     });
@@ -101,6 +101,7 @@ export function Navigation() {
           <span className="menu-close-icon">Close</span>
         </summary>
         <nav id="primary-navigation" className="primary-navigation" aria-label={siteContent.common.navigation.label}>
+          <span className="menu-caption" aria-hidden="true">Explore</span>
           {renderLinks()}
         </nav>
       </details>

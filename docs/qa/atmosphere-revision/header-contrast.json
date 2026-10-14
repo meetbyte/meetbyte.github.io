@@ -1,0 +1,7627 @@
+{
+  "rows": [
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 10.02
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 11.45
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 11.92
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 11.4
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 11.24
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.5
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.39
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 12.57
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.69
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 12.97
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 11.49
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 10.99
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.33
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 7.76
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.26
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.45
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 12.57
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 9.11
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 12.97
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.18
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.25
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 10.99
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 11.61
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.69
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 7.76
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.12
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.5
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 11.24
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.44
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.02
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 9.29
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 9.69
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 12.4
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 6.68
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 13.47
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.15
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.07
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 10.8
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 6.97
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.39
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 12.1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.88
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.57
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 12.97
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.75
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.69
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 11.5
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.42
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 10.91
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.54
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.12
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.07
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 11.99
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 7.78
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.26
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.46
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.48
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 12.1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.37
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 9.03
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 12.97
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.18
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.69
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.26
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.42
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 10.91
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.54
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 11.31
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.07
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.69
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 11.99
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 7.78
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.12
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 12.46
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.53
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 10.8
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 9.71
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.02
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 13.95
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 13.23
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.47
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 10.72
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.02
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.86
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.46
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 11.96
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 9.91
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 9.51
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.38
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.38
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 9.36
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 8.77
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.32
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.19
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.46
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 11.96
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.8
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 9.51
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.02
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.38
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.03
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 8.77
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 5.98
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.19
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 13.92
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.23
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.15
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 9.84
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 10.71
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.66
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.32
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 9.29
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 8.99
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.59
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.23
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.71
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 10.71
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.22
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.32
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.94
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 8.99
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.17
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 8.23
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 10.09
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 14.75
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.84
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.44
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.84
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.01
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.25
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.58
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.78
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.06
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.43
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 12.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.64
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.2
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 11.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 6.74
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.39
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.58
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.29
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.36
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.53
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 12.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.61
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.96
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 11.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.01
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 6.95
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.84
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.29
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 8
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 8.43
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 12.25
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 14.47
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 5.35
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.14
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.66
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.52
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.91
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.28
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.2
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.08
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.58
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.96
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.78
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.55
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.52
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 12.84
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.66
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 7.5
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.08
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.2
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 11.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 6.74
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.57
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 12.56
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 14.2
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.4
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.18
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 14.98
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.2
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.78
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.6
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.52
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 12.84
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.66
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 13.37
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.08
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.96
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 11.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 12.01
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.57
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.05
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.45
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.37
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 14.94
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 11.05
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 9.66
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.02
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.57
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.88
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.79
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.01
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.17
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.06
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.76
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.23
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.36
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.56
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.57
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 13.88
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.67
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.01
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.39
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.06
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.62
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.23
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.05
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.56
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "00Home",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.18
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "composition": "fixed",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.88
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.79
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.52
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 13.57
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.78
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 8.76
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.23
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 14.36
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.36
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "3",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "4",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "5",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "6",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.67
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.52
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "05Writing",
+      "minimumSampledContrast": 7.61
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "7",
+      "label": "06Contact",
+      "minimumSampledContrast": 12.78
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.62
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "04Experience",
+      "minimumSampledContrast": 14.23
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.05
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "0",
+      "label": "06Contact",
+      "minimumSampledContrast": 14.36
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "1",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "00Home",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "01About",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "02Resume",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "03Skills",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "04Experience",
+      "minimumSampledContrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "05Writing",
+      "minimumSampledContrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "composition": "2",
+      "label": "06Contact",
+      "minimumSampledContrast": 15.85
+    }
+  ],
+  "checks": [
+    "actual artwork pixels sampled behind text at >=4.5:1",
+    "transparent header, no veil",
+    "unframed menu makes room in document",
+    "Escape returns focus",
+    "light mark uses deep accent; dark unchanged"
+  ]
+}

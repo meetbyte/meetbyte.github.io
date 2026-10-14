@@ -35,3 +35,9 @@ Dark variant (light output supplied as edit reference):
 - hero-dark-1120.webp: `2f771e7e451bf4f9bff8538c7ae20d3e0532d59d25725dbd11b16c8780a4fb63`
 
 Latest correction: cover sizing keeps every raster edge outside the document, and route crops no longer use transformed oversized layers that could move ink out of the Skills reading area. Home layout fits ordinary viewports through flex/document flow; it is not cropped to prevent scrolling at browser zoom.
+
+## Current composition — 14 October 2026
+
+Home keeps its fixed approved raster and displays the complete 4:5 artwork at viewport height on desktop rather than stretching it with full-width cover. Its left edge has a local feathered mask; the header uses the same uninterrupted background. Smaller screens retain the ratio with a controlled right bleed and lower opacity, preserving legible copy. No header backing panel is added.
+
+Inner pages vary among eight SVG ink arrangements on each navigation/refresh, using organic silhouettes, grain displacement and locally masked samples of these original textures. A session-only counter advances the composition; blocked storage uses browser randomness. The chosen art stays motionless while reading and stays the same when switching theme. Home does not use this counter. Skills/long reading routes receive a restrained lower-edge echo. This is decorative only, inaccessible to focus/assistive technology, and does not change content, routes or layout.

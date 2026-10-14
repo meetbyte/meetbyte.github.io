@@ -30,7 +30,10 @@ export default function About() {
       <header className="detail-intro about-intro">
         <h1>{about.title}</h1>
         <div className="about-intro-grid">
-        <SiteImage className="about-portrait" src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} sizes="(max-width: 640px) 80vw, 280px" />
+        <div className="about-portrait">
+          <SiteImage className="portrait-light" src="/images/meet-thummar-light.webp" alt={profile.portrait.alt} width={600} height={750} sizes="(max-width: 640px) 75vw, 260px" />
+          <SiteImage className="portrait-dark" src="/images/meet-thummar-dark.webp" alt={profile.portrait.alt} width={600} height={750} sizes="(max-width: 640px) 75vw, 260px" />
+        </div>
         <div className="about-intro-copy">
         {about.introduction && <p className="detail-lead">{about.introduction}</p>}
         {biography.length > 0 ? biography.map((paragraph, index) => (
