@@ -67,23 +67,6 @@ function InkComposition({ variant, id }: { variant: number; id: string }) {
     <svg className="ink-composition ink-echo" viewBox="0 0 1000 1000" preserveAspectRatio="none" focusable="false"><use href={`#stain-${id}`} transform={transforms[(variant + 3) % 8]} /></svg>
   </>;
 }
-/** A continuous textured ribbon follows a diagonal silhouette, with no paper-coloured oval backing. @author meetbyte */
-function HomeRibbon({ id }: { id: string }) {
-  const sweep = "M560 980C690 780 850 620 1010 400C1150 190 1290 100 1510-100L1610-60C1410 220 1280 350 1170 590C1080 770 920 920 910 1010Z";
-  return <svg className="home-ribbon-art" viewBox="0 0 1440 900" preserveAspectRatio="none" focusable="false">
-    <defs>
-      <filter id={`edge-${id}`} x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="3" seed="19" result="grain" /><feDisplacementMap in="SourceGraphic" in2="grain" scale="90" xChannelSelector="R" yChannelSelector="G" /><feGaussianBlur stdDeviation="5" /></filter>
-      <mask id={`ribbon-${id}`}><path d={sweep} fill="white" filter={`url(#edge-${id})`} /></mask>
-      <linearGradient id={`wine-${id}`} x1=".2" y1="1" x2="1" y2="0"><stop stopColor="var(--ribbon-wine)" stopOpacity=".42" /><stop offset=".55" stopColor="var(--ribbon-wine)" stopOpacity=".85" /><stop offset="1" stopColor="var(--ribbon-wine)" stopOpacity=".58" /></linearGradient>
-    </defs>
-    <g mask={`url(#ribbon-${id})`}>
-      <path d={sweep} fill={`url(#wine-${id})`} />
-      <image className="ink-paper-light ribbon-texture" href="/images/editorial/hero-light-1120.webp" x="440" y="-300" width="1200" height="1500" />
-      <image className="ink-paper-dark ribbon-texture" href="/images/editorial/hero-dark-1120.webp" x="440" y="-300" width="1200" height="1500" />
-    </g>
-    <path d="M720 920C800 740 1050 590 1170 350C1240 210 1370 70 1470-40" fill="none" stroke="var(--ribbon-wine)" strokeWidth="1" opacity=".20" />
-  </svg>;
-}
 /** Home keeps its approved composition; navigation and refresh select a fresh inner-page wash. @author meetbyte */
 export function PageAtmosphere() {
   const pathname = usePathname();
@@ -91,6 +74,6 @@ export function PageAtmosphere() {
   const section = pathname.split("/")[1] || "home";
   const reading = /\/(experience|writing)\/[^/]+/.test(pathname);
   return <div className={`page-atmosphere atmosphere-${section}${reading ? " atmosphere-reading" : ""}`} aria-hidden="true">
-    {section === "home" ? <><div className="home-diagonal"><div className="ink-layer home-ribbon"><HomeRibbon id={`ribbon${homeId}`} /></div></div><div className="home-spill"><InkComposition variant={3} id={`home${homeId}`} /></div></> : <InnerInk key={pathname} />}
+    {section === "home" ? <><div className="home-diagonal"><div className="ink-layer" /></div><div className="home-spill"><InkComposition variant={3} id={`home${homeId}`} /></div></> : <InnerInk key={pathname} />}
   </div>;
 }

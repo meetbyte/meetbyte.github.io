@@ -1,0 +1,81 @@
+{
+  "rows": [
+    {
+      "mode": "light",
+      "width": 1440,
+      "height": 600,
+      "scrollWidth": 1440,
+      "scrollHeight": 600,
+      "title": "72px",
+      "body": "18px"
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "scrollHeight": 768,
+      "title": "81.92px",
+      "body": "18px"
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "height": 667,
+      "scrollWidth": 375,
+      "scrollHeight": 667,
+      "title": "75px",
+      "body": "17px"
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "title": "64px",
+      "body": "17px"
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "height": 600,
+      "scrollWidth": 1440,
+      "scrollHeight": 600,
+      "title": "72px",
+      "body": "18px"
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1024,
+      "scrollHeight": 768,
+      "title": "81.92px",
+      "body": "18px"
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "height": 667,
+      "scrollWidth": 375,
+      "scrollHeight": 667,
+      "title": "75px",
+      "body": "17px"
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "scrollHeight": 568,
+      "title": "64px",
+      "body": "17px"
+    }
+  ],
+  "checks": [
+    "8 short/standard viewport theme checks",
+    "short reflow preserves reachable content",
+    "reading visual screenshots"
+  ]
+}
