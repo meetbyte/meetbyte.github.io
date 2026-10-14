@@ -43,6 +43,7 @@ export default function About() {
           <div className="about-portrait">
             <SiteImage
               className="portrait-light"
+              loading="eager"
               src={editorialPortrait.light}
               alt={profile.portrait.alt}
               width={editorialPortrait.width}
@@ -51,8 +52,10 @@ export default function About() {
             />
             <SiteImage
               className="portrait-dark"
+              loading="eager"
+              aria-hidden="true"
               src={editorialPortrait.dark}
-              alt={profile.portrait.alt}
+              alt=""
               width={editorialPortrait.width}
               height={editorialPortrait.height}
               sizes={editorialPortrait.sizes}
