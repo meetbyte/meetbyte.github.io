@@ -47,3 +47,9 @@ Inner pages vary among eight SVG ink arrangements on each navigation/refresh, us
 The latest owner feedback requested more artwork coverage and spills across the page. Home keeps the same approved 4:5 source, broadened to 96svh × 120svh on desktop with modest top/right bleed, plus a faint fixed left-side SVG spill. Smaller screens use the same ratio with deliberate right bleed and reduced opacity. This replaces the previous viewport-height framing; no image is stretched horizontally.
 
 Inner compositions now alternate dominant stains between sides and add smaller opposite-side spills, irregular droplets and a faint lower echo on every inner page. Native vector silhouettes retain the approved paper texture. Their page-wide mask smoothly reduces ink through the reading lane rather than placing a white panel behind text. Refresh/route return variation remains; theme changes do not change the arrangement. No new external assets or animation are introduced.
+
+## Diagonal Home and visible inner ink — 14 October 2026
+
+Home’s source keeps its 4:5 ratio and now tilts 34° on desktop (28° on tablets, 22° on phones), creating a lower-middle-to-upper-right composition. An elliptical mask feathers all rotated raster edges; a separate page-coordinate fade protects the identity column. The original artwork and subtle fixed left spill remain; no literal wine bottle is added. Home identity is anchored above the footer instead of moved with increasing top padding. Small viewports remain free to scroll if content/menu/zoom needs more room.
+
+Inner artwork opacity is now .55 in light and .60 in dark; long-form pages use .42/.46. Counter-spills and spray are stronger. The reading-lane fade reaches its quieter level just before the actual text margin (20px phone, 32px tablet, responsive desktop), so stronger margin ink does not run through words. Source textures, per-visit variation and theme-stable composition are preserved.

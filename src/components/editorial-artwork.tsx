@@ -49,8 +49,8 @@ function InkComposition({ variant, id }: { variant: number; id: string }) {
       </g>
       </defs>
       <use className="ink-primary-stain" href={`#stain-${id}`} transform={transforms[variant]} />
-      <use className="ink-secondary-stain" href={`#stain-${id}`} transform={`translate(${variant % 2 ? 850 : 85} ${180 + variant * 70}) rotate(${variant * 23 - 45}) scale(.48 .62)`} opacity=".48" />
-      <g className="ink-spray" fill="var(--ink-color)" opacity=".20" filter={`url(#grain-${id})`} transform={`translate(${variant % 2 ? 760 : 135} ${480 - variant * 35}) rotate(${variant * 17})`}>
+      <use className="ink-secondary-stain" href={`#stain-${id}`} transform={`translate(${variant % 2 ? 850 : 85} ${180 + variant * 70}) rotate(${variant * 23 - 45}) scale(.48 .62)`} opacity=".78" />
+      <g className="ink-spray" fill="var(--ink-color)" opacity=".40" filter={`url(#grain-${id})`} transform={`translate(${variant % 2 ? 760 : 135} ${480 - variant * 35}) rotate(${variant * 17})`}>
         <path d="M0 0C-12-17-32-14-28 8C-21 27 11 22 0 0Z M54 37C42 23 26 31 33 45C42 59 66 50 54 37Z M-30 95C-44 84-62 104-46 114C-31 124-16 106-30 95Z M85 145C73 134 64 150 78 159C88 166 97 151 85 145Z" />
         <ellipse cx="22" cy="170" rx="5" ry="9" /><ellipse cx="-72" cy="48" rx="4" ry="6" />
       </g>
@@ -65,6 +65,6 @@ export function PageAtmosphere() {
   const section = pathname.split("/")[1] || "home";
   const reading = /\/(experience|writing)\/[^/]+/.test(pathname);
   return <div className={`page-atmosphere atmosphere-${section}${reading ? " atmosphere-reading" : ""}`} aria-hidden="true">
-    {section === "home" ? <><div className="ink-layer" /><div className="home-spill"><InkComposition variant={3} id={`home${homeId}`} /></div></> : <InnerInk key={pathname} pathname={pathname} />}
+    {section === "home" ? <><div className="home-diagonal"><div className="ink-layer" /></div><div className="home-spill"><InkComposition variant={3} id={`home${homeId}`} /></div></> : <InnerInk key={pathname} pathname={pathname} />}
   </div>;
 }
