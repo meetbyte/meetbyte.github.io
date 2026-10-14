@@ -9,7 +9,7 @@ const {chromium}=await import(process.env.PLAYWRIGHT_MODULE_PATH || 'playwright'
 const axePath=process.env.AXE_SCRIPT_PATH;
 if(!axePath)throw new Error('Set AXE_SCRIPT_PATH to the separately installed axe-core/axe.min.js.');
 const routes=['/','/about/','/resume/','/skills/','/experience/','/writing/','/contact/','/experience/apex-self-service/','/experience/mobilefirst-modernization/','/experience/engineering-tooling/','/experience/production-investigation/','/writing/beyond-screens/','/writing/modernizing-safely/','/writing/behind-the-requirement/','/writing/software-meets-reality/','/writing/ai-and-decisions/','/writing/thinking-slowly/'];
-const output='docs/qa/original-art-diagonal';fs.mkdirSync(output,{recursive:true});
+const output='docs/qa/continuous-original-art';fs.mkdirSync(output,{recursive:true});
 const results={layouts:[],axe:[],localLinks:[],navigation:[],errors:[]};
 const server=await startStaticServer();let browser;
 try{

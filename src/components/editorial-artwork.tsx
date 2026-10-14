@@ -70,10 +70,9 @@ function InkComposition({ variant, id }: { variant: number; id: string }) {
 /** Home keeps its approved composition; navigation and refresh select a fresh inner-page wash. @author meetbyte */
 export function PageAtmosphere() {
   const pathname = usePathname();
-  const homeId = useId().replace(/[^a-zA-Z0-9]/g, "");
   const section = pathname.split("/")[1] || "home";
   const reading = /\/(experience|writing)\/[^/]+/.test(pathname);
   return <div className={`page-atmosphere atmosphere-${section}${reading ? " atmosphere-reading" : ""}`} aria-hidden="true">
-    {section === "home" ? <><div className="home-diagonal"><div className="ink-layer" /></div><div className="home-spill"><InkComposition variant={3} id={`home${homeId}`} /></div></> : <InnerInk key={pathname} />}
+    {section === "home" ? <div className="home-diagonal"><div className="ink-layer" /></div> : <InnerInk key={pathname} />}
   </div>;
 }

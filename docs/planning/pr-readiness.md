@@ -43,3 +43,5 @@ Current final visual follow-up: Home identity is anchored in the lower page, ori
 Latest owner screenshot correction: replace the Home bitmap ellipse with an organically masked SVG diagonal band using original texture, eliminating the pale right-edge bulge in both themes. Expand inner artwork to 24 distinct silhouette/arrangement combinations and avoid per-route seed collisions. Current local evidence: docs/qa/ribbon-art/. Owner visual acceptance remains separate.
 
 Latest owner correction supersedes the SVG band checkpoint: restore the exact original paired artwork and rotate the full source diagonally. Keep all accepted inner designs and slightly lower their intensity. Current targeted local evidence is docs/qa/original-art-diagonal/. Owner visual acceptance remains pending.
+
+Current screenshot correction removes all Home masks/extra stains and renders the original image as a continuous 48° diagonal background, with uniform image strength and clear lettering. Current targeted evidence: docs/qa/continuous-original-art/. Original source curves remain; no internal straight cut is introduced.

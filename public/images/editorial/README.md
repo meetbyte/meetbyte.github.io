@@ -65,3 +65,9 @@ Inner-page inventory is expanded to 24 compositions: six genuinely different pat
 The owner rejected the SVG band: the request was to rotate the original right-side artwork, not replace its composition. Home now uses the exact unchanged hero-light/hero-dark source files again, rendered as a complete 4:5 image plane and rotated 48° desktop, 44° tablet, 40° phone. The replacement HomeRibbon component/paint paths have been removed. Source edges feather before the outermost pixels; a page-coordinate fade keeps the identity column quiet. The original torn paper, wine colour and fine linework are retained, without an elliptical mask or a new ribbon silhouette. Do not reinterpret a future placement request as authority to redraw this artwork.
 
 The accepted 24 inner-page designs are retained, with intensity reduced roughly 10%: .55→.49 light, .60→.54 dark, .42→.38 light reading, .46→.41 dark reading. This is a small tone adjustment, not another design replacement.
+
+## Continuous original Home — 14 October 2026
+
+The owner rejected the artificial diagonal cut/fade. All old Home image masks, identity-side masks and extra Home stains are removed, including obsolete stylesheet rules. The original paired bitmap now covers the entire Home through a 48° rotated, container-sized overscan plane. Its 4:5 ratio is preserved; raster boundaries remain outside the page. The normal viewport crops the background at the screen boundary, but no internal contour, oval, ribbon or strip cuts the artwork. Uniform .50 opacity applies across the whole image in each theme; no region is faded differently and opening the menu does not change artwork intensity. Clear Home text ink retains the established two-tone name.
+
+The fine curved lines are part of the original source image, not added by the renderer. No source bitmap is edited. The artificial straight diagonal seam from earlier compositing is removed. Other-page artwork/designs and their accepted tone remain unchanged.

@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {startStaticServer} from './static-server.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE_PATH||'playwright');
 const server=await startStaticServer(4179);let browser;
-const output='docs/qa/original-art-diagonal';fs.mkdirSync(output,{recursive:true});
+const output='docs/qa/continuous-original-art';fs.mkdirSync(output,{recursive:true});
 try {
  browser=await chromium.launch({executablePath:process.env.FOUNDATION_BROWSER_EXECUTABLE,args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});
  const page=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
