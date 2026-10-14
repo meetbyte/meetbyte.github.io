@@ -9,7 +9,7 @@ const {chromium}=await import(process.env.PLAYWRIGHT_MODULE_PATH || 'playwright'
 const axePath=process.env.AXE_SCRIPT_PATH;
 if(!axePath)throw new Error('Set AXE_SCRIPT_PATH to the separately installed axe-core/axe.min.js.');
 const routes=['/','/about/','/resume/','/skills/','/experience/','/writing/','/contact/','/experience/apex-self-service/','/experience/mobilefirst-modernization/','/experience/engineering-tooling/','/experience/production-investigation/','/writing/beyond-screens/','/writing/modernizing-safely/','/writing/behind-the-requirement/','/writing/software-meets-reality/','/writing/ai-and-decisions/','/writing/thinking-slowly/'];
-const output='docs/qa/header-seo';fs.mkdirSync(output,{recursive:true});
+const output='docs/qa/free-header';fs.mkdirSync(output,{recursive:true});
 const results={layouts:[],axe:[],localLinks:[],navigation:[],errors:[]};
 const server=await startStaticServer();let browser;
 try{
@@ -30,7 +30,7 @@ try{
    if(route==='/about/' && width>=768)assert.ok(await page.evaluate(()=>document.querySelector('.about-portrait').getBoundingClientRect().left<document.querySelector('.about-intro-copy').getBoundingClientRect().left),'Portrait must be on the left');
    if(/experience\/[^/]+/.test(route))assert.equal(await page.locator('.experience-map').count(),1);
    if(/writing\/[^/]+/.test(route))assert.equal(await page.locator('.article-prose blockquote a').count(),1);
-   assert.equal(await page.locator('.site-brand svg').count(),1);assert.equal(await page.locator('.site-brand svg rect').getAttribute('fill'),'var(--accent)');
+   assert.equal(await page.locator('.site-brand svg').count(),1);assert.equal(await page.locator('.site-brand svg rect').getAttribute('fill'),'var(--logo-color)');
    assert.equal(await page.locator('select').count(),0);
    if(route==='/experience/')assert.equal(await page.locator('main .eyebrow').first().innerText(),'04 / EXPERIENCE');
    if(route==='/writing/')assert.equal(await page.locator('main .eyebrow').first().innerText(),'05 / WRITING');

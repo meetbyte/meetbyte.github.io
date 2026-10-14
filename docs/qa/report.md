@@ -21,7 +21,7 @@ Seven canonical sections and ten reading routes: four detailed Experience narrat
 | Interaction | Theme persistence/System changes, mobile Escape focus, route focus and same-route loading recovery passed |
 | Browser exceptions | None detected |
 
-Latest machine evidence: [results.json](header-seo/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
+Latest machine evidence: [results.json](free-header/results.json); the earlier checkpoint remains in [complete-site/results.json](complete-site/results.json) and [performance-summary.json](complete-site/performance-summary.json). Screenshots were inspected locally for full-page composition and legibility; generated screenshots/raw lab traces are not shipped as website assets.
 
 Axe marked color contrast as requiring manual judgment on every route/theme because text overlaps masked decorative backgrounds. Zero detected violations does **not** establish full WCAG conformance. Visual inspection covered the artwork and reading layouts, but a formal screen-reader assessment and comprehensive manual contrast certification have not been performed.
 
@@ -70,3 +70,13 @@ Dedicated checks: 126 header link/theme/viewport contrast cases at >=4.5:1, with
 Static SEO audit checks 17 unique titles/descriptions, canonical equality, indexable HTML, one h1, anchors, OG/Twitter tags, robots/sitemap and sample/alias exclusions. It caught the missing name in the root title (root-level layout template did not append it); the page now uses an explicit absolute name/role title. Experience metadata is corrected to describe its actual subject. Reproduction: scripts/qa/seo-check.mjs; evidence: docs/qa/header-seo/seo-results.json. Social PNG dimensions checked at 1200×630. No live search indexing/ranking, Search Console access or fresh Lighthouse score is claimed.
 
 Linear acceptance reconciliation: docs/planning/pr-readiness.md. Reports/process/schema completion does not authorize an application-source merge or publication. All normal tests and the final full-site responsive/accessibility/browser checks remain required for the pushed head.
+
+## 14 October free-header and mobile navigation revision
+
+Owner rejected the veil. It is removed from both themes; the header has a transparent background and no ::after panel. The natural Home artwork crop, dark light-theme lettering and modest weight/size increase keep navigation readable. The name moves about 36px lower on a 900px desktop viewport and 20px lower on tall phones; screens <=700px retain compact top spacing to preserve fit. The light m-dot logo/favicon uses deep burgundy; the dark mark retains its previous palette.
+
+Mobile controls are borderless Menu/Close text and a smaller theme glyph with no backing circle. Open navigation is a transparent two-column editorial list; the header makes room so it does not cover the hero. Native details behavior, pre-JavaScript availability, outside dismissal, route dismissal, Escape and focus return are retained. Button names match Menu/Close state through the native toggle event.
+
+Contrast validation now samples actual screenshot pixels behind text rectangles after hiding glyphs/underlines (with transitions disabled for stable background sampling), not a presumed opaque header surface. Sampled values are in docs/qa/free-header/header-contrast.json. This is a regression test for the measured combinations, not comprehensive WCAG certification. Both-theme closed/open phone/tablet/desktop images were inspected locally. Full 170-layout/34-axe matrix and eight short-viewport fits are recorded under docs/qa/free-header/; artifacts from the earlier veil checkpoint are historical.
+
+Final free-header result: 168 sampled header/menu text cases passed, minimum sampled contrast 5.09:1; eight short-viewport fits passed. Keyboard Menu focus uses a visible underline, rather than a button-shaped outline. The 170-layout/34-axe regression reports zero detected violations and no browser exceptions.

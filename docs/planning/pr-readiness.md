@@ -20,7 +20,7 @@ The documentation/schema/QA deliverables MEE-10, MEE-20 and MEE-22 can be closed
 
 ## Source verification
 
-Normal lint/typecheck/test/build, complete-site browser matrix and static metadata checks. Header text contrast is checked against the palette surface within the opaque portion of its feathered veil (mobile menu uses its own surface), avoiding ink-dependent readability. These checks supplement the existing manual visual inspection, not a claim that every accessibility requirement is certified.
+Normal lint/typecheck/test/build, complete-site browser matrix and static metadata checks. Header text contrast is sampled against actual rendered artwork pixels, with no veil or navigation card. The open mobile menu is transparent and makes room in document flow. These checks supplement the existing manual visual inspection, not a claim that every accessibility requirement is certified.
 
 ## Search readiness
 

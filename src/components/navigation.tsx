@@ -4,18 +4,18 @@
  * @file Native mobile disclosure stays usable before JavaScript loads.
  * @author meetbyte
  */
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { siteContent } from "@/constants/content";
 import { navigationItems } from "@/data/navigation";
 import { isActiveRoute } from "@/lib/navigation";
 import { isRouteEnabled } from "@/lib/page-visibility";
 import { SiteLink } from "./site-link";
-import { Icon } from "./icons";
 
 /** Render visible routes and preserve keyboard/native disclosure behaviour. @author meetbyte */
 export function Navigation() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
   const desktop = useRef<HTMLElement>(null);
   const menu = useRef<HTMLDetailsElement>(null);
   const previousPath = useRef(pathname);
@@ -88,6 +88,7 @@ export function Navigation() {
       <details
         ref={menu}
         className="mobile-navigation"
+        onToggle={(event) => setMenuOpen(event.currentTarget.open)}
         suppressHydrationWarning
         onBlur={(event) => {
           if (event.relatedTarget instanceof Node && !event.currentTarget.contains(event.relatedTarget)) {
@@ -95,9 +96,9 @@ export function Navigation() {
           }
         }}
       >
-        <summary className="menu-toggle icon-button" aria-label="Navigation menu">
-          <span className="menu-open-icon"><Icon name="menu" size={21} /></span>
-          <span className="menu-close-icon"><Icon name="close" size={21} /></span>
+        <summary className="menu-toggle" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}>
+          <span className="menu-open-icon">Menu</span>
+          <span className="menu-close-icon">Close</span>
         </summary>
         <nav id="primary-navigation" className="primary-navigation" aria-label={siteContent.common.navigation.label}>
           {renderLinks()}
