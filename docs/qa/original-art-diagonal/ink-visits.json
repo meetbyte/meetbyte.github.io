@@ -1,0 +1,18 @@
+{
+  "first": "1",
+  "second": "2",
+  "revisit": "4",
+  "home": {
+    "background": "url(\"http://127.0.0.1:4179/images/editorial/hero-dark-1120.webp\")",
+    "width": 1152,
+    "height": 1440,
+    "transform": "matrix(0.669131, 0.743145, -0.743145, 0.669131, 0, 0)",
+    "nameTop": 474.6875
+  },
+  "checks": [
+    "inner artwork changes on refresh and route return",
+    "theme switch preserves composition",
+    "Original Home artwork remains fixed and rotated without reshaping; desktop name begins below midpoint",
+    "one visible portrait with matching theme"
+  ]
+}

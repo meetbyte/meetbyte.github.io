@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "experienceIds": [
+    "apex-self-service",
+    "mobilefirst-modernization",
+    "engineering-tooling",
+    "production-investigation"
+  ],
+  "writingIds": [
+    "beyond-screens",
+    "modernizing-safely",
+    "behind-the-requirement",
+    "software-meets-reality",
+    "ai-and-decisions",
+    "thinking-slowly"
+  ],
+  "homeFeaturedExperienceIds": [],
+  "homeFeaturedWritingIds": []
+}

@@ -1,71 +1,91 @@
 "use client";
-
 /**
- * @file Clock-based defaults and an interruptible manual sun/moon journey.
+ * @file One-click accessible appearance toggle with persistent and OS-aware preferences.
  * @author meetbyte
  */
-import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/constants/config";
 import { siteContent } from "@/constants/content";
-import { createThemeJourney } from "@/lib/theme-journey";
-import { watchAtmosphere } from "@/lib/atmosphere-clock";
-import { parseSeasonChoice, readVisitSeason, seasonChoiceEvent } from "@/lib/season";
-import { readVisitTheme, resolveTheme, saveVisitTheme, type Theme } from "@/lib/theme";
-import { Icon } from "./icons";
-
-/**
- * Synchronizes the local clock, manual theme choice and season updates with reversible sun/moon travel and preference cleanup.
- * @author meetbyte
- */
+import { useEffect, useState } from "react";
+import {
+  readThemePreference,
+  saveThemePreference,
+  parseThemePreference,
+  resolvePreferredTheme,
+} from "@/lib/theme";
+/** Sync cross-tab and OS changes; keep manual choices in memory when storage is blocked. @author meetbyte */
 export function ThemeToggle() {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   const [ready, setReady] = useState(false);
-  const [theme, setTheme] = useState<Theme>("light");
-  const selected = useRef<Theme>("light");
-  const atmosphere = useRef<ReturnType<typeof watchAtmosphere> | null>(null);
-
   useEffect(() => {
-    const root = document.documentElement;
-    const manualChoice = readVisitTheme();
-    selected.current = manualChoice ?? resolveTheme();
-    root.dataset.theme = selected.current;
-    setTheme(selected.current);
-    const media = window.matchMedia(siteConfig.prefersReducedMotionQuery);
-    const journey = createThemeJourney(root, () => media.matches);
-    const watcher = watchAtmosphere({
-      theme(next) {
-        if (selected.current === next) return;
-        selected.current = next;
-        setTheme(next);
-        journey.go(next);
-      },
-      season(next) { root.dataset.season = next; },
-    }, undefined, manualChoice, readVisitSeason());
-    atmosphere.current = watcher; setReady(true);
-    const stopForReducedMotion = () => { if (media.matches) journey.finish(); };
-    const onVisibility = () => { if (document.hidden) journey.finish(); else watcher.synchronize(); };
-    const onFocus = () => watcher.synchronize();
-    const onSeasonChoice = () => watcher.chooseSeason(parseSeasonChoice(root.dataset.seasonChoice));
-    media.addEventListener("change", stopForReducedMotion);
-    document.addEventListener("visibilitychange", onVisibility);
-    window.addEventListener("focus", onFocus);
-    window.addEventListener(seasonChoiceEvent, onSeasonChoice);
+    const media = window.matchMedia(siteConfig.prefersDarkThemeQuery);
+    let current = readThemePreference();
+    const apply = () => {
+      document.documentElement.dataset.theme = resolvePreferredTheme(
+        current,
+        media.matches,
+      );
+      setTheme(resolvePreferredTheme(current, media.matches));
+    };
+    const choose = (event: Event) => {
+      current = parseThemePreference((event as CustomEvent).detail);
+      apply();
+    };
+    const storage = (event: StorageEvent) => {
+      if (
+        event.key !== siteConfig.themePreferenceStorageKey &&
+        event.key !== null
+      )
+        return;
+      current = readThemePreference();
+      apply();
+    };
+    apply();
+    setReady(true);
+    media.addEventListener("change", apply);
+    window.addEventListener(siteConfig.themePreferenceEvent, choose);
+    window.addEventListener("storage", storage);
     return () => {
-      watcher.dispose(); atmosphere.current = null; journey.dispose();
-      media.removeEventListener("change", stopForReducedMotion);
-      document.removeEventListener("visibilitychange", onVisibility);
-      window.removeEventListener("focus", onFocus);
-      window.removeEventListener(seasonChoiceEvent, onSeasonChoice);
+      media.removeEventListener("change", apply);
+      window.removeEventListener(siteConfig.themePreferenceEvent, choose);
+      window.removeEventListener("storage", storage);
     };
   }, []);
-
-  function toggleTheme() {
-    const next: Theme = selected.current === "dark" ? "light" : "dark";
-    saveVisitTheme(next);
-    if (atmosphere.current) atmosphere.current.choose(next);
-    else { selected.current = next; setTheme(next); document.documentElement.dataset.theme = next; }
-  }
-  const label = theme === "dark" ? siteContent.common.theme.switchToLight : siteContent.common.theme.switchToDark;
-  return <button type="button" className="theme-toggle icon-button" onClick={toggleTheme} disabled={!ready} aria-label={label} aria-pressed={theme === "dark"} title={label}>
-    <Icon name={theme === "dark" ? "sun" : "moon"} size={19} />
-  </button>;
+  const label =
+    theme === "dark"
+      ? siteContent.common.theme.switchToLight
+      : siteContent.common.theme.switchToDark;
+  return (
+    <button
+      className="theme-toggle"
+      type="button"
+      disabled={!ready}
+      aria-label={label}
+      title={label}
+      onClick={() => {
+        const next = theme === "dark" ? "light" : "dark";
+        saveThemePreference(next);
+        window.dispatchEvent(
+          new CustomEvent(siteConfig.themePreferenceEvent, { detail: next }),
+        );
+      }}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="8"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.25"
+        />
+        <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
+      </svg>
+    </button>
+  );
 }

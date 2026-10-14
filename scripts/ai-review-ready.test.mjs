@@ -1,3 +1,4 @@
+/** @file Deterministic CI-ready signal safety checks; no live GitHub writes. @author meetbyte */
 /** Verify the privileged CI signal with mocked GitHub APIs and no external writes. @author meetbyte */
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -10,6 +11,7 @@ const execute = new AsyncFunction('github', 'context', 'core', script);
 const sha = 'a'.repeat(40);
 const repositoryId = 1387111031;
 
+/** Builds an isolated mocked API/run fixture for signal safety assertions. @author meetbyte */
 function fixture() {
   const state = {
     run: { id: 12, workflow_id: 34, path: '.github/workflows/ci.yml', name: 'PR Quality',

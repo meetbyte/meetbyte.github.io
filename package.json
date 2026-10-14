@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "lint": "eslint . --max-warnings=0",
-    "test": "tsx --test scripts/content.test.ts scripts/scenery-motion.test.ts scripts/theme-journey.test.ts scripts/atmosphere.test.ts scripts/ux-reliability.test.ts",
-    "postbuild": "tsx scripts/finalize-export.ts"
+    "test": "node --import tsx --test scripts/content.test.ts scripts/scenery-motion.test.ts scripts/theme-journey.test.ts scripts/atmosphere.test.ts scripts/ux-reliability.test.ts scripts/foundation.test.ts scripts/editorial.test.ts",
+    "postbuild": "node --import tsx scripts/finalize-export.ts"
   },
   "dependencies": {
     "next": "16.3.8",

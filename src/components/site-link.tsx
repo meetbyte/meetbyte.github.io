@@ -10,7 +10,7 @@ import { useConnection } from "./connection-provider";
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & { href: string };
 
 /**
- * Uses native anchors on limited connections, prevents unusable offline navigation and tracks ordinary client navigation without prefetch.
+ * Prefetches internal routes on normal connections; limited/offline connections keep native recovery.
  * @author meetbyte
  */
 export function SiteLink({ href, onClick, ...props }: Props) {
@@ -21,5 +21,5 @@ export function SiteLink({ href, onClick, ...props }: Props) {
       event.preventDefault(); connection.hold(href);
     }
   }} />;
-  return <Link {...props} href={href} onClick={onClick} prefetch={false} onNavigate={() => connection.begin(href)} />;
+  return <Link {...props} href={href} onClick={onClick} prefetch={true} onNavigate={() => connection.begin(href)} />;
 }

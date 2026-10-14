@@ -1,0 +1,94 @@
+{
+  "rows": [
+    {
+      "loading": "normal",
+      "frames": [
+        {
+          "route": "/skills/",
+          "composition": "1",
+          "ready": "true"
+        },
+        {
+          "route": "/writing/",
+          "composition": "2",
+          "ready": "true"
+        },
+        {
+          "route": "/skills/",
+          "composition": "3",
+          "ready": "true"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "loading": "slow",
+      "frames": [
+        {
+          "route": "/skills/",
+          "composition": "1",
+          "ready": "true"
+        },
+        {
+          "route": "/writing/",
+          "composition": "2",
+          "ready": "true"
+        },
+        {
+          "route": "/skills/",
+          "composition": "3",
+          "ready": "true"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "loading": "failed",
+      "frames": [
+        {
+          "route": "/skills/",
+          "composition": "1",
+          "ready": "true"
+        },
+        {
+          "route": "/writing/",
+          "composition": "2",
+          "ready": "true"
+        },
+        {
+          "route": "/skills/",
+          "composition": "3",
+          "ready": "true"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "loading": "blocked-storage",
+      "frames": [
+        {
+          "route": "/skills/",
+          "composition": "22",
+          "ready": "true"
+        },
+        {
+          "route": "/writing/",
+          "composition": "4",
+          "ready": "true"
+        },
+        {
+          "route": "/skills/",
+          "composition": "6",
+          "ready": "true"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "checks": [
+    "one first-visible composition, no interim server design",
+    "theme preserves composition",
+    "one selection per client navigation",
+    "slow/failed image loads and blocked storage remain usable"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "rows": [
+    {
+      "url": "https://meetbyte.github.io/",
+      "title": "Meet Thummar | Software Engineer & Enterprise Systems",
+      "description": "Meet Thummar is a software engineer working across full-stack development, enterprise integrations, modernization and production delivery. Explore his experience and writing.",
+      "canonical": "https://meetbyte.github.io/"
+    },
+    {
+      "url": "https://meetbyte.github.io/about/",
+      "title": "About | Meet Thummar",
+      "description": "Meet Thummar’s story, approach to software engineering, interests and current learning.",
+      "canonical": "https://meetbyte.github.io/about/"
+    },
+    {
+      "url": "https://meetbyte.github.io/resume/",
+      "title": "Resume | Meet Thummar",
+      "description": "Meet Thummar’s professional experience, education, certification and downloadable CV.",
+      "canonical": "https://meetbyte.github.io/resume/"
+    },
+    {
+      "url": "https://meetbyte.github.io/skills/",
+      "title": "Skills | Meet Thummar",
+      "description": "Technical leadership, full-stack development, system design and the tools behind Meet Thummar’s work.",
+      "canonical": "https://meetbyte.github.io/skills/"
+    },
+    {
+      "url": "https://meetbyte.github.io/experience/",
+      "title": "Experience | Meet Thummar",
+      "description": "Four engineering case studies by Meet Thummar: Oracle APEX self-service data workflows, enterprise modernization, engineering tooling and production investigation.",
+      "canonical": "https://meetbyte.github.io/experience/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/",
+      "title": "Writing | Meet Thummar",
+      "description": "Notes on engineering, decisions and thinking slowly.",
+      "canonical": "https://meetbyte.github.io/writing/"
+    },
+    {
+      "url": "https://meetbyte.github.io/contact/",
+      "title": "Contact | Meet Thummar",
+      "description": "Connect with Meet Thummar about engineering problems, enterprise applications and opportunities.",
+      "canonical": "https://meetbyte.github.io/contact/"
+    },
+    {
+      "url": "https://meetbyte.github.io/experience/apex-self-service/",
+      "title": "Building an Enterprise System from the Ground Up | Meet Thummar",
+      "description": "A self-service Oracle APEX platform that turned repeated banking data requests into a governed workflow for segmentation, extraction and scheduled delivery.",
+      "canonical": "https://meetbyte.github.io/experience/apex-self-service/"
+    },
+    {
+      "url": "https://meetbyte.github.io/experience/engineering-tooling/",
+      "title": "Improving the Engineering Workflow | Meet Thummar",
+      "description": "Bringing AI-assisted documentation, dependency checks, code scanning and delivery tooling into the everyday work of maintaining software.",
+      "canonical": "https://meetbyte.github.io/experience/engineering-tooling/"
+    },
+    {
+      "url": "https://meetbyte.github.io/experience/mobilefirst-modernization/",
+      "title": "Modernizing Enterprise Systems Without Losing Functionality | Meet Thummar",
+      "description": "Moving MobileFirst services to Java and Spring Boot while preserving the application’s behavior, adapting integrations and supporting ongoing delivery.",
+      "canonical": "https://meetbyte.github.io/experience/mobilefirst-modernization/"
+    },
+    {
+      "url": "https://meetbyte.github.io/experience/production-investigation/",
+      "title": "Engineering Beyond Deployment | Meet Thummar",
+      "description": "Taking reported issues through investigation and resolution with business, QA and support teams, while staying hands-on in the system.",
+      "canonical": "https://meetbyte.github.io/experience/production-investigation/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/ai-and-decisions/",
+      "title": "AI Can Write Code. Who Owns the Decision? | Meet Thummar",
+      "description": "Generated code can reduce effort. It does not settle requirements, trade-offs or responsibility for what becomes part of a system.",
+      "canonical": "https://meetbyte.github.io/writing/ai-and-decisions/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/behind-the-requirement/",
+      "title": "The Problem Behind the Requirement | Meet Thummar",
+      "description": "A requested feature is often the beginning of a conversation. Understanding the reason behind it can change the shape of the solution.",
+      "canonical": "https://meetbyte.github.io/writing/behind-the-requirement/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/beyond-screens/",
+      "title": "Building Software Is More Than Building Screens | Meet Thummar",
+      "description": "The interface is only one part of a system. The harder work is understanding the decisions, dependencies and people behind it.",
+      "canonical": "https://meetbyte.github.io/writing/beyond-screens/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/modernizing-safely/",
+      "title": "Modernizing Without Breaking What Works | Meet Thummar",
+      "description": "Modernization asks for two kinds of care: making a system easier to change while preserving the behavior people still depend on.",
+      "canonical": "https://meetbyte.github.io/writing/modernizing-safely/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/software-meets-reality/",
+      "title": "When Software Meets Reality | Meet Thummar",
+      "description": "Delivery is an important moment, but it does not end a system’s story. Supporting real use asks for evidence, communication and careful follow-through.",
+      "canonical": "https://meetbyte.github.io/writing/software-meets-reality/"
+    },
+    {
+      "url": "https://meetbyte.github.io/writing/thinking-slowly/",
+      "title": "The Value of Thinking Slowly | Meet Thummar",
+      "description": "Some questions become clearer when they are given more space. Slower thinking can be a way to pay closer attention, rather than a reason to avoid action.",
+      "canonical": "https://meetbyte.github.io/writing/thinking-slowly/"
+    }
+  ],
+  "checks": [
+    "17 unique static titles/descriptions",
+    "17 correct canonicals/indexable HTML pages",
+    "one h1 each",
+    "crawlable HTML anchors",
+    "OG/Twitter tags",
+    "robots sitemap declaration",
+    "sample/draft/alias sitemap exclusion"
+  ]
+}

@@ -7,6 +7,8 @@ export const routes = {
   about: "/about/",
   resume: "/resume/",
   skills: "/skills/",
+  experience: "/experience/",
+  writing: "/writing/",
   projects: "/projects/",
   blog: "/blog/",
   contact: "/contact/",

@@ -1,0 +1,465 @@
+{
+  "routes": [
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/about/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/resume/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/skills/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 320,
+      "route": "/contact/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/about/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/resume/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/contact/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/about/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/resume/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/skills/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "route": "/contact/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/about/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/resume/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/contact/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/about/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/resume/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/contact/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/about/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/resume/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/skills/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 320,
+      "route": "/contact/",
+      "viewport": 320,
+      "scroll": 320,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/about/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/resume/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/contact/",
+      "viewport": 375,
+      "scroll": 375,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/about/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/resume/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/skills/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "route": "/contact/",
+      "viewport": 768,
+      "scroll": 768,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/about/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/resume/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/contact/",
+      "viewport": 1024,
+      "scroll": 1024,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/about/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 1,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/resume/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/contact/",
+      "viewport": 1440,
+      "scroll": 1440,
+      "portrait": 0,
+      "h1": 1
+    }
+  ],
+  "checks": [
+    "persistent override across reload",
+    "OS changes in System mode",
+    "manual choice ignores OS",
+    "blocked storage",
+    "Escape returns menu focus",
+    "client route focus",
+    "unpublished/unknown 404",
+    "CV asset",
+    "no runtime errors"
+  ]
+}

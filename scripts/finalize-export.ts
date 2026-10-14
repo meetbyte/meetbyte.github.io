@@ -5,5 +5,5 @@
 import path from "node:path";
 import { pageVisibility } from "../src/constants/page-visibility";
 import { finalizeExport } from "../src/lib/finalize-export";
-const disabled = Object.entries(pageVisibility).filter(([, enabled]) => !enabled).map(([route]) => route);
+const disabled = Object.entries(pageVisibility).filter(([route, enabled]) => !enabled && !(route === "projects" && pageVisibility.experience) && !(route === "blog" && pageVisibility.writing)).map(([route]) => route);
 console.log("Static export cleanup:", finalizeExport(path.resolve(process.cwd(), "out"), disabled).join(", ") || "nothing hidden");

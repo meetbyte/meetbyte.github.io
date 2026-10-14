@@ -7,16 +7,40 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Meet Thummar",
   initials: "MT",
-  portrait: { src: "/images/meet-thummar.webp", alt: "Meet Thummar", width: 1122, height: 1402 },
+  portrait: {
+    src: "/images/meet-thummar-editorial.webp",
+    alt: "Meet Thummar",
+    width: 1122,
+    height: 1402,
+  },
   title: "Software Engineer | Full-Stack & Enterprise Systems",
   brandLines: ["MEET", "THUMMAR"],
-  roles: ["Technical Leadership", "Full-Stack Engineering", "System Design & Integration", "End-to-End Delivery"],
-  summary: "I lead a team and build software for banking, financial services and insurance, from the first design discussions through delivery and support.",
+  roles: [
+    "Technical Leadership",
+    "Full-Stack Engineering",
+    "System Design & Integration",
+    "End-to-End Delivery",
+  ],
+  summary:
+    "I lead a team and build software for banking, financial services and insurance, from the first design discussions through delivery and support.",
   learning: "Exploring Applied AI · Deepening System Design",
   location: "Open to global opportunities",
   socials: [
     { label: "GitHub", shortLabel: "GH", href: "https://github.com/meetbyte" },
-    { label: "LinkedIn", shortLabel: "in", href: "https://www.linkedin.com/in/thummarmeet/" },
+    {
+      label: "LinkedIn",
+      shortLabel: "in",
+      href: "https://www.linkedin.com/in/thummarmeet/",
+    },
     { label: "X", shortLabel: "X", href: "https://x.com/meetbyte" },
   ],
 };
+
+/** Theme-aware About portrait assets; the existing blue-shirt cutout remains in profile.portrait. */
+export const editorialPortrait = {
+  light: "/images/meet-thummar-light.webp",
+  dark: "/images/meet-thummar-dark.webp",
+  width: 600,
+  height: 750,
+  sizes: "(max-width: 640px) 75vw, 260px",
+} as const;

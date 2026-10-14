@@ -1,0 +1,137 @@
+{
+  "rows": [
+    {
+      "mode": "light",
+      "width": 1668,
+      "height": 940,
+      "artWidth": 1668,
+      "artHeight": 940,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-light-landscape.webp\")",
+      "source": [
+        1672,
+        941
+      ],
+      "opacity": "0.5",
+      "coverScale": 0.9989373007438895
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "height": 812,
+      "artWidth": 375,
+      "artHeight": 812,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-light-portrait.webp\")",
+      "source": [
+        863,
+        1822
+      ],
+      "opacity": "0.5",
+      "coverScale": 0.4456641053787047
+    },
+    {
+      "mode": "light",
+      "width": 1920,
+      "height": 1080,
+      "artWidth": 1920,
+      "artHeight": 1080,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-light-landscape.webp\")",
+      "source": [
+        1672,
+        941
+      ],
+      "opacity": "0.5",
+      "coverScale": 1.1483253588516746
+    },
+    {
+      "mode": "light",
+      "width": 768,
+      "height": 1024,
+      "artWidth": 768,
+      "artHeight": 1024,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-light-portrait.webp\")",
+      "source": [
+        863,
+        1822
+      ],
+      "opacity": "0.5",
+      "coverScale": 0.8899188876013905
+    },
+    {
+      "mode": "dark",
+      "width": 1668,
+      "height": 940,
+      "artWidth": 1668,
+      "artHeight": 940,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-dark-landscape.webp\")",
+      "source": [
+        1672,
+        941
+      ],
+      "opacity": "0.44",
+      "coverScale": 0.9989373007438895
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "height": 812,
+      "artWidth": 375,
+      "artHeight": 812,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-dark-portrait.webp\")",
+      "source": [
+        864,
+        1821
+      ],
+      "opacity": "0.44",
+      "coverScale": 0.44590884129599123
+    },
+    {
+      "mode": "dark",
+      "width": 1920,
+      "height": 1080,
+      "artWidth": 1920,
+      "artHeight": 1080,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-dark-landscape.webp\")",
+      "source": [
+        1672,
+        941
+      ],
+      "opacity": "0.44",
+      "coverScale": 1.1483253588516746
+    },
+    {
+      "mode": "dark",
+      "width": 768,
+      "height": 1024,
+      "artWidth": 768,
+      "artHeight": 1024,
+      "transform": "none",
+      "mask": "none",
+      "background": "url(\"http://127.0.0.1:4183/images/editorial/home-dark-portrait.webp\")",
+      "source": [
+        864,
+        1821
+      ],
+      "opacity": "0.44",
+      "coverScale": 0.8888888888888888
+    }
+  ],
+  "checks": [
+    "native landscape or portrait based on screen aspect",
+    "no CSS rotation or mask",
+    "cover scale <=1.16 on representative screens; no claim of native 4K or retina resolution"
+  ]
+}

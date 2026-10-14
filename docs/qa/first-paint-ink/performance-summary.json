@@ -1,0 +1,257 @@
+[
+  {
+    "label": "home-mobile",
+    "route": "/",
+    "scores": {
+      "performance": 80,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 1203.124,
+      "largest-contentful-paint": 5253.124,
+      "total-blocking-time": 72,
+      "cumulative-layout-shift": 0,
+      "speed-index": 1203.124
+    },
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "title": "First Contentful Paint",
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.22,
+        "title": "Largest Contentful Paint",
+        "displayValue": "5.3 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.99,
+        "title": "Total Blocking Time",
+        "displayValue": "70 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.69,
+        "title": "Max Potential First Input Delay",
+        "displayValue": "190 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.59,
+        "title": "Time to Interactive",
+        "displayValue": "6.5 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 35 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 148 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 946 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "title": "Document request latency",
+        "displayValue": "Est savings of 14 KiB"
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0.5,
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 43 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 400 ms"
+      }
+    ]
+  },
+  {
+    "label": "home-desktop",
+    "route": "/",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 323.769,
+      "largest-contentful-paint": 1272.6535,
+      "total-blocking-time": 2,
+      "cumulative-layout-shift": 0,
+      "speed-index": 323.769
+    },
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.87,
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.3 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 40 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 147 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 1,044 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "title": "Document request latency",
+        "displayValue": "Est savings of 14 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 18 KiB"
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0,
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 43 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 110 ms"
+      }
+    ]
+  },
+  {
+    "label": "resume-mobile",
+    "route": "/resume/",
+    "scores": {
+      "performance": 76,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 1352.853,
+      "largest-contentful-paint": 6099.279500000001,
+      "total-blocking-time": 143.5,
+      "cumulative-layout-shift": 0,
+      "speed-index": 1352.853
+    },
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "title": "First Contentful Paint",
+        "displayValue": "1.4 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.12,
+        "title": "Largest Contentful Paint",
+        "displayValue": "6.1 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.95,
+        "title": "Total Blocking Time",
+        "displayValue": "140 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.41,
+        "title": "Max Potential First Input Delay",
+        "displayValue": "280 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.61,
+        "title": "Time to Interactive",
+        "displayValue": "6.3 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 28 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 147 KiB"
+      },
+      {
+        "id": "cache-insight",
+        "score": 0,
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 850 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "title": "Document request latency",
+        "displayValue": "Est savings of 33 KiB"
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0,
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 43 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree"
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 410 ms"
+      }
+    ]
+  }
+]

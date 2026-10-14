@@ -5,14 +5,25 @@
  * @author meetbyte
  */
 import { useEffect, useRef, useState } from "react";
-import { parseSeasonChoice, readVisitSeason, resolveSeason, saveVisitSeason, seasonChoiceEvent, type SeasonChoice } from "@/lib/season";
+import {
+  parseSeasonChoice,
+  readVisitSeason,
+  resolveSeason,
+  saveVisitSeason,
+  seasonChoiceEvent,
+  type SeasonChoice,
+} from "@/lib/season";
 
 /** Preview control reused by the optional header disclosure. @author meetbyte */
 export function SeasonPicker() {
   const [ready, setReady] = useState(false);
   const [choice, setChoice] = useState<SeasonChoice>("auto");
-  useEffect(() => { setChoice(readVisitSeason()); setReady(true); }, []);
+  useEffect(() => {
+    setChoice(readVisitSeason());
+    setReady(true);
+  }, []);
 
+  /** Updates the optional visit-only season preview without changing theme preference. @author meetbyte */
   function choose(value: string) {
     const next = parseSeasonChoice(value);
     setChoice(next);
@@ -23,16 +34,24 @@ export function SeasonPicker() {
     window.dispatchEvent(new Event(seasonChoiceEvent));
   }
 
-  return <label className="season-picker">
-    <span>Season</span>
-    <select disabled={!ready} value={choice} onChange={(event) => choose(event.target.value)} aria-controls="site-scenery" title="Preview a season, or follow the calendar with Auto">
-      <option value="auto">Auto</option>
-      <option value="summer">Summer</option>
-      <option value="monsoon">Monsoon</option>
-      <option value="autumn">Autumn</option>
-      <option value="winter">Winter</option>
-    </select>
-  </label>;
+  return (
+    <label className="season-picker">
+      <span>Season</span>
+      <select
+        disabled={!ready}
+        value={choice}
+        onChange={(event) => choose(event.target.value)}
+        aria-controls="site-scenery"
+        title="Preview a season, or follow the calendar with Auto"
+      >
+        <option value="auto">Auto</option>
+        <option value="summer">Summer</option>
+        <option value="monsoon">Monsoon</option>
+        <option value="autumn">Autumn</option>
+        <option value="winter">Winter</option>
+      </select>
+    </label>
+  );
 }
 
 /** A compact optional preview; opening it never changes the header height. @author meetbyte */
@@ -46,7 +65,11 @@ export function SeasonPreview() {
       disclosure.current.querySelector("summary")?.focus();
     };
     const closeOutside = (event: PointerEvent) => {
-      if (disclosure.current?.open && event.target instanceof Node && !disclosure.current.contains(event.target)) {
+      if (
+        disclosure.current?.open &&
+        event.target instanceof Node &&
+        !disclosure.current.contains(event.target)
+      ) {
         disclosure.current.open = false;
       }
     };
@@ -59,9 +82,17 @@ export function SeasonPreview() {
   }, []);
 
   return (
-    <details ref={disclosure} className="season-preview" suppressHydrationWarning>
-      <summary className="season-preview-toggle" aria-label="Preview season">Season</summary>
-      <div className="season-preview-panel"><SeasonPicker /></div>
+    <details
+      ref={disclosure}
+      className="season-preview"
+      suppressHydrationWarning
+    >
+      <summary className="season-preview-toggle" aria-label="Preview season">
+        Season
+      </summary>
+      <div className="season-preview-panel">
+        <SeasonPicker />
+      </div>
     </details>
   );
 }

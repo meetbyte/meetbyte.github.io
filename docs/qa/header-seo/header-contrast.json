@@ -1,0 +1,892 @@
+{
+  "rows": [
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Home",
+      "contrast": 7.78
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "About",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 7.78
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 7.78
+    },
+    {
+      "mode": "light",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 14.75
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Home",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Home",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 14.05
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 7.41
+    },
+    {
+      "mode": "light",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 14.05
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Home",
+      "contrast": 8.13
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "About",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 8.13
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 8.13
+    },
+    {
+      "mode": "dark",
+      "width": 375,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 14.5
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Home",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1024,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Home",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Skills",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Writing",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/",
+      "label": "Contact",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Home",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Skills",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Writing",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/skills/",
+      "label": "Contact",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Home",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "About",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Resume",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Skills",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Experience",
+      "contrast": 15.85
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Writing",
+      "contrast": 8.89
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "route": "/writing/",
+      "label": "Contact",
+      "contrast": 15.85
+    }
+  ],
+  "checks": [
+    "both palettes at >=4.5:1",
+    "desktop text inside opaque veil region",
+    "mobile menu palette surface",
+    "logo fill equals semantic accent"
+  ]
+}

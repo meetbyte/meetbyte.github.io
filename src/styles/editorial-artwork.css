@@ -1,0 +1,207 @@
+/**
+ * @file Full-document ink, a viewport-fit Home and borderless left portrait.
+ * @author meetbyte
+ */
+body { position: relative; isolation: isolate; }
+:root { --logo-color: var(--accent-deep); --page-art: url('/images/editorial/hero-light-1120.webp'); }
+html[data-theme="dark"] { --logo-color: var(--accent); --page-art: url('/images/editorial/hero-dark-1120.webp'); }
+.page-atmosphere { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+/* Shared decorative layer; Home framing and inner SVG composition overrides are defined below. */
+.ink-layer { position: absolute; inset: 0; background: var(--page-art) no-repeat right center / cover; opacity: .24; mix-blend-mode: multiply; mask-image: linear-gradient(90deg,transparent 5%,rgba(0,0,0,.12) 35%,rgba(0,0,0,.5) 70%,#000); }
+.site-shell { position: relative; z-index: 1; }
+.site-header { position: relative; isolation: isolate; background: transparent; border-bottom: 0; }
+.site-header::after { display: none; }
+.site-header .nav-link { color: var(--text); }
+.site-header .nav-link[aria-current="page"] { color: var(--accent); }
+.site-brand { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+.brand-logo { width: 36px; height: 36px; }
+.site-grid { padding-top: 32px; }
+.atmosphere-about .ink-layer { opacity: .24; background-position: 92% 20%; }
+.atmosphere-resume .ink-layer { opacity: .19; background-position: 85% 60%; }
+.atmosphere-skills .ink-layer { opacity: .30; background-position: right 30%; }
+.atmosphere-experience .ink-layer { opacity: .23; background-position: 96% 45%; }
+.atmosphere-writing .ink-layer { opacity: .20; background-position: 90% 65%; }
+.atmosphere-contact .ink-layer { opacity: .27; background-position: right 35%; }
+.atmosphere-reading .ink-layer { opacity: .13; background-position: var(--reading-shift) center; }
+html[data-theme="dark"] .ink-layer { mix-blend-mode: screen; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .26; }
+html[data-theme="dark"] .atmosphere-skills .ink-layer { opacity: .34; }
+html[data-theme="dark"] .atmosphere-reading .ink-layer { opacity: .14; }
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--accent); padding: 0; cursor: pointer; }
+.theme-toggle:hover { background: var(--surface-muted); }
+.theme-toggle:disabled { opacity: .5; }
+.desktop-navigation .nav-link { font-size: 13px; font-weight: 550; letter-spacing: .07em; }
+.editorial-home { max-width: none; width: 100%; margin: 0; padding: 0; }
+/* Fit ordinary viewports through document flow, never by clipping or disabling scrolling at zoom. */
+body:has(.editorial-home) .site-shell { display: flex; flex-direction: column; min-height: 100svh; }
+body:has(.editorial-home) .site-grid { flex: 1; padding: 0; }
+body:has(.editorial-home) .site-footer { padding: 16px 0; border-top: 0; font-size: 12px; }
+.home-introduction { display: flex; align-items: flex-start; min-height: 0; padding: clamp(96px,26svh,234px) 0 32px; }
+.home-introduction-copy { min-width: 0; width: 100%; max-width: 580px; }
+.home-introduction .eyebrow::before { content: ""; display: inline-block; width: 26px; height: 1px; background: currentColor; margin-right: 16px; vertical-align: middle; }
+.home-introduction .eyebrow { font-size: 11px; letter-spacing: .28em; font-weight: 500; margin: 0 0 24px; }
+.home-introduction h1 { max-width: none; margin: 0 0 24px; font-size: min(8.7vw,16svh,8.5rem); font-weight: 300; line-height: .9; letter-spacing: -.045em; }
+.home-introduction h1 span { display: block; }
+.home-surname { color: var(--accent); }
+.home-summary { max-width: 32ch; margin: 0; font-family: var(--font-heading),Georgia,serif; font-size: clamp(1.125rem,1.5vw,1.35rem); line-height: 1.6; letter-spacing: .11em; }
+.home-explore { display: inline-flex; gap: 16px; align-items: center; min-height: 44px; margin-top: 40px; padding-left: 20px; border-left: 1px solid var(--accent); font-size: 12px; letter-spacing: .1em; color: var(--text-secondary); }
+.home-explore:hover { color: var(--accent); }
+.editorial-index-heading { display: block; }
+.menu-toggle,.menu-toggle:hover,.menu-toggle:focus-visible { color: var(--text); background: transparent; border: 0; box-shadow: none; border-radius: 0; list-style: none; }
+.about-intro-grid { grid-template-columns: 260px minmax(0,1fr); gap: 48px; }
+.about-intro-grid .about-portrait { width: 260px; margin: 8px 0 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; mask-image: linear-gradient(180deg,#000 72%,rgba(0,0,0,.8) 84%,transparent); }
+.editorial-essay .article-prose blockquote p + p { margin-top: 16px; font-family: var(--font-body),sans-serif; font-size: .875rem; line-height: 1.6; color: var(--text-secondary); }
+@media (max-width: 959px) {
+ .home-introduction h1 { font-size: min(12vw,16svh,7.5rem); }
+ .about-intro-grid { grid-template-columns: 220px minmax(0,1fr); gap: 32px; }
+ .about-intro-grid .about-portrait { width: 220px; }
+}
+@media (max-width: 639px) {
+ :root { --page-art: url('/images/editorial/hero-light-600.webp'); }
+ html[data-theme="dark"] { --page-art: url('/images/editorial/hero-dark-600.webp'); }
+ .home-introduction { padding: clamp(96px,20svh,180px) 0 24px; }
+ .home-introduction h1 { font-size: min(20vw,12svh,5.5rem); }
+ .home-introduction .eyebrow { font-size: 10px; letter-spacing: .18em; margin-bottom: 20px; }
+ .home-summary { max-width: 25ch; font-size: 1.125rem; }
+ .home-explore { margin-top: 28px; }
+ .page-atmosphere:not(.atmosphere-home) .ink-layer { opacity: .24; }
+ .about-intro-grid { grid-template-columns: minmax(0,1fr); gap: 24px; }
+ .about-intro-grid .about-portrait { width: 220px; max-width: 75%; }
+}
+.site-footer { position: relative; }
+.site-footer::before { content: ""; position: absolute; inset: -48px 0 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at center,var(--page) 30%,transparent 75%); }
+/* Keep controls and Home footer in quiet space instead of relying on dark ink for contrast. */
+.theme-toggle svg { width: 18px; height: 18px; background: transparent; }
+.site-footer::before { display: none; }
+body:has(.editorial-home) .site-footer { justify-content: flex-start; gap: 16px 40px; }
+
+/* Unframed editorial navigation: opening the list makes room in the document rather than placing a card over the hero. */
+.theme-toggle:hover { background: transparent; color: var(--accent-hover); }
+@media(max-width:959px) {
+ .site-header { min-height: 72px; padding-block: 14px; gap: 16px; }
+ .brand-logo { width: 28px; height: 28px; }
+ .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 44px; font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+ .menu-toggle::-webkit-details-marker { display: none; }
+ .mobile-navigation .primary-navigation { right: -60px; width: min(480px,calc(100vw - 64px)); top: calc(100% + 12px); padding: 16px 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; overflow: visible; max-height: none; }
+ .mobile-navigation[open] .primary-navigation { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px 24px; }
+ .mobile-navigation .nav-link,.mobile-navigation .nav-link.is-active { min-height: 44px; padding: 4px 0; background: transparent; font-family: var(--font-heading),Georgia,serif; font-size: 23px; font-weight: 400; letter-spacing: -.01em; }
+ .mobile-navigation .nav-link[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px; }
+ .site-header:has(.mobile-navigation[open]) { padding-bottom: 254px; }
+}
+@media(max-width:639px) { .mobile-navigation .primary-navigation { width: calc(100vw - 40px); } }
+@media(max-height:700px) { .home-introduction { padding-top: 28px; } }
+/* Keyboard focus stays visible without outlining the mobile label as a boxed button. */
+.site-header .menu-toggle:focus-visible { outline: 0; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.page-atmosphere:not(.atmosphere-home) .inner-ink { inset: 0; background: none; mask-image: none; mix-blend-mode: normal; opacity: .30; --ink-color: #8c314c; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { --ink-color: #cc829c; opacity: .28; mix-blend-mode: normal; }
+.atmosphere-reading .inner-ink { opacity: .18 !important; }
+.ink-composition { position: absolute; top: 0; right: 0; width: 100%; height: min(1100px,100%); }
+.portrait-light,.portrait-dark { width: 100%; height: auto; display: block; }
+.portrait-dark { display: none; }
+html[data-theme="dark"] .portrait-light { display: none; }
+html[data-theme="dark"] .portrait-dark { display: block; }
+.mobile-route-index,.menu-caption { display: none; }
+@media(max-width:959px) {
+ .mobile-navigation .primary-navigation { padding-top: 8px; gap: 10px 24px; }
+ .menu-caption { display: block; grid-column: 1 / -1; font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
+ .mobile-navigation .nav-link,.mobile-navigation .nav-link.is-active { display: flex; align-items: baseline; gap: 10px; font-size: 21px; min-height: 46px; }
+ .mobile-route-index { display: inline; font-family: var(--font-body),sans-serif; font-size: 9px; letter-spacing: .08em; color: inherit; }
+ .site-header:has(.mobile-navigation[open]) { padding-bottom: 286px; }
+}
+
+/* Grain comes from the approved paper/ink assets; local radial masks erase all raster boundaries. */
+.ink-paper-dark { display: none; }
+html[data-theme="dark"] .ink-paper-light { display: none; }
+html[data-theme="dark"] .ink-paper-dark { display: block; }
+.page-atmosphere:not(.atmosphere-home) .inner-ink { mix-blend-mode: multiply; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { mix-blend-mode: screen; }
+.ink-echo { top: auto; bottom: 0; transform: scale(-1); opacity: .4; display: none; }
+.atmosphere-skills .ink-echo,.atmosphere-reading .ink-echo { display: block; }
+/* Deep light-theme accent remains readable over every permitted inner-page stain. */
+html[data-theme="light"] .site-header .nav-link[aria-current="page"] { color: var(--accent-deep); }
+.ink-echo { display: block; opacity: .22; }
+/* Keep the two short sentences balanced rather than leaving a lone word on the second line. */
+.home-summary { max-width: 36ch; letter-spacing: .045em; text-wrap: balance; }
+@media(max-width:639px) { .home-summary { max-width: 25ch; } }
+/* Feather the ink through the reading lane; retain stronger spills at both outer margins. */
+.page-atmosphere:not(.atmosphere-home) .inner-ink { mask-image: linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.4) 12%,rgba(0,0,0,.22) 25%,rgba(0,0,0,.22) 75%,rgba(0,0,0,.4) 88%,rgba(0,0,0,.7)); }
+/* Quiet the entire Home artwork while browsing the open menu, without a header-only cut or panel. */
+
+/* Anchor the introduction above the footer, so the identity lives in the lower part of Home. */
+body:has(.editorial-home) .site-grid { display: flex; align-items: flex-end; }
+body:has(.editorial-home) .content-panel { width: 100%; }
+.home-introduction { padding: 24px 0 clamp(24px,4svh,40px); }
+.home-introduction h1 { font-size: min(8vw,12svh,7rem); }
+@media(max-width:959px) { .home-introduction h1 { font-size: min(12vw,12svh,7rem); } }
+@media(max-width:639px) { .home-introduction h1 { font-size: min(20vw,12svh,5.5rem); } }
+
+/* Raise artwork contrast; feather it before the actual text margin, rather than hiding the entire page. */
+.page-atmosphere:not(.atmosphere-home) .inner-ink { --reading-edge: max(48px,calc((100vw - 1200px)/2 + 48px)); opacity: .55; mask-image: linear-gradient(90deg,#000,rgba(0,0,0,.26) calc(var(--reading-edge) - 8px),rgba(0,0,0,.26) calc(100% - var(--reading-edge) + 8px),#000); }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { opacity: .60; }
+.atmosphere-reading .inner-ink { opacity: .42 !important; }
+html[data-theme="dark"] .atmosphere-reading .inner-ink { opacity: .46 !important; }
+@media(max-width:1023px) { .page-atmosphere:not(.atmosphere-home) .inner-ink { --reading-edge: 32px; } }
+@media(max-width:639px) { .page-atmosphere:not(.atmosphere-home) .inner-ink { --reading-edge: 20px; } }
+/* Slightly quieter inner atmospheres; keep the accepted 24 designs and their layout intact. */
+.page-atmosphere:not(.atmosphere-home) .inner-ink { opacity: .49; }
+html[data-theme="dark"] .page-atmosphere:not(.atmosphere-home) .inner-ink { opacity: .54; }
+.atmosphere-reading .inner-ink { opacity: .38 !important; }
+html[data-theme="dark"] .atmosphere-reading .inner-ink { opacity: .41 !important; }
+html[data-theme="light"] body:has(.editorial-home) .site-shell { --text: #080508; --text-secondary: #080508; }
+
+/* Native landscape composition avoids rotation overscan and keeps the texture at a natural scale. */
+.home-diagonal { position: absolute; inset: 0; mask-image: none; }
+.atmosphere-home { --home-art: url('/images/editorial/home-light-landscape.webp'); }
+html[data-theme="dark"] .atmosphere-home { --home-art: url('/images/editorial/home-dark-landscape.webp'); }
+.atmosphere-home .ink-layer { inset: 0; width: auto; height: auto; aspect-ratio: auto; background: var(--home-art) center / cover no-repeat; transform: none; opacity: .54; mask-image: none; mix-blend-mode: normal; }
+html[data-theme="dark"] .atmosphere-home .ink-layer { opacity: .47; mix-blend-mode: normal; }
+/* Tall screens use a composed portrait counterpart instead of cropping deep into the wide image. */
+@media (max-aspect-ratio: 1/1) {
+ .atmosphere-home { --home-art: url('/images/editorial/home-light-portrait.webp'); }
+ html[data-theme="dark"] .atmosphere-home { --home-art: url('/images/editorial/home-dark-portrait.webp'); }
+}
+/* Uniform artwork strength and clear lettering; no local fades, panels or extra Home stains. */
+html[data-theme="light"] body:has(.editorial-home) .site-shell { --text: #080508; --text-secondary: #080508; }
+body:has(.editorial-home) .home-surname,body:has(.editorial-home) .home-explore,body:has(.editorial-home) .site-footer,body:has(.editorial-home) .home-introduction .eyebrow,body:has(.editorial-home) .site-header .nav-link { color: var(--text); }
+/* Retain the established two-tone name while keeping the full image readable. */
+html[data-theme="light"] body:has(.editorial-home) .home-introduction h1 { color: var(--ink); }
+html[data-theme="light"] body:has(.editorial-home) .home-surname { color: var(--accent-deep); }
+html[data-theme="dark"] body:has(.editorial-home) .home-surname { color: var(--accent); }
+
+/* One server-rendered SVG: first-paint composition is chosen in the head, not swapped after hydration. */
+.ink-primary-stain { transform: var(--ink-primary,translate(720px,170px) rotate(16deg)); }
+.ink-secondary-stain { transform: var(--ink-secondary,translate(85px,180px) rotate(-45deg) scale(.48,.62)); }
+.ink-spray { transform: var(--ink-spray,translate(135px,480px)); }
+.ink-echo-stain { transform: var(--ink-echo,translate(110px,90px) rotate(108deg)); }
+.ink-sized { rx: var(--ink-rx,220px); ry: var(--ink-ry,300px); }
+.ink-side-wash { cx: var(--ink-wash-cx,180px); }
+.ink-outline-0 { display: var(--ink-shape-0,inline); }
+.ink-outline-1 { display: var(--ink-shape-1,none); }
+.ink-outline-2 { display: var(--ink-shape-2,none); }
+.ink-outline-3 { display: var(--ink-shape-3,none); }
+.ink-outline-4 { display: var(--ink-shape-4,none); }
+.ink-outline-5 { display: var(--ink-shape-5,none); }
+html[data-ink-variant="0"] { --ink-primary: translate(720px,170px) rotate(16deg); --ink-secondary: translate(85px,180px) rotate(-45deg) scale(.48,.62); --ink-spray: translate(135px,480px) rotate(0deg); --ink-echo: translate(110px,90px) rotate(108deg); --ink-rx: 220px; --ink-ry: 300px; --ink-wash-cx: 180px; --ink-shape-0: inline; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="1"] { --ink-primary: translate(160px,390px) rotate(-28deg); --ink-secondary: translate(850px,250px) rotate(-22deg) scale(.48,.62); --ink-spray: translate(760px,445px) rotate(17deg); --ink-echo: translate(830px,730px) rotate(-72deg); --ink-rx: 228px; --ink-ry: 287px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: inline; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="2"] { --ink-primary: translate(770px,600px) rotate(66deg); --ink-secondary: translate(85px,320px) rotate(1deg) scale(.48,.62); --ink-spray: translate(135px,410px) rotate(34deg); --ink-echo: translate(210px,650px) rotate(155deg); --ink-rx: 236px; --ink-ry: 274px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: inline; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="3"] { --ink-primary: translate(110px,90px) rotate(108deg); --ink-secondary: translate(850px,390px) rotate(24deg) scale(.48,.62); --ink-spray: translate(760px,375px) rotate(51deg); --ink-echo: translate(900px,400px) rotate(40deg); --ink-rx: 244px; --ink-ry: 261px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: inline; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="4"] { --ink-primary: translate(830px,730px) rotate(-72deg); --ink-secondary: translate(85px,460px) rotate(47deg) scale(.48,.62); --ink-spray: translate(135px,340px) rotate(68deg); --ink-echo: translate(400px,70px) rotate(-10deg); --ink-rx: 252px; --ink-ry: 248px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: inline; --ink-shape-5: none; }
+html[data-ink-variant="5"] { --ink-primary: translate(210px,650px) rotate(155deg); --ink-secondary: translate(850px,530px) rotate(70deg) scale(.48,.62); --ink-spray: translate(760px,305px) rotate(85deg); --ink-echo: translate(720px,170px) rotate(16deg); --ink-rx: 260px; --ink-ry: 235px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: inline; }
+html[data-ink-variant="6"] { --ink-primary: translate(900px,400px) rotate(40deg); --ink-secondary: translate(85px,600px) rotate(93deg) scale(.48,.62); --ink-spray: translate(135px,270px) rotate(102deg); --ink-echo: translate(160px,390px) rotate(-28deg); --ink-rx: 268px; --ink-ry: 222px; --ink-wash-cx: 180px; --ink-shape-0: inline; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="7"] { --ink-primary: translate(400px,70px) rotate(-10deg); --ink-secondary: translate(850px,670px) rotate(116deg) scale(.48,.62); --ink-spray: translate(760px,235px) rotate(119deg); --ink-echo: translate(770px,600px) rotate(66deg); --ink-rx: 276px; --ink-ry: 209px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: inline; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="8"] { --ink-primary: translate(720px,170px) rotate(16deg); --ink-secondary: translate(85px,180px) rotate(139deg) scale(.48,.62); --ink-spray: translate(135px,480px) rotate(136deg); --ink-echo: translate(110px,90px) rotate(108deg); --ink-rx: 220px; --ink-ry: 300px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: inline; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="9"] { --ink-primary: translate(160px,390px) rotate(-28deg); --ink-secondary: translate(850px,250px) rotate(162deg) scale(.48,.62); --ink-spray: translate(760px,445px) rotate(153deg); --ink-echo: translate(830px,730px) rotate(-72deg); --ink-rx: 228px; --ink-ry: 287px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: inline; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="10"] { --ink-primary: translate(770px,600px) rotate(66deg); --ink-secondary: translate(85px,320px) rotate(185deg) scale(.48,.62); --ink-spray: translate(135px,410px) rotate(170deg); --ink-echo: translate(210px,650px) rotate(155deg); --ink-rx: 236px; --ink-ry: 274px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: inline; --ink-shape-5: none; }
+html[data-ink-variant="11"] { --ink-primary: translate(110px,90px) rotate(108deg); --ink-secondary: translate(850px,390px) rotate(208deg) scale(.48,.62); --ink-spray: translate(760px,375px) rotate(187deg); --ink-echo: translate(900px,400px) rotate(40deg); --ink-rx: 244px; --ink-ry: 261px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: inline; }
+html[data-ink-variant="12"] { --ink-primary: translate(830px,730px) rotate(-72deg); --ink-secondary: translate(85px,460px) rotate(231deg) scale(.48,.62); --ink-spray: translate(135px,340px) rotate(204deg); --ink-echo: translate(400px,70px) rotate(-10deg); --ink-rx: 252px; --ink-ry: 248px; --ink-wash-cx: 180px; --ink-shape-0: inline; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="13"] { --ink-primary: translate(210px,650px) rotate(155deg); --ink-secondary: translate(850px,530px) rotate(254deg) scale(.48,.62); --ink-spray: translate(760px,305px) rotate(221deg); --ink-echo: translate(720px,170px) rotate(16deg); --ink-rx: 260px; --ink-ry: 235px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: inline; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="14"] { --ink-primary: translate(900px,400px) rotate(40deg); --ink-secondary: translate(85px,600px) rotate(277deg) scale(.48,.62); --ink-spray: translate(135px,270px) rotate(238deg); --ink-echo: translate(160px,390px) rotate(-28deg); --ink-rx: 268px; --ink-ry: 222px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: inline; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="15"] { --ink-primary: translate(400px,70px) rotate(-10deg); --ink-secondary: translate(850px,670px) rotate(300deg) scale(.48,.62); --ink-spray: translate(760px,235px) rotate(255deg); --ink-echo: translate(770px,600px) rotate(66deg); --ink-rx: 276px; --ink-ry: 209px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: inline; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="16"] { --ink-primary: translate(720px,170px) rotate(16deg); --ink-secondary: translate(85px,180px) rotate(323deg) scale(.48,.62); --ink-spray: translate(135px,480px) rotate(272deg); --ink-echo: translate(110px,90px) rotate(108deg); --ink-rx: 220px; --ink-ry: 300px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: inline; --ink-shape-5: none; }
+html[data-ink-variant="17"] { --ink-primary: translate(160px,390px) rotate(-28deg); --ink-secondary: translate(850px,250px) rotate(346deg) scale(.48,.62); --ink-spray: translate(760px,445px) rotate(289deg); --ink-echo: translate(830px,730px) rotate(-72deg); --ink-rx: 228px; --ink-ry: 287px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: inline; }
+html[data-ink-variant="18"] { --ink-primary: translate(770px,600px) rotate(66deg); --ink-secondary: translate(85px,320px) rotate(369deg) scale(.48,.62); --ink-spray: translate(135px,410px) rotate(306deg); --ink-echo: translate(210px,650px) rotate(155deg); --ink-rx: 236px; --ink-ry: 274px; --ink-wash-cx: 180px; --ink-shape-0: inline; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="19"] { --ink-primary: translate(110px,90px) rotate(108deg); --ink-secondary: translate(850px,390px) rotate(392deg) scale(.48,.62); --ink-spray: translate(760px,375px) rotate(323deg); --ink-echo: translate(900px,400px) rotate(40deg); --ink-rx: 244px; --ink-ry: 261px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: inline; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="20"] { --ink-primary: translate(830px,730px) rotate(-72deg); --ink-secondary: translate(85px,460px) rotate(415deg) scale(.48,.62); --ink-spray: translate(135px,340px) rotate(340deg); --ink-echo: translate(400px,70px) rotate(-10deg); --ink-rx: 252px; --ink-ry: 248px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: inline; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="21"] { --ink-primary: translate(210px,650px) rotate(155deg); --ink-secondary: translate(850px,530px) rotate(438deg) scale(.48,.62); --ink-spray: translate(760px,305px) rotate(357deg); --ink-echo: translate(720px,170px) rotate(16deg); --ink-rx: 260px; --ink-ry: 235px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: inline; --ink-shape-4: none; --ink-shape-5: none; }
+html[data-ink-variant="22"] { --ink-primary: translate(900px,400px) rotate(40deg); --ink-secondary: translate(85px,600px) rotate(461deg) scale(.48,.62); --ink-spray: translate(135px,270px) rotate(374deg); --ink-echo: translate(160px,390px) rotate(-28deg); --ink-rx: 268px; --ink-ry: 222px; --ink-wash-cx: 180px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: inline; --ink-shape-5: none; }
+html[data-ink-variant="23"] { --ink-primary: translate(400px,70px) rotate(-10deg); --ink-secondary: translate(850px,670px) rotate(484deg) scale(.48,.62); --ink-spray: translate(760px,235px) rotate(391deg); --ink-echo: translate(770px,600px) rotate(66deg); --ink-rx: 276px; --ink-ry: 209px; --ink-wash-cx: -290px; --ink-shape-0: none; --ink-shape-1: none; --ink-shape-2: none; --ink-shape-3: none; --ink-shape-4: none; --ink-shape-5: inline; }

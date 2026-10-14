@@ -1,5 +1,5 @@
 /**
- * @file Route template that replays the entry transition after navigation.
+ * @file Shared route wrapper; current editorial CSS disables legacy entry animation.
  * @author meetbyte
  */
 import { RouteMotion } from "@/components/route-motion";
