@@ -170,3 +170,12 @@ html[data-theme="dark"] .atmosphere-reading .inner-ink { opacity: .46 !important
 /* Keep this fade in page coordinates, so rotating the image cannot darken the identity column. */
 .home-diagonal { position: absolute; inset: 0; mask-image: linear-gradient(90deg,transparent 38%,rgba(0,0,0,.08) 50%,rgba(0,0,0,.65) 74%,#000); }
 @media(max-width:639px) { .home-diagonal { mask-image: linear-gradient(90deg,rgba(0,0,0,.04) 20%,rgba(0,0,0,.12) 70%,rgba(0,0,0,.5)); } }
+
+/* Home is composed in page coordinates: no rotated rectangle or radial paper bulge. */
+.atmosphere-home .home-ribbon { inset: 0; width: 100%; height: 100%; transform: none; background: none; mask-image: none; opacity: .85; --ribbon-wine: #7c2943; }
+html[data-theme="dark"] .atmosphere-home .home-ribbon { --ribbon-wine: #cf7896; }
+.home-ribbon-art { display: block; width: 100%; height: 100%; }
+.ribbon-texture { mix-blend-mode: multiply; opacity: .55; }
+html[data-theme="dark"] .ribbon-texture { mix-blend-mode: screen; opacity: .45; }
+@media(max-width:639px) { .atmosphere-home .home-ribbon { opacity: .5; } }
+html[data-theme="dark"] .atmosphere-home .home-ribbon { --ribbon-wine: #b06a86; opacity: .65; }

@@ -39,3 +39,5 @@ CR002 additionally lowers the Home identity, restores full original artwork prop
 Latest follow-up: Home artwork now has broader coverage, identity is lower again and the concise line reads “Building software. Staying curious.” Inner pages distribute spills and spray on both sides with a quiet reading lane. Current local evidence moves to docs/qa/spilled-surface/. Previous checkpoints remain historical.
 
 Current final visual follow-up: Home identity is anchored in the lower page, original artwork tilts upward toward the right with soft edges, and inner ink is stronger in both themes. Current evidence is docs/qa/diagonal-ink/. The abstract metaphor is retained without a literal bottle. Owner visual acceptance and main release approval remain pending.
+
+Latest owner screenshot correction: replace the Home bitmap ellipse with an organically masked SVG diagonal band using original texture, eliminating the pale right-edge bulge in both themes. Expand inner artwork to 24 distinct silhouette/arrangement combinations and avoid per-route seed collisions. Current local evidence: docs/qa/ribbon-art/. Owner visual acceptance remains separate.
