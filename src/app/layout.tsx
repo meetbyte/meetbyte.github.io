@@ -14,6 +14,7 @@ import { Navigation } from "@/components/navigation";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteContent } from "@/constants/content";
 import { routes } from "@/constants/routes";
+import { createInkBootstrapScript } from "@/lib/editorial-ink";
 import { createThemeBootstrapScript } from "@/lib/theme";
 import "@/styles/colors.css";
 import "@/styles/globals.css";
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${inter.variable} ${newsreader.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       {/* Resolve persistent theme or OS preference before the first paint. */}
-      <head><script dangerouslySetInnerHTML={{ __html: createThemeBootstrapScript() + createConnectionBootstrapScript() }} /></head>
+      <head><script dangerouslySetInnerHTML={{ __html: createThemeBootstrapScript() + createInkBootstrapScript() + createConnectionBootstrapScript() }} /></head>
       <body suppressHydrationWarning>
         <ConnectionProvider>
         <PageAtmosphere />

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {startStaticServer} from './static-server.mjs';
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE_PATH||'playwright');
-const output='docs/qa/pr-ready';fs.mkdirSync(output,{recursive:true});
+const output='docs/qa/first-paint-ink';fs.mkdirSync(output,{recursive:true});
 const server=await startStaticServer(4183);let browser;const rows=[];
 try {
  browser=await chromium.launch({executablePath:process.env.FOUNDATION_BROWSER_EXECUTABLE,args:['--no-sandbox']});

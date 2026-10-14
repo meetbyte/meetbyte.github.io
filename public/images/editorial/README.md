@@ -88,3 +88,6 @@ Actual editor output: landscape 1672×941 both themes; portrait 863×1822 light 
 
 
 14 October follow-up: owner accepted the Home image and requested slightly stronger opacity: current .54 light/.47 dark. Inner visits select once and reveal after texture decode, avoiding a visible composition-0 hydration swap. Texture failures leave native SVG ink and readable content; no late layout movement. Current release-candidate evidence: `docs/qa/pr-ready/`.
+
+
+Refresh follow-up: inner artwork is now native server-rendered SVG, with one head-selected CSS composition before first paint. No hidden/empty layer waits for image decoding or React scripts. Shape/placement/radius/spray parameters retain 24 compositions; paper grain remains baked into the original raster texture; live fractal generation is replaced by a cached native grain map, retaining organic displacement. Soft edge blur remains, and hydration never replaces the geometry. A theme/aspect-aware preload discovers the current background early. Original raster assets, Home framing and .54/.47 opacity are unchanged. Native pigment remains when a texture fails. Current evidence: `docs/qa/first-paint-ink/`.

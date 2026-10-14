@@ -21,7 +21,7 @@ Paths below are relative to the repository root.
 | Legacy landscape references | `src/styles/scenery.css`, `src/styles/seasons.css` | Retained, not imported by current layout; current original artwork is managed by PageAtmosphere. |
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
-| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Home uses line-free landscape/portrait WebP pairs selected by screen aspect, no CSS rotation or masks. Inner visits retain two-sided stains/spray and feathered reading-lane masks. |
+| Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Home uses line-free landscape/portrait WebP pairs selected by screen aspect, no CSS rotation or masks. Inner visits retain two-sided stains/spray and feathered reading-lane masks, with static SVG plus prepaint selection in `src/lib/editorial-ink.ts`; never defer the whole layer until hydration. |
 | Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
 | Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 
@@ -61,3 +61,8 @@ Preview the generated `out/` through a static server. Check both themes, the mob
 ## Source descriptions and future content
 
 Use [the commenting guide](COMMENTING_GUIDE.md) for authored file/function descriptions and `@author meetbyte`. [Repository context](PROJECT_CONTEXT.md) records the active implementation and choices for future chats. Add genuine projects/articles through [the Step 4 follow-up](prompts/04_RESUME_PROJECTS_AND_BLOG.md), using [the content worksheet](planning/PROJECT_BLOG_CONTENT_TEMPLATE.md); preserve the existing engines and publication flags.
+
+
+## Owner-reviewed PR identity
+
+Owner instruction, 14 October 2026: Meet is the sole developer and will personally approve/merge source changes. Do not open owner-reviewed PRs through the connected meetbyte identity when that would make self-approval impossible. Keep development on CR002 and use an exact tested-commit review mirror under `agent/MEE-NNN-description` with the existing Agent Draft PR workflow. Verify author github-actions[bot] / GitHub ID 41898282, main base and full head SHA before handing off. A commit's author is not its PR author; changing git attribution is not a substitute. Do not impersonate a ChatGPT GitHub identity. No agent approves, merges, deploys, enables auto-merge or weakens protection. If bot creation is unavailable, report the specific blocker; do not silently fall back to an owner-authored PR.

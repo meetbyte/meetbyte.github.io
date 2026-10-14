@@ -1,0 +1,18 @@
+{
+  "first": "1",
+  "second": "2",
+  "revisit": "4",
+  "home": {
+    "background": "url(\"http://127.0.0.1:4179/images/editorial/home-dark-landscape.webp\")",
+    "width": 1440,
+    "height": 900,
+    "transform": "none",
+    "nameTop": 474.6875
+  },
+  "checks": [
+    "inner artwork changes on refresh and route return",
+    "theme switch preserves composition",
+    "Line-free landscape Home remains fixed without rotation; desktop name begins below midpoint",
+    "one visible portrait with matching theme"
+  ]
+}
