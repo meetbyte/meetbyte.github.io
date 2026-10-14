@@ -1,23 +1,18 @@
 /**
- * @file Text-led experience index with local draft previews and production publication gating.
+ * @file Experience route; shared editorial modules own rendering and publication boundaries.
  * @author meetbyte
  */
-import { pageEyebrow } from "@/lib/page-label";
-import { SiteLink as Link } from "@/components/site-link";
-import { getExperienceEntries } from "@/lib/content/editorial";
+import { EditorialIndex } from "@/components/editorial-index";
+import { editorialSections } from "@/data/editorial";
 import { pageMetadata } from "@/lib/metadata";
-import { requirePageEnabled } from "@/lib/require-page-enabled";
-import { formatPostDate } from "@/lib/content/posts";
-export const metadata = pageMetadata("Experience", "Four engineering case studies by Meet Thummar: Oracle APEX self-service data workflows, enterprise modernization, engineering tooling and production investigation.", "/experience/", { sample: process.env.NODE_ENV === "development" });
-/** Presents original prose without fictional dates or empty card grids. @author meetbyte */
-export default async function Experience() {
-  requirePageEnabled("experience");
-  const entries = await getExperienceEntries();
-  return <div className="detail-page experience-index">
-    <header className="detail-intro editorial-index-heading"><div><p className="eyebrow">{pageEyebrow("/experience/", "EXPERIENCE")}</p><h1>The work behind the perspective.</h1><p className="detail-lead">Problems, decisions and lessons from enterprise engineering.</p></div></header>
-    <div className="writing-list">{entries.map(entry => <article key={entry.id}>
-      <p className="writing-meta"><span>{entry.category}</span><span>{entry.minutes} min read</span>{entry.publishedAt && <time dateTime={entry.publishedAt}>{formatPostDate(entry.publishedAt)}</time>}{entry.status !== "published" && <span>Draft</span>}</p>
-      <h2><Link href={`/experience/${entry.slug}/`}>{entry.title}</Link></h2><p>{entry.summary}</p>
-    </article>)}</div>
-  </div>;
+const content = editorialSections.experience;
+export const metadata = pageMetadata(
+  content.label,
+  content.description,
+  content.route,
+  { sample: process.env.NODE_ENV === "development" },
+);
+/** Keeps this route server-rendered through the shared editorial index. @author meetbyte */
+export default function Experience() {
+  return <EditorialIndex section="experience" />;
 }

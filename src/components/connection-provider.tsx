@@ -6,11 +6,28 @@
  */
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { isLimitedConnection, sceneryVisitStorageKey, type ConnectionHints } from "@/lib/connection";
+import {
+  isLimitedConnection,
+  sceneryVisitStorageKey,
+  type ConnectionHints,
+} from "@/lib/connection";
+import { siteConfig } from "@/constants/config";
+import { siteContent } from "@/constants/content";
 import { normalizePath } from "@/lib/navigation";
 
-const ConnectionContext = createContext({ limited: false, offline: false, light: false, ready: false,
-  showScenery: () => {}, begin: (href: string) => { void href; }, hold: (href: string) => { void href; } });
+const ConnectionContext = createContext({
+  limited: false,
+  offline: false,
+  light: false,
+  ready: false,
+  showScenery: () => {},
+  begin: (href: string) => {
+    void href;
+  },
+  hold: (href: string) => {
+    void href;
+  },
+});
 /**
  * Reads connection quality and navigation-recovery actions from the shared connection context.
  * @author meetbyte
@@ -21,9 +38,18 @@ export const useConnection = () => useContext(ConnectionContext);
  * Synchronizes optional connection hints, visit-scoped scenery quality and delayed/offline route feedback; disposes listeners and timers.
  * @author meetbyte
  */
-export function ConnectionProvider({ children }: { children: React.ReactNode }) {
+export function ConnectionProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
-  const [state, setState] = useState({ limited: false, offline: false, light: false, ready: false });
+  const [state, setState] = useState({
+    limited: false,
+    offline: false,
+    light: false,
+    ready: false,
+  });
   const fullScenery = useRef(false);
   const [destination, setDestination] = useState<string | null>(null);
   const [visible, setVisible] = useState(false);
@@ -32,54 +58,111 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
   const path = useRef(pathname);
 
   useEffect(() => {
-    const connection = (navigator as Navigator & { connection?: ConnectionHints & EventTarget }).connection;
-    try { fullScenery.current = sessionStorage.getItem(sceneryVisitStorageKey) === "full"; } catch {}
+    const connection = (
+      navigator as Navigator & { connection?: ConnectionHints & EventTarget }
+    ).connection;
+    try {
+      fullScenery.current =
+        sessionStorage.getItem(sceneryVisitStorageKey) === "full";
+    } catch {}
     const synchronize = () => {
       const offline = navigator.onLine === false;
       const limited = isLimitedConnection(!offline, connection);
       const light = limited && !fullScenery.current;
-      document.documentElement.dataset.connection = limited ? "limited" : "normal";
+      document.documentElement.dataset.connection = limited
+        ? "limited"
+        : "normal";
       document.documentElement.dataset.scenery = light ? "light" : "full";
       setState({ limited, offline, light, ready: true });
       setDismissed(false);
     };
     synchronize();
     connection?.addEventListener?.("change", synchronize);
-    window.addEventListener("online", synchronize); window.addEventListener("offline", synchronize);
-    return () => { connection?.removeEventListener?.("change", synchronize); window.removeEventListener("online", synchronize); window.removeEventListener("offline", synchronize); };
+    window.addEventListener("online", synchronize);
+    window.addEventListener("offline", synchronize);
+    return () => {
+      connection?.removeEventListener?.("change", synchronize);
+      window.removeEventListener("online", synchronize);
+      window.removeEventListener("offline", synchronize);
+    };
   }, []);
 
   useEffect(() => {
     if (path.current === pathname) return;
-    path.current = pathname; setDestination(null); setVisible(false); setStalled(false);
+    path.current = pathname;
+    setDestination(null);
+    setVisible(false);
+    setStalled(false);
   }, [pathname]);
   useEffect(() => {
     if (!destination || state.offline) return;
     // Routine internal transitions are quiet. Offer recovery only after a genuine stall.
-    const fallback = window.setTimeout(() => { setVisible(true); setStalled(true); }, 5000);
-    return () => { window.clearTimeout(fallback); };
+    const fallback = window.setTimeout(() => {
+      setVisible(true);
+      setStalled(true);
+    }, siteConfig.navigationStallMs);
+    return () => {
+      window.clearTimeout(fallback);
+    };
   }, [destination, state.offline]);
 
+  /** Keeps the optional legacy full-art preference usable if its control is mounted again. @author meetbyte */
   function showScenery() {
     fullScenery.current = true;
-    try { sessionStorage.setItem(sceneryVisitStorageKey, "full"); } catch {}
+    try {
+      sessionStorage.setItem(sceneryVisitStorageKey, "full");
+    } catch {}
     document.documentElement.dataset.scenery = "full";
     setState((current) => ({ ...current, light: false }));
   }
+  /** Starts delayed recovery only for a genuinely different internal destination. @author meetbyte */
   function begin(href: string) {
-    if (normalizePath(href.split(/[?#]/)[0]) === normalizePath(pathname)) return;
-    setDestination(href); setVisible(false); setStalled(false); setDismissed(false);
+    if (normalizePath(href.split(/[?#]/)[0]) === normalizePath(pathname))
+      return;
+    setDestination(href);
+    setVisible(false);
+    setStalled(false);
+    setDismissed(false);
   }
-  function hold(href: string) { setDestination(href); setVisible(true); setDismissed(false); }
+  /** Retains the attempted destination while offline so recovery can use a native URL. @author meetbyte */
+  function hold(href: string) {
+    setDestination(href);
+    setVisible(true);
+    setDismissed(false);
+  }
 
-  return <ConnectionContext.Provider value={{ ...state, showScenery, begin, hold }}>
-    {children}
-    {!dismissed && (state.offline || visible && destination) && <div className="connection-notice">
-      <span role="status">{state.offline ? "You’re offline. You can keep reading this page." : "This page is taking longer than expected."}</span>
-      {destination && (state.offline || stalled) && <button type="button" disabled={state.offline} onClick={() => window.location.assign(destination)}>{state.offline ? "Waiting for connection" : "Open page directly"}</button>}
-      <button type="button" aria-label="Dismiss connection notice" onClick={() => setDismissed(true)}>Dismiss</button>
-    </div>}
-  </ConnectionContext.Provider>;
+  return (
+    <ConnectionContext.Provider value={{ ...state, showScenery, begin, hold }}>
+      {children}
+      {!dismissed && (state.offline || (visible && destination)) && (
+        <div className="connection-notice">
+          <span role="status">
+            {state.offline
+              ? siteContent.common.connection.offline
+              : siteContent.common.connection.stalled}
+          </span>
+          {destination && (state.offline || stalled) && (
+            <button
+              type="button"
+              disabled={state.offline}
+              onClick={() => window.location.assign(destination)}
+            >
+              {state.offline
+                ? siteContent.common.connection.waiting
+                : siteContent.common.connection.openDirectly}
+            </button>
+          )}
+          <button
+            type="button"
+            aria-label={siteContent.common.connection.dismissLabel}
+            onClick={() => setDismissed(true)}
+          >
+            {siteContent.common.connection.dismiss}
+          </button>
+        </div>
+      )}
+    </ConnectionContext.Provider>
+  );
 }
 
 /**
@@ -89,5 +172,13 @@ export function ConnectionProvider({ children }: { children: React.ReactNode }) 
 export function SceneryQualityControl() {
   const connection = useConnection();
   if (!connection.ready || !connection.light) return null;
-  return <button type="button" className="scenery-quality-control" onClick={connection.showScenery}>Load full scenery</button>;
+  return (
+    <button
+      type="button"
+      className="scenery-quality-control"
+      onClick={connection.showScenery}
+    >
+      {siteContent.common.connection.fullScenery}
+    </button>
+  );
 }

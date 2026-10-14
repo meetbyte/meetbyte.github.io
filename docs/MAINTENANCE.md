@@ -22,7 +22,7 @@ Paths below are relative to the repository root.
 | Global shell | `src/app/layout.tsx`, `src/styles/editorial.css` | Slim header, native scrolling reading region, verified footer links. No persistent portrait/sidebar or scenery. |
 
 | Page-wide artwork | `src/components/editorial-artwork.tsx`, `src/styles/editorial-artwork.css`, `public/images/editorial/` | Home uses line-free landscape/portrait WebP pairs selected by screen aspect, no CSS rotation or masks. Inner visits retain two-sided stains/spray and feathered reading-lane masks, with static SVG plus prepaint selection in `src/lib/editorial-ink.ts`; never defer the whole layer until hydration. |
-| Current narratives/essays | `src/data/experience.ts`, `content/writing/`, `src/data/writing.ts` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
+| Current narratives/essays | `content/experience/`, `content/writing/`, `content/manifest.json` | Inspect current adapters before edits; preserve owner approval references and genuine content. |
 | Validation and release | `docs/qa/report.md`, `docs/release/` | Local results, reproducible scripts, owner release gates and rollback/revision process. |
 
 ## Shared functionality
@@ -37,7 +37,11 @@ Use the existing focused modules instead of introducing a miscellaneous `utils.t
 - `src/lib/scenery-motion.ts`: saved ambient preference and reduced-motion resolution. The reusable `SceneryMotionToggle` component is not mounted.
 - `src/lib/connection.ts`: optional slow/offline hints; `ConnectionProvider` and `SiteLink` handle navigation feedback and recovery.
 - `src/lib/metadata.ts`: shared SEO origin, descriptions and social metadata.
-- `src/lib/content/`: build-time article/project/image validation; UI receives normalized data.
+- `src/lib/content/`: build-time article/project/image validation; UI receives normalized data. `dates.ts` shares date-only validation/display; `editorial-routes.ts` shares static entry resolution and metadata.
+- `src/components/editorial-index.tsx`, `editorial-detail.tsx`, `editorial-entry-meta.tsx`: shared server-rendered Experience/Writing views. Route files retain Next.js exports and select their section.
+- `src/data/editorial.ts`, `experience-maps.ts`: editorial interface copy and verified conceptual reading maps, separate from JSX.
+- `src/constants/config.ts`, `editorial.ts`, `artwork.ts`: behavior/storage/event settings, editorial inventory/reading settings and serialized prepaint ink configuration. Browser bootstrap bodies receive configuration as literal arguments; never leave imported module references inside a serialized function.
+- `scripts/qa/static-server.mjs`: one static export/RSC/404 server used by QA runners.
 - `src/lib/finalize-export.ts`: validated cleanup of generated hidden routes, preserving source content.
 
 ## Conventions used here
@@ -66,3 +70,8 @@ Use [the commenting guide](COMMENTING_GUIDE.md) for authored file/function descr
 ## Owner-reviewed PR identity
 
 Owner instruction, 14 October 2026: Meet is the sole developer and will personally approve/merge source changes. Do not open owner-reviewed PRs through the connected meetbyte identity when that would make self-approval impossible. Keep development on CR002 and use an exact tested-commit review mirror under `agent/MEE-NNN-description` with the existing Agent Draft PR workflow. Verify author github-actions[bot] / GitHub ID 41898282, main base and full head SHA before handing off. A commit's author is not its PR author; changing git attribution is not a substitute. Do not impersonate a ChatGPT GitHub identity. No agent approves, merges, deploys, enables auto-merge or weakens protection. If bot creation is unavailable, report the specific blocker; do not silently fall back to an owner-authored PR.
+
+
+## Coding standards verification
+
+The 14 October maintenance pass and its limits are recorded in [coding-standards.md](qa/coding-standards.md). Keep shared editorial views server-rendered, preserve sanitized-HTML and publication boundaries, and put reusable behavior settings/content in the modules above. Add descriptive file/function comments with `@author meetbyte` for responsibilities and side effects; anonymous callbacks and obvious assignments do not need boilerplate. Generated files, media, JSON and third-party notices are exempt.

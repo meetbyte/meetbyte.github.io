@@ -1,5 +1,5 @@
 /**
- * @file Approved editorial foundation; legacy page details remain reusable until their page milestones.
+ * @file Shared editorial typography and shell; final art/menu overrides live in editorial-artwork.css.
  * @author meetbyte
  */
 :root {
@@ -21,8 +21,6 @@ h3 { font-size: 1.375rem; line-height: 1.3; }
 .site-grid { display: block; flex: none; padding: 48px 0 64px; height: auto; }
 .content-panel { height: auto; min-height: 0; overflow: visible; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
 .header-tools { gap: 0; }
-.theme-choice select { min-height: 44px; max-width: 112px; border: 1px solid var(--accent); border-radius: 4px; padding: 8px; color: var(--text); background: var(--surface); font: inherit; font-size: 14px; }
-.theme-choice select:disabled { opacity: .65; }
 .nav-link { padding: 10px; min-height: 44px; font-size: 14px; font-weight: 500; border-radius: 0; }
 .nav-indicator { display: none; }
 .site-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; border-top: 1px solid var(--line); padding: 32px 0; color: var(--ink-soft); font-size: 14px; }
@@ -69,7 +67,6 @@ h3 { font-size: 1.375rem; line-height: 1.3; }
   .site-shell { display: block; height: auto; width: calc(100% - 40px); }
   .brand-name { font-size: 20px; white-space: normal; max-width: 105px; }
   .site-header { min-height: 80px; }
-  .theme-choice select { font-size: 13px; max-width: 90px; }
   .hero-copy { padding: 24px 0 48px; }
   .detail-intro { padding: 24px 0 32px; }
   .hero-copy p,.detail-lead,.detail-body,.section-copy p { font-size: 17px; }
