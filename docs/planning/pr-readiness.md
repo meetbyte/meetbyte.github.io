@@ -1,6 +1,6 @@
 # CR002 PR readiness — 14 October 2026
 
-Owner will create the PR from feature/CR002_subtle_changes to main. This handoff reports source/deliverable readiness, not approval to merge or deploy. Final commit and concrete check evidence are recorded in Linear after pushing.
+Owner now requested a review PR from feature/CR002_subtle_changes to main. This handoff reports source/deliverable readiness, not approval to merge or deploy. Final commit and concrete check evidence are recorded in Linear after pushing.
 
 ## Milestone reconciliation
 
@@ -48,3 +48,10 @@ Current screenshot correction removes all Home masks/extra stains and renders th
 
 
 14 October 2026: owner-selected line-free Home correction supersedes rotated original-art framing. Landscape/tall edited counterparts retain wine-art identity with no CSS rotation or masks. Actual image dimensions and source provenance are documented in `public/images/editorial/README.md`; fresh targeted evidence is `docs/qa/line-free-landscape/`. Original sources and inner pages unchanged. Owner visual acceptance and main/release approval remain pending.
+
+
+## Current PR request and Linear reconciliation
+
+Owner authorized opening the CR002-to-main PR for their code review, not merge/deployment. All MEE-5–23 acceptance criteria and dependencies have been read and reconciled in `linear-reconciliation.md`. Source implementation is available for review; factual/editorial signoff, code merge and release/live checks remain separate. Existing basic Linear statuses are retained, including mandatory In Progress for MEE-11/12 until approved merge. MEE-23 rollout is separate and not completed by this website PR.
+
+Current follow-up removes inner artwork's visible hydration placeholder and decodes the shared texture before revealing the final visit composition. Four loading/storage modes with initial/theme/client-navigation checks pass. Home opacity increases slightly to .54 light/.47 dark with images unchanged. Fresh full implementation/SEO/Lighthouse evidence lives in `docs/qa/pr-ready/`; mobile lab LCP remains a recorded limitation. The connected meetbyte account authors the requested PR, so an eligible separate reviewer is necessary under GitHub protection. No settings are weakened.

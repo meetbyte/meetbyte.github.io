@@ -153,8 +153,8 @@ html[data-theme="light"] body:has(.editorial-home) .site-shell { --text: #080508
 .home-diagonal { position: absolute; inset: 0; mask-image: none; }
 .atmosphere-home { --home-art: url('/images/editorial/home-light-landscape.webp'); }
 html[data-theme="dark"] .atmosphere-home { --home-art: url('/images/editorial/home-dark-landscape.webp'); }
-.atmosphere-home .ink-layer { inset: 0; width: auto; height: auto; aspect-ratio: auto; background: var(--home-art) center / cover no-repeat; transform: none; opacity: .50; mask-image: none; mix-blend-mode: normal; }
-html[data-theme="dark"] .atmosphere-home .ink-layer { opacity: .44; mix-blend-mode: normal; }
+.atmosphere-home .ink-layer { inset: 0; width: auto; height: auto; aspect-ratio: auto; background: var(--home-art) center / cover no-repeat; transform: none; opacity: .54; mask-image: none; mix-blend-mode: normal; }
+html[data-theme="dark"] .atmosphere-home .ink-layer { opacity: .47; mix-blend-mode: normal; }
 /* Tall screens use a composed portrait counterpart instead of cropping deep into the wide image. */
 @media (max-aspect-ratio: 1/1) {
  .atmosphere-home { --home-art: url('/images/editorial/home-light-portrait.webp'); }

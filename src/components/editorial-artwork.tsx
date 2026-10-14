@@ -1,26 +1,42 @@
 "use client";
 /** @file Stable Home artwork and changing, motionless inner-page ink compositions. @author meetbyte */
 import { usePathname } from "next/navigation";
-import { useEffect, useId, useState } from "react";
+import { useId, useLayoutEffect, useRef, useState } from "react";
 
-/** Twenty-four restrained compositions vary position, silhouette and ink grain without moving while reading. @author meetbyte */
+/** Decode shared texture once; a failed decorative asset still leaves native ink and readable content. @author meetbyte */
+let textureReady: Promise<PromiseSettledResult<void>[]> | undefined;
+function prepareInkTexture() {
+  return textureReady ??= Promise.allSettled(["light", "dark"].map(mode => {
+    const image = new Image();
+    image.src = `/images/editorial/hero-${mode}-600.webp`;
+    return image.decode();
+  }));
+}
+/** Select one visit composition before revealing it; never paint an interim server placeholder. @author meetbyte */
 function InnerInk() {
-  const [visit, setVisit] = useState(0);
+  const [visit, setVisit] = useState<number | null>(null);
+  const selected = useRef<number | null>(null);
   const id = useId().replace(/[^a-zA-Z0-9]/g, "");
-  useEffect(() => {
-    const frame = requestAnimationFrame(() => {
+  useLayoutEffect(() => {
+    let active = true;
+    // The ref preserves the selection during development Strict Mode effect replay.
+    if (selected.current === null) {
       let next = 1;
       try {
         const key = "meetbyte-ink-visit";
         next = (Number(sessionStorage.getItem(key)) || 0) + 1;
         sessionStorage.setItem(key, String(next));
       } catch { next = crypto.getRandomValues(new Uint32Array(1))[0] % 24 + 1; }
-      setVisit(next);
-    });
-    return () => cancelAnimationFrame(frame);
+      selected.current = next;
+    }
+    const next = selected.current;
+    void prepareInkTexture().then(() => { if (active) setVisit(next); });
+    return () => { active = false; };
   }, []);
-  const variant = visit % 24;
-  return <div className="ink-layer inner-ink" data-composition={variant}><InkComposition variant={variant} id={id} /></div>;
+  const variant = visit === null ? null : visit % 24;
+  return <div className="ink-layer inner-ink" data-ready={variant !== null} data-composition={variant ?? undefined}>
+    {variant !== null && <InkComposition variant={variant} id={id} />}
+  </div>;
 }
 /** Shared organic stains and scattered droplets retain the approved paper texture on both sides. @author meetbyte */
 function InkComposition({ variant, id }: { variant: number; id: string }) {

@@ -142,3 +142,24 @@ Owner chose removal of the original curved lines. New edited landscape and portr
 Fresh evidence: `line-free-landscape/`. All 148 Home raster contrast cases pass (88 mobile-menu-open/desktop cases plus 60 menu-closed cases). Minimum normal text 5.87:1 and large text 3.52:1. Eight short viewport fits/reachable reflow checks and theme/visit/portrait behavior pass. Eight native-art scale/composition checks pass: 1668×940 desktop uses ~1.00× cover scale, 1920×1080 ~1.15×, representative phone/tablet screens downsample their composed tall sources. Source dimensions and scale evidence are in `art-scale.json`; no native 4K or retina-resolution claim. Lint, typecheck, 38 tests and production build pass. Earlier complete layout matrices remain historical; this is a targeted visual correction.
 
 Owner visual acceptance remains pending. CR002 only; no main merge or deployment.
+
+
+## Current owner PR candidate — 14 October 2026
+
+Inner-page artwork previously rendered composition 0 in static HTML then replaced it after hydration. This can occur in production too. The chosen per-visit composition now becomes visible only after shared light/dark texture decoding; selection is stable through development Strict Mode effect replay, theme changes and reading. A missing decorative image falls back to native ink and readable page content. There is no timed fade or placeholder-to-final composition swap. A single initial image reveal on a cold connection is normal loading, not a promise that network assets paint instantaneously.
+
+Owner accepted the Home image; pixels/framing remain unchanged. Opacity increases from .50 to .54 in light and .44 to .47 in dark. Fresh Home open/closed menu contrast cases pass (148 cases; minimum normal text 5.22:1 and large text 3.28:1).
+
+Current evidence: `pr-ready/`. Fresh production-export matrix passes 170 responsive/theme layouts, 34 axe runs with zero detected violations, 24 local links, no browser exceptions, keyboard/menu/theme/navigation recovery, legacy alias/404 and draft/sample boundaries. Static SEO checks pass for all 17 canonical pages. Eight short-viewport/reflow checks, eight native-art composition/scale checks and artwork/theme/portrait checks pass. Four loading modes (normal, delayed, failed image and blocked storage) each show exactly one initial composition and one per subsequent route visit, unchanged on theme switching. Lint/typecheck, all 38 website tests and production build pass.
+
+Fresh Lighthouse local lab (one run per scenario; Home mobile reports CPU calibration warning):
+
+| Scenario | Performance | Accessibility / Best practices / SEO | LCP | CLS |
+| --- | --- | --- | --- | --- |
+| Home desktop | 98 | 100 / 100 / 100 | 1.17s | 0 |
+| Home simulated mobile | 77 | 100 / 100 / 100 | 6.31s | 0 |
+| Resume simulated mobile | 88 | 100 / 100 / 100 | 3.96s | 0 |
+
+Mobile LCP and framework loading overhead remain documented limitations. These simulated local figures are not production field Core Web Vitals, full WCAG certification, Search Console validation or proof of indexing/ranking. Raw Lighthouse outputs are reproducible local artifacts; compact performance summary is checked in. All issue acceptance/dependency states are reconciled in `docs/planning/linear-reconciliation.md`; owner content/privacy/code approval and release/live checks remain pending. Owner requested opening one CR002-to-main review PR; no merge/deployment or protection changes are authorized.
+
+Final expanded raster validation: all 2,404 text cases pass, covering all 24 desktop inner compositions and all six smaller-screen silhouette families in both themes, plus Home; the separate 60 closed-menu Home cases also pass. Minimum normal/large raster text contrast is 5.03:1 / 3.28:1. All 27 signal-safety deterministic tests pass. Current source/evidence will be anchored to the pushed PR head in Linear and the PR description.

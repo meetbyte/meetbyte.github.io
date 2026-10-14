@@ -9,7 +9,7 @@ const {chromium}=await import(process.env.PLAYWRIGHT_MODULE_PATH || 'playwright'
 const axePath=process.env.AXE_SCRIPT_PATH;
 if(!axePath)throw new Error('Set AXE_SCRIPT_PATH to the separately installed axe-core/axe.min.js.');
 const routes=['/','/about/','/resume/','/skills/','/experience/','/writing/','/contact/','/experience/apex-self-service/','/experience/mobilefirst-modernization/','/experience/engineering-tooling/','/experience/production-investigation/','/writing/beyond-screens/','/writing/modernizing-safely/','/writing/behind-the-requirement/','/writing/software-meets-reality/','/writing/ai-and-decisions/','/writing/thinking-slowly/'];
-const output='docs/qa/continuous-original-art';fs.mkdirSync(output,{recursive:true});
+const output='docs/qa/pr-ready';fs.mkdirSync(output,{recursive:true});
 const results={layouts:[],axe:[],localLinks:[],navigation:[],errors:[]};
 const server=await startStaticServer();let browser;
 try{
@@ -20,10 +20,10 @@ try{
   await page.setViewportSize({width,height:900});await page.emulateMedia({colorScheme:mode});
   for(const route of routes){
    const response=await page.goto('http://127.0.0.1:4173'+route);assert.equal(response.status(),200,route);
-   await page.waitForFunction(()=>!document.querySelector('.theme-toggle').disabled);await page.evaluate(()=>document.fonts.ready);
+   await page.waitForFunction(()=>!document.querySelector('.theme-toggle').disabled);await page.evaluate(()=>document.fonts.ready);await page.waitForFunction(()=>!document.querySelector(".inner-ink")||document.querySelector(".inner-ink").dataset.ready==="true");
    assert.equal(await page.locator('html').getAttribute('data-theme'),mode);
    const metrics=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,viewport:innerWidth,h1:document.querySelectorAll('h1').length,portrait:[...document.querySelectorAll('img[src*="meet-thummar"]')].filter(e=>e.getBoundingClientRect().width>0).length,main:document.querySelector('main').getBoundingClientRect().bottom,footer:document.querySelector('footer').getBoundingClientRect().top,background:getComputedStyle(document.querySelector('.ink-layer')).backgroundImage,artBottom:document.querySelector('.page-atmosphere').getBoundingClientRect().bottom,documentHeight:document.documentElement.scrollHeight}));
-   assert.ok(metrics.scroll<=width+1,JSON.stringify({mode,width,route,...metrics}));assert.equal(metrics.h1,1,route);assert.equal(metrics.portrait,route==='/about/'?1:0,route);assert.ok(metrics.footer>=metrics.main,route);if(route==='/')assert.ok(metrics.background.includes(`hero-${mode}-`));else assert.equal(await page.locator('.inner-ink').count(),1);assert.ok(metrics.artBottom>=metrics.documentHeight-2,'Artwork must span the document');
+   assert.ok(metrics.scroll<=width+1,JSON.stringify({mode,width,route,...metrics}));assert.equal(metrics.h1,1,route);assert.equal(metrics.portrait,route==='/about/'?1:0,route);assert.ok(metrics.footer>=metrics.main,route);if(route==='/')assert.ok(metrics.background.includes(`home-${mode}-`));else assert.equal(await page.locator('.inner-ink').count(),1);assert.ok(metrics.artBottom>=metrics.documentHeight-2,'Artwork must span the document');
    assert.equal(await page.getByText('Draft',{exact:true}).count(),0);
    if(route==='/')assert.ok(await page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight+1),'Home should fit the standard viewport');
    if(route==='/skills/')assert.ok(await page.locator('.ink-layer').evaluate(e=>Number(getComputedStyle(e).opacity)>=.24),'Skills ink must remain visible');

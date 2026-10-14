@@ -85,3 +85,6 @@ Actual editor output: landscape 1672×941 both themes; portrait 863×1822 light 
 - `home-dark-portrait.webp`: 278,728 bytes; SHA-256 `90971123e23c0e2ba008152b8dbca6c009e25ca2b459d937d8a98ed41572e2c9`.
 - `home-light-landscape.webp`: 280,898 bytes; SHA-256 `8f60c5907b67290bd0d12a617461234c4f0e5a64764a11d26a61b2d718f5cc2b`.
 - `home-light-portrait.webp`: 197,024 bytes; SHA-256 `485153fd704df626f305bb6d0648897141c323b717c99c471263b98760d2e48b`.
+
+
+14 October follow-up: owner accepted the Home image and requested slightly stronger opacity: current .54 light/.47 dark. Inner visits select once and reveal after texture decode, avoiding a visible composition-0 hydration swap. Texture failures leave native SVG ink and readable content; no late layout movement. Current release-candidate evidence: `docs/qa/pr-ready/`.
