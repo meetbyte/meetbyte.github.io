@@ -1,6 +1,6 @@
 "use client";
 /**
- * @file One-click accessible appearance toggle with persistent and OS-aware preferences.
+ * @file One-click accessible appearance toggle with persistent preferences and a light default.
  * @author meetbyte
  */
 import { siteConfig } from "@/constants/config";
@@ -12,19 +12,15 @@ import {
   parseThemePreference,
   resolvePreferredTheme,
 } from "@/lib/theme";
-/** Sync cross-tab and OS changes; keep manual choices in memory when storage is blocked. @author meetbyte */
+/** Sync cross-tab changes; keep manual choices in memory when storage is blocked. @author meetbyte */
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    const media = window.matchMedia(siteConfig.prefersDarkThemeQuery);
     let current = readThemePreference();
     const apply = () => {
-      document.documentElement.dataset.theme = resolvePreferredTheme(
-        current,
-        media.matches,
-      );
-      setTheme(resolvePreferredTheme(current, media.matches));
+      document.documentElement.dataset.theme = resolvePreferredTheme(current);
+      setTheme(resolvePreferredTheme(current));
     };
     const choose = (event: Event) => {
       current = parseThemePreference((event as CustomEvent).detail);
@@ -41,11 +37,9 @@ export function ThemeToggle() {
     };
     apply();
     setReady(true);
-    media.addEventListener("change", apply);
     window.addEventListener(siteConfig.themePreferenceEvent, choose);
     window.addEventListener("storage", storage);
     return () => {
-      media.removeEventListener("change", apply);
       window.removeEventListener(siteConfig.themePreferenceEvent, choose);
       window.removeEventListener("storage", storage);
     };

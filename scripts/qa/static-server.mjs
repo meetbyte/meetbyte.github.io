@@ -1,5 +1,5 @@
 /**
- * @file Local static-export server with real 404s and Next.js exported RSC responses.
+ * @file Local static-export server with real 404s and literal exported assets; directory requests always return HTML.
  * @author meetbyte
  */
 import fs from "node:fs";
@@ -36,10 +36,7 @@ export async function startStaticServer(port = 4173) {
       return res.end();
     }
     if (fs.existsSync(file) && fs.statSync(file).isDirectory())
-      file = path.join(
-        file,
-        req.headers.rsc === "1" ? "index.txt" : "index.html",
-      );
+      file = path.join(file, "index.html");
     if (!fs.existsSync(file)) {
       res.writeHead(404, { "content-type": "text/html" });
       return res.end(fs.readFileSync(path.join(root, "404.html")));
