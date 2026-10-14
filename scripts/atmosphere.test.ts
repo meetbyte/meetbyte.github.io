@@ -30,16 +30,16 @@ test("season bootstrap keeps its calendar independent of the persistent theme", 
   });
 });
 
-test("persistent choices override OS before paint; invalid or denied storage uses OS", () => {
+test("light defaults before paint even with a dark OS; explicit choices persist", () => {
   for (const dark of [true, false]) {
     for (const saved of ["dark", "light", "system", "invalid", null]) {
       const dataset: Record<string, string> = {};
       runInNewContext(createThemeBootstrapScript(), { localStorage: { getItem: () => saved }, matchMedia: () => ({ matches: dark }), document: { documentElement: { dataset } } });
-      assert.equal(dataset.theme, saved === "dark" || saved === "light" ? saved : dark ? "dark" : "light");
+      assert.equal(dataset.theme, saved === "dark" ? "dark" : "light");
     }
     const dataset: Record<string, string> = {};
     runInNewContext(createThemeBootstrapScript(), { get localStorage() { throw new Error("denied"); }, matchMedia: () => ({ matches: dark }), document: { documentElement: { dataset } } });
-    assert.equal(dataset.theme, dark ? "dark" : "light");
+    assert.equal(dataset.theme, "light");
   }
 });
 

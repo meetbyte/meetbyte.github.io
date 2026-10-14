@@ -48,3 +48,10 @@ The full prompt pack and its source ZIP/manifest supply a portable implementatio
 Run `npm run lint`, `npm run typecheck`, `npm test` and `npm run build`. In a clean extraction run `npm ci`; the typecheck script generates route types automatically; use the documented Windows webpack fallback only if needed. Preview `out/` through a static host with real 404 responses. Check both themes, narrow/large layouts, keyboard navigation, reduced motion, Contact/CV, published detail routes and disabled/draft/sample boundaries. Current local results are in [the QA report](qa/report.md). `/projects/` and `/blog/` are noindex canonical pointers to Experience and Writing, while old sample detail URLs remain 404. Release and rollback preparation is in [website-release.md](release/website-release.md); future post-release feedback follows [revision-protocol.md](release/revision-protocol.md).
 
 The GitHub Pages workflow builds from source and uploads `out/`; its deploy job is restricted to `main`. A local check is not proof of a live deployment. Do not commit, push, dispatch or deploy without explicit user authorization. Preserve any existing staged or unstaged changes when continuing.
+
+
+## Navigation incident follow-up — 14 October 2026
+
+Owner reported stalled navigation on the live GitHub Pages site. SiteLink now uses native document anchors on every connection, rather than Next.js client routing; directory URLs load their exported HTML directly. No router-dependent loading notice starts for ordinary online links. This means full document navigation, with normal browser history/modifier-click/download/no-JS behavior. Offline ordinary internal clicks retain the recovery notice.
+
+Light is now the default appearance for fresh visits even with a dark OS or nighttime clock. A deliberate saved dark selection remains honored. CR002 persists the selection in localStorage; CR001 retains its existing visit-scoped sessionStorage choice and seasonal/motion controls. The correction changes navigation/default appearance only; it does not restore another design or authorize main merge/deployment.

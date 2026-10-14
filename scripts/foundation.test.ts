@@ -60,10 +60,10 @@ test("theme bootstrap handles missing browser APIs and persistent explicit choic
     });
     assert.equal(dataset.theme, saved === "dark" ? "dark" : "light");
   }
-  assert.equal(parseThemePreference({ bad: true }), "system");
-  assert.equal(resolvePreferredTheme("system", true), "dark");
-  assert.equal(resolvePreferredTheme("light", true), "light");
-  assert.equal(resolvePreferredTheme("dark", false), "dark");
+  assert.equal(parseThemePreference({ bad: true }), "light");
+  assert.equal(resolvePreferredTheme("system"), "light");
+  assert.equal(resolvePreferredTheme("light"), "light");
+  assert.equal(resolvePreferredTheme("dark"), "dark");
 });
 
 test("nested nav states and editorial routes preserve explicit visibility boundaries", () => {
