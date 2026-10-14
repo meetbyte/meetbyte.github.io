@@ -55,3 +55,7 @@ The GitHub Pages workflow builds from source and uploads `out/`; its deploy job 
 Owner reported stalled navigation on the live GitHub Pages site. SiteLink now uses native document anchors on every connection, rather than Next.js client routing; directory URLs load their exported HTML directly. No router-dependent loading notice starts for ordinary online links. This means full document navigation, with normal browser history/modifier-click/download/no-JS behavior. Offline ordinary internal clicks retain the recovery notice.
 
 Light is now the default appearance for fresh visits even with a dark OS or nighttime clock. A deliberate saved dark selection remains honored. CR002 persists the selection in localStorage; CR001 retains its existing visit-scoped sessionStorage choice and seasonal/motion controls. The correction changes navigation/default appearance only; it does not restore another design or authorize main merge/deployment.
+
+## Live appearance/rendering follow-up — MEE-24
+
+Theme changes prepare and decode route-specific imagery before changing palette, keeping the old appearance visible on a cold/failed request. About eagerly loads stacked portrait variants. Inner-page artwork follows the viewport through long documents; Home framing is unchanged. Native HTML links now request browser prefetch on pointer/focus intent where supported, excluding constrained/offline connections. See [live-rendering.md](qa/live-rendering.md) for the incident history, hosting lessons and verification limits.
